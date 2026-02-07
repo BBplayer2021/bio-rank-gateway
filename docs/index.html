@@ -201,19 +201,32 @@
         .project-preview {
             width: 100%;
             height: 180px;
-            object-fit: cover;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: #718096;
             font-size: 3rem;
+            overflow: hidden;
         }
         
         .project-preview img {
+            max-width: 90%;
+            max-height: 160px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            padding: 10px;
+        }
+        
+        .preview-fallback {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #a0aec0;
         }
         
         .project-body {
@@ -758,7 +771,8 @@
             const badges = project.badges || {};
             
             const previewHtml = previewImage 
-                ? `<img src="${previewImage}" alt="Preview" onerror="this.parentElement.innerHTML='<i class=\\'bi bi-image\\'></i>'">`
+                ? `<img src="${previewImage}" alt="${project.name}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                   <div class="preview-fallback" style="display:none;"><i class="bi bi-code-square"></i></div>`
                 : `<i class="bi bi-code-square"></i>`;
             
             const tagsHtml = [
