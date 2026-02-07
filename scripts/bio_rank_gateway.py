@@ -398,52 +398,159 @@ def extract_install_commands(readme_content: str) -> List[Dict[str, str]]:
 
 
 def extract_preview_images(readme_content: str, repo_url: str) -> List[str]:
-    """从README中提取预览图"""
+    """从README中提取预览图和Logo"""
     images = []
+    logo_images = []  # Logo图片优先级最高
     
-    # 匹配Markdown图片语法
-    md_pattern = r'!\[([^\]]*)\]\(([^)]+)\)'
-    # 匹配HTML img标签
-    html_pattern = r'<img[^>]+src=["\']([^"\']+)["\']'
+    # 从repo_url提取owner和repo名
+    # https://github.com/owner/repo -> owner/repo
+    repo_full_name = ""
+    if "github.com" in repo_url:
+        parts = repo_url.replace("https://github.com/", "").replace("http://github.com/", "").split("/")
+        if len(parts) >= 2:
+            repo_full_name = f"{parts[0]}/{parts[1]}"
+    
+    def convert_to_raw_url(url: str) -> str:
+        """将GitHub相对路径或blob路径转换为raw URL"""
+        url = url.strip()
+        
+        # 已经是完整URL
+        if url.startswith('http://') or url.startswith('https://'):
+            # 转换blob URL为raw URL
+            if 'github.com' in url and '/blob/' in url:
+                url = url.replace('github.com', 'raw.githubusercontent.com').replace('/blob/', '/')
+            return url
+        
+        # GitHub绝对路径格式: /owner/repo/raw/branch/path 或 /owner/repo/blob/branch/path
+        if url.startswith('/') and '/raw/' in url:
+            return f"https://raw.githubusercontent.com{url.replace('/raw/', '/', 1)}"
+        
+        if url.startswith('/') and '/blob/' in url:
+            # /owner/repo/blob/master/path -> https://raw.githubusercontent.com/owner/repo/master/path
+            url = url.replace('/blob/', '/', 1)
+            return f"https://raw.githubusercontent.com{url}"
+        
+        # 相对路径格式: ./assets/logo.png 或 assets/logo.png
+        if repo_full_name:
+            clean_path = url.lstrip('./')
+            # 尝试多个分支
+            return f"https://raw.githubusercontent.com/{repo_full_name}/master/{clean_path}"
+        
+        return url
+    
+    # Logo关键词 - 最高优先级
+    logo_keywords = ['logo', 'banner', 'header', 'brand']
     
     # 优先关键词
     priority_keywords = ['workflow', 'report', 'plot', 'result', 'output', 'diagram', 
-                         'overview', 'pipeline', 'screenshot', 'example', 'figure']
+                         'overview', 'pipeline', 'screenshot', 'example', 'figure', 'dag']
     
-    # 提取Markdown图片
+    # 排除的徽章关键词
+    badge_keywords = ['badge', 'shields.io', 'travis', 'codecov', 'circleci', 'coveralls',
+                      'github.io/badge', 'img.shields', 'badgen.net', 'fury.io']
+    
+    # 1. 提取<picture>元素中的图片 (nf-core风格)
+    picture_pattern = r'<picture[^>]*>.*?<img[^>]+src=["\']([^"\']+)["\'].*?</picture>'
+    for url in re.findall(picture_pattern, readme_content, re.DOTALL | re.IGNORECASE):
+        url_lower = url.lower()
+        if any(badge in url_lower for badge in badge_keywords):
+            continue
+        
+        full_url = convert_to_raw_url(url)
+        is_logo = any(kw in url_lower for kw in logo_keywords)
+        
+        if is_logo:
+            if full_url not in logo_images:
+                logo_images.append(full_url)
+        elif full_url not in images:
+            images.append(full_url)
+    
+    # 2. 提取<source>标签中的图片
+    source_pattern = r'<source[^>]+srcset=["\']([^"\']+)["\']'
+    for url in re.findall(source_pattern, readme_content, re.IGNORECASE):
+        url_lower = url.lower()
+        if any(badge in url_lower for badge in badge_keywords):
+            continue
+        
+        full_url = convert_to_raw_url(url)
+        is_logo = any(kw in url_lower for kw in logo_keywords)
+        
+        if is_logo:
+            if full_url not in logo_images:
+                logo_images.append(full_url)
+    
+    # 3. 提取HTML <img>标签 (包括GitHub风格的相对路径)
+    html_pattern = r'<img[^>]+src=["\']([^"\']+)["\']'
+    for url in re.findall(html_pattern, readme_content, re.IGNORECASE):
+        url_lower = url.lower()
+        if any(badge in url_lower for badge in badge_keywords):
+            continue
+        
+        full_url = convert_to_raw_url(url)
+        is_logo = any(kw in url_lower for kw in logo_keywords)
+        is_priority = any(kw in url_lower for kw in priority_keywords)
+        
+        if is_logo:
+            if full_url not in logo_images:
+                logo_images.append(full_url)
+        elif is_priority:
+            if full_url not in images:
+                images.insert(0, full_url)
+        else:
+            if full_url not in images:
+                images.append(full_url)
+    
+    # 4. 提取<a>标签中href指向的图片 (MpGAP风格)
+    a_img_pattern = r'<a[^>]+href=["\']([^"\']+\.(?:png|jpg|jpeg|gif|svg|webp))["\']'
+    for url in re.findall(a_img_pattern, readme_content, re.IGNORECASE):
+        url_lower = url.lower()
+        if any(badge in url_lower for badge in badge_keywords):
+            continue
+        
+        full_url = convert_to_raw_url(url)
+        is_logo = any(kw in url_lower for kw in logo_keywords)
+        
+        if is_logo:
+            if full_url not in logo_images:
+                logo_images.append(full_url)
+        elif full_url not in images:
+            images.append(full_url)
+    
+    # 5. 提取Markdown图片语法
+    md_pattern = r'!\[([^\]]*)\]\(([^)]+)\)'
     for alt, url in re.findall(md_pattern, readme_content):
         alt_lower = alt.lower()
         url_lower = url.lower()
         
-        # 过滤徽章和小图标
-        if any(badge in url_lower for badge in ['badge', 'shields.io', 'travis', 'codecov', 'circleci']):
+        if any(badge in url_lower for badge in badge_keywords):
             continue
         
-        # 检查是否包含优先关键词
+        full_url = convert_to_raw_url(url)
+        is_logo = any(kw in alt_lower or kw in url_lower for kw in logo_keywords)
         is_priority = any(kw in alt_lower or kw in url_lower for kw in priority_keywords)
         
-        # 转换相对路径为绝对路径
-        if not url.startswith('http'):
-            # 从repo URL构建raw content URL
-            raw_base = repo_url.replace('github.com', 'raw.githubusercontent.com') + '/main/'
-            url = raw_base + url.lstrip('./')
-        
-        if is_priority:
-            images.insert(0, url)  # 优先图片放前面
+        if is_logo:
+            if full_url not in logo_images:
+                logo_images.append(full_url)
+        elif is_priority:
+            if full_url not in images:
+                images.insert(0, full_url)
         else:
-            images.append(url)
+            if full_url not in images:
+                images.append(full_url)
     
-    # 提取HTML图片
-    for url in re.findall(html_pattern, readme_content):
-        if any(badge in url.lower() for badge in ['badge', 'shields.io', 'travis', 'codecov']):
-            continue
-        if not url.startswith('http'):
-            raw_base = repo_url.replace('github.com', 'raw.githubusercontent.com') + '/main/'
-            url = raw_base + url.lstrip('./')
-        if url not in images:
-            images.append(url)
+    # Logo图片放在最前面，然后是其他图片
+    result = logo_images + images
     
-    return images[:5]  # 最多返回5张图
+    # 去重并返回前5张
+    seen = set()
+    unique_result = []
+    for img in result:
+        if img not in seen:
+            seen.add(img)
+            unique_result.append(img)
+    
+    return unique_result[:5]
 
 
 def generate_badge_url(full_name: str, stars: int, language: str = "") -> str:
