@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-02-07T17:00:30.332095",
+  "generated_at": "2026-02-08T00:24:29.567261",
   "version": "13.0",
   "scoring_formulas": {
     "pipeline": "S = 5 * log10(Stars) + Weekly_Growth * 2 + Env_Bonus(15) + Zombie_Penalty(0.5)",
     "utility": "S = 8 * log10(Stars) + Weekly_Growth * 2 + Zombie_Penalty(0.5)"
   },
-  "total_repositories": 661,
+  "total_repositories": 662,
   "categories": {
     "Genomics": {
       "total_count": 338,
@@ -80,8 +80,8 @@
             "workflow"
           ],
           "license": "MIT License",
-          "open_issues": 344,
-          "pushed_at": "2026-02-07T08:21:21Z",
+          "open_issues": 343,
+          "pushed_at": "2026-02-07T18:15:50Z",
           "tech_stack": [],
           "install_commands": [],
           "preview_images": [
@@ -163,7 +163,7 @@
           ],
           "license": "Other",
           "open_issues": 15,
-          "pushed_at": "2026-02-05T20:24:56Z",
+          "pushed_at": "2026-02-07T17:04:57Z",
           "tech_stack": [],
           "install_commands": [
             {
@@ -355,7 +355,7 @@
           ],
           "license": "MIT License",
           "open_issues": 54,
-          "pushed_at": "2026-02-06T15:39:32Z",
+          "pushed_at": "2026-02-07T22:04:40Z",
           "tech_stack": [],
           "install_commands": [],
           "preview_images": [
@@ -947,12 +947,52 @@
       "top_10_utilities": [
         {
           "rank": 1,
+          "name": "francescopace/espectre",
+          "url": "https://github.com/francescopace/espectre",
+          "description": "🛜 ESPectre 👻  - Motion detection system based on Wi-Fi spectre analysis (CSI), with Home Assistant integration.",
+          "stars": 6301,
+          "weekly_growth": 6,
+          "score": 42.4,
+          "has_paper": false,
+          "has_docker": false,
+          "has_conda": false,
+          "sub_label": "Alignment",
+          "topics": [
+            "csi",
+            "diy",
+            "esp-32",
+            "espectre",
+            "home-assistant",
+            "motion-detection",
+            "wifi",
+            "wifi-sensing"
+          ],
+          "license": "GNU General Public License v3.0",
+          "open_issues": 5,
+          "pushed_at": "2026-02-05T00:37:26Z",
+          "tech_stack": [],
+          "install_commands": [],
+          "preview_images": [
+            "https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png",
+            "https://raw.githubusercontent.com/francescopace/espectre/master/images/home_lab.jpg",
+            "https://raw.githubusercontent.com/francescopace/espectre/master/images/espectre-home-assistant.png"
+          ],
+          "badges": {
+            "stars": "https://img.shields.io/github/stars/francescopace/espectre?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/francescopace/espectre?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/francescopace/espectre?style=flat-square",
+            "license": "https://img.shields.io/github/license/francescopace/espectre?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/francescopace/espectre?style=flat-square"
+          }
+        },
+        {
+          "rank": 2,
           "name": "WasmEdge/WasmEdge",
           "url": "https://github.com/WasmEdge/WasmEdge",
           "description": "WasmEdge is a lightweight, high-performance, and extensible WebAssembly runtime for cloud native, edge, and decentralized applications. It powers serverless apps, embedded functions, microservices, smart contracts, and IoT devices.",
-          "stars": 10418,
-          "weekly_growth": 0,
-          "score": 37.14,
+          "stars": 10420,
+          "weekly_growth": 2,
+          "score": 41.14,
           "has_paper": true,
           "has_docker": true,
           "has_conda": false,
@@ -994,7 +1034,7 @@
           }
         },
         {
-          "rank": 2,
+          "rank": 3,
           "name": "dapr/dapr",
           "url": "https://github.com/dapr/dapr",
           "description": "Dapr is a portable runtime for building distributed applications across cloud and edge, combining event-driven architecture with workflow orchestration.",
@@ -1034,46 +1074,6 @@
             "license": "https://img.shields.io/github/license/dapr/dapr?style=flat-square",
             "last_commit": "https://img.shields.io/github/last-commit/dapr/dapr?style=flat-square",
             "docker": "https://img.shields.io/badge/docker-available-blue?style=flat-square&logo=docker"
-          }
-        },
-        {
-          "rank": 3,
-          "name": "francescopace/espectre",
-          "url": "https://github.com/francescopace/espectre",
-          "description": "🛜 ESPectre 👻  - Motion detection system based on Wi-Fi spectre analysis (CSI), with Home Assistant integration.",
-          "stars": 6295,
-          "weekly_growth": 1,
-          "score": 32.39,
-          "has_paper": false,
-          "has_docker": false,
-          "has_conda": false,
-          "sub_label": "Alignment",
-          "topics": [
-            "csi",
-            "diy",
-            "esp-32",
-            "espectre",
-            "home-assistant",
-            "motion-detection",
-            "wifi",
-            "wifi-sensing"
-          ],
-          "license": "GNU General Public License v3.0",
-          "open_issues": 5,
-          "pushed_at": "2026-02-05T00:37:26Z",
-          "tech_stack": [],
-          "install_commands": [],
-          "preview_images": [
-            "https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png",
-            "https://raw.githubusercontent.com/francescopace/espectre/master/images/home_lab.jpg",
-            "https://raw.githubusercontent.com/francescopace/espectre/master/images/espectre-home-assistant.png"
-          ],
-          "badges": {
-            "stars": "https://img.shields.io/github/stars/francescopace/espectre?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/francescopace/espectre?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/francescopace/espectre?style=flat-square",
-            "license": "https://img.shields.io/github/license/francescopace/espectre?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/francescopace/espectre?style=flat-square"
           }
         },
         {
@@ -1200,6 +1200,54 @@
         },
         {
           "rank": 7,
+          "name": "scverse/anndata",
+          "url": "https://github.com/scverse/anndata",
+          "description": "Annotated data.",
+          "stars": 709,
+          "weekly_growth": 1,
+          "score": 29.81,
+          "has_paper": true,
+          "has_docker": false,
+          "has_conda": true,
+          "sub_label": "Alignment",
+          "topics": [
+            "anndata",
+            "bioinformatics",
+            "data-science",
+            "machine-learning",
+            "scanpy",
+            "scverse",
+            "transcriptomics"
+          ],
+          "license": "BSD 3-Clause \"New\" or \"Revised\" License",
+          "open_issues": 263,
+          "pushed_at": "2026-02-06T19:04:02Z",
+          "tech_stack": [],
+          "install_commands": [
+            {
+              "type": "conda",
+              "command": "conda install anndata -c conda-forge"
+            },
+            {
+              "type": "pip",
+              "command": "pip install anndata"
+            }
+          ],
+          "preview_images": [
+            "https://raw.githubusercontent.com/numfocus/templates/master/images/numfocus-logo.png",
+            "https://raw.githubusercontent.com/scverse/anndata/main/docs/_static/img/anndata_schema.svg"
+          ],
+          "badges": {
+            "stars": "https://img.shields.io/github/stars/scverse/anndata?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/scverse/anndata?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/scverse/anndata?style=flat-square",
+            "license": "https://img.shields.io/github/license/scverse/anndata?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/scverse/anndata?style=flat-square",
+            "conda": "https://img.shields.io/badge/conda-available-green?style=flat-square&logo=anaconda"
+          }
+        },
+        {
+          "rank": 8,
           "name": "pachterlab/gget",
           "url": "https://github.com/pachterlab/gget",
           "description": "🧬 gget enables efficient querying of genomic reference databases",
@@ -1230,7 +1278,7 @@
           ],
           "license": "BSD 2-Clause \"Simplified\" License",
           "open_issues": 22,
-          "pushed_at": "2026-02-05T22:10:53Z",
+          "pushed_at": "2026-02-07T23:04:25Z",
           "tech_stack": [],
           "install_commands": [
             {
@@ -1263,7 +1311,7 @@
           }
         },
         {
-          "rank": 8,
+          "rank": 9,
           "name": "broadinstitute/picard",
           "url": "https://github.com/broadinstitute/picard",
           "description": "A set of command line tools (in Java) for manipulating high-throughput sequencing (HTS) data and formats such as SAM/BAM/CRAM and VCF.",
@@ -1295,7 +1343,7 @@
           }
         },
         {
-          "rank": 9,
+          "rank": 10,
           "name": "hail-is/hail",
           "url": "https://github.com/hail-is/hail",
           "description": "Cloud-native genomic dataframes and batch computing",
@@ -1330,44 +1378,6 @@
             "issues": "https://img.shields.io/github/issues/hail-is/hail?style=flat-square",
             "license": "https://img.shields.io/github/license/hail-is/hail?style=flat-square",
             "last_commit": "https://img.shields.io/github/last-commit/hail-is/hail?style=flat-square"
-          }
-        },
-        {
-          "rank": 10,
-          "name": "samtools/htslib",
-          "url": "https://github.com/samtools/htslib",
-          "description": "C library for high-throughput sequencing data formats",
-          "stars": 904,
-          "weekly_growth": 0,
-          "score": 28.65,
-          "has_paper": true,
-          "has_docker": false,
-          "has_conda": false,
-          "sub_label": "Variant Calling",
-          "topics": [
-            "bam",
-            "bcf",
-            "bioinformatics",
-            "cram",
-            "htslib",
-            "ngs",
-            "sam",
-            "vcf"
-          ],
-          "license": "Other",
-          "open_issues": 161,
-          "pushed_at": "2026-02-06T17:05:04Z",
-          "tech_stack": [],
-          "install_commands": [],
-          "preview_images": [
-            "https://api.cirrus-ci.com/github/samtools/htslib.svg?branch=develop"
-          ],
-          "badges": {
-            "stars": "https://img.shields.io/github/stars/samtools/htslib?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/samtools/htslib?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/samtools/htslib?style=flat-square",
-            "license": "https://img.shields.io/github/license/samtools/htslib?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/samtools/htslib?style=flat-square"
           }
         }
       ]
@@ -2272,37 +2282,6 @@
         },
         {
           "rank": 2,
-          "name": "dmcable/spacexr",
-          "url": "https://github.com/dmcable/spacexr",
-          "description": "Spatial-eXpression-R: Cell type identification (including cell type mixtures) and cell type-specific differential expression for spatial transcriptomics",
-          "stars": 437,
-          "weekly_growth": 1,
-          "score": 28.12,
-          "has_paper": true,
-          "has_docker": false,
-          "has_conda": false,
-          "sub_label": "Alignment",
-          "topics": [
-            "cell-type-identification",
-            "differential-expression",
-            "spatial-transcriptomics"
-          ],
-          "license": "GNU General Public License v3.0",
-          "open_issues": 69,
-          "pushed_at": "2026-01-22T15:04:34Z",
-          "tech_stack": [],
-          "install_commands": [],
-          "preview_images": [],
-          "badges": {
-            "stars": "https://img.shields.io/github/stars/dmcable/spacexr?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/dmcable/spacexr?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/dmcable/spacexr?style=flat-square",
-            "license": "https://img.shields.io/github/license/dmcable/spacexr?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/dmcable/spacexr?style=flat-square"
-          }
-        },
-        {
-          "rank": 3,
           "name": "scverse/PyDESeq2",
           "url": "https://github.com/scverse/PyDESeq2",
           "description": "A Python implementation of the DESeq2 pipeline for bulk RNA-seq DEA.",
@@ -2359,7 +2338,7 @@
           }
         },
         {
-          "rank": 4,
+          "rank": 3,
           "name": "cafferychen777/mLLMCelltype",
           "url": "https://github.com/cafferychen777/mLLMCelltype",
           "description": "Cell type annotation for single-cell RNA-seq using multi-LLM consensus",
@@ -2414,7 +2393,7 @@
           }
         },
         {
-          "rank": 5,
+          "rank": 4,
           "name": "aertslab/pySCENIC",
           "url": "https://github.com/aertslab/pySCENIC",
           "description": "pySCENIC is a lightning-fast python implementation of the SCENIC pipeline (Single-Cell rEgulatory Network Inference and Clustering) which enables biologists to infer transcription factors, gene regulatory networks and cell types from single-cell RNA-seq data.",
@@ -2446,7 +2425,7 @@
           }
         },
         {
-          "rank": 6,
+          "rank": 5,
           "name": "jinworks/CellChat",
           "url": "https://github.com/jinworks/CellChat",
           "description": "R toolkit for inference, visualization and analysis of cell-cell communication from single-cell and spatially resolved transcriptomics",
@@ -2487,7 +2466,7 @@
           }
         },
         {
-          "rank": 7,
+          "rank": 6,
           "name": "aristoteleo/dynamo-release",
           "url": "https://github.com/aristoteleo/dynamo-release",
           "description": "Inclusive model of expression dynamics with conventional or metabolic labeling based scRNA-seq / multiomics, vector field reconstruction and differential geometry analyses",
@@ -2534,7 +2513,7 @@
           }
         },
         {
-          "rank": 8,
+          "rank": 7,
           "name": "gpertea/stringtie",
           "url": "https://github.com/gpertea/stringtie",
           "description": "Transcript assembly and quantification for RNA-Seq",
@@ -2566,7 +2545,7 @@
           }
         },
         {
-          "rank": 9,
+          "rank": 8,
           "name": "agitter/single-cell-pseudotime",
           "url": "https://github.com/agitter/single-cell-pseudotime",
           "description": "An overview of algorithms for estimating pseudotime in single-cell RNA-seq data",
@@ -2595,6 +2574,37 @@
             "issues": "https://img.shields.io/github/issues/agitter/single-cell-pseudotime?style=flat-square",
             "license": "https://img.shields.io/github/license/agitter/single-cell-pseudotime?style=flat-square",
             "last_commit": "https://img.shields.io/github/last-commit/agitter/single-cell-pseudotime?style=flat-square"
+          }
+        },
+        {
+          "rank": 9,
+          "name": "dmcable/spacexr",
+          "url": "https://github.com/dmcable/spacexr",
+          "description": "Spatial-eXpression-R: Cell type identification (including cell type mixtures) and cell type-specific differential expression for spatial transcriptomics",
+          "stars": 437,
+          "weekly_growth": 0,
+          "score": 26.12,
+          "has_paper": true,
+          "has_docker": false,
+          "has_conda": false,
+          "sub_label": "Alignment",
+          "topics": [
+            "cell-type-identification",
+            "differential-expression",
+            "spatial-transcriptomics"
+          ],
+          "license": "GNU General Public License v3.0",
+          "open_issues": 69,
+          "pushed_at": "2026-01-22T15:04:34Z",
+          "tech_stack": [],
+          "install_commands": [],
+          "preview_images": [],
+          "badges": {
+            "stars": "https://img.shields.io/github/stars/dmcable/spacexr?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/dmcable/spacexr?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/dmcable/spacexr?style=flat-square",
+            "license": "https://img.shields.io/github/license/dmcable/spacexr?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/dmcable/spacexr?style=flat-square"
           }
         },
         {
@@ -2640,9 +2650,9 @@
       ]
     },
     "Metagenomics": {
-      "total_count": 72,
+      "total_count": 73,
       "pipeline_count": 13,
-      "utility_count": 59,
+      "utility_count": 60,
       "top_20_pipelines": [
         {
           "rank": 1,
@@ -4095,7 +4105,7 @@
             "visualization"
           ],
           "license": "MIT License",
-          "open_issues": 137,
+          "open_issues": 138,
           "pushed_at": "2026-02-07T06:18:41Z",
           "tech_stack": [],
           "install_commands": [
@@ -4397,33 +4407,43 @@
         },
         {
           "rank": 3,
-          "name": "dmcable/spacexr",
-          "url": "https://github.com/dmcable/spacexr",
-          "description": "Spatial-eXpression-R: Cell type identification (including cell type mixtures) and cell type-specific differential expression for spatial transcriptomics",
-          "stars": 437,
+          "name": "theislab/cellrank",
+          "url": "https://github.com/theislab/cellrank",
+          "description": "CellRank: dynamics from multi-view single-cell data",
+          "stars": 422,
           "weekly_growth": 1,
-          "score": 28.12,
+          "score": 28.0,
           "has_paper": true,
           "has_docker": false,
           "has_conda": false,
           "sub_label": "Alignment",
           "topics": [
-            "cell-type-identification",
-            "differential-expression",
-            "spatial-transcriptomics"
+            "bioinformatics",
+            "cell-fate-determination",
+            "cell-fate-transitions",
+            "data-science",
+            "fuzzy-clustering-analyses",
+            "genetics",
+            "machine-learning",
+            "manifold-learning",
+            "markov-chains",
+            "rna-velocity",
+            "single-cell-genomics",
+            "single-cell-rna-seq",
+            "trajectory-generation"
           ],
-          "license": "GNU General Public License v3.0",
-          "open_issues": 69,
-          "pushed_at": "2026-01-22T15:04:34Z",
+          "license": "BSD 3-Clause \"New\" or \"Revised\" License",
+          "open_issues": 27,
+          "pushed_at": "2026-01-22T11:25:31Z",
           "tech_stack": [],
           "install_commands": [],
           "preview_images": [],
           "badges": {
-            "stars": "https://img.shields.io/github/stars/dmcable/spacexr?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/dmcable/spacexr?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/dmcable/spacexr?style=flat-square",
-            "license": "https://img.shields.io/github/license/dmcable/spacexr?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/dmcable/spacexr?style=flat-square"
+            "stars": "https://img.shields.io/github/stars/theislab/cellrank?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/theislab/cellrank?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/theislab/cellrank?style=flat-square",
+            "license": "https://img.shields.io/github/license/theislab/cellrank?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/theislab/cellrank?style=flat-square"
           }
         },
         {
@@ -5858,60 +5878,6 @@
     "fastest_growth": [
       {
         "repo": {
-          "id": 238749318,
-          "full_name": "dmcable/spacexr",
-          "url": "https://github.com/dmcable/spacexr",
-          "description": "Spatial-eXpression-R: Cell type identification (including cell type mixtures) and cell type-specific differential expression for spatial transcriptomics",
-          "category": "Single-cell",
-          "project_type": "Utility",
-          "has_paper": 1,
-          "has_docker": 0,
-          "has_conda_env": 0,
-          "sub_label": "Alignment",
-          "topics": "[\"cell-type-identification\", \"differential-expression\", \"spatial-transcriptomics\"]",
-          "license": "GNU General Public License v3.0",
-          "tech_stack": null,
-          "install_commands": "[]",
-          "preview_images": "[]",
-          "badge_url": "https://img.shields.io/github/stars/dmcable/spacexr?style=flat-square&logo=github",
-          "stars": 437,
-          "forks": 91,
-          "open_issues": 69,
-          "pushed_at": "2026-01-22T15:04:34Z",
-          "weekly_growth": 1,
-          "score": 28.12
-        },
-        "growth": 1
-      },
-      {
-        "repo": {
-          "id": 374763231,
-          "full_name": "inngest/inngest",
-          "url": "https://github.com/inngest/inngest",
-          "description": "The leading workflow orchestration platform.  Run stateful step functions and AI workflows on serverless, servers, or the edge.",
-          "category": "Transcriptomics",
-          "project_type": "Pipeline",
-          "has_paper": 0,
-          "has_docker": 0,
-          "has_conda_env": 0,
-          "sub_label": "",
-          "topics": "[\"cli\", \"event-driven\", \"event-driven-architecture\", \"queues\", \"serverless\", \"serverless-functions\", \"workflow-engine\", \"workflows\"]",
-          "license": "Other",
-          "tech_stack": null,
-          "install_commands": "[]",
-          "preview_images": "[\"https://github.com/inngest/.github/raw/main/profile/github-readme-banner-2025-06-20.png\", \"https://raw.githubusercontent.com/inngest/inngest/master/github/assets/dashboard-screenshot-2024-09-23.png\", \"https://raw.githubusercontent.com/inngest/inngest/master/github/assets/architecture-2024-09-23.png\"]",
-          "badge_url": "https://img.shields.io/github/stars/inngest/inngest?style=flat-square&logo=github",
-          "stars": 4773,
-          "forks": 244,
-          "open_issues": 156,
-          "pushed_at": "2026-02-07T10:41:54Z",
-          "weekly_growth": 1,
-          "score": 20.39
-        },
-        "growth": 1
-      },
-      {
-        "repo": {
           "id": 1083590674,
           "full_name": "francescopace/espectre",
           "url": "https://github.com/francescopace/espectre",
@@ -5928,12 +5894,120 @@
           "install_commands": "[]",
           "preview_images": "[\"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png\", \"https://raw.githubusercontent.com/francescopace/espectre/master/images/home_lab.jpg\", \"https://raw.githubusercontent.com/francescopace/espectre/master/images/espectre-home-assistant.png\"]",
           "badge_url": "https://img.shields.io/github/stars/francescopace/espectre?style=flat-square&logo=github",
-          "stars": 6295,
+          "stars": 6301,
           "forks": 476,
           "open_issues": 5,
           "pushed_at": "2026-02-05T00:37:26Z",
+          "weekly_growth": 6,
+          "score": 42.4
+        },
+        "growth": 6
+      },
+      {
+        "repo": {
+          "id": 224908244,
+          "full_name": "WasmEdge/WasmEdge",
+          "url": "https://github.com/WasmEdge/WasmEdge",
+          "description": "WasmEdge is a lightweight, high-performance, and extensible WebAssembly runtime for cloud native, edge, and decentralized applications. It powers serverless apps, embedded functions, microservices, smart contracts, and IoT devices.",
+          "category": "Transcriptomics",
+          "project_type": "Utility",
+          "has_paper": 1,
+          "has_docker": 1,
+          "has_conda_env": 0,
+          "sub_label": "Alignment",
+          "topics": "[\"artificial-intelligence\", \"cloud\", \"cloud-native\", \"cncf\", \"container\", \"docker\", \"edge-computing\", \"ewasm\", \"hacktoberfest\", \"hacktoberfest2023\", \"kubernetes\", \"rust-lang\", \"serverless\", \"wasm\", \"webassembly\"]",
+          "license": "Apache License 2.0",
+          "tech_stack": null,
+          "install_commands": "[]",
+          "preview_images": "[\"https://raw.githubusercontent.com/WasmEdge/WasmEdge/master/docs/wasmedge-runtime-logo.png\", \"https://app.fossa.com/api/projects/git%2Bgithub.com%2FWasmEdge%2FWasmEdge.svg?type=shield\", \"https://app.fossa.com/api/projects/git%2Bgithub.com%2FWasmEdge%2FWasmEdge.svg?type=large\"]",
+          "badge_url": "https://img.shields.io/github/stars/WasmEdge/WasmEdge?style=flat-square&logo=github",
+          "stars": 10420,
+          "forks": 989,
+          "open_issues": 201,
+          "pushed_at": "2026-02-06T10:58:08Z",
+          "weekly_growth": 2,
+          "score": 41.14
+        },
+        "growth": 2
+      },
+      {
+        "repo": {
+          "id": 687493160,
+          "full_name": "DRIgnazGortngschirl/bambulab-studio-orca-slicer-presets",
+          "url": "https://github.com/DRIgnazGortngschirl/bambulab-studio-orca-slicer-presets",
+          "description": " This repository is dedicated to storing / collecting presets that have been meticulously crafted and optimized for use in 3D printing and slicing applications. Whether you're a 3D printing enthusiast, engineer, or designer, our collection of presets aims to simplify your workflow and elevate your 3D printing experience.",
+          "category": "Genomics",
+          "project_type": "Utility",
+          "has_paper": 0,
+          "has_docker": 0,
+          "has_conda_env": 0,
+          "sub_label": "Alignment",
+          "topics": "[\"3dprinting\", \"bambulab\", \"bambustudio\", \"orcaslicer\", \"presets\"]",
+          "license": "Creative Commons Zero v1.0 Universal",
+          "tech_stack": null,
+          "install_commands": "[]",
+          "preview_images": "[\"https://wiki.bambulab.com/admin/home/logo-large.png\", \"https://api.star-history.com/svg?repos=DRIgnazGortngschirl/bambulab-studio-orca-slicer-presets&type=Date\", \"https://raw.githubusercontent.com/SoftFever/OrcaSlicer/main/resources/images/OrcaSlicer_192px_transparent.png\", \"https://raw.githubusercontent.com/DRIgnazGortngschirl/bambulab-studio-orca-slicer-presets/main/REPO-MEDIA/bambulab-studio-orca-slicer-presets-init-view.gif\"]",
+          "badge_url": "https://img.shields.io/github/stars/DRIgnazGortngschirl/bambulab-studio-orca-slicer-presets?style=flat-square&logo=github",
+          "stars": 293,
+          "forks": 17,
+          "open_issues": 1,
+          "pushed_at": "2026-02-02T19:57:18Z",
+          "weekly_growth": 2,
+          "score": 23.73
+        },
+        "growth": 2
+      },
+      {
+        "repo": {
+          "id": 27452807,
+          "full_name": "broadinstitute/gatk",
+          "url": "https://github.com/broadinstitute/gatk",
+          "description": "Official code repository for GATK versions 4 and up",
+          "category": "Genomics",
+          "project_type": "Utility",
+          "has_paper": 0,
+          "has_docker": 1,
+          "has_conda_env": 1,
+          "sub_label": "Alignment",
+          "topics": "[\"bioinformatics\", \"dna\", \"gatk\", \"genome\", \"genomics\", \"ngs\", \"science\", \"sequencing\", \"spark\"]",
+          "license": "Other",
+          "tech_stack": null,
+          "install_commands": "[{\"type\": \"brew\", \"command\": \"brew install temurin\"}]",
+          "preview_images": "[]",
+          "badge_url": "https://img.shields.io/github/stars/broadinstitute/gatk?style=flat-square&logo=github",
+          "stars": 1906,
+          "forks": 622,
+          "open_issues": 1418,
+          "pushed_at": "2026-02-07T17:11:11Z",
           "weekly_growth": 1,
-          "score": 32.39
+          "score": 28.24
+        },
+        "growth": 1
+      },
+      {
+        "repo": {
+          "id": 38241461,
+          "full_name": "galaxyproject/training-material",
+          "url": "https://github.com/galaxyproject/training-material",
+          "description": "A collection of Galaxy-related training material",
+          "category": "Metagenomics",
+          "project_type": "Utility",
+          "has_paper": 0,
+          "has_docker": 0,
+          "has_conda_env": 0,
+          "sub_label": "Alignment",
+          "topics": "[\"chip-seq\", \"hacktoberfest\", \"materials\", \"metagenomics\", \"ngs\", \"proteomics\", \"rnaseq\", \"training\", \"tutorial\", \"usegalaxy\"]",
+          "license": "MIT License",
+          "tech_stack": null,
+          "install_commands": "[]",
+          "preview_images": "[\"https://raw.githubusercontent.com/galaxyproject/training-material/master/shared/images/GTNLogo1000.png\"]",
+          "badge_url": "https://img.shields.io/github/stars/galaxyproject/training-material?style=flat-square&logo=github",
+          "stars": 345,
+          "forks": 1042,
+          "open_issues": 386,
+          "pushed_at": "2026-02-07T00:22:57Z",
+          "weekly_growth": 1,
+          "score": 22.3
         },
         "growth": 1
       }
@@ -5994,7 +6068,7 @@
           "score": 11.45
         },
         "issues": 67,
-        "inactive_days": 375,
+        "inactive_days": 376,
         "stars": 27
       },
       {
@@ -6052,7 +6126,7 @@
           "score": 28.27
         },
         "issues": 40,
-        "inactive_days": 378,
+        "inactive_days": 379,
         "stars": 45
       },
       {
@@ -6081,88 +6155,68 @@
           "score": 26.81
         },
         "issues": 20,
-        "inactive_days": 268,
+        "inactive_days": 269,
         "stars": 23
       }
     ]
   },
   "new_entries": [
     {
-      "category": "Genomics",
-      "type": "Utility",
-      "repo": {
-        "rank": 3,
-        "name": "francescopace/espectre",
-        "url": "https://github.com/francescopace/espectre",
-        "description": "🛜 ESPectre 👻  - Motion detection system based on Wi-Fi spectre analysis (CSI), with Home Assistant integration.",
-        "stars": 6295,
-        "weekly_growth": 1,
-        "score": 32.39,
-        "has_paper": false,
-        "has_docker": false,
-        "has_conda": false,
-        "sub_label": "Alignment",
-        "topics": [
-          "csi",
-          "diy",
-          "esp-32",
-          "espectre",
-          "home-assistant",
-          "motion-detection",
-          "wifi",
-          "wifi-sensing"
-        ],
-        "license": "GNU General Public License v3.0",
-        "open_issues": 5,
-        "pushed_at": "2026-02-05T00:37:26Z",
-        "tech_stack": [],
-        "install_commands": [],
-        "preview_images": [
-          "https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png",
-          "https://raw.githubusercontent.com/francescopace/espectre/master/images/home_lab.jpg",
-          "https://raw.githubusercontent.com/francescopace/espectre/master/images/espectre-home-assistant.png"
-        ],
-        "badges": {
-          "stars": "https://img.shields.io/github/stars/francescopace/espectre?style=flat-square&logo=github",
-          "forks": "https://img.shields.io/github/forks/francescopace/espectre?style=flat-square&logo=github",
-          "issues": "https://img.shields.io/github/issues/francescopace/espectre?style=flat-square",
-          "license": "https://img.shields.io/github/license/francescopace/espectre?style=flat-square",
-          "last_commit": "https://img.shields.io/github/last-commit/francescopace/espectre?style=flat-square"
-        }
-      }
-    },
-    {
       "category": "Transcriptomics",
       "type": "Utility",
       "repo": {
-        "rank": 2,
-        "name": "dmcable/spacexr",
-        "url": "https://github.com/dmcable/spacexr",
-        "description": "Spatial-eXpression-R: Cell type identification (including cell type mixtures) and cell type-specific differential expression for spatial transcriptomics",
-        "stars": 437,
-        "weekly_growth": 1,
-        "score": 28.12,
+        "rank": 3,
+        "name": "cafferychen777/mLLMCelltype",
+        "url": "https://github.com/cafferychen777/mLLMCelltype",
+        "description": "Cell type annotation for single-cell RNA-seq using multi-LLM consensus",
+        "stars": 631,
+        "weekly_growth": 0,
+        "score": 27.4,
         "has_paper": true,
         "has_docker": false,
         "has_conda": false,
         "sub_label": "Alignment",
         "topics": [
-          "cell-type-identification",
-          "differential-expression",
-          "spatial-transcriptomics"
+          "bioinformatics",
+          "cell-type-annotation",
+          "computational-biology",
+          "consensus-algorithm",
+          "large-language-models",
+          "llm",
+          "scanpy",
+          "scrna",
+          "scrnaseq-analysis",
+          "seurat",
+          "single-cell"
         ],
-        "license": "GNU General Public License v3.0",
-        "open_issues": 69,
-        "pushed_at": "2026-01-22T15:04:34Z",
+        "license": "MIT License",
+        "open_issues": 9,
+        "pushed_at": "2026-02-07T07:10:48Z",
         "tech_stack": [],
-        "install_commands": [],
-        "preview_images": [],
+        "install_commands": [
+          {
+            "type": "pip",
+            "command": "pip install mllmcelltype"
+          },
+          {
+            "type": "pip",
+            "command": "pip install git"
+          },
+          {
+            "type": "pip",
+            "command": "pip install google-genai"
+          }
+        ],
+        "preview_images": [
+          "https://raw.githubusercontent.com/cafferychen777/mLLMCelltype/master/assets/mLLMCelltype_logo.png",
+          "https://raw.githubusercontent.com/cafferychen777/mLLMCelltype/master/images/mLLMCelltype_visualization.png"
+        ],
         "badges": {
-          "stars": "https://img.shields.io/github/stars/dmcable/spacexr?style=flat-square&logo=github",
-          "forks": "https://img.shields.io/github/forks/dmcable/spacexr?style=flat-square&logo=github",
-          "issues": "https://img.shields.io/github/issues/dmcable/spacexr?style=flat-square",
-          "license": "https://img.shields.io/github/license/dmcable/spacexr?style=flat-square",
-          "last_commit": "https://img.shields.io/github/last-commit/dmcable/spacexr?style=flat-square"
+          "stars": "https://img.shields.io/github/stars/cafferychen777/mLLMCelltype?style=flat-square&logo=github",
+          "forks": "https://img.shields.io/github/forks/cafferychen777/mLLMCelltype?style=flat-square&logo=github",
+          "issues": "https://img.shields.io/github/issues/cafferychen777/mLLMCelltype?style=flat-square",
+          "license": "https://img.shields.io/github/license/cafferychen777/mLLMCelltype?style=flat-square",
+          "last_commit": "https://img.shields.io/github/last-commit/cafferychen777/mLLMCelltype?style=flat-square"
         }
       }
     },
@@ -6171,42 +6225,52 @@
       "type": "Utility",
       "repo": {
         "rank": 3,
-        "name": "dmcable/spacexr",
-        "url": "https://github.com/dmcable/spacexr",
-        "description": "Spatial-eXpression-R: Cell type identification (including cell type mixtures) and cell type-specific differential expression for spatial transcriptomics",
-        "stars": 437,
+        "name": "theislab/cellrank",
+        "url": "https://github.com/theislab/cellrank",
+        "description": "CellRank: dynamics from multi-view single-cell data",
+        "stars": 422,
         "weekly_growth": 1,
-        "score": 28.12,
+        "score": 28.0,
         "has_paper": true,
         "has_docker": false,
         "has_conda": false,
         "sub_label": "Alignment",
         "topics": [
-          "cell-type-identification",
-          "differential-expression",
-          "spatial-transcriptomics"
+          "bioinformatics",
+          "cell-fate-determination",
+          "cell-fate-transitions",
+          "data-science",
+          "fuzzy-clustering-analyses",
+          "genetics",
+          "machine-learning",
+          "manifold-learning",
+          "markov-chains",
+          "rna-velocity",
+          "single-cell-genomics",
+          "single-cell-rna-seq",
+          "trajectory-generation"
         ],
-        "license": "GNU General Public License v3.0",
-        "open_issues": 69,
-        "pushed_at": "2026-01-22T15:04:34Z",
+        "license": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "open_issues": 27,
+        "pushed_at": "2026-01-22T11:25:31Z",
         "tech_stack": [],
         "install_commands": [],
         "preview_images": [],
         "badges": {
-          "stars": "https://img.shields.io/github/stars/dmcable/spacexr?style=flat-square&logo=github",
-          "forks": "https://img.shields.io/github/forks/dmcable/spacexr?style=flat-square&logo=github",
-          "issues": "https://img.shields.io/github/issues/dmcable/spacexr?style=flat-square",
-          "license": "https://img.shields.io/github/license/dmcable/spacexr?style=flat-square",
-          "last_commit": "https://img.shields.io/github/last-commit/dmcable/spacexr?style=flat-square"
+          "stars": "https://img.shields.io/github/stars/theislab/cellrank?style=flat-square&logo=github",
+          "forks": "https://img.shields.io/github/forks/theislab/cellrank?style=flat-square&logo=github",
+          "issues": "https://img.shields.io/github/issues/theislab/cellrank?style=flat-square",
+          "license": "https://img.shields.io/github/license/theislab/cellrank?style=flat-square",
+          "last_commit": "https://img.shields.io/github/last-commit/theislab/cellrank?style=flat-square"
         }
       }
     }
   ],
   "summary": {
     "total_pipelines": 100,
-    "total_utilities": 561,
-    "with_docker": 171,
+    "total_utilities": 562,
+    "with_docker": 172,
     "with_conda": 248,
-    "paper_linked": 500
+    "paper_linked": 501
   }
 }
