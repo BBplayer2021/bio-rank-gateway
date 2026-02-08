@@ -94,6 +94,34 @@ UTILITY_LABELS = {
 # 排除关键词
 EXCLUDE_KEYWORDS = ["notes", "exercise", "homework", "tutorial", "learning", "course", "awesome-"]
 
+# 通用编程项目黑名单关键词（非生信工具）
+NON_BIO_BLACKLIST = [
+    "wasmedge", "dapr", "runtime", "orchestration", "kubernetes", "k8s",
+    "service mesh", "microservice", "serverless", "cloud native", "devops",
+    "web framework", "frontend", "backend", "react", "vue", "angular",
+    "game engine", "blockchain", "cryptocurrency", "machine learning platform",
+    "deep learning framework", "chatbot", "llm", "large language model"
+]
+
+# 生信安全词（包含这些词的项目不会被黑名单排除）
+BIO_SAFELIST = [
+    "bioinformatics", "genomics", "transcriptomics", "proteomics", "metabolomics",
+    "metagenomics", "epigenetics", "sequencing", "alignment", "variant",
+    "gene", "genome", "rna", "dna", "protein", "cell", "single-cell",
+    "ngs", "chip-seq", "atac-seq", "methylation", "expression",
+    "phylogenetic", "taxonomy", "microbiome", "omics", "biomarker",
+    "scRNA", "spatial transcriptomics", "chromatin"
+]
+
+# 通用流程引擎仓库 -> 标记为 "Workflow Engine"，不占据具体分析工具榜首
+WORKFLOW_ENGINE_REPOS = [
+    "snakemake/snakemake",
+    "nextflow-io/nextflow",
+    "common-workflow-language/cwltool",
+    "broadinstitute/cromwell",
+    "DataBiosphere/toil",
+]
+
 # Pipeline 组织白名单
 PIPELINE_ORG_WHITELIST = [
     "nf-core", "snakemake-workflows", "nextflow-io", "bcbio", "snakepipes",
@@ -162,6 +190,28 @@ def is_excluded(repo: dict) -> bool:
         if kw in description or kw in name:
             return True
     return False
+
+
+def is_non_bio_project(repo: dict) -> bool:
+    """检测是否为非生信的通用编程项目"""
+    description = (repo.get("description") or "").lower()
+    topics = [t.lower() for t in repo.get("topics", [])]
+    full_text = f"{description} {' '.join(topics)}"
+    
+    # 先检查是否包含生信安全词
+    has_bio_term = any(term in full_text for term in BIO_SAFELIST)
+    if has_bio_term:
+        return False  # 包含生信词汇，不排除
+    
+    # 再检查是否命中非生信黑名单
+    has_blacklist_term = any(term in full_text for term in NON_BIO_BLACKLIST)
+    return has_blacklist_term
+
+
+def is_workflow_engine(repo: dict) -> bool:
+    """检测是否为通用流程引擎（非具体分析工具）"""
+    full_name = repo.get("full_name", "").lower()
+    return full_name in [r.lower() for r in WORKFLOW_ENGINE_REPOS]
 
 
 # ============================================================
@@ -864,6 +914,11 @@ def depth_search(quick_mode: bool = False):
                 if is_excluded(repo):
                     continue
                 
+                # 过滤非生信的通用编程项目
+                if is_non_bio_project(repo):
+                    log(f"    [SKIP] {full_name} (non-bio project)")
+                    continue
+                
                 description = (repo.get("description") or "").lower()
                 topics = [t.lower() for t in repo.get("topics", [])]
                 
@@ -875,8 +930,13 @@ def depth_search(quick_mode: bool = False):
                 repo_name = repo.get("name", "")
                 readme = get_readme_content(owner, repo_name)
                 
-                final_category = classify_category(repo, category)
-                project_type = detect_project_type(repo, readme)
+                # 检测是否为通用流程引擎
+                if is_workflow_engine(repo):
+                    final_category = "Workflow Engine"
+                    project_type = "Pipeline"
+                else:
+                    final_category = classify_category(repo, category)
+                    project_type = detect_project_type(repo, readme)
                 
                 if project_type == "Pipeline" and category_pipelines_count[final_category] >= max_pipelines_per_category:
                     continue
@@ -941,16 +1001,24 @@ def generate_ranking_report():
                 repo.get("pushed_at", ""), repo.get("open_issues", 0), bool(repo["has_paper"])
             )
     
-    # 按类别和类型分组
-    categories = ["Genomics", "Transcriptomics", "Metagenomics", "Single-cell", "Epigenetics"]
+    # 按类别和类型分组（包含 Workflow Engine 独立分类）
+    categories = ["Genomics", "Transcriptomics", "Metagenomics", "Single-cell", "Epigenetics", "Workflow Engine"]
     ranking = {}
     
     for cat in categories:
         cat_repos = []
         for repo in repos:
-            repo_categories = get_multi_categories(repo)
-            if cat in repo_categories:
-                cat_repos.append(repo)
+            if cat == "Workflow Engine":
+                # Workflow Engine 直接按 category 字段匹配
+                if repo.get("category") == "Workflow Engine":
+                    cat_repos.append(repo)
+            else:
+                # 排除 Workflow Engine 项目进入具体组学类别
+                if repo.get("category") == "Workflow Engine":
+                    continue
+                repo_categories = get_multi_categories(repo)
+                if cat in repo_categories:
+                    cat_repos.append(repo)
         
         pipelines = sorted([r for r in cat_repos if r["project_type"] == "Pipeline"],
                           key=lambda x: x["score"], reverse=True)[:20]
@@ -1044,11 +1112,15 @@ def _generate_red_black_lists(repos):
 
 
 def _format_repo(r: dict, rank: int) -> dict:
+    full_name = r["full_name"]
+    short_name = full_name.split("/")[-1] if "/" in full_name else full_name
     return {
         "rank": rank,
-        "name": r["full_name"],
+        "full_name": full_name,
+        "short_name": short_name,
+        "name": full_name,
         "url": r["url"],
-        "description": r["description"],
+        "description": r["description"] or "",
         "stars": r["stars"],
         "weekly_growth": r["weekly_growth"],
         "score": r["score"],
@@ -1063,7 +1135,7 @@ def _format_repo(r: dict, rank: int) -> dict:
         "tech_stack": json.loads(r["tech_stack"]) if r.get("tech_stack") else [],
         "install_commands": json.loads(r["install_commands"]) if r.get("install_commands") else [],
         "preview_images": json.loads(r["preview_images"]) if r.get("preview_images") else [],
-        "badges": generate_all_badges(r["full_name"], r["stars"], r.get("language", ""),
+        "badges": generate_all_badges(full_name, r["stars"], r.get("language", ""),
                                       bool(r["has_docker"]), bool(r["has_conda_env"]))
     }
 

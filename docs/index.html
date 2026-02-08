@@ -229,23 +229,42 @@
             color: #a0aec0;
         }
         
+        .initials-avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
         .project-body {
             padding: 20px;
         }
         
         .project-rank {
             position: absolute;
-            top: 15px;
-            left: 15px;
-            background: rgba(0, 0, 0, 0.7);
+            top: 12px;
+            left: 12px;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.75);
             color: white;
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
+            min-width: 28px;
+            padding: 4px 8px;
+            border-radius: 14px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: 700;
+            font-size: 0.8rem;
+            line-height: 1;
+            backdrop-filter: blur(4px);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
         }
         
         .project-header {
@@ -543,6 +562,15 @@
                     <small class="text-muted">ATAC-seq, ChIP-seq</small>
                 </div>
             </li>
+            <li class="category-item" data-category="Workflow Engine">
+                <div class="category-icon" style="background: #718096;">
+                    <i class="bi bi-gear-wide-connected"></i>
+                </div>
+                <div>
+                    <div>Workflow Engine</div>
+                    <small class="text-muted">Nextflow, Snakemake</small>
+                </div>
+            </li>
         </ul>
         
         <div class="mt-4 pt-4 border-top border-secondary">
@@ -560,7 +588,7 @@
                     <h1 class="page-title" id="pageTitle">Genomics</h1>
                     <p class="page-subtitle">Top bioinformatics tools ranked by our scoring algorithm</p>
                 </div>
-                <a href="https://github.com/YOUR_USERNAME/bio-rank-gateway" target="_blank" class="btn btn-outline-dark">
+                <a id="repoLink" href="#" target="_blank" class="btn btn-outline-dark">
                     <i class="bi bi-github"></i> View on GitHub
                 </a>
             </div>
@@ -760,6 +788,12 @@
                 return;
             }
             
+            // 更新 View on GitHub 按钮链接到榜首项目
+            const topProject = projects[0];
+            if (topProject && topProject.url) {
+                document.getElementById('repoLink').href = topProject.url;
+            }
+            
             const html = projects.map(project => createProjectCard(project)).join('');
             document.getElementById('projectGrid').innerHTML = html;
         }
@@ -769,11 +803,25 @@
             const previewImage = project.preview_images?.[0] || null;
             const installCmd = project.install_commands?.[0] || null;
             const badges = project.badges || {};
+            const shortName = project.short_name || project.name.split('/').pop();
             
-            const previewHtml = previewImage 
-                ? `<img src="${previewImage}" alt="${project.name}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                   <div class="preview-fallback" style="display:none;"><i class="bi bi-code-square"></i></div>`
-                : `<i class="bi bi-code-square"></i>`;
+            // 生成首字母头像的颜色（基于名称哈希）
+            const avatarColors = ['#4299e1','#48bb78','#ed8936','#9f7aea','#ed64a6','#38b2ac','#e53e3e','#dd6b20','#805ad5','#3182ce'];
+            const colorIndex = shortName.split('').reduce((acc, c) => acc + c.charCodeAt(0), 0) % avatarColors.length;
+            const avatarColor = avatarColors[colorIndex];
+            const initials = shortName.substring(0, 2);
+            
+            // 首字母头像HTML
+            const initialsHtml = `<div class="initials-avatar" style="background:${avatarColor};">${initials}</div>`;
+            
+            // 预览图逻辑：有图片时显示图片，加载失败或无图片时显示首字母头像
+            let previewHtml;
+            if (previewImage) {
+                previewHtml = `<img src="${previewImage}" alt="${shortName}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                   <div class="preview-fallback" style="display:none;">${initialsHtml}</div>`;
+            } else {
+                previewHtml = initialsHtml;
+            }
             
             const tagsHtml = [
                 project.has_docker ? '<span class="tag tag-docker">Docker</span>' : '',
@@ -803,7 +851,7 @@
                     <div class="project-body">
                         <div class="project-header">
                             <h3 class="project-name">
-                                <a href="${project.url}" target="_blank">${project.name.split('/')[1]}</a>
+                                <a href="${project.url}" target="_blank">${project.short_name || project.name.split('/').pop()}</a>
                             </h3>
                             <span class="project-score">${project.score.toFixed(1)}</span>
                         </div>
