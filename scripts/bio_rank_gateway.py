@@ -884,7 +884,7 @@ def depth_search(quick_mode: bool = False):
             "Single-cell": ["scRNA-seq", "Scanpy"]
         }
     
-    category_pipelines_count = {cat: 0 for cat in KEYWORDS.keys()}
+    category_pipelines_count = defaultdict(int)
     max_pipelines_per_category = 20
     
     bio_terms = ["bioinformatics", "genomics", "transcriptomics", "metagenomics", 
