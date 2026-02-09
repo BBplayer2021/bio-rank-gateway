@@ -195,15 +195,29 @@ def is_excluded(repo: dict) -> bool:
 def is_non_bio_project(repo: dict) -> bool:
     """检测是否为非生信的通用编程项目"""
     description = (repo.get("description") or "").lower()
-    topics = [t.lower() for t in repo.get("topics", [])]
+    raw_topics = repo.get("topics", [])
+    if isinstance(raw_topics, str):
+        try:
+            raw_topics = json.loads(raw_topics)
+        except (json.JSONDecodeError, TypeError):
+            raw_topics = []
+    topics = [t.lower() for t in raw_topics]
     full_text = f"{description} {' '.join(topics)}"
+    
+    # 也检查仓库名本身
+    full_name = (repo.get("full_name") or "").lower()
     
     # 先检查是否包含生信安全词
     has_bio_term = any(term in full_text for term in BIO_SAFELIST)
     if has_bio_term:
         return False  # 包含生信词汇，不排除
     
-    # 再检查是否命中非生信黑名单
+    # 检查仓库名是否直接命中黑名单
+    has_name_blacklist = any(term in full_name for term in NON_BIO_BLACKLIST)
+    if has_name_blacklist:
+        return True
+    
+    # 再检查描述和topics是否命中非生信黑名单
     has_blacklist_term = any(term in full_text for term in NON_BIO_BLACKLIST)
     return has_blacklist_term
 
@@ -983,6 +997,11 @@ def generate_ranking_report():
     log("=" * 70)
     
     repos = get_all_repos_for_ranking()
+    
+    # 二次过滤：排除数据库中遗留的非生信项目
+    before_count = len(repos)
+    repos = [r for r in repos if not is_non_bio_project(r)]
+    log(f"  [Filter] Removed {before_count - len(repos)} non-bio projects from database, {len(repos)} remaining")
     
     # 计算评分
     for repo in repos:
