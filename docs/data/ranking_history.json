@@ -193,5 +193,76 @@
         ]
       }
     }
+  },
+  {
+    "timestamp": "2026-02-09T06:42:45.724904",
+    "top3": {
+      "Genomics": {
+        "pipelines": [
+          "nf-core/sarek",
+          "maxplanck-ie/snakepipes",
+          "nf-core/raredisease"
+        ],
+        "utilities": [
+          "francescopace/espectre",
+          "WasmEdge/WasmEdge",
+          "dapr/dapr"
+        ]
+      },
+      "Transcriptomics": {
+        "pipelines": [
+          "nf-core/rnaseq",
+          "nf-core/scrnaseq",
+          "nf-core/rnafusion"
+        ],
+        "utilities": [
+          "jinworks/CellChat",
+          "Starlitnightly/omicverse",
+          "agitter/single-cell-pseudotime"
+        ]
+      },
+      "Metagenomics": {
+        "pipelines": [
+          "YongxinLiu/EasyMetagenome",
+          "metagenome-atlas/atlas",
+          "nf-core/mag"
+        ],
+        "utilities": [
+          "torognes/vsearch",
+          "benjjneb/dada2",
+          "biobakery/MetaPhlAn"
+        ]
+      },
+      "Single-cell": {
+        "pipelines": [
+          "nf-core/scrnaseq",
+          "nf-core/spatialvi",
+          "nf-core/scnanoseq"
+        ],
+        "utilities": [
+          "scverse/scanpy",
+          "scverse/scvi-tools",
+          "jinworks/CellChat"
+        ]
+      },
+      "Epigenetics": {
+        "pipelines": [
+          "nf-core/chipseq",
+          "nf-core/atacseq",
+          "nf-core/methylseq"
+        ],
+        "utilities": [
+          "macs3-project/MACS",
+          "mdozmorov/HiC_tools",
+          "FelixKrueger/Bismark"
+        ]
+      },
+      "Workflow Engine": {
+        "pipelines": [
+          "snakemake/snakemake"
+        ],
+        "utilities": []
+      }
+    }
   }
 ]
