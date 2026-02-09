@@ -96,7 +96,7 @@ EXCLUDE_KEYWORDS = ["notes", "exercise", "homework", "tutorial", "learning", "co
 
 # 通用编程项目黑名单关键词（非生信工具）
 NON_BIO_BLACKLIST = [
-    "wasmedge", "dapr", "runtime", "orchestration", "kubernetes", "k8s",
+    "wasmedge", "dapr", "espectre", "runtime", "orchestration", "kubernetes", "k8s",
     "service mesh", "microservice", "serverless", "cloud native", "devops",
     "web framework", "frontend", "backend", "react", "vue", "angular",
     "game engine", "blockchain", "cryptocurrency", "machine learning platform",
@@ -1002,23 +1002,18 @@ def generate_ranking_report():
             )
     
     # 按类别和类型分组（包含 Workflow Engine 独立分类）
-    categories = ["Genomics", "Transcriptomics", "Metagenomics", "Single-cell", "Epigenetics", "Workflow Engine"]
+    categories = ["Genomics", "Transcriptomics", "Metagenomics", "Single-cell", "Epigenetics"]
     ranking = {}
     
     for cat in categories:
         cat_repos = []
         for repo in repos:
-            if cat == "Workflow Engine":
-                # Workflow Engine 直接按 category 字段匹配
-                if repo.get("category") == "Workflow Engine":
-                    cat_repos.append(repo)
-            else:
-                # 排除 Workflow Engine 项目进入具体组学类别
-                if repo.get("category") == "Workflow Engine":
-                    continue
-                repo_categories = get_multi_categories(repo)
-                if cat in repo_categories:
-                    cat_repos.append(repo)
+            # 排除 Workflow Engine 项目进入具体组学类别
+            if repo.get("category") == "Workflow Engine":
+                continue
+            repo_categories = get_multi_categories(repo)
+            if cat in repo_categories:
+                cat_repos.append(repo)
         
         pipelines = sorted([r for r in cat_repos if r["project_type"] == "Pipeline"],
                           key=lambda x: x["score"], reverse=True)[:20]
