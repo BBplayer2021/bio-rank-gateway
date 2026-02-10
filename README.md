@@ -1,30 +1,45 @@
 <p align="center">
   <h1 align="center">Bio-Rank Gateway</h1>
   <p align="center"><strong>Find the best, code the rest.</strong></p>
+  <p align="center">
+    <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>
+    <img src="https://img.shields.io/badge/Python-3.9%2B-blue.svg" alt="Python 3.9+">
+    <a href="https://github.com/BBplayer2021/bio-rank-gateway/actions"><img src="https://github.com/BBplayer2021/bio-rank-gateway/actions/workflows/main.yml/badge.svg" alt="GitHub Actions"></a>
+    <a href="https://github.com/BBplayer2021/bio-rank-gateway/stargazers"><img src="https://img.shields.io/github/stars/BBplayer2021/bio-rank-gateway?style=social" alt="GitHub Stars"></a>
+    <a href="https://github.com/BBplayer2021/bio-rank-gateway/network/members"><img src="https://img.shields.io/github/forks/BBplayer2021/bio-rank-gateway?style=social" alt="GitHub Forks"></a>
+  </p>
 </p>
 
 A fully automated bioinformatics tool ranking portal deployed on GitHub Pages.
 
+## 🌟 Why Bio-Rank Gateway?
+
+In the fast-evolving field of bioinformatics, finding the most reliable and active tool is a challenge. Bio-Rank Gateway solves the "Discovery Problem" by providing a data-driven, zero-bias leaderboard. We help you skip the "zombie" repos and focus on the gold standards.
+
+- **Live & Real-time**: No more static, outdated lists.
+- **Pure Bioinfo**: Noise-free filtering using domain-specific algorithms.
+- **Evidence-based**: Ranking based on growth, maintenance, and community impact.
+
 ## Features
 
-### 1. Automated Pipeline
+### 1. 🤖 Automated Pipeline
 - Weekly automated data collection (every Sunday at 0:00 UTC)
 - GitHub Actions workflow for CI/CD
 - Automatic deployment to GitHub Pages
 
-### 2. Data Enrichment
+### 2. 💎 Data Enrichment
 - **Install Command Detection**: Regex matching for `conda install`, `pip install`, `docker pull`, `git clone`
 - **Preview Image Extraction**: Scans README for workflow/report/plot images
 - **Badge Generation**: Shields.io badge URLs for each project
 
-### 3. Frontend Portal
+### 3. 🎨 Frontend Portal
 - Modern card-based design
 - Left sidebar for omics category navigation
 - Dual-track switching (Pipeline/Utility)
 - Quick Install code blocks
 - Giscus comment system integration
 
-### 4. Notification System
+### 4. 📢 Notification System
 - Tracks Top 3 rankings
 - Detects new entries
 - Outputs badge Markdown for manual notification
@@ -49,32 +64,35 @@ bio-rank-gateway/
 
 ## Scoring Formulas
 
-### Pipeline Score
-```
-S = 5 × log10(Stars) + Weekly_Growth × 2 + Env_Bonus(15) + Paper_Bonus(5) + Zombie_Penalty(0.5)
-```
+> ### Pipeline Score
+> ```
+> S = 5 × log10(Stars) + Weekly_Growth × 2 + Env_Bonus(15) + Paper_Bonus(5) + Maintenance-Aware Scoring(0.5)
+> ```
+> - **Stars**: GitHub star count (logarithmic scale)
+> - **Weekly_Growth**: Star increase in the past 7 days
+> - **Env_Bonus**: +15 if Docker/Conda support detected
+> - **Paper_Bonus**: +5 if an associated publication is found
+> - **Maintenance-Aware Scoring (Anti-Zombie)**: ×0.5 penalty for repos inactive > 180 days
+>
+> ### Utility Score
+> ```
+> S = 8 × log10(Stars) + Weekly_Growth × 2 + Paper_Bonus(5) + Maintenance-Aware Scoring(0.5)
+> ```
 
-### Utility Score
-```
-S = 8 × log10(Stars) + Weekly_Growth × 2 + Paper_Bonus(5) + Zombie_Penalty(0.5)
-```
+## 🛠️ Get Started in 3 Minutes
 
-## Setup
+1. **Fork** this repository to your own GitHub account.
+2. **Enable GitHub Pages**: Go to `Settings > Pages` and set the source to the `gh-pages` branch.
+3. **Watch it run**: The GitHub Actions workflow will automatically collect data and deploy every Sunday.
 
-### 1. Fork this repository
+### Optional: Configure Giscus Comments
+1. Enable GitHub Discussions in your repository.
+2. Install the Giscus app: https://giscus.app/
+3. Update the Giscus configuration in `docs/index.html`.
 
-### 2. Enable GitHub Pages
-- Go to Settings > Pages
-- Set source to `gh-pages` branch
-
-### 3. Configure Giscus (Optional)
-1. Enable GitHub Discussions in your repository
-2. Install Giscus app: https://giscus.app/
-3. Update the Giscus configuration in `docs/index.html`
-
-### 4. Set up GitHub Token
-- The workflow uses `GITHUB_TOKEN` automatically provided by GitHub Actions
-- For higher API rate limits, you can add a personal access token
+### Optional: Boost API Rate Limits
+- The workflow uses `GITHUB_TOKEN` automatically provided by GitHub Actions.
+- For higher limits, add a personal access token as a repository secret.
 
 ## Local Development
 
@@ -99,6 +117,13 @@ python -m http.server 8000
 ## License
 
 MIT License
+
+## 🤝 Support & Feedback
+
+If you find this project useful, please give us a ⭐️! It helps more researchers discover the right tools.
+
+- Found a bug? [Open an Issue](https://github.com/BBplayer2021/bio-rank-gateway/issues)
+- Have an idea? [Start a Discussion](https://github.com/BBplayer2021/bio-rank-gateway/discussions)
 
 ## Contributing
 
