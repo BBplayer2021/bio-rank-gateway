@@ -1,4 +1,7 @@
-# Bio-Rank Gateway v13.0
+<p align="center">
+  <h1 align="center">Bio-Rank Gateway</h1>
+  <p align="center"><strong>Find the best, code the rest.</strong></p>
+</p>
 
 A fully automated bioinformatics tool ranking portal deployed on GitHub Pages.
 
