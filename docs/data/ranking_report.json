@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-02-09T06:42:45.717799",
+  "generated_at": "2026-02-09T15:33:09.227424",
   "version": "13.0",
   "scoring_formulas": {
     "pipeline": "S = 5 * log10(Stars) + Weekly_Growth * 2 + Env_Bonus(15) + Zombie_Penalty(0.5)",
     "utility": "S = 8 * log10(Stars) + Weekly_Growth * 2 + Zombie_Penalty(0.5)"
   },
-  "total_repositories": 663,
+  "total_repositories": 657,
   "categories": {
     "Genomics": {
-      "total_count": 338,
-      "pipeline_count": 36,
-      "utility_count": 302,
+      "total_count": 332,
+      "pipeline_count": 35,
+      "utility_count": 297,
       "top_20_pipelines": [
         {
           "rank": 1,
@@ -19,9 +19,9 @@
           "name": "nf-core/sarek",
           "url": "https://github.com/nf-core/sarek",
           "description": "Analysis pipeline to detect germline or somatic variants (pre-processing, variant calling and annotation) from WGS / targeted sequencing",
-          "stars": 542,
-          "weekly_growth": 0,
-          "score": 33.67,
+          "stars": 543,
+          "weekly_growth": 1,
+          "score": 35.67,
           "has_paper": true,
           "has_docker": true,
           "has_conda": false,
@@ -49,8 +49,8 @@
             "workflow"
           ],
           "license": "MIT License",
-          "open_issues": 344,
-          "pushed_at": "2026-02-08T22:42:55Z",
+          "open_issues": 342,
+          "pushed_at": "2026-02-09T14:14:55Z",
           "tech_stack": [],
           "install_commands": [],
           "preview_images": [
@@ -117,49 +117,43 @@
         },
         {
           "rank": 3,
-          "full_name": "nf-core/raredisease",
-          "short_name": "raredisease",
-          "name": "nf-core/raredisease",
-          "url": "https://github.com/nf-core/raredisease",
-          "description": "Call and score variants from WGS/WES of rare disease patients.",
-          "stars": 113,
+          "full_name": "sequana/sequana",
+          "short_name": "sequana",
+          "name": "sequana/sequana",
+          "url": "https://github.com/sequana/sequana",
+          "description": "Sequana: a set of Snakemake NGS pipelines",
+          "stars": 152,
           "weekly_growth": 1,
-          "score": 32.27,
+          "score": 32.91,
           "has_paper": true,
           "has_docker": true,
-          "has_conda": false,
+          "has_conda": true,
           "sub_label": "",
           "topics": [
-            "diagnostics",
-            "nextflow",
-            "nf-core",
-            "pipeline",
-            "rare-disease",
-            "snv",
-            "structural-variants",
-            "variant-annotation",
-            "variant-calling",
-            "wes",
-            "wgs",
-            "workflow"
+            "coverage",
+            "de-novo",
+            "ngs",
+            "pacbio",
+            "rna-seq",
+            "sequanix",
+            "snakemake",
+            "taxonomy",
+            "variant-calling"
           ],
-          "license": "MIT License",
-          "open_issues": 54,
-          "pushed_at": "2026-02-07T22:04:40Z",
+          "license": "BSD 3-Clause \"New\" or \"Revised\" License",
+          "open_issues": 6,
+          "pushed_at": "2026-01-22T11:55:15Z",
           "tech_stack": [],
           "install_commands": [],
-          "preview_images": [
-            "https://raw.githubusercontent.com/nf-core/raredisease/master/docs/images/nf-core-raredisease_logo_light.png",
-            "https://raw.githubusercontent.com/nf-core/raredisease/master/docs/images/nf-core-raredisease_logo_dark.png",
-            "https://raw.githubusercontent.com/nf-core/raredisease/master/docs/images/raredisease_metromap_light.png"
-          ],
+          "preview_images": [],
           "badges": {
-            "stars": "https://img.shields.io/github/stars/nf-core/raredisease?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/nf-core/raredisease?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/nf-core/raredisease?style=flat-square",
-            "license": "https://img.shields.io/github/license/nf-core/raredisease?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/nf-core/raredisease?style=flat-square",
-            "docker": "https://img.shields.io/badge/docker-available-blue?style=flat-square&logo=docker"
+            "stars": "https://img.shields.io/github/stars/sequana/sequana?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/sequana/sequana?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/sequana/sequana?style=flat-square",
+            "license": "https://img.shields.io/github/license/sequana/sequana?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/sequana/sequana?style=flat-square",
+            "docker": "https://img.shields.io/badge/docker-available-blue?style=flat-square&logo=docker",
+            "conda": "https://img.shields.io/badge/conda-available-green?style=flat-square&logo=anaconda"
           }
         },
         {
@@ -264,47 +258,6 @@
         },
         {
           "rank": 6,
-          "full_name": "sequana/sequana",
-          "short_name": "sequana",
-          "name": "sequana/sequana",
-          "url": "https://github.com/sequana/sequana",
-          "description": "Sequana: a set of Snakemake NGS pipelines",
-          "stars": 151,
-          "weekly_growth": 0,
-          "score": 30.89,
-          "has_paper": true,
-          "has_docker": true,
-          "has_conda": true,
-          "sub_label": "",
-          "topics": [
-            "coverage",
-            "de-novo",
-            "ngs",
-            "pacbio",
-            "rna-seq",
-            "sequanix",
-            "snakemake",
-            "taxonomy",
-            "variant-calling"
-          ],
-          "license": "BSD 3-Clause \"New\" or \"Revised\" License",
-          "open_issues": 6,
-          "pushed_at": "2026-01-22T11:55:15Z",
-          "tech_stack": [],
-          "install_commands": [],
-          "preview_images": [],
-          "badges": {
-            "stars": "https://img.shields.io/github/stars/sequana/sequana?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/sequana/sequana?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/sequana/sequana?style=flat-square",
-            "license": "https://img.shields.io/github/license/sequana/sequana?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/sequana/sequana?style=flat-square",
-            "docker": "https://img.shields.io/badge/docker-available-blue?style=flat-square&logo=docker",
-            "conda": "https://img.shields.io/badge/conda-available-green?style=flat-square&logo=anaconda"
-          }
-        },
-        {
-          "rank": 7,
           "full_name": "MaayanLab/biojupies",
           "short_name": "biojupies",
           "name": "MaayanLab/biojupies",
@@ -354,6 +307,53 @@
           }
         },
         {
+          "rank": 7,
+          "full_name": "nf-core/raredisease",
+          "short_name": "raredisease",
+          "name": "nf-core/raredisease",
+          "url": "https://github.com/nf-core/raredisease",
+          "description": "Call and score variants from WGS/WES of rare disease patients.",
+          "stars": 113,
+          "weekly_growth": 0,
+          "score": 30.27,
+          "has_paper": true,
+          "has_docker": true,
+          "has_conda": false,
+          "sub_label": "",
+          "topics": [
+            "diagnostics",
+            "nextflow",
+            "nf-core",
+            "pipeline",
+            "rare-disease",
+            "snv",
+            "structural-variants",
+            "variant-annotation",
+            "variant-calling",
+            "wes",
+            "wgs",
+            "workflow"
+          ],
+          "license": "MIT License",
+          "open_issues": 53,
+          "pushed_at": "2026-02-09T14:17:51Z",
+          "tech_stack": [],
+          "install_commands": [],
+          "preview_images": [
+            "https://raw.githubusercontent.com/nf-core/raredisease/master/docs/images/nf-core-raredisease_logo_light.png",
+            "https://raw.githubusercontent.com/nf-core/raredisease/master/docs/images/nf-core-raredisease_logo_dark.png",
+            "https://raw.githubusercontent.com/nf-core/raredisease/master/docs/images/raredisease_metromap_light.png"
+          ],
+          "badges": {
+            "stars": "https://img.shields.io/github/stars/nf-core/raredisease?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/nf-core/raredisease?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/nf-core/raredisease?style=flat-square",
+            "license": "https://img.shields.io/github/license/nf-core/raredisease?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/nf-core/raredisease?style=flat-square",
+            "docker": "https://img.shields.io/badge/docker-available-blue?style=flat-square&logo=docker"
+          }
+        },
+        {
           "rank": 8,
           "full_name": "nf-core/oncoanalyser",
           "short_name": "oncoanalyser",
@@ -388,7 +388,7 @@
           ],
           "license": "MIT License",
           "open_issues": 17,
-          "pushed_at": "2026-02-09T05:09:38Z",
+          "pushed_at": "2026-02-09T11:12:17Z",
           "tech_stack": [],
           "install_commands": [],
           "preview_images": [
@@ -599,7 +599,7 @@
             "workflow"
           ],
           "license": "MIT License",
-          "open_issues": 19,
+          "open_issues": 22,
           "pushed_at": "2026-02-06T15:07:56Z",
           "tech_stack": [],
           "install_commands": [],
@@ -696,7 +696,7 @@
             "workflow"
           ],
           "license": "MIT License",
-          "open_issues": 25,
+          "open_issues": 26,
           "pushed_at": "2026-02-06T09:40:24Z",
           "tech_stack": [],
           "install_commands": [],
@@ -809,59 +809,6 @@
         },
         {
           "rank": 17,
-          "full_name": "google/deeppolisher",
-          "short_name": "deeppolisher",
-          "name": "google/deeppolisher",
-          "url": "https://github.com/google/deeppolisher",
-          "description": "Transformer-based sequence correction method for genome assembly polishing",
-          "stars": 99,
-          "weekly_growth": 1,
-          "score": 26.98,
-          "has_paper": false,
-          "has_docker": true,
-          "has_conda": false,
-          "sub_label": "",
-          "topics": [
-            "assembly-polishing",
-            "genome-assembly",
-            "human-genome"
-          ],
-          "license": "BSD 3-Clause \"New\" or \"Revised\" License",
-          "open_issues": 4,
-          "pushed_at": "2025-03-11T16:18:02Z",
-          "tech_stack": [],
-          "install_commands": [
-            {
-              "type": "pip",
-              "command": "pip install --upgrade"
-            },
-            {
-              "type": "pip",
-              "command": "pip install -r"
-            },
-            {
-              "type": "pip",
-              "command": "pip install .[cpu]"
-            },
-            {
-              "type": "docker",
-              "command": "docker pull google/deepconsensus:polisher_v0.1.0"
-            }
-          ],
-          "preview_images": [
-            "https://raw.githubusercontent.com/google/deeppolisher/master/docs/images/deeppolisher.png"
-          ],
-          "badges": {
-            "stars": "https://img.shields.io/github/stars/google/deeppolisher?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/google/deeppolisher?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/google/deeppolisher?style=flat-square",
-            "license": "https://img.shields.io/github/license/google/deeppolisher?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/google/deeppolisher?style=flat-square",
-            "docker": "https://img.shields.io/badge/docker-available-blue?style=flat-square&logo=docker"
-          }
-        },
-        {
-          "rank": 18,
           "full_name": "nf-core/spatialxe",
           "short_name": "spatialxe",
           "name": "nf-core/spatialxe",
@@ -907,7 +854,7 @@
           }
         },
         {
-          "rank": 19,
+          "rank": 18,
           "full_name": "nf-core/clipseq",
           "short_name": "clipseq",
           "name": "nf-core/clipseq",
@@ -949,7 +896,7 @@
           }
         },
         {
-          "rank": 20,
+          "rank": 19,
           "full_name": "nf-core/detaxizer",
           "short_name": "detaxizer",
           "name": "nf-core/detaxizer",
@@ -1000,330 +947,54 @@
             "last_commit": "https://img.shields.io/github/last-commit/nf-core/detaxizer?style=flat-square",
             "docker": "https://img.shields.io/badge/docker-available-blue?style=flat-square&logo=docker"
           }
+        },
+        {
+          "rank": 20,
+          "full_name": "mobinasri/flagger",
+          "short_name": "flagger",
+          "name": "mobinasri/flagger",
+          "url": "https://github.com/mobinasri/flagger",
+          "description": "Evaluating genome assemblies",
+          "stars": 114,
+          "weekly_growth": 0,
+          "score": 25.28,
+          "has_paper": false,
+          "has_docker": true,
+          "has_conda": false,
+          "sub_label": "",
+          "topics": [
+            "bioinformatics",
+            "genome",
+            "genome-assembly-evaluation",
+            "genomics"
+          ],
+          "license": "MIT License",
+          "open_issues": 17,
+          "pushed_at": "2026-01-11T00:56:24Z",
+          "tech_stack": [],
+          "install_commands": [],
+          "preview_images": [],
+          "badges": {
+            "stars": "https://img.shields.io/github/stars/mobinasri/flagger?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/mobinasri/flagger?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/mobinasri/flagger?style=flat-square",
+            "license": "https://img.shields.io/github/license/mobinasri/flagger?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/mobinasri/flagger?style=flat-square",
+            "docker": "https://img.shields.io/badge/docker-available-blue?style=flat-square&logo=docker"
+          }
         }
       ],
       "top_10_utilities": [
         {
           "rank": 1,
-          "full_name": "francescopace/espectre",
-          "short_name": "espectre",
-          "name": "francescopace/espectre",
-          "url": "https://github.com/francescopace/espectre",
-          "description": "🛜 ESPectre 👻  - Motion detection system based on Wi-Fi spectre analysis (CSI), with Home Assistant integration.",
-          "stars": 6315,
-          "weekly_growth": 14,
-          "score": 58.4,
-          "has_paper": false,
-          "has_docker": false,
-          "has_conda": false,
-          "sub_label": "Alignment",
-          "topics": [
-            "csi",
-            "diy",
-            "esp-32",
-            "espectre",
-            "home-assistant",
-            "motion-detection",
-            "wifi",
-            "wifi-sensing"
-          ],
-          "license": "GNU General Public License v3.0",
-          "open_issues": 4,
-          "pushed_at": "2026-02-08T18:58:03Z",
-          "tech_stack": [],
-          "install_commands": [],
-          "preview_images": [
-            "https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png",
-            "https://raw.githubusercontent.com/francescopace/espectre/master/images/home_lab.jpg",
-            "https://raw.githubusercontent.com/francescopace/espectre/master/images/espectre-home-assistant.png"
-          ],
-          "badges": {
-            "stars": "https://img.shields.io/github/stars/francescopace/espectre?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/francescopace/espectre?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/francescopace/espectre?style=flat-square",
-            "license": "https://img.shields.io/github/license/francescopace/espectre?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/francescopace/espectre?style=flat-square"
-          }
-        },
-        {
-          "rank": 2,
-          "full_name": "WasmEdge/WasmEdge",
-          "short_name": "WasmEdge",
-          "name": "WasmEdge/WasmEdge",
-          "url": "https://github.com/WasmEdge/WasmEdge",
-          "description": "WasmEdge is a lightweight, high-performance, and extensible WebAssembly runtime for cloud native, edge, and decentralized applications. It powers serverless apps, embedded functions, microservices, smart contracts, and IoT devices.",
-          "stars": 10420,
-          "weekly_growth": 2,
-          "score": 41.14,
-          "has_paper": true,
-          "has_docker": true,
-          "has_conda": false,
-          "sub_label": "Alignment",
-          "topics": [
-            "artificial-intelligence",
-            "cloud",
-            "cloud-native",
-            "cncf",
-            "container",
-            "docker",
-            "edge-computing",
-            "ewasm",
-            "hacktoberfest",
-            "hacktoberfest2023",
-            "kubernetes",
-            "rust-lang",
-            "serverless",
-            "wasm",
-            "webassembly"
-          ],
-          "license": "Apache License 2.0",
-          "open_issues": 201,
-          "pushed_at": "2026-02-06T10:58:08Z",
-          "tech_stack": [],
-          "install_commands": [],
-          "preview_images": [
-            "https://raw.githubusercontent.com/WasmEdge/WasmEdge/master/docs/wasmedge-runtime-logo.png",
-            "https://app.fossa.com/api/projects/git%2Bgithub.com%2FWasmEdge%2FWasmEdge.svg?type=shield",
-            "https://app.fossa.com/api/projects/git%2Bgithub.com%2FWasmEdge%2FWasmEdge.svg?type=large"
-          ],
-          "badges": {
-            "stars": "https://img.shields.io/github/stars/WasmEdge/WasmEdge?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/WasmEdge/WasmEdge?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/WasmEdge/WasmEdge?style=flat-square",
-            "license": "https://img.shields.io/github/license/WasmEdge/WasmEdge?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/WasmEdge/WasmEdge?style=flat-square",
-            "docker": "https://img.shields.io/badge/docker-available-blue?style=flat-square&logo=docker"
-          }
-        },
-        {
-          "rank": 3,
-          "full_name": "dapr/dapr",
-          "short_name": "dapr",
-          "name": "dapr/dapr",
-          "url": "https://github.com/dapr/dapr",
-          "description": "Dapr is a portable runtime for building distributed applications across cloud and edge, combining event-driven architecture with workflow orchestration.",
-          "stars": 25480,
-          "weekly_growth": 0,
-          "score": 35.25,
-          "has_paper": false,
-          "has_docker": true,
-          "has_conda": false,
-          "sub_label": "Alignment",
-          "topics": [
-            "containers",
-            "event-driven",
-            "kubernetes",
-            "microservice",
-            "microservices",
-            "pubsub",
-            "serverless",
-            "sidecar",
-            "state-management"
-          ],
-          "license": "Apache License 2.0",
-          "open_issues": 407,
-          "pushed_at": "2026-02-07T14:27:21Z",
-          "tech_stack": [],
-          "install_commands": [],
-          "preview_images": [
-            "https://raw.githubusercontent.com/dapr/dapr/master/img/dapr_logo.svg",
-            "https://raw.githubusercontent.com/kedacore/keda/main/images/logo-cncf.svg",
-            "https://discord.com/api/guilds/778680217417809931/widget.png?style=banner2",
-            "https://raw.githubusercontent.com/dapr/dapr/master/img/overview.png"
-          ],
-          "badges": {
-            "stars": "https://img.shields.io/github/stars/dapr/dapr?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/dapr/dapr?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/dapr/dapr?style=flat-square",
-            "license": "https://img.shields.io/github/license/dapr/dapr?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/dapr/dapr?style=flat-square",
-            "docker": "https://img.shields.io/badge/docker-available-blue?style=flat-square&logo=docker"
-          }
-        },
-        {
-          "rank": 4,
-          "full_name": "samtools/htslib",
-          "short_name": "htslib",
-          "name": "samtools/htslib",
-          "url": "https://github.com/samtools/htslib",
-          "description": "C library for high-throughput sequencing data formats",
-          "stars": 906,
-          "weekly_growth": 2,
-          "score": 32.66,
-          "has_paper": true,
-          "has_docker": false,
-          "has_conda": false,
-          "sub_label": "Variant Calling",
-          "topics": [
-            "bam",
-            "bcf",
-            "bioinformatics",
-            "cram",
-            "htslib",
-            "ngs",
-            "sam",
-            "vcf"
-          ],
-          "license": "Other",
-          "open_issues": 161,
-          "pushed_at": "2026-02-06T17:05:04Z",
-          "tech_stack": [],
-          "install_commands": [],
-          "preview_images": [
-            "https://api.cirrus-ci.com/github/samtools/htslib.svg?branch=develop"
-          ],
-          "badges": {
-            "stars": "https://img.shields.io/github/stars/samtools/htslib?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/samtools/htslib?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/samtools/htslib?style=flat-square",
-            "license": "https://img.shields.io/github/license/samtools/htslib?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/samtools/htslib?style=flat-square"
-          }
-        },
-        {
-          "rank": 5,
-          "full_name": "chhylp123/hifiasm",
-          "short_name": "hifiasm",
-          "name": "chhylp123/hifiasm",
-          "url": "https://github.com/chhylp123/hifiasm",
-          "description": "Hifiasm: a haplotype-resolved assembler for accurate Hifi reads ",
-          "stars": 738,
-          "weekly_growth": 2,
-          "score": 31.94,
-          "has_paper": true,
-          "has_docker": false,
-          "has_conda": false,
-          "sub_label": "Alignment",
-          "topics": [
-            "bioinformatics",
-            "denovo-assembly",
-            "genomics",
-            "hifi-read",
-            "pacbio"
-          ],
-          "license": "MIT License",
-          "open_issues": 574,
-          "pushed_at": "2025-03-18T18:42:21Z",
-          "tech_stack": [],
-          "install_commands": [
-            {
-              "type": "git",
-              "command": "git clone https://github.com/chhylp123/hifiasm"
-            }
-          ],
-          "preview_images": [],
-          "badges": {
-            "stars": "https://img.shields.io/github/stars/chhylp123/hifiasm?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/chhylp123/hifiasm?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/chhylp123/hifiasm?style=flat-square",
-            "license": "https://img.shields.io/github/license/chhylp123/hifiasm?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/chhylp123/hifiasm?style=flat-square"
-          }
-        },
-        {
-          "rank": 6,
-          "full_name": "mdtraj/mdtraj",
-          "short_name": "mdtraj",
-          "name": "mdtraj/mdtraj",
-          "url": "https://github.com/mdtraj/mdtraj",
-          "description": "An open library for the analysis of molecular dynamics trajectories",
-          "stars": 697,
-          "weekly_growth": 2,
-          "score": 31.75,
-          "has_paper": true,
-          "has_docker": false,
-          "has_conda": false,
-          "sub_label": "Trajectory",
-          "topics": [
-            "dihedral-angles",
-            "mdtraj",
-            "molecular-dynamics",
-            "molecular-dynamics-trajectories",
-            "pdb",
-            "pdb-files",
-            "python",
-            "rmsd"
-          ],
-          "license": "GNU Lesser General Public License v2.1",
-          "open_issues": 87,
-          "pushed_at": "2026-02-04T20:17:45Z",
-          "tech_stack": [],
-          "install_commands": [],
-          "preview_images": [],
-          "badges": {
-            "stars": "https://img.shields.io/github/stars/mdtraj/mdtraj?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/mdtraj/mdtraj?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/mdtraj/mdtraj?style=flat-square",
-            "license": "https://img.shields.io/github/license/mdtraj/mdtraj?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/mdtraj/mdtraj?style=flat-square"
-          }
-        },
-        {
-          "rank": 7,
-          "full_name": "oschwengers/bakta",
-          "short_name": "bakta",
-          "name": "oschwengers/bakta",
-          "url": "https://github.com/oschwengers/bakta",
-          "description": "Rapid & standardized annotation of bacterial genomes, MAGs & plasmids",
-          "stars": 606,
-          "weekly_growth": 2,
-          "score": 31.26,
-          "has_paper": true,
-          "has_docker": true,
-          "has_conda": true,
-          "sub_label": "Cell Annotation",
-          "topics": [
-            "annotation",
-            "bacteria",
-            "bacterial-genomes",
-            "bioinformatics",
-            "genome-annotation",
-            "mag",
-            "metagenome-assembled-genomes",
-            "microbial-genomics",
-            "plasmids"
-          ],
-          "license": "GNU General Public License v3.0",
-          "open_issues": 16,
-          "pushed_at": "2026-02-02T10:55:59Z",
-          "tech_stack": [],
-          "install_commands": [
-            {
-              "type": "conda",
-              "command": "conda install -c conda-forge -c bioconda bakta"
-            },
-            {
-              "type": "conda",
-              "command": "conda install -c conda-forge -c bioconda python=3.8 deepsig"
-            },
-            {
-              "type": "pip",
-              "command": "pip install --user"
-            }
-          ],
-          "preview_images": [
-            "https://raw.githubusercontent.com/oschwengers/bakta/master/examples/plot-cog-p2.png"
-          ],
-          "badges": {
-            "stars": "https://img.shields.io/github/stars/oschwengers/bakta?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/oschwengers/bakta?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/oschwengers/bakta?style=flat-square",
-            "license": "https://img.shields.io/github/license/oschwengers/bakta?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/oschwengers/bakta?style=flat-square",
-            "docker": "https://img.shields.io/badge/docker-available-blue?style=flat-square&logo=docker",
-            "conda": "https://img.shields.io/badge/conda-available-green?style=flat-square&logo=anaconda"
-          }
-        },
-        {
-          "rank": 8,
           "full_name": "samtools/samtools",
           "short_name": "samtools",
           "name": "samtools/samtools",
           "url": "https://github.com/samtools/samtools",
           "description": "Tools (written in C using htslib) for manipulating next-generation sequencing data",
-          "stars": 1837,
-          "weekly_growth": 0,
-          "score": 31.11,
+          "stars": 1838,
+          "weekly_growth": 1,
+          "score": 33.11,
           "has_paper": true,
           "has_docker": false,
           "has_conda": true,
@@ -1347,7 +1018,73 @@
           }
         },
         {
-          "rank": 9,
+          "rank": 2,
+          "full_name": "pachterlab/gget",
+          "short_name": "gget",
+          "name": "pachterlab/gget",
+          "url": "https://github.com/pachterlab/gget",
+          "description": "🧬 gget enables efficient querying of genomic reference databases",
+          "stars": 1096,
+          "weekly_growth": 1,
+          "score": 31.32,
+          "has_paper": true,
+          "has_docker": false,
+          "has_conda": true,
+          "sub_label": "Alignment",
+          "topics": [
+            "alphafold",
+            "alphafold2",
+            "archs4",
+            "blast",
+            "databases",
+            "enrichment-analysis",
+            "enrichr",
+            "ensembl",
+            "genomics",
+            "gget",
+            "ncbi",
+            "proteomics",
+            "reference",
+            "rna-seq",
+            "transcriptomics",
+            "uniprot"
+          ],
+          "license": "BSD 2-Clause \"Simplified\" License",
+          "open_issues": 22,
+          "pushed_at": "2026-02-09T15:23:30Z",
+          "tech_stack": [],
+          "install_commands": [
+            {
+              "type": "pip",
+              "command": "pip install gget"
+            },
+            {
+              "type": "pip",
+              "command": "pip install --upgrade"
+            },
+            {
+              "type": "pip",
+              "command": "pip install ."
+            },
+            {
+              "type": "git",
+              "command": "git clone https://github.com/pachterlab/gget.git"
+            }
+          ],
+          "preview_images": [
+            "https://raw.githubusercontent.com/pachterlab/gget/main/figures/gget_overview.png?raw=true"
+          ],
+          "badges": {
+            "stars": "https://img.shields.io/github/stars/pachterlab/gget?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/pachterlab/gget?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/pachterlab/gget?style=flat-square",
+            "license": "https://img.shields.io/github/license/pachterlab/gget?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/pachterlab/gget?style=flat-square",
+            "conda": "https://img.shields.io/badge/conda-available-green?style=flat-square&logo=anaconda"
+          }
+        },
+        {
+          "rank": 3,
           "full_name": "lh3/bwa",
           "short_name": "bwa",
           "name": "lh3/bwa",
@@ -1387,7 +1124,7 @@
           }
         },
         {
-          "rank": 10,
+          "rank": 4,
           "full_name": "shenwei356/seqkit",
           "short_name": "seqkit",
           "name": "shenwei356/seqkit",
@@ -1412,8 +1149,8 @@
             "toolkit"
           ],
           "license": "MIT License",
-          "open_issues": 25,
-          "pushed_at": "2026-02-09T03:08:16Z",
+          "open_issues": 24,
+          "pushed_at": "2026-02-09T09:55:05Z",
           "tech_stack": [],
           "install_commands": [
             {
@@ -1439,6 +1176,298 @@
             "issues": "https://img.shields.io/github/issues/shenwei356/seqkit?style=flat-square",
             "license": "https://img.shields.io/github/license/shenwei356/seqkit?style=flat-square",
             "last_commit": "https://img.shields.io/github/last-commit/shenwei356/seqkit?style=flat-square",
+            "conda": "https://img.shields.io/badge/conda-available-green?style=flat-square&logo=anaconda"
+          }
+        },
+        {
+          "rank": 5,
+          "full_name": "brentp/mosdepth",
+          "short_name": "mosdepth",
+          "name": "brentp/mosdepth",
+          "url": "https://github.com/brentp/mosdepth",
+          "description": "fast BAM/CRAM depth calculation for WGS, exome, or targeted sequencing",
+          "stars": 819,
+          "weekly_growth": 1,
+          "score": 30.31,
+          "has_paper": true,
+          "has_docker": true,
+          "has_conda": true,
+          "sub_label": "Format Conversion",
+          "topics": [
+            "coverage",
+            "depth",
+            "exome",
+            "genome",
+            "hacktoberfest",
+            "nim",
+            "nim-lang",
+            "sequencing",
+            "wgs"
+          ],
+          "license": "MIT License",
+          "open_issues": 48,
+          "pushed_at": "2026-02-09T04:05:53Z",
+          "tech_stack": [],
+          "install_commands": [
+            {
+              "type": "docker",
+              "command": "docker pull quay.io/biocontainers/mosdepth:0.3.3--h37c5b7d_2"
+            },
+            {
+              "type": "brew",
+              "command": "brew install brewsci"
+            }
+          ],
+          "preview_images": [
+            "https://user-images.githubusercontent.com/1739/29678184-da1f384c-88ba-11e7-9d98-df4fe3a59924.png \"logo\"",
+            "https://user-images.githubusercontent.com/1739/29646191-2a246564-883f-11e7-951a-aa68d7a1a6ed.png \"Y Example\"",
+            "https://user-images.githubusercontent.com/1739/29646192-2a2a6126-883f-11e7-91ab-049295eb3531.png \"WGS Example\"",
+            "https://user-images.githubusercontent.com/1739/29647913-d79ab028-8848-11e7-86cf-60d4b087bc3b.png \"algorithm\"",
+            "https://user-images.githubusercontent.com/1739/31246294-256d1b7c-a9ca-11e7-8e28-6c4d07cba3f5.png"
+          ],
+          "badges": {
+            "stars": "https://img.shields.io/github/stars/brentp/mosdepth?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/brentp/mosdepth?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/brentp/mosdepth?style=flat-square",
+            "license": "https://img.shields.io/github/license/brentp/mosdepth?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/brentp/mosdepth?style=flat-square",
+            "docker": "https://img.shields.io/badge/docker-available-blue?style=flat-square&logo=docker",
+            "conda": "https://img.shields.io/badge/conda-available-green?style=flat-square&logo=anaconda"
+          }
+        },
+        {
+          "rank": 6,
+          "full_name": "broadinstitute/picard",
+          "short_name": "picard",
+          "name": "broadinstitute/picard",
+          "url": "https://github.com/broadinstitute/picard",
+          "description": "A set of command line tools (in Java) for manipulating high-throughput sequencing (HTS) data and formats such as SAM/BAM/CRAM and VCF.",
+          "stars": 1049,
+          "weekly_growth": 0,
+          "score": 29.17,
+          "has_paper": true,
+          "has_docker": false,
+          "has_conda": false,
+          "sub_label": "Variant Calling",
+          "topics": [],
+          "license": "MIT License",
+          "open_issues": 231,
+          "pushed_at": "2026-02-04T17:00:26Z",
+          "tech_stack": [],
+          "install_commands": [
+            {
+              "type": "git",
+              "command": "git clone https://github.com/broadinstitute/picard.git"
+            }
+          ],
+          "preview_images": [],
+          "badges": {
+            "stars": "https://img.shields.io/github/stars/broadinstitute/picard?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/broadinstitute/picard?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/broadinstitute/picard?style=flat-square",
+            "license": "https://img.shields.io/github/license/broadinstitute/picard?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/broadinstitute/picard?style=flat-square"
+          }
+        },
+        {
+          "rank": 7,
+          "full_name": "hail-is/hail",
+          "short_name": "hail",
+          "name": "hail-is/hail",
+          "url": "https://github.com/hail-is/hail",
+          "description": "Cloud-native genomic dataframes and batch computing",
+          "stars": 1046,
+          "weekly_growth": 0,
+          "score": 29.16,
+          "has_paper": true,
+          "has_docker": false,
+          "has_conda": false,
+          "sub_label": "Alignment",
+          "topics": [
+            "bioinformatics",
+            "genetics",
+            "genomics",
+            "gwas",
+            "hail",
+            "python",
+            "software",
+            "vcf"
+          ],
+          "license": "MIT License",
+          "open_issues": 292,
+          "pushed_at": "2026-02-06T20:06:41Z",
+          "tech_stack": [],
+          "install_commands": [],
+          "preview_images": [
+            "https://www.yourkit.com/images/yklogo.png"
+          ],
+          "badges": {
+            "stars": "https://img.shields.io/github/stars/hail-is/hail?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/hail-is/hail?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/hail-is/hail?style=flat-square",
+            "license": "https://img.shields.io/github/license/hail-is/hail?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/hail-is/hail?style=flat-square"
+          }
+        },
+        {
+          "rank": 8,
+          "full_name": "Ch0pin/medusa",
+          "short_name": "medusa",
+          "name": "Ch0pin/medusa",
+          "url": "https://github.com/Ch0pin/medusa",
+          "description": "Mobile Edge-Dynamic Unified Security Analysis",
+          "stars": 2174,
+          "weekly_growth": 1,
+          "score": 28.7,
+          "has_paper": false,
+          "has_docker": true,
+          "has_conda": false,
+          "sub_label": "General",
+          "topics": [
+            "android",
+            "android-malware",
+            "dynamic-analysis",
+            "frida",
+            "frida-scripts",
+            "frida-snippets",
+            "ios",
+            "ios-reverse-engineering",
+            "malware",
+            "medusa",
+            "penetration-testing",
+            "pentest"
+          ],
+          "license": "GNU General Public License v3.0",
+          "open_issues": 6,
+          "pushed_at": "2026-02-04T12:23:54Z",
+          "tech_stack": [],
+          "install_commands": [
+            {
+              "type": "pip",
+              "command": "pip install -r"
+            },
+            {
+              "type": "pip",
+              "command": "pip install gnureadline"
+            },
+            {
+              "type": "pip",
+              "command": "pip install git"
+            }
+          ],
+          "preview_images": [
+            "https://raw.githubusercontent.com/Ch0pin/medusa/master/assets/images/logo.svg",
+            "https://user-images.githubusercontent.com/4659186/151658659-b4f83296-60ec-4818-a303-5645284b0a67.png",
+            "https://user-images.githubusercontent.com/4659186/151658663-6c77f2e3-6f42-4424-b593-d8cfe3d3bed3.png",
+            "https://raw.githubusercontent.com/Ch0pin/medusa/master/assets/images/sponsors/mhl_dark.png",
+            "https://github.com/Ch0pin/stheno/assets/4659186/fd49c39e-865b-4dc3-b2d1-59a0f4594028"
+          ],
+          "badges": {
+            "stars": "https://img.shields.io/github/stars/Ch0pin/medusa?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/Ch0pin/medusa?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/Ch0pin/medusa?style=flat-square",
+            "license": "https://img.shields.io/github/license/Ch0pin/medusa?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/Ch0pin/medusa?style=flat-square",
+            "docker": "https://img.shields.io/badge/docker-available-blue?style=flat-square&logo=docker"
+          }
+        },
+        {
+          "rank": 9,
+          "full_name": "samtools/htslib",
+          "short_name": "htslib",
+          "name": "samtools/htslib",
+          "url": "https://github.com/samtools/htslib",
+          "description": "C library for high-throughput sequencing data formats",
+          "stars": 906,
+          "weekly_growth": 0,
+          "score": 28.66,
+          "has_paper": true,
+          "has_docker": false,
+          "has_conda": false,
+          "sub_label": "Variant Calling",
+          "topics": [
+            "bam",
+            "bcf",
+            "bioinformatics",
+            "cram",
+            "htslib",
+            "ngs",
+            "sam",
+            "vcf"
+          ],
+          "license": "Other",
+          "open_issues": 161,
+          "pushed_at": "2026-02-06T17:05:04Z",
+          "tech_stack": [],
+          "install_commands": [],
+          "preview_images": [
+            "https://api.cirrus-ci.com/github/samtools/htslib.svg?branch=develop"
+          ],
+          "badges": {
+            "stars": "https://img.shields.io/github/stars/samtools/htslib?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/samtools/htslib?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/samtools/htslib?style=flat-square",
+            "license": "https://img.shields.io/github/license/samtools/htslib?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/samtools/htslib?style=flat-square"
+          }
+        },
+        {
+          "rank": 10,
+          "full_name": "tanghaibao/jcvi",
+          "short_name": "jcvi",
+          "name": "tanghaibao/jcvi",
+          "url": "https://github.com/tanghaibao/jcvi",
+          "description": "Python library to facilitate genome assembly, annotation, and comparative genomics",
+          "stars": 889,
+          "weekly_growth": 0,
+          "score": 28.59,
+          "has_paper": true,
+          "has_docker": false,
+          "has_conda": true,
+          "sub_label": "Alignment",
+          "topics": [
+            "allmaps",
+            "assembly",
+            "bioinformatics",
+            "blast",
+            "comparative-genomics",
+            "genetic-maps",
+            "genome-sequencing",
+            "genomics",
+            "sequence-alignments",
+            "synteny",
+            "variant-calling"
+          ],
+          "license": "BSD 2-Clause \"Simplified\" License",
+          "open_issues": 57,
+          "pushed_at": "2025-12-22T14:03:59Z",
+          "tech_stack": [],
+          "install_commands": [
+            {
+              "type": "pip",
+              "command": "pip install git"
+            },
+            {
+              "type": "pip",
+              "command": "pip install jcvi"
+            },
+            {
+              "type": "pip",
+              "command": "pip install -e"
+            }
+          ],
+          "preview_images": [
+            "https://www.dropbox.com/s/yu9ehsi6sqifuaa/bluredges.png?raw=1",
+            "https://www.dropbox.com/s/9vl3ys3ndvimg4c/grape-peach-cacao.png?raw=1",
+            "https://www.dropbox.com/s/jfs8xavcxix37se/ALLMAPS.gif?raw=1",
+            "https://api.star-history.com/svg?repos=tanghaibao/jcvi&type=Date"
+          ],
+          "badges": {
+            "stars": "https://img.shields.io/github/stars/tanghaibao/jcvi?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/tanghaibao/jcvi?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/tanghaibao/jcvi?style=flat-square",
+            "license": "https://img.shields.io/github/license/tanghaibao/jcvi?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/tanghaibao/jcvi?style=flat-square",
             "conda": "https://img.shields.io/badge/conda-available-green?style=flat-square&logo=anaconda"
           }
         }
@@ -1472,8 +1501,8 @@
             "workflow"
           ],
           "license": "MIT License",
-          "open_issues": 48,
-          "pushed_at": "2026-02-06T18:05:31Z",
+          "open_issues": 47,
+          "pushed_at": "2026-02-09T11:03:20Z",
           "tech_stack": [],
           "install_commands": [],
           "preview_images": [
@@ -1564,8 +1593,8 @@
             "workflow"
           ],
           "license": "MIT License",
-          "open_issues": 24,
-          "pushed_at": "2026-01-09T11:24:00Z",
+          "open_issues": 25,
+          "pushed_at": "2026-02-09T10:04:43Z",
           "tech_stack": [],
           "install_commands": [],
           "preview_images": [
@@ -1736,8 +1765,8 @@
             "workflow"
           ],
           "license": "MIT License",
-          "open_issues": 105,
-          "pushed_at": "2026-02-02T08:24:05Z",
+          "open_issues": 103,
+          "pushed_at": "2026-02-09T07:46:30Z",
           "tech_stack": [],
           "install_commands": [],
           "preview_images": [
@@ -1790,7 +1819,7 @@
           ],
           "license": "MIT License",
           "open_issues": 3,
-          "pushed_at": "2026-02-06T14:20:01Z",
+          "pushed_at": "2026-02-09T07:24:57Z",
           "tech_stack": [],
           "install_commands": [],
           "preview_images": [
@@ -2208,50 +2237,6 @@
         },
         {
           "rank": 18,
-          "full_name": "chanzuckerberg/cellxgene",
-          "short_name": "cellxgene",
-          "name": "chanzuckerberg/cellxgene",
-          "url": "https://github.com/chanzuckerberg/cellxgene",
-          "description": "An interactive explorer for single-cell transcriptomics data",
-          "stars": 751,
-          "weekly_growth": 2,
-          "score": 18.38,
-          "has_paper": false,
-          "has_docker": false,
-          "has_conda": false,
-          "sub_label": "",
-          "topics": [
-            "dataviz",
-            "scientific",
-            "scrna-seq",
-            "transcriptomics",
-            "visualization"
-          ],
-          "license": "MIT License",
-          "open_issues": 137,
-          "pushed_at": "2026-02-08T02:20:00Z",
-          "tech_stack": [],
-          "install_commands": [
-            {
-              "type": "pip",
-              "command": "pip install cellxgene"
-            }
-          ],
-          "preview_images": [
-            "https://raw.githubusercontent.com/chanzuckerberg/cellxgene/master/docs/cellxgene-logo.png",
-            "https://github.com/chanzuckerberg/cellxgene/raw/main/docs/images/crossfilter.gif",
-            "https://github.com/chanzuckerberg/cellxgene/raw/main/docs/images/category-breakdown.gif"
-          ],
-          "badges": {
-            "stars": "https://img.shields.io/github/stars/chanzuckerberg/cellxgene?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/chanzuckerberg/cellxgene?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/chanzuckerberg/cellxgene?style=flat-square",
-            "license": "https://img.shields.io/github/license/chanzuckerberg/cellxgene?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/chanzuckerberg/cellxgene?style=flat-square"
-          }
-        },
-        {
-          "rank": 19,
           "full_name": "snakemake-workflows/rna-seq-star-deseq2",
           "short_name": "rna-seq-star-deseq2",
           "name": "snakemake-workflows/rna-seq-star-deseq2",
@@ -2286,7 +2271,7 @@
           }
         },
         {
-          "rank": 20,
+          "rank": 19,
           "full_name": "azizilab/starfysh",
           "short_name": "starfysh",
           "name": "azizilab/starfysh",
@@ -2322,54 +2307,56 @@
             "license": "https://img.shields.io/github/license/azizilab/starfysh?style=flat-square",
             "last_commit": "https://img.shields.io/github/last-commit/azizilab/starfysh?style=flat-square"
           }
+        },
+        {
+          "rank": 20,
+          "full_name": "ropensci/UCSCXenaTools",
+          "short_name": "UCSCXenaTools",
+          "name": "ropensci/UCSCXenaTools",
+          "url": "https://github.com/ropensci/UCSCXenaTools",
+          "description": ":package: An R package for accessing genomics data from UCSC Xena platform, from cancer multi-omics to single-cell RNA-seq https://cran.r-project.org/web/packages/UCSCXenaTools/",
+          "stars": 112,
+          "weekly_growth": 0,
+          "score": 15.25,
+          "has_paper": true,
+          "has_docker": false,
+          "has_conda": false,
+          "sub_label": "",
+          "topics": [
+            "api-client",
+            "bioinformatics",
+            "ccle",
+            "downloader",
+            "icgc",
+            "r",
+            "tcga",
+            "toil",
+            "treehouse",
+            "ucsc",
+            "ucsc-xena"
+          ],
+          "license": "GNU General Public License v3.0",
+          "open_issues": 1,
+          "pushed_at": "2026-02-06T17:30:01Z",
+          "tech_stack": [],
+          "install_commands": [],
+          "preview_images": [
+            "https://raw.githubusercontent.com/ropensci/UCSCXenaTools/master/man/figures/logo.png",
+            "https://joss.theoj.org/papers/10.21105/joss.01627/status.svg",
+            "https://ropensci.org/public_images/ropensci_footer.png"
+          ],
+          "badges": {
+            "stars": "https://img.shields.io/github/stars/ropensci/UCSCXenaTools?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/ropensci/UCSCXenaTools?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/ropensci/UCSCXenaTools?style=flat-square",
+            "license": "https://img.shields.io/github/license/ropensci/UCSCXenaTools?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/ropensci/UCSCXenaTools?style=flat-square"
+          }
         }
       ],
       "top_10_utilities": [
         {
           "rank": 1,
-          "full_name": "jinworks/CellChat",
-          "short_name": "CellChat",
-          "name": "jinworks/CellChat",
-          "url": "https://github.com/jinworks/CellChat",
-          "description": "R toolkit for inference, visualization and analysis of cell-cell communication from single-cell and spatially resolved transcriptomics",
-          "stars": 540,
-          "weekly_growth": 1,
-          "score": 28.86,
-          "has_paper": true,
-          "has_docker": false,
-          "has_conda": false,
-          "sub_label": "Alignment",
-          "topics": [
-            "cell-cell-communication",
-            "cell-cell-interaction",
-            "microenvironment",
-            "single-cell-analysis",
-            "spatial-transcriptomics"
-          ],
-          "license": "GNU General Public License v3.0",
-          "open_issues": 351,
-          "pushed_at": "2025-10-07T00:08:42Z",
-          "tech_stack": [],
-          "install_commands": [
-            {
-              "type": "pip",
-              "command": "pip install umap-learn"
-            }
-          ],
-          "preview_images": [
-            "https://raw.githubusercontent.com/jinworks/CellChat/main/CellChat_Logo.png",
-            "https://clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=n&d=42WqeykSXznN_NSaBlpf6CtSXQxhqmIs6QusUsguFdY"
-          ],
-          "badges": {
-            "stars": "https://img.shields.io/github/stars/jinworks/CellChat?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/jinworks/CellChat?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/jinworks/CellChat?style=flat-square",
-            "license": "https://img.shields.io/github/license/jinworks/CellChat?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/jinworks/CellChat?style=flat-square"
-          }
-        },
-        {
-          "rank": 2,
           "full_name": "Starlitnightly/omicverse",
           "short_name": "omicverse",
           "name": "Starlitnightly/omicverse",
@@ -2389,8 +2376,8 @@
             "single-cell"
           ],
           "license": "GNU General Public License v3.0",
-          "open_issues": 14,
-          "pushed_at": "2026-02-07T01:18:38Z",
+          "open_issues": 15,
+          "pushed_at": "2026-02-09T11:45:43Z",
           "tech_stack": [],
           "install_commands": [
             {
@@ -2427,41 +2414,7 @@
           }
         },
         {
-          "rank": 3,
-          "full_name": "agitter/single-cell-pseudotime",
-          "short_name": "single-cell-pseudotime",
-          "name": "agitter/single-cell-pseudotime",
-          "url": "https://github.com/agitter/single-cell-pseudotime",
-          "description": "An overview of algorithms for estimating pseudotime in single-cell RNA-seq data",
-          "stars": 438,
-          "weekly_growth": 1,
-          "score": 28.13,
-          "has_paper": true,
-          "has_docker": false,
-          "has_conda": false,
-          "sub_label": "Trajectory",
-          "topics": [
-            "bioinformatics",
-            "pseudotime-algorithms",
-            "rna-seq",
-            "single-cell"
-          ],
-          "license": "Creative Commons Attribution 4.0 International",
-          "open_issues": 1,
-          "pushed_at": "2026-02-03T14:46:50Z",
-          "tech_stack": [],
-          "install_commands": [],
-          "preview_images": [],
-          "badges": {
-            "stars": "https://img.shields.io/github/stars/agitter/single-cell-pseudotime?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/agitter/single-cell-pseudotime?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/agitter/single-cell-pseudotime?style=flat-square",
-            "license": "https://img.shields.io/github/license/agitter/single-cell-pseudotime?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/agitter/single-cell-pseudotime?style=flat-square"
-          }
-        },
-        {
-          "rank": 4,
+          "rank": 2,
           "full_name": "scverse/PyDESeq2",
           "short_name": "PyDESeq2",
           "name": "scverse/PyDESeq2",
@@ -2520,7 +2473,7 @@
           }
         },
         {
-          "rank": 5,
+          "rank": 3,
           "full_name": "cafferychen777/mLLMCelltype",
           "short_name": "mLLMCelltype",
           "name": "cafferychen777/mLLMCelltype",
@@ -2548,7 +2501,7 @@
           ],
           "license": "MIT License",
           "open_issues": 9,
-          "pushed_at": "2026-02-09T06:22:59Z",
+          "pushed_at": "2026-02-09T06:41:06Z",
           "tech_stack": [],
           "install_commands": [
             {
@@ -2577,7 +2530,7 @@
           }
         },
         {
-          "rank": 6,
+          "rank": 4,
           "full_name": "aertslab/pySCENIC",
           "short_name": "pySCENIC",
           "name": "aertslab/pySCENIC",
@@ -2611,7 +2564,50 @@
           }
         },
         {
-          "rank": 7,
+          "rank": 5,
+          "full_name": "jinworks/CellChat",
+          "short_name": "CellChat",
+          "name": "jinworks/CellChat",
+          "url": "https://github.com/jinworks/CellChat",
+          "description": "R toolkit for inference, visualization and analysis of cell-cell communication from single-cell and spatially resolved transcriptomics",
+          "stars": 540,
+          "weekly_growth": 0,
+          "score": 26.86,
+          "has_paper": true,
+          "has_docker": false,
+          "has_conda": false,
+          "sub_label": "Alignment",
+          "topics": [
+            "cell-cell-communication",
+            "cell-cell-interaction",
+            "microenvironment",
+            "single-cell-analysis",
+            "spatial-transcriptomics"
+          ],
+          "license": "GNU General Public License v3.0",
+          "open_issues": 351,
+          "pushed_at": "2025-10-07T00:08:42Z",
+          "tech_stack": [],
+          "install_commands": [
+            {
+              "type": "pip",
+              "command": "pip install umap-learn"
+            }
+          ],
+          "preview_images": [
+            "https://raw.githubusercontent.com/jinworks/CellChat/main/CellChat_Logo.png",
+            "https://clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=n&d=42WqeykSXznN_NSaBlpf6CtSXQxhqmIs6QusUsguFdY"
+          ],
+          "badges": {
+            "stars": "https://img.shields.io/github/stars/jinworks/CellChat?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/jinworks/CellChat?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/jinworks/CellChat?style=flat-square",
+            "license": "https://img.shields.io/github/license/jinworks/CellChat?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/jinworks/CellChat?style=flat-square"
+          }
+        },
+        {
+          "rank": 6,
           "full_name": "aristoteleo/dynamo-release",
           "short_name": "dynamo-release",
           "name": "aristoteleo/dynamo-release",
@@ -2660,7 +2656,7 @@
           }
         },
         {
-          "rank": 8,
+          "rank": 7,
           "full_name": "gpertea/stringtie",
           "short_name": "stringtie",
           "name": "gpertea/stringtie",
@@ -2691,6 +2687,40 @@
             "issues": "https://img.shields.io/github/issues/gpertea/stringtie?style=flat-square",
             "license": "https://img.shields.io/github/license/gpertea/stringtie?style=flat-square",
             "last_commit": "https://img.shields.io/github/last-commit/gpertea/stringtie?style=flat-square"
+          }
+        },
+        {
+          "rank": 8,
+          "full_name": "agitter/single-cell-pseudotime",
+          "short_name": "single-cell-pseudotime",
+          "name": "agitter/single-cell-pseudotime",
+          "url": "https://github.com/agitter/single-cell-pseudotime",
+          "description": "An overview of algorithms for estimating pseudotime in single-cell RNA-seq data",
+          "stars": 438,
+          "weekly_growth": 0,
+          "score": 26.13,
+          "has_paper": true,
+          "has_docker": false,
+          "has_conda": false,
+          "sub_label": "Trajectory",
+          "topics": [
+            "bioinformatics",
+            "pseudotime-algorithms",
+            "rna-seq",
+            "single-cell"
+          ],
+          "license": "Creative Commons Attribution 4.0 International",
+          "open_issues": 1,
+          "pushed_at": "2026-02-03T14:46:50Z",
+          "tech_stack": [],
+          "install_commands": [],
+          "preview_images": [],
+          "badges": {
+            "stars": "https://img.shields.io/github/stars/agitter/single-cell-pseudotime?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/agitter/single-cell-pseudotime?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/agitter/single-cell-pseudotime?style=flat-square",
+            "license": "https://img.shields.io/github/license/agitter/single-cell-pseudotime?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/agitter/single-cell-pseudotime?style=flat-square"
           }
         },
         {
@@ -2782,9 +2812,9 @@
           "name": "YongxinLiu/EasyMetagenome",
           "url": "https://github.com/YongxinLiu/EasyMetagenome",
           "description": "Easy Metagenome Pipeline",
-          "stars": 518,
+          "stars": 519,
           "weekly_growth": 1,
-          "score": 35.57,
+          "score": 35.58,
           "has_paper": true,
           "has_docker": false,
           "has_conda": true,
@@ -2883,7 +2913,7 @@
           ],
           "license": "MIT License",
           "open_issues": 84,
-          "pushed_at": "2026-02-02T19:41:55Z",
+          "pushed_at": "2026-02-09T08:37:28Z",
           "tech_stack": [],
           "install_commands": [],
           "preview_images": [
@@ -3796,7 +3826,7 @@
           ],
           "license": "MIT License",
           "open_issues": 3,
-          "pushed_at": "2026-02-06T14:20:01Z",
+          "pushed_at": "2026-02-09T07:24:57Z",
           "tech_stack": [],
           "install_commands": [],
           "preview_images": [
@@ -4100,50 +4130,6 @@
         },
         {
           "rank": 9,
-          "full_name": "chanzuckerberg/cellxgene",
-          "short_name": "cellxgene",
-          "name": "chanzuckerberg/cellxgene",
-          "url": "https://github.com/chanzuckerberg/cellxgene",
-          "description": "An interactive explorer for single-cell transcriptomics data",
-          "stars": 751,
-          "weekly_growth": 2,
-          "score": 18.38,
-          "has_paper": false,
-          "has_docker": false,
-          "has_conda": false,
-          "sub_label": "",
-          "topics": [
-            "dataviz",
-            "scientific",
-            "scrna-seq",
-            "transcriptomics",
-            "visualization"
-          ],
-          "license": "MIT License",
-          "open_issues": 137,
-          "pushed_at": "2026-02-08T02:20:00Z",
-          "tech_stack": [],
-          "install_commands": [
-            {
-              "type": "pip",
-              "command": "pip install cellxgene"
-            }
-          ],
-          "preview_images": [
-            "https://raw.githubusercontent.com/chanzuckerberg/cellxgene/master/docs/cellxgene-logo.png",
-            "https://github.com/chanzuckerberg/cellxgene/raw/main/docs/images/crossfilter.gif",
-            "https://github.com/chanzuckerberg/cellxgene/raw/main/docs/images/category-breakdown.gif"
-          ],
-          "badges": {
-            "stars": "https://img.shields.io/github/stars/chanzuckerberg/cellxgene?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/chanzuckerberg/cellxgene?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/chanzuckerberg/cellxgene?style=flat-square",
-            "license": "https://img.shields.io/github/license/chanzuckerberg/cellxgene?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/chanzuckerberg/cellxgene?style=flat-square"
-          }
-        },
-        {
-          "rank": 10,
           "full_name": "scverse/SnapATAC2",
           "short_name": "SnapATAC2",
           "name": "scverse/SnapATAC2",
@@ -4176,7 +4162,7 @@
           }
         },
         {
-          "rank": 11,
+          "rank": 10,
           "full_name": "mengxu98/scop",
           "short_name": "scop",
           "name": "mengxu98/scop",
@@ -4211,7 +4197,7 @@
           }
         },
         {
-          "rank": 12,
+          "rank": 11,
           "full_name": "ropensci/UCSCXenaTools",
           "short_name": "UCSCXenaTools",
           "name": "ropensci/UCSCXenaTools",
@@ -4256,7 +4242,7 @@
           }
         },
         {
-          "rank": 13,
+          "rank": 12,
           "full_name": "p-gueguen/Spatial_transcriptomics_tools",
           "short_name": "Spatial_transcriptomics_tools",
           "name": "p-gueguen/Spatial_transcriptomics_tools",
@@ -4289,7 +4275,7 @@
           }
         },
         {
-          "rank": 14,
+          "rank": 13,
           "full_name": "jfnavarro/st_pipeline",
           "short_name": "st_pipeline",
           "name": "jfnavarro/st_pipeline",
@@ -4320,6 +4306,50 @@
             "issues": "https://img.shields.io/github/issues/jfnavarro/st_pipeline?style=flat-square",
             "license": "https://img.shields.io/github/license/jfnavarro/st_pipeline?style=flat-square",
             "last_commit": "https://img.shields.io/github/last-commit/jfnavarro/st_pipeline?style=flat-square"
+          }
+        },
+        {
+          "rank": 14,
+          "full_name": "chanzuckerberg/cellxgene",
+          "short_name": "cellxgene",
+          "name": "chanzuckerberg/cellxgene",
+          "url": "https://github.com/chanzuckerberg/cellxgene",
+          "description": "An interactive explorer for single-cell transcriptomics data",
+          "stars": 751,
+          "weekly_growth": 0,
+          "score": 14.38,
+          "has_paper": false,
+          "has_docker": false,
+          "has_conda": false,
+          "sub_label": "",
+          "topics": [
+            "dataviz",
+            "scientific",
+            "scrna-seq",
+            "transcriptomics",
+            "visualization"
+          ],
+          "license": "MIT License",
+          "open_issues": 137,
+          "pushed_at": "2026-02-08T02:20:00Z",
+          "tech_stack": [],
+          "install_commands": [
+            {
+              "type": "pip",
+              "command": "pip install cellxgene"
+            }
+          ],
+          "preview_images": [
+            "https://raw.githubusercontent.com/chanzuckerberg/cellxgene/master/docs/cellxgene-logo.png",
+            "https://github.com/chanzuckerberg/cellxgene/raw/main/docs/images/crossfilter.gif",
+            "https://github.com/chanzuckerberg/cellxgene/raw/main/docs/images/category-breakdown.gif"
+          ],
+          "badges": {
+            "stars": "https://img.shields.io/github/stars/chanzuckerberg/cellxgene?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/chanzuckerberg/cellxgene?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/chanzuckerberg/cellxgene?style=flat-square",
+            "license": "https://img.shields.io/github/license/chanzuckerberg/cellxgene?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/chanzuckerberg/cellxgene?style=flat-square"
           }
         },
         {
@@ -4522,55 +4552,14 @@
       "top_10_utilities": [
         {
           "rank": 1,
-          "full_name": "scverse/scanpy",
-          "short_name": "scanpy",
-          "name": "scverse/scanpy",
-          "url": "https://github.com/scverse/scanpy",
-          "description": "Single-cell analysis in Python. Scales to >100M cells.",
-          "stars": 2346,
-          "weekly_growth": 0,
-          "score": 31.96,
-          "has_paper": true,
-          "has_docker": false,
-          "has_conda": false,
-          "sub_label": "Alignment",
-          "topics": [
-            "anndata",
-            "bioinformatics",
-            "data-science",
-            "machine-learning",
-            "python",
-            "scanpy",
-            "scverse",
-            "transcriptomics",
-            "visualize-data"
-          ],
-          "license": "BSD 3-Clause \"New\" or \"Revised\" License",
-          "open_issues": 570,
-          "pushed_at": "2026-02-06T16:39:00Z",
-          "tech_stack": [],
-          "install_commands": [],
-          "preview_images": [
-            "https://raw.githubusercontent.com/numfocus/templates/master/images/numfocus-logo.png"
-          ],
-          "badges": {
-            "stars": "https://img.shields.io/github/stars/scverse/scanpy?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/scverse/scanpy?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/scverse/scanpy?style=flat-square",
-            "license": "https://img.shields.io/github/license/scverse/scanpy?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/scverse/scanpy?style=flat-square"
-          }
-        },
-        {
-          "rank": 2,
           "full_name": "scverse/scvi-tools",
           "short_name": "scvi-tools",
           "name": "scverse/scvi-tools",
           "url": "https://github.com/scverse/scvi-tools",
           "description": "Deep probabilistic analysis of single-cell and spatial omics data",
-          "stars": 1560,
-          "weekly_growth": 0,
-          "score": 30.54,
+          "stars": 1561,
+          "weekly_growth": 1,
+          "score": 32.55,
           "has_paper": true,
           "has_docker": false,
           "has_conda": true,
@@ -4588,8 +4577,8 @@
             "variational-bayes"
           ],
           "license": "BSD 3-Clause \"New\" or \"Revised\" License",
-          "open_issues": 32,
-          "pushed_at": "2026-02-08T14:07:34Z",
+          "open_issues": 31,
+          "pushed_at": "2026-02-09T11:43:46Z",
           "tech_stack": [],
           "install_commands": [
             {
@@ -4615,92 +4604,56 @@
           }
         },
         {
-          "rank": 3,
-          "full_name": "jinworks/CellChat",
-          "short_name": "CellChat",
-          "name": "jinworks/CellChat",
-          "url": "https://github.com/jinworks/CellChat",
-          "description": "R toolkit for inference, visualization and analysis of cell-cell communication from single-cell and spatially resolved transcriptomics",
-          "stars": 540,
-          "weekly_growth": 1,
-          "score": 28.86,
+          "rank": 2,
+          "full_name": "scverse/scanpy",
+          "short_name": "scanpy",
+          "name": "scverse/scanpy",
+          "url": "https://github.com/scverse/scanpy",
+          "description": "Single-cell analysis in Python. Scales to >100M cells.",
+          "stars": 2346,
+          "weekly_growth": 0,
+          "score": 31.96,
           "has_paper": true,
           "has_docker": false,
           "has_conda": false,
           "sub_label": "Alignment",
           "topics": [
-            "cell-cell-communication",
-            "cell-cell-interaction",
-            "microenvironment",
-            "single-cell-analysis",
-            "spatial-transcriptomics"
-          ],
-          "license": "GNU General Public License v3.0",
-          "open_issues": 351,
-          "pushed_at": "2025-10-07T00:08:42Z",
-          "tech_stack": [],
-          "install_commands": [
-            {
-              "type": "pip",
-              "command": "pip install umap-learn"
-            }
-          ],
-          "preview_images": [
-            "https://raw.githubusercontent.com/jinworks/CellChat/main/CellChat_Logo.png",
-            "https://clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=n&d=42WqeykSXznN_NSaBlpf6CtSXQxhqmIs6QusUsguFdY"
-          ],
-          "badges": {
-            "stars": "https://img.shields.io/github/stars/jinworks/CellChat?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/jinworks/CellChat?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/jinworks/CellChat?style=flat-square",
-            "license": "https://img.shields.io/github/license/jinworks/CellChat?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/jinworks/CellChat?style=flat-square"
-          }
-        },
-        {
-          "rank": 4,
-          "full_name": "agitter/single-cell-pseudotime",
-          "short_name": "single-cell-pseudotime",
-          "name": "agitter/single-cell-pseudotime",
-          "url": "https://github.com/agitter/single-cell-pseudotime",
-          "description": "An overview of algorithms for estimating pseudotime in single-cell RNA-seq data",
-          "stars": 438,
-          "weekly_growth": 1,
-          "score": 28.13,
-          "has_paper": true,
-          "has_docker": false,
-          "has_conda": false,
-          "sub_label": "Trajectory",
-          "topics": [
+            "anndata",
             "bioinformatics",
-            "pseudotime-algorithms",
-            "rna-seq",
-            "single-cell"
+            "data-science",
+            "machine-learning",
+            "python",
+            "scanpy",
+            "scverse",
+            "transcriptomics",
+            "visualize-data"
           ],
-          "license": "Creative Commons Attribution 4.0 International",
-          "open_issues": 1,
-          "pushed_at": "2026-02-03T14:46:50Z",
+          "license": "BSD 3-Clause \"New\" or \"Revised\" License",
+          "open_issues": 569,
+          "pushed_at": "2026-02-09T10:38:45Z",
           "tech_stack": [],
           "install_commands": [],
-          "preview_images": [],
+          "preview_images": [
+            "https://raw.githubusercontent.com/numfocus/templates/master/images/numfocus-logo.png"
+          ],
           "badges": {
-            "stars": "https://img.shields.io/github/stars/agitter/single-cell-pseudotime?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/agitter/single-cell-pseudotime?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/agitter/single-cell-pseudotime?style=flat-square",
-            "license": "https://img.shields.io/github/license/agitter/single-cell-pseudotime?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/agitter/single-cell-pseudotime?style=flat-square"
+            "stars": "https://img.shields.io/github/stars/scverse/scanpy?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/scverse/scanpy?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/scverse/scanpy?style=flat-square",
+            "license": "https://img.shields.io/github/license/scverse/scanpy?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/scverse/scanpy?style=flat-square"
           }
         },
         {
-          "rank": 5,
+          "rank": 3,
           "full_name": "theislab/cellrank",
           "short_name": "cellrank",
           "name": "theislab/cellrank",
           "url": "https://github.com/theislab/cellrank",
           "description": "CellRank: dynamics from multi-view single-cell data",
-          "stars": 423,
+          "stars": 424,
           "weekly_growth": 1,
-          "score": 28.01,
+          "score": 28.02,
           "has_paper": true,
           "has_docker": false,
           "has_conda": false,
@@ -4735,7 +4688,7 @@
           }
         },
         {
-          "rank": 6,
+          "rank": 4,
           "full_name": "cafferychen777/mLLMCelltype",
           "short_name": "mLLMCelltype",
           "name": "cafferychen777/mLLMCelltype",
@@ -4763,7 +4716,7 @@
           ],
           "license": "MIT License",
           "open_issues": 9,
-          "pushed_at": "2026-02-09T06:22:59Z",
+          "pushed_at": "2026-02-09T06:41:06Z",
           "tech_stack": [],
           "install_commands": [
             {
@@ -4792,7 +4745,7 @@
           }
         },
         {
-          "rank": 7,
+          "rank": 5,
           "full_name": "aertslab/pySCENIC",
           "short_name": "pySCENIC",
           "name": "aertslab/pySCENIC",
@@ -4826,7 +4779,50 @@
           }
         },
         {
-          "rank": 8,
+          "rank": 6,
+          "full_name": "jinworks/CellChat",
+          "short_name": "CellChat",
+          "name": "jinworks/CellChat",
+          "url": "https://github.com/jinworks/CellChat",
+          "description": "R toolkit for inference, visualization and analysis of cell-cell communication from single-cell and spatially resolved transcriptomics",
+          "stars": 540,
+          "weekly_growth": 0,
+          "score": 26.86,
+          "has_paper": true,
+          "has_docker": false,
+          "has_conda": false,
+          "sub_label": "Alignment",
+          "topics": [
+            "cell-cell-communication",
+            "cell-cell-interaction",
+            "microenvironment",
+            "single-cell-analysis",
+            "spatial-transcriptomics"
+          ],
+          "license": "GNU General Public License v3.0",
+          "open_issues": 351,
+          "pushed_at": "2025-10-07T00:08:42Z",
+          "tech_stack": [],
+          "install_commands": [
+            {
+              "type": "pip",
+              "command": "pip install umap-learn"
+            }
+          ],
+          "preview_images": [
+            "https://raw.githubusercontent.com/jinworks/CellChat/main/CellChat_Logo.png",
+            "https://clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=n&d=42WqeykSXznN_NSaBlpf6CtSXQxhqmIs6QusUsguFdY"
+          ],
+          "badges": {
+            "stars": "https://img.shields.io/github/stars/jinworks/CellChat?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/jinworks/CellChat?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/jinworks/CellChat?style=flat-square",
+            "license": "https://img.shields.io/github/license/jinworks/CellChat?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/jinworks/CellChat?style=flat-square"
+          }
+        },
+        {
+          "rank": 7,
           "full_name": "chris-mcginnis-ucsf/DoubletFinder",
           "short_name": "DoubletFinder",
           "name": "chris-mcginnis-ucsf/DoubletFinder",
@@ -4861,47 +4857,57 @@
           }
         },
         {
-          "rank": 9,
-          "full_name": "samuel-marsh/scCustomize",
-          "short_name": "scCustomize",
-          "name": "samuel-marsh/scCustomize",
-          "url": "https://github.com/samuel-marsh/scCustomize",
-          "description": "R package with collection of functions created and/or curated to aid in the visualization and analysis of single-cell data using R.",
-          "stars": 288,
+          "rank": 8,
+          "full_name": "scverse/pertpy",
+          "short_name": "pertpy",
+          "name": "scverse/pertpy",
+          "url": "https://github.com/scverse/pertpy",
+          "description": "Single-cell perturbation analysis",
+          "stars": 284,
           "weekly_growth": 1,
-          "score": 26.68,
+          "score": 26.63,
           "has_paper": true,
           "has_docker": false,
-          "has_conda": false,
-          "sub_label": "Alignment",
+          "has_conda": true,
+          "sub_label": "Differential Expression",
           "topics": [
-            "customization",
-            "ggplot2",
-            "scrna-seq",
-            "seurat",
-            "single-cell",
-            "single-cell-genomics",
-            "single-cell-rna-seq",
-            "visualization"
+            "perturbation",
+            "scverse",
+            "single-cell"
           ],
-          "license": "GNU General Public License v3.0",
-          "open_issues": 5,
-          "pushed_at": "2026-01-29T16:11:59Z",
+          "license": "MIT License",
+          "open_issues": 40,
+          "pushed_at": "2026-02-02T16:47:38Z",
           "tech_stack": [],
-          "install_commands": [],
+          "install_commands": [
+            {
+              "type": "conda",
+              "command": "conda install -c conda-forge pertpy"
+            },
+            {
+              "type": "pip",
+              "command": "pip install pertpy"
+            },
+            {
+              "type": "pip",
+              "command": "pip install rpy2"
+            }
+          ],
           "preview_images": [
-            "https://raw.githubusercontent.com/samuel-marsh/scCustomize/master/man/figures/scCustomize_Logo.svg"
+            "https://raw.githubusercontent.com/numfocus/templates/master/images/numfocus-logo.png",
+            "https://github.com/user-attachments/assets/d2e32d69-b767-4be3-a938-77a9dce45d3f"
           ],
           "badges": {
-            "stars": "https://img.shields.io/github/stars/samuel-marsh/scCustomize?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/samuel-marsh/scCustomize?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/samuel-marsh/scCustomize?style=flat-square",
-            "license": "https://img.shields.io/github/license/samuel-marsh/scCustomize?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/samuel-marsh/scCustomize?style=flat-square"
+            "stars": "https://img.shields.io/github/stars/scverse/pertpy?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/scverse/pertpy?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/scverse/pertpy?style=flat-square",
+            "license": "https://img.shields.io/github/license/scverse/pertpy?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/scverse/pertpy?style=flat-square",
+            "conda": "https://img.shields.io/badge/conda-available-green?style=flat-square&logo=anaconda"
           }
         },
         {
-          "rank": 10,
+          "rank": 9,
           "full_name": "aristoteleo/dynamo-release",
           "short_name": "dynamo-release",
           "name": "aristoteleo/dynamo-release",
@@ -4947,6 +4953,56 @@
             "issues": "https://img.shields.io/github/issues/aristoteleo/dynamo-release?style=flat-square",
             "license": "https://img.shields.io/github/license/aristoteleo/dynamo-release?style=flat-square",
             "last_commit": "https://img.shields.io/github/last-commit/aristoteleo/dynamo-release?style=flat-square"
+          }
+        },
+        {
+          "rank": 10,
+          "full_name": "gao-lab/GLUE",
+          "short_name": "GLUE",
+          "name": "gao-lab/GLUE",
+          "url": "https://github.com/gao-lab/GLUE",
+          "description": "Graph-linked unified embedding for single-cell multi-omics data integration",
+          "stars": 453,
+          "weekly_growth": 0,
+          "score": 26.25,
+          "has_paper": true,
+          "has_docker": false,
+          "has_conda": true,
+          "sub_label": "Alignment",
+          "topics": [
+            "bioinformatics",
+            "deep-learning",
+            "single-cell",
+            "single-cell-multiomics"
+          ],
+          "license": "MIT License",
+          "open_issues": 23,
+          "pushed_at": "2026-02-09T00:27:33Z",
+          "tech_stack": [],
+          "install_commands": [
+            {
+              "type": "conda",
+              "command": "conda install -c conda-forge -c bioconda scglue"
+            },
+            {
+              "type": "conda",
+              "command": "conda install -c conda-forge -c bioconda scglue pytorch-gpu"
+            },
+            {
+              "type": "pip",
+              "command": "pip install scglue"
+            }
+          ],
+          "preview_images": [
+            "https://raw.githubusercontent.com/gao-lab/GLUE/master/docs/_static/architecture.svg"
+          ],
+          "badges": {
+            "stars": "https://img.shields.io/github/stars/gao-lab/GLUE?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/gao-lab/GLUE?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/gao-lab/GLUE?style=flat-square",
+            "license": "https://img.shields.io/github/license/gao-lab/GLUE?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/gao-lab/GLUE?style=flat-square",
+            "conda": "https://img.shields.io/badge/conda-available-green?style=flat-square&logo=anaconda"
           }
         }
       ]
@@ -5858,102 +5914,6 @@
         },
         {
           "rank": 5,
-          "full_name": "nloyfer/wgbs_tools",
-          "short_name": "wgbs_tools",
-          "name": "nloyfer/wgbs_tools",
-          "url": "https://github.com/nloyfer/wgbs_tools",
-          "description": "tools for working with Bisulfite Sequencing data while preserving reads intrinsic dependencies ",
-          "stars": 180,
-          "weekly_growth": 1,
-          "score": 25.04,
-          "has_paper": true,
-          "has_docker": false,
-          "has_conda": false,
-          "sub_label": "Alignment",
-          "topics": [
-            "bioinformatics",
-            "dna-methylation",
-            "methylation",
-            "wgbs-analysis"
-          ],
-          "license": "Other",
-          "open_issues": 28,
-          "pushed_at": "2025-12-13T14:38:10Z",
-          "tech_stack": [],
-          "install_commands": [
-            {
-              "type": "git",
-              "command": "git clone https://github.com/nloyfer/wgbs_tools.git"
-            }
-          ],
-          "preview_images": [
-            "https://raw.githubusercontent.com/nloyfer/wgbs_tools/master/docs/img/colon.beta.png \"beta vis example\"",
-            "https://raw.githubusercontent.com/nloyfer/wgbs_tools/master/docs/img/colon.pat.png \"pat vis example\" =100x100",
-            "https://raw.githubusercontent.com/nloyfer/wgbs_tools/master/docs/img/wgbstools_overview.png \"wgbstools overview\"",
-            "https://raw.githubusercontent.com/nloyfer/wgbs_tools/master/docs/img/colon.pat.png",
-            "https://raw.githubusercontent.com/nloyfer/wgbs_tools/master/docs/img/colon.beta.png"
-          ],
-          "badges": {
-            "stars": "https://img.shields.io/github/stars/nloyfer/wgbs_tools?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/nloyfer/wgbs_tools?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/nloyfer/wgbs_tools?style=flat-square",
-            "license": "https://img.shields.io/github/license/nloyfer/wgbs_tools?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/nloyfer/wgbs_tools?style=flat-square"
-          }
-        },
-        {
-          "rank": 6,
-          "full_name": "dpeerlab/SEACells",
-          "short_name": "SEACells",
-          "name": "dpeerlab/SEACells",
-          "url": "https://github.com/dpeerlab/SEACells",
-          "description": "SEACells algorithm for Inference of transcriptional and epigenomic cellular states from single-cell genomics data",
-          "stars": 179,
-          "weekly_growth": 1,
-          "score": 25.02,
-          "has_paper": true,
-          "has_docker": false,
-          "has_conda": true,
-          "sub_label": "Alignment",
-          "topics": [],
-          "license": "GNU General Public License v2.0",
-          "open_issues": 34,
-          "pushed_at": "2025-03-27T15:27:08Z",
-          "tech_stack": [],
-          "install_commands": [
-            {
-              "type": "pip",
-              "command": "pip install cmake"
-            },
-            {
-              "type": "pip",
-              "command": "pip install SEACells"
-            },
-            {
-              "type": "pip",
-              "command": "pip install -r"
-            },
-            {
-              "type": "git",
-              "command": "git clone https://github.com/dpeerlab/SEACells.git"
-            },
-            {
-              "type": "git",
-              "command": "git clone https://github.com/dpeerlab/SEACells.git"
-            }
-          ],
-          "preview_images": [],
-          "badges": {
-            "stars": "https://img.shields.io/github/stars/dpeerlab/SEACells?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/dpeerlab/SEACells?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/dpeerlab/SEACells?style=flat-square",
-            "license": "https://img.shields.io/github/license/dpeerlab/SEACells?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/dpeerlab/SEACells?style=flat-square",
-            "conda": "https://img.shields.io/badge/conda-available-green?style=flat-square&logo=anaconda"
-          }
-        },
-        {
-          "rank": 7,
           "full_name": "deeptools/HiCExplorer",
           "short_name": "HiCExplorer",
           "name": "deeptools/HiCExplorer",
@@ -6000,7 +5960,7 @@
           }
         },
         {
-          "rank": 8,
+          "rank": 6,
           "full_name": "zengxiaofei/HapHiC",
           "short_name": "HapHiC",
           "name": "zengxiaofei/HapHiC",
@@ -6030,7 +5990,7 @@
             "yahs"
           ],
           "license": "BSD 3-Clause \"New\" or \"Revised\" License",
-          "open_issues": 4,
+          "open_issues": 3,
           "pushed_at": "2026-01-05T02:23:10Z",
           "tech_stack": [],
           "install_commands": [
@@ -6055,7 +6015,7 @@
           }
         },
         {
-          "rank": 9,
+          "rank": 7,
           "full_name": "aertslab/scenicplus",
           "short_name": "scenicplus",
           "name": "aertslab/scenicplus",
@@ -6095,7 +6055,7 @@
           }
         },
         {
-          "rank": 10,
+          "rank": 8,
           "full_name": "loosolab/TOBIAS",
           "short_name": "TOBIAS",
           "name": "loosolab/TOBIAS",
@@ -6138,189 +6098,245 @@
             "last_commit": "https://img.shields.io/github/last-commit/loosolab/TOBIAS?style=flat-square",
             "conda": "https://img.shields.io/badge/conda-available-green?style=flat-square&logo=anaconda"
           }
-        }
-      ]
-    },
-    "Workflow Engine": {
-      "total_count": 1,
-      "pipeline_count": 1,
-      "utility_count": 0,
-      "top_20_pipelines": [
+        },
         {
-          "rank": 1,
-          "full_name": "snakemake/snakemake",
-          "short_name": "snakemake",
-          "name": "snakemake/snakemake",
-          "url": "https://github.com/snakemake/snakemake",
-          "description": "This is the development home of the workflow management system Snakemake. For general information, see",
-          "stars": 2702,
-          "weekly_growth": 1,
-          "score": 39.16,
+          "rank": 9,
+          "full_name": "open2c/cooler",
+          "short_name": "cooler",
+          "name": "open2c/cooler",
+          "url": "https://github.com/open2c/cooler",
+          "description": "A cool place to store your Hi-C",
+          "stars": 231,
+          "weekly_growth": 0,
+          "score": 23.91,
           "has_paper": true,
           "has_docker": true,
           "has_conda": true,
-          "sub_label": "",
+          "sub_label": "Format Conversion",
           "topics": [
-            "reproducibility",
-            "snakemake",
-            "workflow-management"
+            "3d-genome",
+            "bioinformatics",
+            "chromatin",
+            "contact-matrix",
+            "cooler",
+            "file-format",
+            "genomics",
+            "hdf5",
+            "hi-c",
+            "ngs",
+            "python",
+            "sparse"
           ],
-          "license": "MIT License",
-          "open_issues": 1252,
-          "pushed_at": "2026-02-05T16:15:24Z",
+          "license": "BSD 3-Clause \"New\" or \"Revised\" License",
+          "open_issues": 50,
+          "pushed_at": "2026-01-28T17:57:31Z",
           "tech_stack": [],
-          "install_commands": [],
-          "preview_images": [],
+          "install_commands": [
+            {
+              "type": "conda",
+              "command": "conda install -c conda-forge -c bioconda cooler"
+            },
+            {
+              "type": "pip",
+              "command": "pip install cooler"
+            }
+          ],
+          "preview_images": [
+            "https://github.com/open2c/cooler/raw/master/docs/cooler_logo.png"
+          ],
           "badges": {
-            "stars": "https://img.shields.io/github/stars/snakemake/snakemake?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/snakemake/snakemake?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/snakemake/snakemake?style=flat-square",
-            "license": "https://img.shields.io/github/license/snakemake/snakemake?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/snakemake/snakemake?style=flat-square",
+            "stars": "https://img.shields.io/github/stars/open2c/cooler?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/open2c/cooler?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/open2c/cooler?style=flat-square",
+            "license": "https://img.shields.io/github/license/open2c/cooler?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/open2c/cooler?style=flat-square",
             "docker": "https://img.shields.io/badge/docker-available-blue?style=flat-square&logo=docker",
             "conda": "https://img.shields.io/badge/conda-available-green?style=flat-square&logo=anaconda"
           }
+        },
+        {
+          "rank": 10,
+          "full_name": "haowenz/chromap",
+          "short_name": "chromap",
+          "name": "haowenz/chromap",
+          "url": "https://github.com/haowenz/chromap",
+          "description": "Fast alignment and preprocessing of chromatin profiles",
+          "stars": 212,
+          "weekly_growth": 0,
+          "score": 23.61,
+          "has_paper": true,
+          "has_docker": false,
+          "has_conda": true,
+          "sub_label": "Alignment",
+          "topics": [
+            "bioinformatics",
+            "chromatin-profiles",
+            "genomics",
+            "sequence-analysis"
+          ],
+          "license": "MIT License",
+          "open_issues": 64,
+          "pushed_at": "2026-01-17T21:20:03Z",
+          "tech_stack": [],
+          "install_commands": [
+            {
+              "type": "conda",
+              "command": "conda install -c conda-forge -c bioconda chromap"
+            },
+            {
+              "type": "git",
+              "command": "git clone https://github.com/haowenz/chromap.git"
+            }
+          ],
+          "preview_images": [],
+          "badges": {
+            "stars": "https://img.shields.io/github/stars/haowenz/chromap?style=flat-square&logo=github",
+            "forks": "https://img.shields.io/github/forks/haowenz/chromap?style=flat-square&logo=github",
+            "issues": "https://img.shields.io/github/issues/haowenz/chromap?style=flat-square",
+            "license": "https://img.shields.io/github/license/haowenz/chromap?style=flat-square",
+            "last_commit": "https://img.shields.io/github/last-commit/haowenz/chromap?style=flat-square",
+            "conda": "https://img.shields.io/badge/conda-available-green?style=flat-square&logo=anaconda"
+          }
         }
-      ],
-      "top_10_utilities": []
+      ]
     }
   },
   "red_black_lists": {
     "fastest_growth": [
       {
         "repo": {
-          "id": 1083590674,
-          "full_name": "francescopace/espectre",
-          "url": "https://github.com/francescopace/espectre",
-          "description": "🛜 ESPectre 👻  - Motion detection system based on Wi-Fi spectre analysis (CSI), with Home Assistant integration.",
-          "category": "Epigenetics",
-          "project_type": "Utility",
-          "has_paper": 0,
-          "has_docker": 0,
-          "has_conda_env": 0,
-          "sub_label": "Alignment",
-          "topics": "[\"csi\", \"diy\", \"esp-32\", \"espectre\", \"home-assistant\", \"motion-detection\", \"wifi\", \"wifi-sensing\"]",
-          "license": "GNU General Public License v3.0",
-          "tech_stack": null,
-          "install_commands": "[]",
-          "preview_images": "[\"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png\", \"https://raw.githubusercontent.com/francescopace/espectre/master/images/home_lab.jpg\", \"https://raw.githubusercontent.com/francescopace/espectre/master/images/espectre-home-assistant.png\"]",
-          "badge_url": "https://img.shields.io/github/stars/francescopace/espectre?style=flat-square&logo=github",
-          "stars": 6315,
-          "forks": 479,
-          "open_issues": 4,
-          "pushed_at": "2026-02-08T18:58:03Z",
-          "weekly_growth": 14,
-          "score": 58.4
-        },
-        "growth": 14
-      },
-      {
-        "repo": {
-          "id": 4339773,
-          "full_name": "samtools/htslib",
-          "url": "https://github.com/samtools/htslib",
-          "description": "C library for high-throughput sequencing data formats",
+          "id": 3666841,
+          "full_name": "samtools/samtools",
+          "url": "https://github.com/samtools/samtools",
+          "description": "Tools (written in C using htslib) for manipulating next-generation sequencing data",
           "category": "Genomics",
           "project_type": "Utility",
           "has_paper": 1,
           "has_docker": 0,
-          "has_conda_env": 0,
+          "has_conda_env": 1,
           "sub_label": "Variant Calling",
-          "topics": "[\"bam\", \"bcf\", \"bioinformatics\", \"cram\", \"htslib\", \"ngs\", \"sam\", \"vcf\"]",
+          "topics": "[]",
           "license": "Other",
           "tech_stack": null,
           "install_commands": "[]",
-          "preview_images": "[\"https://api.cirrus-ci.com/github/samtools/htslib.svg?branch=develop\"]",
-          "badge_url": "https://img.shields.io/github/stars/samtools/htslib?style=flat-square&logo=github",
-          "stars": 906,
-          "forks": 460,
-          "open_issues": 161,
-          "pushed_at": "2026-02-06T17:05:04Z",
-          "weekly_growth": 2,
-          "score": 32.66
+          "preview_images": "[\"https://api.cirrus-ci.com/github/samtools/samtools.svg?branch=develop\"]",
+          "badge_url": "https://img.shields.io/github/stars/samtools/samtools?style=flat-square&logo=github",
+          "stars": 1838,
+          "forks": 608,
+          "open_issues": 198,
+          "pushed_at": "2026-01-29T16:06:49Z",
+          "weekly_growth": 1,
+          "score": 33.11
         },
-        "growth": 2
+        "growth": 1
       },
       {
         "repo": {
-          "id": 6604361,
-          "full_name": "mdtraj/mdtraj",
-          "url": "https://github.com/mdtraj/mdtraj",
-          "description": "An open library for the analysis of molecular dynamics trajectories",
-          "category": "Single-cell",
+          "id": 19802637,
+          "full_name": "tseemann/snippy",
+          "url": "https://github.com/tseemann/snippy",
+          "description": ":scissors: :zap: Rapid haploid variant calling and core genome alignment",
+          "category": "Genomics",
           "project_type": "Utility",
-          "has_paper": 1,
-          "has_docker": 0,
-          "has_conda_env": 0,
-          "sub_label": "Trajectory",
-          "topics": "[\"dihedral-angles\", \"mdtraj\", \"molecular-dynamics\", \"molecular-dynamics-trajectories\", \"pdb\", \"pdb-files\", \"python\", \"rmsd\"]",
-          "license": "GNU Lesser General Public License v2.1",
-          "tech_stack": null,
-          "install_commands": "[]",
-          "preview_images": "[]",
-          "badge_url": "https://img.shields.io/github/stars/mdtraj/mdtraj?style=flat-square&logo=github",
-          "stars": 697,
-          "forks": 291,
-          "open_issues": 87,
-          "pushed_at": "2026-02-04T20:17:45Z",
-          "weekly_growth": 2,
-          "score": 31.75
-        },
-        "growth": 2
-      },
-      {
-        "repo": {
-          "id": 105615409,
-          "full_name": "chanzuckerberg/cellxgene",
-          "url": "https://github.com/chanzuckerberg/cellxgene",
-          "description": "An interactive explorer for single-cell transcriptomics data",
-          "category": "Single-cell",
-          "project_type": "Pipeline",
           "has_paper": 0,
           "has_docker": 0,
-          "has_conda_env": 0,
-          "sub_label": "",
-          "topics": "[\"dataviz\", \"scientific\", \"scrna-seq\", \"transcriptomics\", \"visualization\"]",
-          "license": "MIT License",
+          "has_conda_env": 1,
+          "sub_label": "Alignment",
+          "topics": "[\"bacteria\", \"bioinformatics\", \"fastq-analysis\", \"genomics\", \"haploid\", \"indel-discovery\", \"snps\", \"variant-calling\", \"vcf\"]",
+          "license": "GNU General Public License v2.0",
           "tech_stack": null,
-          "install_commands": "[{\"type\": \"pip\", \"command\": \"pip install cellxgene\"}]",
-          "preview_images": "[\"https://raw.githubusercontent.com/chanzuckerberg/cellxgene/master/docs/cellxgene-logo.png\", \"https://github.com/chanzuckerberg/cellxgene/raw/main/docs/images/crossfilter.gif\", \"https://github.com/chanzuckerberg/cellxgene/raw/main/docs/images/category-breakdown.gif\"]",
-          "badge_url": "https://img.shields.io/github/stars/chanzuckerberg/cellxgene?style=flat-square&logo=github",
-          "stars": 751,
-          "forks": 145,
-          "open_issues": 137,
-          "pushed_at": "2026-02-08T02:20:00Z",
-          "weekly_growth": 2,
-          "score": 18.38
+          "install_commands": "[{\"type\": \"conda\", \"command\": \"conda install -c conda-forge -c bioconda snippy\"}]",
+          "preview_images": "[]",
+          "badge_url": "https://img.shields.io/github/stars/tseemann/snippy?style=flat-square&logo=github",
+          "stars": 565,
+          "forks": 118,
+          "open_issues": 219,
+          "pushed_at": "2025-12-12T11:54:54Z",
+          "weekly_growth": 1,
+          "score": 24.02
         },
-        "growth": 2
+        "growth": 1
       },
       {
         "repo": {
-          "id": 185860172,
-          "full_name": "chhylp123/hifiasm",
-          "url": "https://github.com/chhylp123/hifiasm",
-          "description": "Hifiasm: a haplotype-resolved assembler for accurate Hifi reads ",
+          "id": 33544197,
+          "full_name": "Gabaldonlab/redundans",
+          "url": "https://github.com/Gabaldonlab/redundans",
+          "description": "Redundans is a pipeline that assists an assembly of heterozygous/polymorphic genomes.",
           "category": "Genomics",
           "project_type": "Utility",
           "has_paper": 1,
+          "has_docker": 1,
+          "has_conda_env": 1,
+          "sub_label": "Alignment",
+          "topics": "[\"assembled-contigs\", \"assembly\", \"bioinformatics\", \"closing\", \"contigs\", \"docker-image\", \"fasta\", \"gap\", \"genome-assembly\", \"genomics\", \"heterozygous\", \"mate-pairs\", \"paired-end\", \"pipeline\", \"polymorphic\", \"python\", \"scaffolding\"]",
+          "license": "GNU General Public License v3.0",
+          "tech_stack": null,
+          "install_commands": "[{\"type\": \"conda\", \"command\": \"conda install -c bioconda redundans\"}, {\"type\": \"pip\", \"command\": \"pip install -U\"}, {\"type\": \"docker\", \"command\": \"docker pull cgenomics/redundans:latest\"}]",
+          "preview_images": "[\"https://raw.githubusercontent.com/Gabaldonlab/redundans/master/docs/redundans_flowchart.png\"]",
+          "badge_url": "https://img.shields.io/github/stars/Gabaldonlab/redundans?style=flat-square&logo=github",
+          "stars": 169,
+          "forks": 21,
+          "open_issues": 0,
+          "pushed_at": "2025-04-14T10:57:54Z",
+          "weekly_growth": 1,
+          "score": 24.82
+        },
+        "growth": 1
+      },
+      {
+        "repo": {
+          "id": 38241461,
+          "full_name": "galaxyproject/training-material",
+          "url": "https://github.com/galaxyproject/training-material",
+          "description": "A collection of Galaxy-related training material",
+          "category": "Metagenomics",
+          "project_type": "Utility",
+          "has_paper": 0,
           "has_docker": 0,
           "has_conda_env": 0,
           "sub_label": "Alignment",
-          "topics": "[\"bioinformatics\", \"denovo-assembly\", \"genomics\", \"hifi-read\", \"pacbio\"]",
+          "topics": "[\"chip-seq\", \"hacktoberfest\", \"materials\", \"metagenomics\", \"ngs\", \"proteomics\", \"rnaseq\", \"training\", \"tutorial\", \"usegalaxy\"]",
           "license": "MIT License",
           "tech_stack": null,
-          "install_commands": "[{\"type\": \"git\", \"command\": \"git clone https://github.com/chhylp123/hifiasm\"}]",
-          "preview_images": "[]",
-          "badge_url": "https://img.shields.io/github/stars/chhylp123/hifiasm?style=flat-square&logo=github",
-          "stars": 738,
-          "forks": 104,
-          "open_issues": 574,
-          "pushed_at": "2025-03-18T18:42:21Z",
-          "weekly_growth": 2,
-          "score": 31.94
+          "install_commands": "[]",
+          "preview_images": "[\"https://raw.githubusercontent.com/galaxyproject/training-material/master/shared/images/GTNLogo1000.png\"]",
+          "badge_url": "https://img.shields.io/github/stars/galaxyproject/training-material?style=flat-square&logo=github",
+          "stars": 346,
+          "forks": 1043,
+          "open_issues": 387,
+          "pushed_at": "2026-02-09T11:05:37Z",
+          "weekly_growth": 1,
+          "score": 22.31
         },
-        "growth": 2
+        "growth": 1
+      },
+      {
+        "repo": {
+          "id": 53329678,
+          "full_name": "sequana/sequana",
+          "url": "https://github.com/sequana/sequana",
+          "description": "Sequana: a set of Snakemake NGS pipelines",
+          "category": "Metagenomics",
+          "project_type": "Pipeline",
+          "has_paper": 1,
+          "has_docker": 1,
+          "has_conda_env": 1,
+          "sub_label": "",
+          "topics": "[\"coverage\", \"de-novo\", \"ngs\", \"pacbio\", \"rna-seq\", \"sequanix\", \"snakemake\", \"taxonomy\", \"variant-calling\"]",
+          "license": "BSD 3-Clause \"New\" or \"Revised\" License",
+          "tech_stack": null,
+          "install_commands": "[]",
+          "preview_images": "[]",
+          "badge_url": "https://img.shields.io/github/stars/sequana/sequana?style=flat-square&logo=github",
+          "stars": 152,
+          "forks": 27,
+          "open_issues": 6,
+          "pushed_at": "2026-01-22T11:55:15Z",
+          "weekly_growth": 1,
+          "score": 32.91
+        },
+        "growth": 1
       }
     ],
     "maintenance_warning": [
@@ -6408,7 +6424,7 @@
           "score": 24.46
         },
         "issues": 284,
-        "inactive_days": 227,
+        "inactive_days": 228,
         "stars": 271
       },
       {
@@ -6477,49 +6493,193 @@
       "type": "Pipeline",
       "repo": {
         "rank": 3,
-        "full_name": "nf-core/raredisease",
-        "short_name": "raredisease",
-        "name": "nf-core/raredisease",
-        "url": "https://github.com/nf-core/raredisease",
-        "description": "Call and score variants from WGS/WES of rare disease patients.",
-        "stars": 113,
+        "full_name": "sequana/sequana",
+        "short_name": "sequana",
+        "name": "sequana/sequana",
+        "url": "https://github.com/sequana/sequana",
+        "description": "Sequana: a set of Snakemake NGS pipelines",
+        "stars": 152,
         "weekly_growth": 1,
-        "score": 32.27,
+        "score": 32.91,
         "has_paper": true,
         "has_docker": true,
-        "has_conda": false,
+        "has_conda": true,
         "sub_label": "",
         "topics": [
-          "diagnostics",
-          "nextflow",
-          "nf-core",
-          "pipeline",
-          "rare-disease",
-          "snv",
-          "structural-variants",
-          "variant-annotation",
-          "variant-calling",
-          "wes",
-          "wgs",
-          "workflow"
+          "coverage",
+          "de-novo",
+          "ngs",
+          "pacbio",
+          "rna-seq",
+          "sequanix",
+          "snakemake",
+          "taxonomy",
+          "variant-calling"
         ],
-        "license": "MIT License",
-        "open_issues": 54,
-        "pushed_at": "2026-02-07T22:04:40Z",
+        "license": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "open_issues": 6,
+        "pushed_at": "2026-01-22T11:55:15Z",
+        "tech_stack": [],
+        "install_commands": [],
+        "preview_images": [],
+        "badges": {
+          "stars": "https://img.shields.io/github/stars/sequana/sequana?style=flat-square&logo=github",
+          "forks": "https://img.shields.io/github/forks/sequana/sequana?style=flat-square&logo=github",
+          "issues": "https://img.shields.io/github/issues/sequana/sequana?style=flat-square",
+          "license": "https://img.shields.io/github/license/sequana/sequana?style=flat-square",
+          "last_commit": "https://img.shields.io/github/last-commit/sequana/sequana?style=flat-square",
+          "docker": "https://img.shields.io/badge/docker-available-blue?style=flat-square&logo=docker",
+          "conda": "https://img.shields.io/badge/conda-available-green?style=flat-square&logo=anaconda"
+        }
+      }
+    },
+    {
+      "category": "Genomics",
+      "type": "Utility",
+      "repo": {
+        "rank": 1,
+        "full_name": "samtools/samtools",
+        "short_name": "samtools",
+        "name": "samtools/samtools",
+        "url": "https://github.com/samtools/samtools",
+        "description": "Tools (written in C using htslib) for manipulating next-generation sequencing data",
+        "stars": 1838,
+        "weekly_growth": 1,
+        "score": 33.11,
+        "has_paper": true,
+        "has_docker": false,
+        "has_conda": true,
+        "sub_label": "Variant Calling",
+        "topics": [],
+        "license": "Other",
+        "open_issues": 198,
+        "pushed_at": "2026-01-29T16:06:49Z",
         "tech_stack": [],
         "install_commands": [],
         "preview_images": [
-          "https://raw.githubusercontent.com/nf-core/raredisease/master/docs/images/nf-core-raredisease_logo_light.png",
-          "https://raw.githubusercontent.com/nf-core/raredisease/master/docs/images/nf-core-raredisease_logo_dark.png",
-          "https://raw.githubusercontent.com/nf-core/raredisease/master/docs/images/raredisease_metromap_light.png"
+          "https://api.cirrus-ci.com/github/samtools/samtools.svg?branch=develop"
         ],
         "badges": {
-          "stars": "https://img.shields.io/github/stars/nf-core/raredisease?style=flat-square&logo=github",
-          "forks": "https://img.shields.io/github/forks/nf-core/raredisease?style=flat-square&logo=github",
-          "issues": "https://img.shields.io/github/issues/nf-core/raredisease?style=flat-square",
-          "license": "https://img.shields.io/github/license/nf-core/raredisease?style=flat-square",
-          "last_commit": "https://img.shields.io/github/last-commit/nf-core/raredisease?style=flat-square",
-          "docker": "https://img.shields.io/badge/docker-available-blue?style=flat-square&logo=docker"
+          "stars": "https://img.shields.io/github/stars/samtools/samtools?style=flat-square&logo=github",
+          "forks": "https://img.shields.io/github/forks/samtools/samtools?style=flat-square&logo=github",
+          "issues": "https://img.shields.io/github/issues/samtools/samtools?style=flat-square",
+          "license": "https://img.shields.io/github/license/samtools/samtools?style=flat-square",
+          "last_commit": "https://img.shields.io/github/last-commit/samtools/samtools?style=flat-square",
+          "conda": "https://img.shields.io/badge/conda-available-green?style=flat-square&logo=anaconda"
+        }
+      }
+    },
+    {
+      "category": "Genomics",
+      "type": "Utility",
+      "repo": {
+        "rank": 2,
+        "full_name": "pachterlab/gget",
+        "short_name": "gget",
+        "name": "pachterlab/gget",
+        "url": "https://github.com/pachterlab/gget",
+        "description": "🧬 gget enables efficient querying of genomic reference databases",
+        "stars": 1096,
+        "weekly_growth": 1,
+        "score": 31.32,
+        "has_paper": true,
+        "has_docker": false,
+        "has_conda": true,
+        "sub_label": "Alignment",
+        "topics": [
+          "alphafold",
+          "alphafold2",
+          "archs4",
+          "blast",
+          "databases",
+          "enrichment-analysis",
+          "enrichr",
+          "ensembl",
+          "genomics",
+          "gget",
+          "ncbi",
+          "proteomics",
+          "reference",
+          "rna-seq",
+          "transcriptomics",
+          "uniprot"
+        ],
+        "license": "BSD 2-Clause \"Simplified\" License",
+        "open_issues": 22,
+        "pushed_at": "2026-02-09T15:23:30Z",
+        "tech_stack": [],
+        "install_commands": [
+          {
+            "type": "pip",
+            "command": "pip install gget"
+          },
+          {
+            "type": "pip",
+            "command": "pip install --upgrade"
+          },
+          {
+            "type": "pip",
+            "command": "pip install ."
+          },
+          {
+            "type": "git",
+            "command": "git clone https://github.com/pachterlab/gget.git"
+          }
+        ],
+        "preview_images": [
+          "https://raw.githubusercontent.com/pachterlab/gget/main/figures/gget_overview.png?raw=true"
+        ],
+        "badges": {
+          "stars": "https://img.shields.io/github/stars/pachterlab/gget?style=flat-square&logo=github",
+          "forks": "https://img.shields.io/github/forks/pachterlab/gget?style=flat-square&logo=github",
+          "issues": "https://img.shields.io/github/issues/pachterlab/gget?style=flat-square",
+          "license": "https://img.shields.io/github/license/pachterlab/gget?style=flat-square",
+          "last_commit": "https://img.shields.io/github/last-commit/pachterlab/gget?style=flat-square",
+          "conda": "https://img.shields.io/badge/conda-available-green?style=flat-square&logo=anaconda"
+        }
+      }
+    },
+    {
+      "category": "Genomics",
+      "type": "Utility",
+      "repo": {
+        "rank": 3,
+        "full_name": "lh3/bwa",
+        "short_name": "bwa",
+        "name": "lh3/bwa",
+        "url": "https://github.com/lh3/bwa",
+        "description": "Burrow-Wheeler Aligner for short-read alignment (see minimap2 for long-read alignment)",
+        "stars": 1701,
+        "weekly_growth": 0,
+        "score": 30.85,
+        "has_paper": true,
+        "has_docker": false,
+        "has_conda": true,
+        "sub_label": "Alignment",
+        "topics": [
+          "bioinformatics",
+          "fm-index",
+          "genomics",
+          "sequence-alignment"
+        ],
+        "license": "GNU General Public License v3.0",
+        "open_issues": 97,
+        "pushed_at": "2025-03-22T19:05:09Z",
+        "tech_stack": [],
+        "install_commands": [
+          {
+            "type": "git",
+            "command": "git clone https://github.com/lh3/bwa.git"
+          }
+        ],
+        "preview_images": [],
+        "badges": {
+          "stars": "https://img.shields.io/github/stars/lh3/bwa?style=flat-square&logo=github",
+          "forks": "https://img.shields.io/github/forks/lh3/bwa?style=flat-square&logo=github",
+          "issues": "https://img.shields.io/github/issues/lh3/bwa?style=flat-square",
+          "license": "https://img.shields.io/github/license/lh3/bwa?style=flat-square",
+          "last_commit": "https://img.shields.io/github/last-commit/lh3/bwa?style=flat-square",
+          "conda": "https://img.shields.io/badge/conda-available-green?style=flat-square&logo=anaconda"
         }
       }
     },
@@ -6527,46 +6687,62 @@
       "category": "Transcriptomics",
       "type": "Utility",
       "repo": {
-        "rank": 1,
-        "full_name": "jinworks/CellChat",
-        "short_name": "CellChat",
-        "name": "jinworks/CellChat",
-        "url": "https://github.com/jinworks/CellChat",
-        "description": "R toolkit for inference, visualization and analysis of cell-cell communication from single-cell and spatially resolved transcriptomics",
-        "stars": 540,
-        "weekly_growth": 1,
-        "score": 28.86,
+        "rank": 2,
+        "full_name": "scverse/PyDESeq2",
+        "short_name": "PyDESeq2",
+        "name": "scverse/PyDESeq2",
+        "url": "https://github.com/scverse/PyDESeq2",
+        "description": "A Python implementation of the DESeq2 pipeline for bulk RNA-seq DEA.",
+        "stars": 728,
+        "weekly_growth": 0,
+        "score": 27.9,
         "has_paper": true,
         "has_docker": false,
-        "has_conda": false,
+        "has_conda": true,
         "sub_label": "Alignment",
         "topics": [
-          "cell-cell-communication",
-          "cell-cell-interaction",
-          "microenvironment",
-          "single-cell-analysis",
-          "spatial-transcriptomics"
+          "bioinformatics",
+          "differential-expression",
+          "python",
+          "rna-seq",
+          "transcriptomics"
         ],
-        "license": "GNU General Public License v3.0",
-        "open_issues": 351,
-        "pushed_at": "2025-10-07T00:08:42Z",
+        "license": "MIT License",
+        "open_issues": 49,
+        "pushed_at": "2026-01-26T17:50:11Z",
         "tech_stack": [],
         "install_commands": [
           {
+            "type": "conda",
+            "command": "conda install pip\npip install pydeseq2"
+          },
+          {
+            "type": "conda",
+            "command": "conda install -c bioconda pydeseq2"
+          },
+          {
             "type": "pip",
-            "command": "pip install umap-learn"
+            "command": "pip install pydeseq2"
+          },
+          {
+            "type": "pip",
+            "command": "pip install pydeseq2"
+          },
+          {
+            "type": "git",
+            "command": "git clone https://github.com/owkin/PyDESeq2.git"
           }
         ],
         "preview_images": [
-          "https://raw.githubusercontent.com/jinworks/CellChat/main/CellChat_Logo.png",
-          "https://clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=n&d=42WqeykSXznN_NSaBlpf6CtSXQxhqmIs6QusUsguFdY"
+          "https://raw.githubusercontent.com/scverse/PyDESeq2/master/docs/source/_static/pydeseq2_logo_green.png"
         ],
         "badges": {
-          "stars": "https://img.shields.io/github/stars/jinworks/CellChat?style=flat-square&logo=github",
-          "forks": "https://img.shields.io/github/forks/jinworks/CellChat?style=flat-square&logo=github",
-          "issues": "https://img.shields.io/github/issues/jinworks/CellChat?style=flat-square",
-          "license": "https://img.shields.io/github/license/jinworks/CellChat?style=flat-square",
-          "last_commit": "https://img.shields.io/github/last-commit/jinworks/CellChat?style=flat-square"
+          "stars": "https://img.shields.io/github/stars/scverse/PyDESeq2?style=flat-square&logo=github",
+          "forks": "https://img.shields.io/github/forks/scverse/PyDESeq2?style=flat-square&logo=github",
+          "issues": "https://img.shields.io/github/issues/scverse/PyDESeq2?style=flat-square",
+          "license": "https://img.shields.io/github/license/scverse/PyDESeq2?style=flat-square",
+          "last_commit": "https://img.shields.io/github/last-commit/scverse/PyDESeq2?style=flat-square",
+          "conda": "https://img.shields.io/badge/conda-available-green?style=flat-square&logo=anaconda"
         }
       }
     },
@@ -6575,36 +6751,59 @@
       "type": "Utility",
       "repo": {
         "rank": 3,
-        "full_name": "agitter/single-cell-pseudotime",
-        "short_name": "single-cell-pseudotime",
-        "name": "agitter/single-cell-pseudotime",
-        "url": "https://github.com/agitter/single-cell-pseudotime",
-        "description": "An overview of algorithms for estimating pseudotime in single-cell RNA-seq data",
-        "stars": 438,
-        "weekly_growth": 1,
-        "score": 28.13,
+        "full_name": "cafferychen777/mLLMCelltype",
+        "short_name": "mLLMCelltype",
+        "name": "cafferychen777/mLLMCelltype",
+        "url": "https://github.com/cafferychen777/mLLMCelltype",
+        "description": "Cell type annotation for single-cell RNA-seq using multi-LLM consensus",
+        "stars": 631,
+        "weekly_growth": 0,
+        "score": 27.4,
         "has_paper": true,
         "has_docker": false,
         "has_conda": false,
-        "sub_label": "Trajectory",
+        "sub_label": "Alignment",
         "topics": [
           "bioinformatics",
-          "pseudotime-algorithms",
-          "rna-seq",
+          "cell-type-annotation",
+          "computational-biology",
+          "consensus-algorithm",
+          "large-language-models",
+          "llm",
+          "scanpy",
+          "scrna",
+          "scrnaseq-analysis",
+          "seurat",
           "single-cell"
         ],
-        "license": "Creative Commons Attribution 4.0 International",
-        "open_issues": 1,
-        "pushed_at": "2026-02-03T14:46:50Z",
+        "license": "MIT License",
+        "open_issues": 9,
+        "pushed_at": "2026-02-09T06:41:06Z",
         "tech_stack": [],
-        "install_commands": [],
-        "preview_images": [],
+        "install_commands": [
+          {
+            "type": "pip",
+            "command": "pip install mllmcelltype"
+          },
+          {
+            "type": "pip",
+            "command": "pip install git"
+          },
+          {
+            "type": "pip",
+            "command": "pip install google-genai"
+          }
+        ],
+        "preview_images": [
+          "https://raw.githubusercontent.com/cafferychen777/mLLMCelltype/master/assets/mLLMCelltype_logo.png",
+          "https://raw.githubusercontent.com/cafferychen777/mLLMCelltype/master/images/mLLMCelltype_visualization.png"
+        ],
         "badges": {
-          "stars": "https://img.shields.io/github/stars/agitter/single-cell-pseudotime?style=flat-square&logo=github",
-          "forks": "https://img.shields.io/github/forks/agitter/single-cell-pseudotime?style=flat-square&logo=github",
-          "issues": "https://img.shields.io/github/issues/agitter/single-cell-pseudotime?style=flat-square",
-          "license": "https://img.shields.io/github/license/agitter/single-cell-pseudotime?style=flat-square",
-          "last_commit": "https://img.shields.io/github/last-commit/agitter/single-cell-pseudotime?style=flat-square"
+          "stars": "https://img.shields.io/github/stars/cafferychen777/mLLMCelltype?style=flat-square&logo=github",
+          "forks": "https://img.shields.io/github/forks/cafferychen777/mLLMCelltype?style=flat-square&logo=github",
+          "issues": "https://img.shields.io/github/issues/cafferychen777/mLLMCelltype?style=flat-square",
+          "license": "https://img.shields.io/github/license/cafferychen777/mLLMCelltype?style=flat-square",
+          "last_commit": "https://img.shields.io/github/last-commit/cafferychen777/mLLMCelltype?style=flat-square"
         }
       }
     },
@@ -6613,93 +6812,54 @@
       "type": "Utility",
       "repo": {
         "rank": 3,
-        "full_name": "jinworks/CellChat",
-        "short_name": "CellChat",
-        "name": "jinworks/CellChat",
-        "url": "https://github.com/jinworks/CellChat",
-        "description": "R toolkit for inference, visualization and analysis of cell-cell communication from single-cell and spatially resolved transcriptomics",
-        "stars": 540,
+        "full_name": "theislab/cellrank",
+        "short_name": "cellrank",
+        "name": "theislab/cellrank",
+        "url": "https://github.com/theislab/cellrank",
+        "description": "CellRank: dynamics from multi-view single-cell data",
+        "stars": 424,
         "weekly_growth": 1,
-        "score": 28.86,
+        "score": 28.02,
         "has_paper": true,
         "has_docker": false,
         "has_conda": false,
         "sub_label": "Alignment",
         "topics": [
-          "cell-cell-communication",
-          "cell-cell-interaction",
-          "microenvironment",
-          "single-cell-analysis",
-          "spatial-transcriptomics"
+          "bioinformatics",
+          "cell-fate-determination",
+          "cell-fate-transitions",
+          "data-science",
+          "fuzzy-clustering-analyses",
+          "genetics",
+          "machine-learning",
+          "manifold-learning",
+          "markov-chains",
+          "rna-velocity",
+          "single-cell-genomics",
+          "single-cell-rna-seq",
+          "trajectory-generation"
         ],
-        "license": "GNU General Public License v3.0",
-        "open_issues": 351,
-        "pushed_at": "2025-10-07T00:08:42Z",
-        "tech_stack": [],
-        "install_commands": [
-          {
-            "type": "pip",
-            "command": "pip install umap-learn"
-          }
-        ],
-        "preview_images": [
-          "https://raw.githubusercontent.com/jinworks/CellChat/main/CellChat_Logo.png",
-          "https://clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=n&d=42WqeykSXznN_NSaBlpf6CtSXQxhqmIs6QusUsguFdY"
-        ],
-        "badges": {
-          "stars": "https://img.shields.io/github/stars/jinworks/CellChat?style=flat-square&logo=github",
-          "forks": "https://img.shields.io/github/forks/jinworks/CellChat?style=flat-square&logo=github",
-          "issues": "https://img.shields.io/github/issues/jinworks/CellChat?style=flat-square",
-          "license": "https://img.shields.io/github/license/jinworks/CellChat?style=flat-square",
-          "last_commit": "https://img.shields.io/github/last-commit/jinworks/CellChat?style=flat-square"
-        }
-      }
-    },
-    {
-      "category": "Workflow Engine",
-      "type": "Pipeline",
-      "repo": {
-        "rank": 1,
-        "full_name": "snakemake/snakemake",
-        "short_name": "snakemake",
-        "name": "snakemake/snakemake",
-        "url": "https://github.com/snakemake/snakemake",
-        "description": "This is the development home of the workflow management system Snakemake. For general information, see",
-        "stars": 2702,
-        "weekly_growth": 1,
-        "score": 39.16,
-        "has_paper": true,
-        "has_docker": true,
-        "has_conda": true,
-        "sub_label": "",
-        "topics": [
-          "reproducibility",
-          "snakemake",
-          "workflow-management"
-        ],
-        "license": "MIT License",
-        "open_issues": 1252,
-        "pushed_at": "2026-02-05T16:15:24Z",
+        "license": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "open_issues": 27,
+        "pushed_at": "2026-02-08T17:59:12Z",
         "tech_stack": [],
         "install_commands": [],
         "preview_images": [],
         "badges": {
-          "stars": "https://img.shields.io/github/stars/snakemake/snakemake?style=flat-square&logo=github",
-          "forks": "https://img.shields.io/github/forks/snakemake/snakemake?style=flat-square&logo=github",
-          "issues": "https://img.shields.io/github/issues/snakemake/snakemake?style=flat-square",
-          "license": "https://img.shields.io/github/license/snakemake/snakemake?style=flat-square",
-          "last_commit": "https://img.shields.io/github/last-commit/snakemake/snakemake?style=flat-square",
-          "docker": "https://img.shields.io/badge/docker-available-blue?style=flat-square&logo=docker",
-          "conda": "https://img.shields.io/badge/conda-available-green?style=flat-square&logo=anaconda"
+          "stars": "https://img.shields.io/github/stars/theislab/cellrank?style=flat-square&logo=github",
+          "forks": "https://img.shields.io/github/forks/theislab/cellrank?style=flat-square&logo=github",
+          "issues": "https://img.shields.io/github/issues/theislab/cellrank?style=flat-square",
+          "license": "https://img.shields.io/github/license/theislab/cellrank?style=flat-square",
+          "last_commit": "https://img.shields.io/github/last-commit/theislab/cellrank?style=flat-square"
         }
       }
     }
   ],
   "summary": {
-    "total_pipelines": 100,
-    "total_utilities": 563,
-    "with_docker": 172,
+    "total_pipelines": 99,
+    "total_utilities": 558,
+    "with_docker": 168,
     "with_conda": 248,
-    "paper_linked": 502
+    "paper_linked": 501
   }
 }
