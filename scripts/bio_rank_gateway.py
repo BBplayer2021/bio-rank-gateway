@@ -64,6 +64,16 @@ KEYWORDS = {
         "ATAC-seq", "ChIP-seq", "DNA Methylation", "Hi-C", "Chromatin",
         "Cut&Tag", "CUT&RUN", "bisulfite", "WGBS", "peak calling",
         "MACS2", "Homer"
+    ],
+    "Proteomics": [
+        "proteomics", "mass-spectrometry", "maxquant", "proteowizard",
+        "peptide-identification", "mass spectrometry", "LC-MS", "tandem mass",
+        "protein identification", "label-free quantification"
+    ],
+    "Metabolomics": [
+        "metabolomics", "lipidomics", "metabolic-profiling", "xcms",
+        "metabolic profiling", "metabolite", "GC-MS", "NMR metabolomics",
+        "untargeted metabolomics", "targeted metabolomics"
     ]
 }
 
@@ -88,7 +98,9 @@ UTILITY_LABELS = {
     "Quantification": ["salmon", "kallisto", "rsem", "count", "tpm", "fpkm"],
     "Fusion Detection": ["fusion", "arriba", "star-fusion", "fusioncatcher"],
     "CNV Analysis": ["cnv", "copy number", "infercnv", "numbat"],
-    "Cell Communication": ["ligand", "receptor", "nichenet", "cellchat", "communication"]
+    "Cell Communication": ["ligand", "receptor", "nichenet", "cellchat", "communication"],
+    "Mass Spectrometry": ["maxquant", "mass spec", "proteowizard", "msconvert", "openms"],
+    "Metabolite Analysis": ["xcms", "mzmine", "metaboanalyst", "lipidomics", "metabolite"]
 }
 
 # 排除关键词
@@ -101,6 +113,22 @@ NON_BIO_BLACKLIST = [
     "web framework", "frontend", "backend", "react", "vue", "angular",
     "game engine", "blockchain", "cryptocurrency", "machine learning platform",
     "deep learning framework", "chatbot", "llm", "large language model"
+]
+
+# 通用技术词（仅含这些词且不含组学词时强制排除）
+GENERIC_TECH_TERMS = [
+    "runtime", "edge-computing", "edge computing", "wasm", "webassembly",
+    "deployment", "container", "docker", "devops", "ci/cd", "monitoring",
+    "load balancing", "api gateway", "service mesh", "sidecar", "proxy",
+    "cncf", "cloud-native", "cloud native", "iot", "mqtt", "grpc"
+]
+
+# 组学核心词（用于判断项目是否有生信相关性）
+OMICS_CORE_TERMS = [
+    "genomics", "transcriptomics", "proteomics", "metabolomics", "metagenomics",
+    "epigenetics", "bioinformatics", "sequencing", "genome", "gene", "rna", "dna",
+    "protein", "peptide", "metabolite", "mass-spectrometry", "single-cell",
+    "ngs", "omics", "phylogenetic", "microbiome", "variant", "alignment"
 ]
 
 # 生信安全词（包含这些词的项目不会被黑名单排除）
@@ -211,6 +239,12 @@ def is_non_bio_project(repo: dict) -> bool:
     has_bio_term = any(term in full_text for term in BIO_SAFELIST)
     if has_bio_term:
         return False  # 包含生信词汇，不排除
+    
+    # 强化过滤：仅含通用技术词且完全不含组学核心词 -> 强制排除
+    has_generic = any(term in full_text or term in full_name for term in GENERIC_TECH_TERMS)
+    has_omics = any(term in full_text for term in OMICS_CORE_TERMS)
+    if has_generic and not has_omics:
+        return True
     
     # 检查仓库名是否直接命中黑名单
     has_name_blacklist = any(term in full_name for term in NON_BIO_BLACKLIST)
@@ -787,6 +821,16 @@ def classify_category(repo: dict, search_category: str) -> str:
                                        "cut&tag", "bisulfite", "epigenom"]):
         matched_categories.append("Epigenetics")
     
+    if any(kw in full_text for kw in ["proteomics", "mass-spectrometry", "mass spectrometry",
+                                       "maxquant", "proteowizard", "peptide", "lc-ms",
+                                       "tandem mass", "label-free quantification"]):
+        matched_categories.append("Proteomics")
+    
+    if any(kw in full_text for kw in ["metabolomics", "lipidomics", "metabolic-profiling",
+                                       "metabolic profiling", "xcms", "metabolite",
+                                       "gc-ms", "nmr metabolomics", "untargeted metabolomics"]):
+        matched_categories.append("Metabolomics")
+    
     if any(kw in full_text for kw in ["rna-seq", "rnaseq", "transcript", "differential expression",
                                        "deseq", "edger", "kallisto", "salmon"]):
         matched_categories.append("Transcriptomics")
@@ -817,6 +861,16 @@ def get_multi_categories(repo: dict) -> list:
     if any(kw in full_text for kw in ["atac-seq", "chip-seq", "methylat", "hi-c", "chromatin",
                                        "cut&tag", "bisulfite", "epigenom"]):
         matched_categories.append("Epigenetics")
+    
+    if any(kw in full_text for kw in ["proteomics", "mass-spectrometry", "mass spectrometry",
+                                       "maxquant", "proteowizard", "peptide", "lc-ms",
+                                       "tandem mass", "label-free quantification"]):
+        matched_categories.append("Proteomics")
+    
+    if any(kw in full_text for kw in ["metabolomics", "lipidomics", "metabolic-profiling",
+                                       "metabolic profiling", "xcms", "metabolite",
+                                       "gc-ms", "nmr metabolomics", "untargeted metabolomics"]):
+        matched_categories.append("Metabolomics")
     
     if any(kw in full_text for kw in ["rna-seq", "rnaseq", "transcript", "differential expression",
                                        "deseq", "edger", "kallisto", "salmon"]):
@@ -902,8 +956,9 @@ def depth_search(quick_mode: bool = False):
     max_pipelines_per_category = 20
     
     bio_terms = ["bioinformatics", "genomics", "transcriptomics", "metagenomics", 
-                 "epigenetics", "sequencing", "alignment", "assembly", "variant", 
-                 "expression", "analysis", "pipeline", "workflow"]
+                 "epigenetics", "proteomics", "metabolomics", "sequencing", "alignment",
+                 "assembly", "variant", "expression", "analysis", "pipeline", "workflow",
+                 "mass-spectrometry", "peptide", "metabolite", "lipidomics"]
     
     for category, keywords in keywords_to_search.items():
         log(f"\n[Category] {category}")
@@ -1021,7 +1076,7 @@ def generate_ranking_report():
             )
     
     # 按类别和类型分组（包含 Workflow Engine 独立分类）
-    categories = ["Genomics", "Transcriptomics", "Metagenomics", "Single-cell", "Epigenetics"]
+    categories = ["Genomics", "Transcriptomics", "Metagenomics", "Single-cell", "Epigenetics", "Proteomics", "Metabolomics"]
     ranking = {}
     
     for cat in categories:
