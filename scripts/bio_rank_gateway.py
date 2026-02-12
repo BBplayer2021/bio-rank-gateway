@@ -68,12 +68,16 @@ KEYWORDS = {
     "Proteomics": [
         "proteomics", "mass-spectrometry", "maxquant", "proteowizard",
         "peptide-identification", "mass spectrometry", "LC-MS", "tandem mass",
-        "protein identification", "label-free quantification"
+        "protein identification", "label-free quantification",
+        "TMT", "iTRAQ", "DIA", "DDA", "SWATH", "mzIdentML", "mzML",
+        "OpenMS", "Comet", "MSFragger", "Percolator", "spectral library"
     ],
     "Metabolomics": [
         "metabolomics", "lipidomics", "metabolic-profiling", "xcms",
         "metabolic profiling", "metabolite", "GC-MS", "NMR metabolomics",
-        "untargeted metabolomics", "targeted metabolomics"
+        "untargeted metabolomics", "targeted metabolomics",
+        "MZmine", "MetaboAnalyst", "mzML", "HMDB", "KEGG pathway",
+        "MS-DIAL", "SIRIUS", "GNPS", "molecular networking", "metabolic flux"
     ]
 }
 
@@ -115,20 +119,75 @@ NON_BIO_BLACKLIST = [
     "deep learning framework", "chatbot", "llm", "large language model"
 ]
 
-# 通用技术词（仅含这些词且不含组学词时强制排除）
-GENERIC_TECH_TERMS = [
-    "runtime", "edge-computing", "edge computing", "wasm", "webassembly",
-    "deployment", "container", "docker", "devops", "ci/cd", "monitoring",
-    "load balancing", "api gateway", "service mesh", "sidecar", "proxy",
-    "cncf", "cloud-native", "cloud native", "iot", "mqtt", "grpc"
-]
+# ============================================================
+# 权重评分机制：Bio-Score / Tech-Score
+# ============================================================
 
-# 组学核心词（用于判断项目是否有生信相关性）
+# 正向词 (Bio-Score): 每命中一个 +10 分
+BIO_SCORE_TERMS = {
+    # 高权重 (15分) - 极高特异性的生信术语
+    "alignment": 15, "vcf": 15, "fastq": 15, "variant calling": 15,
+    "haplotype": 15, "pangenome": 15, "phylogenetic": 15, "bioconda": 15,
+    "metagenomics": 15, "scRNA-seq": 12, "single-cell": 12,
+    "wgs": 15, "wes": 15, "chip-seq": 15, "atac-seq": 15,
+    "proteomics": 15, "metabolomics": 15, "lipidomics": 15,
+    "mass-spectrometry": 15, "mass spectrometry": 15,
+    "maxquant": 15, "proteowizard": 15, "peptide": 12,
+    "xcms": 15, "mzidentml": 15, "tmt": 12, "dia": 10, "dda": 10,
+    # 中权重 (10分) - 常见生信词汇
+    "bioinformatics": 10, "genomics": 10, "transcriptomics": 10,
+    "epigenetics": 10, "sequencing": 10, "genome": 10, "gene expression": 10,
+    "rna-seq": 10, "dna": 10, "rna": 10, "ngs": 10,
+    "bisulfite": 10, "methylation": 10, "microbiome": 10,
+    "biomarker": 10, "omics": 10, "bam": 10,
+    "protein identification": 10, "label-free quantification": 10,
+    "lc-ms": 10, "gc-ms": 10, "tandem mass": 10,
+    "metabolite": 10, "metabolic profiling": 10,
+    # 低权重 (5分) - 可能与生信相关但不够特异
+    "protein": 5, "cell": 5, "assembly": 5, "annotation": 5,
+    "pipeline": 5, "workflow": 5, "analysis": 3, "taxonomy": 5,
+}
+
+# 负向词 (Tech-Score): 每命中一个扣分
+TECH_SCORE_TERMS = {
+    # 高扣分 (15分) - 明确的非生信指标
+    "full-text search": 15, "full text search": 15,
+    "vector database": 15, "vector db": 15,
+    "rag": 15, "retrieval augmented": 15,
+    "search engine": 15, "serverless": 15,
+    "edge-network": 15, "edge network": 15,
+    "wasm": 15, "webassembly": 15,
+    "frontend-framework": 15, "frontend framework": 15,
+    "game-engine": 15, "game engine": 15,
+    "blockchain": 15, "cryptocurrency": 15,
+    "llm": 15, "large language model": 15, "chatbot": 15,
+    # 中扣分 (10分)
+    "cloud-native": 10, "cloud native": 10,
+    "kubernetes": 10, "k8s": 10, "docker swarm": 10,
+    "microservice": 10, "service mesh": 10,
+    "load balancing": 10, "api gateway": 10,
+    "web framework": 10, "react": 10, "vue": 10, "angular": 10,
+    "machine learning platform": 10,
+    "deep learning framework": 10,
+    "iot": 10, "mqtt": 10,
+    # 低扣分 (5分) - 通用但不决定性
+    "runtime": 5, "deployment": 5, "monitoring": 5,
+    "proxy": 5, "sidecar": 5, "grpc": 5,
+    "container": 5, "orchestration": 5,
+}
+
+# Bio-Score 通过阈值
+BIO_SCORE_THRESHOLD = 10
+
+# 组学核心词（用于 IT 词汇强制排除的最终校验）
 OMICS_CORE_TERMS = [
     "genomics", "transcriptomics", "proteomics", "metabolomics", "metagenomics",
     "epigenetics", "bioinformatics", "sequencing", "genome", "gene", "rna", "dna",
     "protein", "peptide", "metabolite", "mass-spectrometry", "single-cell",
-    "ngs", "omics", "phylogenetic", "microbiome", "variant", "alignment"
+    "ngs", "omics", "phylogenetic", "microbiome", "variant", "alignment",
+    "wgs", "scrna-seq", "vcf", "fastq", "bam", "chip-seq", "atac-seq",
+    "maxquant", "xcms", "proteowizard", "lc-ms", "gc-ms",
+    "tmt", "dia", "dda", "mzidentml", "lipidomics"
 ]
 
 # 生信安全词（包含这些词的项目不会被黑名单排除）
@@ -138,7 +197,9 @@ BIO_SAFELIST = [
     "gene", "genome", "rna", "dna", "protein", "cell", "single-cell",
     "ngs", "chip-seq", "atac-seq", "methylation", "expression",
     "phylogenetic", "taxonomy", "microbiome", "omics", "biomarker",
-    "scRNA", "spatial transcriptomics", "chromatin"
+    "scRNA", "spatial transcriptomics", "chromatin",
+    "mass-spectrometry", "maxquant", "proteowizard", "peptide",
+    "metabolomics", "lipidomics", "xcms", "metabolite"
 ]
 
 # 通用流程引擎仓库 -> 标记为 "Workflow Engine"，不占据具体分析工具榜首
@@ -220,8 +281,8 @@ def is_excluded(repo: dict) -> bool:
     return False
 
 
-def is_non_bio_project(repo: dict) -> bool:
-    """检测是否为非生信的通用编程项目"""
+def calculate_bio_tech_scores(repo: dict) -> tuple:
+    """计算项目的 Bio-Score（正向分）和 Tech-Score（负向分）"""
     description = (repo.get("description") or "").lower()
     raw_topics = repo.get("topics", [])
     if isinstance(raw_topics, str):
@@ -230,30 +291,65 @@ def is_non_bio_project(repo: dict) -> bool:
         except (json.JSONDecodeError, TypeError):
             raw_topics = []
     topics = [t.lower() for t in raw_topics]
-    full_text = f"{description} {' '.join(topics)}"
-    
-    # 也检查仓库名本身
     full_name = (repo.get("full_name") or "").lower()
+    full_text = f"{description} {' '.join(topics)} {full_name}"
     
-    # 先检查是否包含生信安全词
-    has_bio_term = any(term in full_text for term in BIO_SAFELIST)
-    if has_bio_term:
-        return False  # 包含生信词汇，不排除
+    bio_score = 0
+    for term, weight in BIO_SCORE_TERMS.items():
+        if term.lower() in full_text:
+            bio_score += weight
     
-    # 强化过滤：仅含通用技术词且完全不含组学核心词 -> 强制排除
-    has_generic = any(term in full_text or term in full_name for term in GENERIC_TECH_TERMS)
+    tech_score = 0
+    for term, weight in TECH_SCORE_TERMS.items():
+        if term.lower() in full_text:
+            tech_score += weight
+    
+    return bio_score, tech_score
+
+
+def is_non_bio_project(repo: dict) -> bool:
+    """基于权重评分机制检测是否为非生信项目
+    
+    判定标准：
+    1. Bio-Score > Tech-Score 且 Bio-Score >= BIO_SCORE_THRESHOLD 时通过
+    2. 含大量 IT 词汇但完全无组学核心词 -> 强制排除
+    3. topics 含 search/database/engine 且无生物学标签 -> 直接剔除
+    """
+    description = (repo.get("description") or "").lower()
+    raw_topics = repo.get("topics", [])
+    if isinstance(raw_topics, str):
+        try:
+            raw_topics = json.loads(raw_topics)
+        except (json.JSONDecodeError, TypeError):
+            raw_topics = []
+    topics = [t.lower() for t in raw_topics]
+    full_name = (repo.get("full_name") or "").lower()
+    full_text = f"{description} {' '.join(topics)} {full_name}"
+    
+    # 规则 1：权重评分
+    bio_score, tech_score = calculate_bio_tech_scores(repo)
+    
+    # 如果 Bio-Score 足够高且超过 Tech-Score，直接通过
+    if bio_score >= BIO_SCORE_THRESHOLD and bio_score > tech_score:
+        return False
+    
+    # 规则 2：topics 含 search/database/engine 且无任何生物学标签 -> 直接剔除
+    non_bio_topic_markers = {"search", "database", "engine", "search-engine", "vector-database",
+                             "full-text-search", "web", "cloud", "devops", "rag"}
+    has_non_bio_topics = bool(set(topics) & non_bio_topic_markers)
     has_omics = any(term in full_text for term in OMICS_CORE_TERMS)
-    if has_generic and not has_omics:
+    if has_non_bio_topics and not has_omics:
         return True
     
-    # 检查仓库名是否直接命中黑名单
-    has_name_blacklist = any(term in full_name for term in NON_BIO_BLACKLIST)
-    if has_name_blacklist:
+    # 规则 3：Tech-Score 远超 Bio-Score -> 排除
+    if tech_score > 0 and bio_score < BIO_SCORE_THRESHOLD:
         return True
     
-    # 再检查描述和topics是否命中非生信黑名单
-    has_blacklist_term = any(term in full_text for term in NON_BIO_BLACKLIST)
-    return has_blacklist_term
+    # 规则 4：完全没有任何生信信号且有 Tech 信号 -> 排除
+    if bio_score == 0 and tech_score > 0:
+        return True
+    
+    return False
 
 
 def is_workflow_engine(repo: dict) -> bool:
@@ -802,10 +898,16 @@ def detect_sub_label(repo: dict, readme_content: str = "") -> str:
 
 
 def classify_category(repo: dict, search_category: str) -> str:
+    """分类器：带置信度校验，Bio-Score 过低归 'Other'"""
     description = (repo.get("description") or "").lower()
     topics = [t.lower() for t in repo.get("topics", [])]
     name = repo.get("name", "").lower()
     full_text = f"{description} {name} {' '.join(topics)}"
+    
+    # 置信度校验：Bio-Score 过低则归为 Other，不进入排行榜
+    bio_score, tech_score = calculate_bio_tech_scores(repo)
+    if bio_score < BIO_SCORE_THRESHOLD and tech_score > bio_score:
+        return "Other"
     
     matched_categories = []
     
@@ -836,7 +938,11 @@ def classify_category(repo: dict, search_category: str) -> str:
         matched_categories.append("Transcriptomics")
     
     if not matched_categories:
-        return search_category if search_category in KEYWORDS else "Genomics"
+        # 无特定分类匹配时，用 Bio-Score 做最终校验
+        if bio_score >= BIO_SCORE_THRESHOLD:
+            return search_category if search_category in KEYWORDS else "Genomics"
+        else:
+            return "Other"
     
     return matched_categories[0]
 
