@@ -418,5 +418,94 @@
         ]
       }
     }
+  },
+  {
+    "timestamp": "2026-02-12T13:49:21.974050",
+    "top3": {
+      "Genomics": {
+        "pipelines": [
+          "K-Dense-AI/claude-scientific-skills",
+          "nf-core/sarek",
+          "maxplanck-ie/snakepipes"
+        ],
+        "utilities": [
+          "francescopace/espectre",
+          "nanobrowser/nanobrowser",
+          "shenwei356/seqkit"
+        ]
+      },
+      "Transcriptomics": {
+        "pipelines": [
+          "nf-core/rnaseq",
+          "nf-core/scrnaseq",
+          "nf-core/rnafusion"
+        ],
+        "utilities": [
+          "scverse/PyDESeq2",
+          "Starlitnightly/omicverse",
+          "broadinstitute/CellBender"
+        ]
+      },
+      "Metagenomics": {
+        "pipelines": [
+          "YongxinLiu/EasyMetagenome",
+          "metagenome-atlas/atlas",
+          "nf-core/mag"
+        ],
+        "utilities": [
+          "torognes/vsearch",
+          "benjjneb/dada2",
+          "biobakery/MetaPhlAn"
+        ]
+      },
+      "Single-cell": {
+        "pipelines": [
+          "nf-core/scrnaseq",
+          "nf-core/spatialvi",
+          "nf-core/scnanoseq"
+        ],
+        "utilities": [
+          "scverse/scanpy",
+          "scverse/scvi-tools",
+          "stuart-lab/signac"
+        ]
+      },
+      "Epigenetics": {
+        "pipelines": [
+          "nf-core/chipseq",
+          "nf-core/atacseq",
+          "nf-core/methylseq"
+        ],
+        "utilities": [
+          "stuart-lab/signac",
+          "macs3-project/MACS",
+          "mdozmorov/HiC_tools"
+        ]
+      },
+      "Proteomics": {
+        "pipelines": [
+          "lazear/sage",
+          "bigbio/quantms",
+          "nf-core/mhcquant"
+        ],
+        "utilities": [
+          "vdemichev/DiaNN",
+          "lightdock/lightdock",
+          "tariqdaouda/pyGeno"
+        ]
+      },
+      "Metabolomics": {
+        "pipelines": [
+          "sneumann/xcms",
+          "shuzhao-li-lab/asari",
+          "biosustain/snakemake_UmetaFlow"
+        ],
+        "utilities": [
+          "sirius-ms/sirius",
+          "zhengrongbin/MEBOCOST",
+          "xieguigang/mzkit"
+        ]
+      }
+    }
   }
 ]
