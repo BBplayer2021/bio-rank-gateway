@@ -329,5 +329,94 @@
         ]
       }
     }
+  },
+  {
+    "timestamp": "2026-02-12T07:20:15.200426",
+    "top3": {
+      "Genomics": {
+        "pipelines": [
+          "oramasearch/orama",
+          "nf-core/sarek",
+          "cgroza/GraffiTE"
+        ],
+        "utilities": [
+          "chhylp123/hifiasm",
+          "pachterlab/gget",
+          "samtools/samtools"
+        ]
+      },
+      "Transcriptomics": {
+        "pipelines": [
+          "nf-core/rnaseq",
+          "nf-core/scrnaseq",
+          "nf-core/spatialvi"
+        ],
+        "utilities": [
+          "scverse/PyDESeq2",
+          "aertslab/pySCENIC",
+          "aristoteleo/dynamo-release"
+        ]
+      },
+      "Metagenomics": {
+        "pipelines": [
+          "YongxinLiu/EasyMetagenome",
+          "metagenome-atlas/atlas",
+          "nf-core/mag"
+        ],
+        "utilities": [
+          "torognes/vsearch",
+          "benjjneb/dada2",
+          "biobakery/MetaPhlAn"
+        ]
+      },
+      "Single-cell": {
+        "pipelines": [
+          "nf-core/scrnaseq",
+          "nf-core/spatialvi",
+          "nf-core/scnanoseq"
+        ],
+        "utilities": [
+          "scverse/scvi-tools",
+          "scverse/scanpy",
+          "theislab/cellrank"
+        ]
+      },
+      "Epigenetics": {
+        "pipelines": [
+          "epigen/atacseq_pipeline",
+          "nf-core/chipseq",
+          "nf-core/atacseq"
+        ],
+        "utilities": [
+          "macs3-project/MACS",
+          "stuart-lab/signac",
+          "mdozmorov/HiC_tools"
+        ]
+      },
+      "Proteomics": {
+        "pipelines": [
+          "lazear/sage",
+          "bigbio/quantms",
+          "nf-core/mhcquant"
+        ],
+        "utilities": [
+          "vdemichev/DiaNN",
+          "lightdock/lightdock",
+          "tariqdaouda/pyGeno"
+        ]
+      },
+      "Metabolomics": {
+        "pipelines": [
+          "sneumann/xcms",
+          "shuzhao-li-lab/asari",
+          "biosustain/snakemake_UmetaFlow"
+        ],
+        "utilities": [
+          "sirius-ms/sirius",
+          "zhengrongbin/MEBOCOST",
+          "xieguigang/mzkit"
+        ]
+      }
+    }
   }
 ]
