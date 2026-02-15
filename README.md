@@ -8,6 +8,13 @@
     <a href="https://github.com/BBplayer2021/bio-rank-gateway/stargazers"><img src="https://img.shields.io/github/stars/BBplayer2021/bio-rank-gateway?style=social" alt="GitHub Stars"></a>
     <a href="https://github.com/BBplayer2021/bio-rank-gateway/network/members"><img src="https://img.shields.io/github/forks/BBplayer2021/bio-rank-gateway?style=social" alt="GitHub Forks"></a>
   </p>
+  <p align="center">
+    <a href="https://bbplayer2021.github.io/bio-rank-gateway/"><img src="https://img.shields.io/badge/🔍_Live_Demo-Visit_Site-ff6b6b?style=for-the-badge" alt="Live Demo"></a>
+  </p>
+  <p align="center">
+    <b>[English]</b> Real-time monitoring of global bioinformatics tool vitality.<br>
+    <b>[中文]</b> 实时监测全球生信工具和流程的生命力，拒绝"生信考古"。
+  </p>
 </p>
 
 A fully automated bioinformatics tool ranking portal deployed on GitHub Pages.
