@@ -419,6 +419,95 @@
             color: #97266d;
         }
         
+        .tag-topic {
+            background: #e2e8f0;
+            color: #4a5568;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .tag-topic:hover {
+            background: #cbd5e0;
+            transform: scale(1.05);
+        }
+        
+        /* Filter Bar */
+        .filter-bar {
+            background: white;
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        
+        .filter-bar-title {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .filter-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .filter-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            color: var(--text-secondary);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .filter-tag:hover {
+            background: #edf2f7;
+            border-color: #cbd5e0;
+        }
+        
+        .filter-tag.active {
+            background: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+        }
+        
+        .filter-tag .count {
+            background: rgba(0, 0, 0, 0.1);
+            padding: 2px 6px;
+            border-radius: 10px;
+            font-size: 0.7rem;
+        }
+        
+        .filter-tag.active .count {
+            background: rgba(255, 255, 255, 0.25);
+        }
+        
+        .filter-clear {
+            background: transparent;
+            border: 1px dashed #cbd5e0;
+            color: var(--text-secondary);
+        }
+        
+        .filter-clear:hover {
+            background: #fff5f5;
+            border-color: #fc8181;
+            color: #c53030;
+        }
+        
+        .project-card.filtered-out {
+            display: none;
+        }
+        
         /* Comments Section */
         .comments-section {
             background: white;
@@ -683,6 +772,16 @@
             </div>
         </div>
         
+        <!-- Filter Bar -->
+        <div class="filter-bar" id="filterBar" style="display: none;">
+            <div class="filter-bar-title">
+                <i class="bi bi-funnel"></i> Filter by Topic
+            </div>
+            <div class="filter-tags" id="filterTags">
+                <!-- Dynamic tags will be inserted here -->
+            </div>
+        </div>
+        
         <!-- Project Grid -->
         <div id="projectGrid" class="project-grid">
             <div class="loading">
@@ -719,6 +818,7 @@
         let rankingData = null;
         let currentCategory = 'Genomics';
         let currentTrack = 'pipeline';
+        let activeFilters = new Set();  // 当前激活的筛选标签
         
         // Load data
         async function loadData() {
@@ -776,6 +876,7 @@
         // Switch category
         function switchCategory(category) {
             currentCategory = category;
+            activeFilters.clear();  // 切换分类时清除筛选
             
             // Update active state
             document.querySelectorAll('.category-item').forEach(item => {
@@ -792,6 +893,7 @@
         // Switch track
         function switchTrack(track) {
             currentTrack = track;
+            activeFilters.clear();  // 切换赛道时清除筛选
             
             document.querySelectorAll('.track-tab').forEach(tab => {
                 tab.classList.remove('active');
@@ -810,6 +912,7 @@
             const categoryData = rankingData.categories[currentCategory];
             if (!categoryData) {
                 document.getElementById('projectGrid').innerHTML = '<p>No data available</p>';
+                document.getElementById('filterBar').style.display = 'none';
                 return;
             }
             
@@ -819,8 +922,25 @@
             
             if (!projects || projects.length === 0) {
                 document.getElementById('projectGrid').innerHTML = '<p>No projects found</p>';
+                document.getElementById('filterBar').style.display = 'none';
                 return;
             }
+            
+            // 收集所有 topics 并统计出现次数
+            const topicCounts = {};
+            projects.forEach(project => {
+                const topics = project.topics || [];
+                topics.forEach(topic => {
+                    // 过滤掉一些通用标签
+                    const skipTopics = ['bioinformatics', 'genomics', 'pipeline', 'workflow', 'python', 'r', 'nextflow', 'snakemake'];
+                    if (!skipTopics.includes(topic.toLowerCase())) {
+                        topicCounts[topic] = (topicCounts[topic] || 0) + 1;
+                    }
+                });
+            });
+            
+            // 渲染 Filter Bar
+            renderFilterBar(topicCounts);
             
             // 更新 View on GitHub 按钮链接到榜首项目
             const topProject = projects[0];
@@ -830,6 +950,92 @@
             
             const html = projects.map(project => createProjectCard(project)).join('');
             document.getElementById('projectGrid').innerHTML = html;
+            
+            // 应用当前筛选
+            applyFilters();
+        }
+        
+        // 渲染 Filter Bar
+        function renderFilterBar(topicCounts) {
+            const filterTagsContainer = document.getElementById('filterTags');
+            const filterBar = document.getElementById('filterBar');
+            
+            // 按出现次数排序，取前15个
+            const sortedTopics = Object.entries(topicCounts)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 15);
+            
+            if (sortedTopics.length === 0) {
+                filterBar.style.display = 'none';
+                return;
+            }
+            
+            filterBar.style.display = 'block';
+            
+            // 生成标签HTML
+            let tagsHtml = '';
+            
+            // 清除筛选按钮
+            if (activeFilters.size > 0) {
+                tagsHtml += `<span class="filter-tag filter-clear" onclick="clearFilters()">
+                    <i class="bi bi-x-circle"></i> Clear
+                </span>`;
+            }
+            
+            sortedTopics.forEach(([topic, count]) => {
+                const isActive = activeFilters.has(topic);
+                tagsHtml += `<span class="filter-tag${isActive ? ' active' : ''}" 
+                    data-topic="${topic}" 
+                    onclick="toggleFilter('${topic}')">
+                    ${formatTopicLabel(topic)}
+                    <span class="count">${count}</span>
+                </span>`;
+            });
+            
+            filterTagsContainer.innerHTML = tagsHtml;
+        }
+        
+        // 格式化 topic 标签显示
+        function formatTopicLabel(topic) {
+            // 将 kebab-case 转为 Title Case
+            return topic.split('-').map(word => 
+                word.charAt(0).toUpperCase() + word.slice(1)
+            ).join(' ');
+        }
+        
+        // 切换筛选标签
+        function toggleFilter(topic) {
+            if (activeFilters.has(topic)) {
+                activeFilters.delete(topic);
+            } else {
+                activeFilters.add(topic);
+            }
+            renderProjects();
+        }
+        
+        // 清除所有筛选
+        function clearFilters() {
+            activeFilters.clear();
+            renderProjects();
+        }
+        
+        // 应用筛选逻辑
+        function applyFilters() {
+            if (activeFilters.size === 0) return;
+            
+            const cards = document.querySelectorAll('.project-card');
+            cards.forEach(card => {
+                const cardTopics = card.dataset.topics ? card.dataset.topics.split(',') : [];
+                const hasMatch = [...activeFilters].some(filter => 
+                    cardTopics.includes(filter.toLowerCase())
+                );
+                
+                if (hasMatch) {
+                    card.classList.remove('filtered-out');
+                } else {
+                    card.classList.add('filtered-out');
+                }
+            });
         }
         
         // Create project card
@@ -838,6 +1044,7 @@
             const installCmd = project.install_commands?.[0] || null;
             const badges = project.badges || {};
             const shortName = project.short_name || project.name.split('/').pop();
+            const topics = project.topics || [];
             
             // 生成首字母头像的颜色（基于名称哈希）
             const avatarColors = ['#4299e1','#48bb78','#ed8936','#9f7aea','#ed64a6','#38b2ac','#e53e3e','#dd6b20','#805ad5','#3182ce'];
@@ -857,12 +1064,20 @@
                 previewHtml = initialsHtml;
             }
             
-            const tagsHtml = [
+            // 环境标签 (Docker, Conda, Paper, sub_label)
+            const envTagsHtml = [
                 project.has_docker ? '<span class="tag tag-docker">Docker</span>' : '',
                 project.has_conda ? '<span class="tag tag-conda">Conda</span>' : '',
                 project.has_paper ? '<span class="tag tag-paper">Paper</span>' : '',
                 project.sub_label ? `<span class="tag">${project.sub_label}</span>` : ''
             ].filter(Boolean).join('');
+            
+            // Topic 标签 (可点击筛选)
+            const skipTopics = ['bioinformatics', 'genomics', 'pipeline', 'workflow', 'python', 'r', 'nextflow', 'snakemake'];
+            const filteredTopics = topics.filter(t => !skipTopics.includes(t.toLowerCase())).slice(0, 4);
+            const topicTagsHtml = filteredTopics.map(topic => 
+                `<span class="tag tag-topic" onclick="toggleFilter('${topic}')">${formatTopicLabel(topic)}</span>`
+            ).join('');
             
             const installHtml = installCmd ? `
                 <div class="install-section">
@@ -877,7 +1092,7 @@
             ` : '';
             
             return `
-                <div class="project-card">
+                <div class="project-card" data-topics="${topics.map(t => t.toLowerCase()).join(',')}">
                     <div class="project-preview" style="position: relative;">
                         ${previewHtml}
                         <span class="project-rank">${project.rank}</span>
@@ -897,7 +1112,8 @@
                             ${badges.last_commit ? `<img src="${badges.last_commit}" alt="Last Commit">` : ''}
                         </div>
                         
-                        <div class="mb-2">${tagsHtml}</div>
+                        <div class="mb-2">${envTagsHtml}</div>
+                        ${topicTagsHtml ? `<div class="mb-2">${topicTagsHtml}</div>` : ''}
                         
                         <div class="project-meta">
                             <span class="meta-item">
