@@ -1216,6 +1216,223 @@ def calculate_utility_score(stars: int, weekly_growth: int, pushed_at: str = "",
 
 
 # ============================================================
+# 社区互动模块：勋章与 Issue 通知
+# ============================================================
+
+# 勋章颜色配置
+RANK_BADGE_COLORS = {
+    1: "gold",       # 金色 - 冠军
+    2: "silver",     # 银色 - 亚军
+    3: "bronze",     # 铜色 - 季军
+    4: "blue",       # 蓝色 - 4-10名
+    5: "blue",
+    6: "blue",
+    7: "blue",
+    8: "blue",
+    9: "blue",
+    10: "blue",
+}
+
+WEBSITE_URL = "https://bbplayer2021.github.io/bio-rank-gateway/"
+
+
+def generate_rank_badge(rank: int, category: str, track: str) -> dict:
+    """为Top 10项目生成勋章Markdown片段
+    
+    Args:
+        rank: 排名 (1-10)
+        category: 分类名称 (如 Genomics)
+        track: 赛道 (Pipeline/Utility)
+    
+    Returns:
+        包含勋章信息的字典
+    """
+    if rank > 10:
+        return {}
+    
+    color = RANK_BADGE_COLORS.get(rank, "blue")
+    
+    # 使用 shields.io 生成勋章
+    label = f"Bio-Rank {category}"
+    message = f"No.{rank} {track}"
+    
+    badge_url = f"https://img.shields.io/badge/{label.replace(' ', '%20').replace('-', '--')}-{message.replace(' ', '%20')}-{color}?style=for-the-badge&logo=github"
+    
+    # Markdown 片段
+    markdown_snippet = f"[![Bio-Rank {category} No.{rank}]({badge_url})]({WEBSITE_URL})"
+    
+    # HTML 片段
+    html_snippet = f'<a href="{WEBSITE_URL}"><img src="{badge_url}" alt="Bio-Rank {category} No.{rank}"></a>'
+    
+    return {
+        "rank": rank,
+        "category": category,
+        "track": track,
+        "color": color,
+        "badge_url": badge_url,
+        "markdown": markdown_snippet,
+        "html": html_snippet
+    }
+
+
+def generate_thank_you_issue_draft(repo_full_name: str, rank: int, category: str, 
+                                    track: str, score: float, stars: int) -> dict:
+    """生成新进榜Top 10项目的感谢信草稿
+    
+    此函数仅生成草稿内容，不会自动创建Issue。
+    用于记录和后续手动操作。
+    
+    Args:
+        repo_full_name: 仓库全名 (owner/repo)
+        rank: 排名
+        category: 分类
+        track: 赛道
+        score: 评分
+        stars: Star数
+    
+    Returns:
+        包含Issue草稿信息的字典
+    """
+    repo_name = repo_full_name.split("/")[-1] if "/" in repo_full_name else repo_full_name
+    
+    # 勋章信息
+    badge_info = generate_rank_badge(rank, category, track)
+    badge_markdown = badge_info.get("markdown", "")
+    
+    # 感谢信标题
+    title = f"🎉 Congratulations! {repo_name} ranked #{rank} in Bio-Rank Gateway ({category} {track}s)"
+    
+    # 感谢信正文
+    body = f"""## 🏆 Bio-Rank Gateway Recognition
+
+Hi there! 👋
+
+We're excited to inform you that **{repo_name}** has been ranked **#{rank}** in the **{category} {track}s** category on [Bio-Rank Gateway]({WEBSITE_URL})!
+
+### 📊 Current Stats
+- **Rank**: #{rank} in {category} {track}s
+- **Score**: {score:.1f}
+- **Stars**: {stars:,}
+
+### 🎖️ Add a Badge to Your README
+
+You can proudly display this achievement by adding the following badge to your README:
+
+**Markdown:**
+```markdown
+{badge_markdown}
+```
+
+**Preview:**
+
+{badge_markdown}
+
+### 🔗 What is Bio-Rank Gateway?
+
+Bio-Rank Gateway is an automated weekly ranking system for bioinformatics tools on GitHub. We evaluate tools based on:
+- GitHub stars and growth trends
+- Docker/Conda environment support
+- Academic paper associations
+- PubMed citation counts
+- Community activity
+
+Visit us at: {WEBSITE_URL}
+
+---
+
+*This is an automated notification. Feel free to close this issue if you prefer not to display the badge.*
+
+Thank you for your contribution to the bioinformatics community! 🧬
+"""
+    
+    return {
+        "repo": repo_full_name,
+        "rank": rank,
+        "category": category,
+        "track": track,
+        "issue_title": title,
+        "issue_body": body,
+        "badge_info": badge_info,
+        "created_at": datetime.now().isoformat(),
+        "status": "draft"  # draft = 未发送, sent = 已发送
+    }
+
+
+def generate_community_badges(ranking: dict) -> dict:
+    """为所有Top 10项目生成勋章数据
+    
+    Args:
+        ranking: 排名数据字典
+    
+    Returns:
+        包含所有勋章信息的字典
+    """
+    badges = {}
+    
+    for category, data in ranking.items():
+        badges[category] = {
+            "pipelines": [],
+            "utilities": []
+        }
+        
+        # Pipeline Top 10 勋章
+        for proj in data.get("top_20_pipelines", [])[:10]:
+            rank = proj.get("rank", 0)
+            if rank <= 10:
+                badge = generate_rank_badge(rank, category, "Pipeline")
+                badge["repo"] = proj.get("full_name", "")
+                badges[category]["pipelines"].append(badge)
+        
+        # Utility Top 10 勋章
+        for proj in data.get("top_10_utilities", [])[:10]:
+            rank = proj.get("rank", 0)
+            if rank <= 10:
+                badge = generate_rank_badge(rank, category, "Utility")
+                badge["repo"] = proj.get("full_name", "")
+                badges[category]["utilities"].append(badge)
+    
+    return badges
+
+
+def generate_issue_drafts_for_new_entries(new_entries: list, ranking: dict) -> list:
+    """为新进榜Top 10项目生成Issue草稿
+    
+    Args:
+        new_entries: 新进榜项目列表
+        ranking: 排名数据
+    
+    Returns:
+        Issue草稿列表
+    """
+    drafts = []
+    
+    for entry in new_entries:
+        repo_name = entry.get("repo", "")
+        category = entry.get("category", "")
+        track = entry.get("track", "")
+        
+        # 查找该项目的详细信息
+        cat_data = ranking.get(category, {})
+        track_key = "top_20_pipelines" if track == "Pipeline" else "top_10_utilities"
+        projects = cat_data.get(track_key, [])
+        
+        for proj in projects[:10]:  # 只处理Top 10
+            if proj.get("full_name") == repo_name or proj.get("name") == repo_name:
+                draft = generate_thank_you_issue_draft(
+                    repo_full_name=proj.get("full_name", repo_name),
+                    rank=proj.get("rank", 0),
+                    category=category,
+                    track=track,
+                    score=proj.get("score", 0),
+                    stars=proj.get("stars", 0)
+                )
+                drafts.append(draft)
+                break
+    
+    return drafts
+
+
+# ============================================================
 # 深度搜索
 # ============================================================
 
@@ -1419,9 +1636,18 @@ def generate_ranking_report():
     # 检测新进榜项目
     new_entries = _detect_new_entries(ranking)
     
+    # 生成社区勋章数据
+    community_badges = generate_community_badges(ranking)
+    log(f"\n[Community] Generated badges for Top 10 projects in each category")
+    
+    # 生成新进榜Issue草稿（仅准备，不执行发送）
+    issue_drafts = generate_issue_drafts_for_new_entries(new_entries, ranking)
+    if issue_drafts:
+        log(f"[Community] Generated {len(issue_drafts)} issue drafts for new Top 10 entries")
+    
     report = {
         "generated_at": datetime.now().isoformat(),
-        "version": "13.0",
+        "version": "14.0",
         "scoring_formulas": {
             "pipeline": "S = 5 * log10(Stars) + Weekly_Growth * 2 + Env_Bonus(15) + Zombie_Penalty(0.5)",
             "utility": "S = 8 * log10(Stars) + Weekly_Growth * 2 + Zombie_Penalty(0.5)"
@@ -1430,6 +1656,10 @@ def generate_ranking_report():
         "categories": ranking,
         "red_black_lists": red_black_lists,
         "new_entries": new_entries,
+        "community": {
+            "badges": community_badges,
+            "issue_drafts": issue_drafts
+        },
         "summary": {
             "total_pipelines": len([r for r in repos if r["project_type"] == "Pipeline"]),
             "total_utilities": len([r for r in repos if r["project_type"] == "Utility"]),
