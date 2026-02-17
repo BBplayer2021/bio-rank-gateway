@@ -34,6 +34,11 @@ SCRIPT_DIR = Path(__file__).parent
 PROJECT_DIR = SCRIPT_DIR.parent
 DB_PATH = PROJECT_DIR / "data" / "bio_toolbox.db"
 DATA_DIR = PROJECT_DIR / "data"
+PUBMED_CACHE_PATH = DATA_DIR / "pubmed_cache.json"
+
+# NCBI Entrez API 配置
+NCBI_ENTREZ_BASE = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
+NCBI_RATE_LIMIT_DELAY = 0.4  # 避免超出 NCBI 频率限制 (3 requests/second)
 
 # 确保目录存在
 DATA_DIR.mkdir(parents=True, exist_ok=True)
@@ -989,19 +994,130 @@ def get_multi_categories(repo: dict) -> list:
 
 
 # ============================================================
+# PubMed 引用量查询
+# ============================================================
+
+def _load_pubmed_cache() -> dict:
+    """加载 PubMed 引用量缓存"""
+    if PUBMED_CACHE_PATH.exists():
+        try:
+            with open(PUBMED_CACHE_PATH, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except (json.JSONDecodeError, IOError):
+            return {}
+    return {}
+
+
+def _save_pubmed_cache(cache: dict):
+    """保存 PubMed 引用量缓存"""
+    try:
+        with open(PUBMED_CACHE_PATH, "w", encoding="utf-8") as f:
+            json.dump(cache, f, indent=2)
+    except IOError as e:
+        log(f"  [Warning] Failed to save PubMed cache: {e}")
+
+
+def fetch_pubmed_citations(tool_name: str) -> int:
+    """
+    通过 NCBI Entrez API 获取工具的 PubMed 引用量
+    搜索策略: tool_name + [bioinformatics]
+    使用本地 JSON 缓存避免重复请求
+    """
+    # 标准化工具名 (去除 owner/ 前缀，转小写)
+    if "/" in tool_name:
+        tool_name = tool_name.split("/")[-1]
+    cache_key = tool_name.lower()
+    
+    # 检查缓存
+    cache = _load_pubmed_cache()
+    if cache_key in cache:
+        cached = cache[cache_key]
+        # 缓存有效期 7 天
+        cached_time = datetime.fromisoformat(cached.get("timestamp", "2000-01-01"))
+        if (datetime.now() - cached_time).days < 7:
+            return cached.get("count", 0)
+    
+    # 构建搜索查询
+    search_term = f'"{tool_name}"[Title/Abstract] AND bioinformatics[MeSH Terms]'
+    search_url = f"{NCBI_ENTREZ_BASE}/esearch.fcgi"
+    params = {
+        "db": "pubmed",
+        "term": search_term,
+        "retmode": "json",
+        "retmax": 0  # 只需要计数
+    }
+    
+    try:
+        time.sleep(NCBI_RATE_LIMIT_DELAY)  # 遵守频率限制
+        response = requests.get(search_url, params=params, timeout=10)
+        
+        if response.status_code == 200:
+            data = response.json()
+            count = int(data.get("esearchresult", {}).get("count", 0))
+            
+            # 更新缓存
+            cache[cache_key] = {
+                "count": count,
+                "timestamp": datetime.now().isoformat()
+            }
+            _save_pubmed_cache(cache)
+            
+            return count
+        else:
+            log(f"  [PubMed] API error for {tool_name}: HTTP {response.status_code}")
+            return 0
+    except requests.exceptions.RequestException as e:
+        log(f"  [PubMed] Request failed for {tool_name}: {e}")
+        return 0
+    except (json.JSONDecodeError, KeyError, ValueError) as e:
+        log(f"  [PubMed] Parse error for {tool_name}: {e}")
+        return 0
+
+
+# ============================================================
 # 评分系统
 # ============================================================
 
+# 评分权重配置
+SCORE_WEIGHTS = {
+    "stars": 0.4,
+    "forks": 0.2,
+    "citations": 0.4
+}
+
+
+def calculate_combined_score(stars: int, forks: int, citations: int) -> float:
+    """
+    综合评分公式 (用户指定):
+    Score = (Stars × 0.4) + (Forks × 0.2) + (Citations × 0.4)
+    """
+    # 使用 log 缩放避免大数值主导
+    star_component = math.log10(stars + 1) * 10 * SCORE_WEIGHTS["stars"]
+    fork_component = math.log10(forks + 1) * 10 * SCORE_WEIGHTS["forks"]
+    citation_component = math.log10(citations + 1) * 10 * SCORE_WEIGHTS["citations"]
+    
+    return round(star_component + fork_component + citation_component, 2)
+
+
 def calculate_pipeline_score(stars: int, weekly_growth: int, has_docker: bool, has_conda: bool, 
-                           pushed_at: str = "", open_issues: int = 0, has_paper: bool = False) -> float:
-    """Pipeline 评分公式"""
+                           pushed_at: str = "", open_issues: int = 0, has_paper: bool = False,
+                           forks: int = 0, citations: int = 0) -> float:
+    """Pipeline 评分公式 (含 PubMed 引用量)"""
+    # 原有基础评分
     star_component = 5 * math.log10(stars) if stars > 0 else 0
     growth_component = weekly_growth * 2
     env_bonus = 15 if (has_docker or has_conda) else 0
     paper_bonus = 5 if has_paper else 0
     
-    base_score = star_component + growth_component + env_bonus + paper_bonus
+    # 新增: PubMed 引用量加分 (log 缩放, 最高 20 分)
+    citation_bonus = min(math.log10(citations + 1) * 8, 20) if citations > 0 else 0
     
+    # 新增: Forks 贡献分 (log 缩放, 最高 10 分)
+    fork_bonus = min(math.log10(forks + 1) * 3, 10) if forks > 0 else 0
+    
+    base_score = star_component + growth_component + env_bonus + paper_bonus + citation_bonus + fork_bonus
+    
+    # Zombie penalty (超过2年未更新)
     if pushed_at:
         try:
             pushed_dt = datetime.fromisoformat(pushed_at.replace('Z', '+00:00'))
@@ -1015,14 +1131,23 @@ def calculate_pipeline_score(stars: int, weekly_growth: int, has_docker: bool, h
 
 
 def calculate_utility_score(stars: int, weekly_growth: int, pushed_at: str = "", 
-                          open_issues: int = 0, has_paper: bool = False) -> float:
-    """Utility 评分公式"""
+                          open_issues: int = 0, has_paper: bool = False,
+                          forks: int = 0, citations: int = 0) -> float:
+    """Utility 评分公式 (含 PubMed 引用量)"""
+    # 原有基础评分
     star_component = 8 * math.log10(stars) if stars > 0 else 0
     growth_component = weekly_growth * 2
     paper_bonus = 5 if has_paper else 0
     
-    base_score = star_component + growth_component + paper_bonus
+    # 新增: PubMed 引用量加分 (log 缩放, 最高 25 分)
+    citation_bonus = min(math.log10(citations + 1) * 10, 25) if citations > 0 else 0
     
+    # 新增: Forks 贡献分 (log 缩放, 最高 8 分)
+    fork_bonus = min(math.log10(forks + 1) * 2.5, 8) if forks > 0 else 0
+    
+    base_score = star_component + growth_component + paper_bonus + citation_bonus + fork_bonus
+    
+    # Zombie penalty (超过2年未更新)
     if pushed_at:
         try:
             pushed_dt = datetime.fromisoformat(pushed_at.replace('Z', '+00:00'))
@@ -1164,22 +1289,35 @@ def generate_ranking_report():
     repos = [r for r in repos if not is_non_bio_project(r)]
     log(f"  [Filter] Removed {before_count - len(repos)} non-bio projects from database, {len(repos)} remaining")
     
-    # 计算评分
-    for repo in repos:
+    # 计算评分 (含 PubMed 引用量)
+    log("\n  [PubMed] Fetching citation counts...")
+    for i, repo in enumerate(repos):
         weekly_growth = get_weekly_star_growth(repo["id"])
         repo["weekly_growth"] = weekly_growth
+        
+        # 获取 PubMed 引用量
+        tool_name = repo["full_name"].split("/")[-1] if "/" in repo["full_name"] else repo["full_name"]
+        citations = fetch_pubmed_citations(tool_name)
+        repo["pubmed_citations"] = citations
+        
+        forks = repo.get("forks", 0)
         
         if repo["project_type"] == "Pipeline":
             repo["score"] = calculate_pipeline_score(
                 repo["stars"], weekly_growth, 
                 bool(repo["has_docker"]), bool(repo["has_conda_env"]),
-                repo.get("pushed_at", ""), repo.get("open_issues", 0), bool(repo["has_paper"])
+                repo.get("pushed_at", ""), repo.get("open_issues", 0), bool(repo["has_paper"]),
+                forks=forks, citations=citations
             )
         else:
             repo["score"] = calculate_utility_score(
                 repo["stars"], weekly_growth,
-                repo.get("pushed_at", ""), repo.get("open_issues", 0), bool(repo["has_paper"])
+                repo.get("pushed_at", ""), repo.get("open_issues", 0), bool(repo["has_paper"]),
+                forks=forks, citations=citations
             )
+        
+        if (i + 1) % 50 == 0:
+            log(f"    Processed {i + 1}/{len(repos)} repos...")
     
     # 按类别和类型分组（包含 Workflow Engine 独立分类）
     categories = ["Genomics", "Transcriptomics", "Metagenomics", "Single-cell", "Epigenetics", "Proteomics", "Metabolomics"]
@@ -1297,6 +1435,8 @@ def _format_repo(r: dict, rank: int) -> dict:
         "url": r["url"],
         "description": r["description"] or "",
         "stars": r["stars"],
+        "forks": r.get("forks", 0),
+        "pubmed_citations": r.get("pubmed_citations", 0),
         "weekly_growth": r["weekly_growth"],
         "score": r["score"],
         "has_paper": bool(r["has_paper"]),
