@@ -184,7 +184,8 @@ def generate_qr_code(url: str, size: int = 200) -> Image.Image:
     qr.add_data(url)
     qr.make(fit=True)
     
-    qr_img = qr.make_image(fill_color="white", back_color="transparent")
+    # 黑色码点 + 白色背景
+    qr_img = qr.make_image(fill_color="black", back_color="white")
     qr_img = qr_img.convert('RGBA')
     qr_img = qr_img.resize((size, size), Image.Resampling.LANCZOS)
     
@@ -394,47 +395,54 @@ def generate_weekly_report(json_path: str, output_path: str):
     
     y_offset += 2 * (col_height + 15) + 40
     
-    # ========== Footer: 二维码 + 统计 ==========
+    # ========== Footer: 统计（左） + 二维码（右下） ==========
     # 分隔线
     draw.line([(padding, y_offset), (POSTER_WIDTH - padding, y_offset)], 
               fill=hex_to_rgb(COLORS["text_muted"]), width=1)
     y_offset += 30
     
-    # 统计数据
+    # 统计数据（左侧）
     total_repos = data.get("total_repositories", 0)
     summary = data.get("summary", {})
     total_pipelines = summary.get("total_pipelines", 0)
     total_utilities = summary.get("total_utilities", 0)
     
-    stats_text = f"Total: {total_repos} repos  |  {total_pipelines} pipelines  |  {total_utilities} utilities"
-    draw.text((padding, y_offset), stats_text, 
-              fill=hex_to_rgb(COLORS["text_muted"]), font=font_small)
-    y_offset += 40
-    
-    # 二维码
+    # 二维码（右下角）
     qr_size = 180
     qr_img = generate_qr_code(WEBSITE_URL, qr_size)
-    qr_x = (POSTER_WIDTH - qr_size) // 2
+    qr_x = POSTER_WIDTH - padding - qr_size - 10
     qr_y = y_offset
     
-    # 二维码白色背景
+    # 二维码白色圆角背景
     draw_rounded_rect(draw, (qr_x - 10, qr_y - 10, qr_x + qr_size + 10, qr_y + qr_size + 10), 
                      12, (255, 255, 255))
     poster.paste(qr_img, (qr_x, qr_y), qr_img)
     
-    y_offset += qr_size + 25
+    # 二维码下方中文提示
+    hint_text = "长按查看实时榜单"
+    hint_bbox = draw.textbbox((0, 0), hint_text, font=font_small)
+    hint_width = hint_bbox[2] - hint_bbox[0]
+    hint_x = qr_x + (qr_size - hint_width) // 2
+    hint_y = qr_y + qr_size + 15
+    draw.text((hint_x, hint_y), hint_text, 
+              fill=hex_to_rgb(COLORS["primary"]), font=font_small)
     
-    # 扫码提示
-    scan_text = "Scan to explore full rankings"
-    scan_bbox = draw.textbbox((0, 0), scan_text, font=font_desc)
-    scan_x = (POSTER_WIDTH - (scan_bbox[2] - scan_bbox[0])) // 2
-    draw.text((scan_x, y_offset), scan_text, 
-              fill=hex_to_rgb(COLORS["text_white"]), font=font_desc)
+    # 左侧统计数据（与二维码同行）
+    draw.text((padding, y_offset), f"{total_repos}", 
+              fill=hex_to_rgb(COLORS["text_white"]), font=font_section)
+    draw.text((padding, y_offset + 45), "Repositories", 
+              fill=hex_to_rgb(COLORS["text_muted"]), font=font_small)
     
-    y_offset += 50
+    draw.text((padding, y_offset + 80), f"{total_pipelines} Pipelines  |  {total_utilities} Utilities", 
+              fill=hex_to_rgb(COLORS["text_muted"]), font=font_desc)
+    
+    draw.text((padding, y_offset + 115), "Scan to explore full rankings  →", 
+              fill=hex_to_rgb(COLORS["secondary"]), font=font_desc)
+    
+    y_offset = max(y_offset + 155, hint_y + 40)
     
     # 版权
-    copyright_text = f"Bio-Rank Gateway v{data.get('version', '13.0')} | Generated automatically"
+    copyright_text = f"Bio-Rank Gateway v{data.get('version', '14.0')} | Generated automatically"
     copy_bbox = draw.textbbox((0, 0), copyright_text, font=font_small)
     copy_x = (POSTER_WIDTH - (copy_bbox[2] - copy_bbox[0])) // 2
     draw.text((copy_x, y_offset), copyright_text, 
