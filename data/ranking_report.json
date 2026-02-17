@@ -1015,106 +1015,6 @@
       "top_10_utilities": [
         {
           "rank": 1,
-          "full_name": "francescopace/espectre",
-          "short_name": "espectre",
-          "name": "francescopace/espectre",
-          "url": "https://github.com/francescopace/espectre",
-          "description": "🛜 ESPectre 👻  - Motion detection system based on Wi-Fi spectre analysis (CSI), with Home Assistant integration.",
-          "stars": 6369,
-          "weekly_growth": 25,
-          "score": 80.43,
-          "has_paper": false,
-          "has_docker": false,
-          "has_conda": false,
-          "sub_label": "Alignment",
-          "topics": [
-            "csi",
-            "diy",
-            "esp-32",
-            "espectre",
-            "home-assistant",
-            "motion-detection",
-            "wifi",
-            "wifi-sensing"
-          ],
-          "license": "GNU General Public License v3.0",
-          "open_issues": 4,
-          "pushed_at": "2026-02-15T00:12:07Z",
-          "tech_stack": [],
-          "install_commands": [],
-          "preview_images": [
-            "https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png",
-            "https://raw.githubusercontent.com/francescopace/espectre/master/images/home_lab.jpg",
-            "https://raw.githubusercontent.com/francescopace/espectre/master/images/espectre-home-assistant.png"
-          ],
-          "badges": {
-            "stars": "https://img.shields.io/github/stars/francescopace/espectre?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/francescopace/espectre?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/francescopace/espectre?style=flat-square",
-            "license": "https://img.shields.io/github/license/francescopace/espectre?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/francescopace/espectre?style=flat-square"
-          }
-        },
-        {
-          "rank": 2,
-          "full_name": "nanobrowser/nanobrowser",
-          "short_name": "nanobrowser",
-          "name": "nanobrowser/nanobrowser",
-          "url": "https://github.com/nanobrowser/nanobrowser",
-          "description": "Open-Source Chrome extension for AI-powered web automation. Run multi-agent workflows using your own LLM API key. Alternative to OpenAI Operator.",
-          "stars": 12222,
-          "weekly_growth": 6,
-          "score": 44.7,
-          "has_paper": false,
-          "has_docker": false,
-          "has_conda": false,
-          "sub_label": "Alignment",
-          "topics": [
-            "agent",
-            "ai",
-            "ai-agents",
-            "ai-tools",
-            "automation",
-            "browser",
-            "browser-automation",
-            "browser-use",
-            "chrome-extension",
-            "comet",
-            "dia",
-            "extension",
-            "manus",
-            "mariner",
-            "multi-agent",
-            "n8n",
-            "nano",
-            "opensource",
-            "playwright",
-            "web-automation"
-          ],
-          "license": "Apache License 2.0",
-          "open_issues": 47,
-          "pushed_at": "2025-11-24T11:10:03Z",
-          "tech_stack": [],
-          "install_commands": [
-            {
-              "type": "git",
-              "command": "git clone https://github.com/nanobrowser/nanobrowser.git"
-            }
-          ],
-          "preview_images": [
-            "https://github.com/user-attachments/assets/ec60b0c4-87ba-48f4-981a-c55ed0e8497b",
-            "https://github.com/user-attachments/assets/112c4385-7b03-4b81-a352-4f348093351b"
-          ],
-          "badges": {
-            "stars": "https://img.shields.io/github/stars/nanobrowser/nanobrowser?style=flat-square&logo=github",
-            "forks": "https://img.shields.io/github/forks/nanobrowser/nanobrowser?style=flat-square&logo=github",
-            "issues": "https://img.shields.io/github/issues/nanobrowser/nanobrowser?style=flat-square",
-            "license": "https://img.shields.io/github/license/nanobrowser/nanobrowser?style=flat-square",
-            "last_commit": "https://img.shields.io/github/last-commit/nanobrowser/nanobrowser?style=flat-square"
-          }
-        },
-        {
-          "rank": 3,
           "full_name": "samtools/samtools",
           "short_name": "samtools",
           "name": "samtools/samtools",
@@ -1146,7 +1046,7 @@
           }
         },
         {
-          "rank": 4,
+          "rank": 2,
           "full_name": "hail-is/hail",
           "short_name": "hail",
           "name": "hail-is/hail",
@@ -1186,7 +1086,7 @@
           }
         },
         {
-          "rank": 5,
+          "rank": 3,
           "full_name": "lh3/bwa",
           "short_name": "bwa",
           "name": "lh3/bwa",
@@ -1226,7 +1126,7 @@
           }
         },
         {
-          "rank": 6,
+          "rank": 4,
           "full_name": "shenwei356/seqkit",
           "short_name": "seqkit",
           "name": "shenwei356/seqkit",
@@ -1282,7 +1182,7 @@
           }
         },
         {
-          "rank": 7,
+          "rank": 5,
           "full_name": "brentp/mosdepth",
           "short_name": "mosdepth",
           "name": "brentp/mosdepth",
@@ -1338,7 +1238,7 @@
           }
         },
         {
-          "rank": 8,
+          "rank": 6,
           "full_name": "broadinstitute/gatk",
           "short_name": "gatk",
           "name": "broadinstitute/gatk",
@@ -1384,7 +1284,7 @@
           }
         },
         {
-          "rank": 9,
+          "rank": 7,
           "full_name": "deeptools/deepTools",
           "short_name": "deepTools",
           "name": "deeptools/deepTools",
@@ -1438,7 +1338,7 @@
           }
         },
         {
-          "rank": 10,
+          "rank": 8,
           "full_name": "chhylp123/hifiasm",
           "short_name": "hifiasm",
           "name": "chhylp123/hifiasm",
@@ -7758,60 +7658,6 @@
           "score": 408.7
         },
         "growth": 192
-      },
-      {
-        "repo": {
-          "id": 1083590674,
-          "full_name": "francescopace/espectre",
-          "url": "https://github.com/francescopace/espectre",
-          "description": "🛜 ESPectre 👻  - Motion detection system based on Wi-Fi spectre analysis (CSI), with Home Assistant integration.",
-          "category": "Other",
-          "project_type": "Utility",
-          "has_paper": 0,
-          "has_docker": 0,
-          "has_conda_env": 0,
-          "sub_label": "Alignment",
-          "topics": "[\"csi\", \"diy\", \"esp-32\", \"espectre\", \"home-assistant\", \"motion-detection\", \"wifi\", \"wifi-sensing\"]",
-          "license": "GNU General Public License v3.0",
-          "tech_stack": null,
-          "install_commands": "[]",
-          "preview_images": "[\"https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png\", \"https://raw.githubusercontent.com/francescopace/espectre/master/images/home_lab.jpg\", \"https://raw.githubusercontent.com/francescopace/espectre/master/images/espectre-home-assistant.png\"]",
-          "badge_url": "https://img.shields.io/github/stars/francescopace/espectre?style=flat-square&logo=github",
-          "stars": 6369,
-          "forks": 481,
-          "open_issues": 4,
-          "pushed_at": "2026-02-15T00:12:07Z",
-          "weekly_growth": 25,
-          "score": 80.43
-        },
-        "growth": 25
-      },
-      {
-        "repo": {
-          "id": 910418754,
-          "full_name": "nanobrowser/nanobrowser",
-          "url": "https://github.com/nanobrowser/nanobrowser",
-          "description": "Open-Source Chrome extension for AI-powered web automation. Run multi-agent workflows using your own LLM API key. Alternative to OpenAI Operator.",
-          "category": "Proteomics",
-          "project_type": "Utility",
-          "has_paper": 0,
-          "has_docker": 0,
-          "has_conda_env": 0,
-          "sub_label": "Alignment",
-          "topics": "[\"agent\", \"ai\", \"ai-agents\", \"ai-tools\", \"automation\", \"browser\", \"browser-automation\", \"browser-use\", \"chrome-extension\", \"comet\", \"dia\", \"extension\", \"manus\", \"mariner\", \"multi-agent\", \"n8n\", \"nano\", \"opensource\", \"playwright\", \"web-automation\"]",
-          "license": "Apache License 2.0",
-          "tech_stack": null,
-          "install_commands": "[{\"type\": \"git\", \"command\": \"git clone https://github.com/nanobrowser/nanobrowser.git\"}]",
-          "preview_images": "[\"https://github.com/user-attachments/assets/ec60b0c4-87ba-48f4-981a-c55ed0e8497b\", \"https://github.com/user-attachments/assets/112c4385-7b03-4b81-a352-4f348093351b\"]",
-          "badge_url": "https://img.shields.io/github/stars/nanobrowser/nanobrowser?style=flat-square&logo=github",
-          "stars": 12222,
-          "forks": 1262,
-          "open_issues": 47,
-          "pushed_at": "2025-11-24T11:10:03Z",
-          "weekly_growth": 6,
-          "score": 44.7
-        },
-        "growth": 6
       },
       {
         "repo": {

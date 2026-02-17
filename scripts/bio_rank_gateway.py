@@ -117,11 +117,53 @@ EXCLUDE_KEYWORDS = ["notes", "exercise", "homework", "tutorial", "learning", "co
 
 # 通用编程项目黑名单关键词（非生信工具）
 NON_BIO_BLACKLIST = [
-    "wasmedge", "dapr", "espectre", "runtime", "orchestration", "kubernetes", "k8s",
+    "wasmedge", "dapr", "espectre", "nanobrowser", "runtime", "orchestration", "kubernetes", "k8s",
     "service mesh", "microservice", "serverless", "cloud native", "devops",
     "web framework", "frontend", "backend", "react", "vue", "angular",
     "game engine", "blockchain", "cryptocurrency", "machine learning platform",
-    "deep learning framework", "chatbot", "llm", "large language model"
+    "deep learning framework", "chatbot", "llm", "large language model",
+    "browser automation", "web scraping", "web agent", "browser agent"
+]
+
+# 强制排除的仓库（精确匹配 full_name，不区分大小写）
+FORCE_EXCLUDE_REPOS = [
+    # 浏览器自动化/AI Agent工具
+    "nicepkg/espectre",
+    "nicepkg/nanobrowser",
+    "nicepkg/vmail",
+    "nicepkg/gpt-runner",
+    "nicepkg/aide",
+    "nicepkg/nice-mcp",
+    "nicepkg/browser-use",
+    "nicepkg/browser-ai",
+    "nicepkg/browser-agent",
+    "nicepkg/web-agent",
+    "nicepkg/ai-agent",
+    "nicepkg/llm-agent",
+    "nicepkg/mcp-agent",
+    "nicepkg/coder-agent",
+    "nicepkg/qoder",
+    "nicepkg/qoder-agent",
+    "nicepkg/llm-browser",
+    "nicepkg/ai-browser",
+    "nicepkg/browser-automation",
+    "nicepkg/web-automation",
+    "nicepkg/agentic-browser",
+    "nicepkg/ai-web-agent",
+    "nicepkg/agent-browser",
+    "nicepkg/automation-browser",
+    "nicepkg/agentic-web",
+    "nicepkg/automation-agent",
+    "nicepkg/agent-automation",
+    "nicepkg/llm-automation",
+    # 其他非生信工具
+    "nicepkg/mcp",
+    "nicepkg/ts",
+    "nicepkg/go",
+    "nicepkg/rust",
+    "orama/orama",
+    "WasmEdge/WasmEdge",
+    "dapr/dapr",
 ]
 
 # ============================================================
@@ -316,10 +358,24 @@ def is_non_bio_project(repo: dict) -> bool:
     """基于权重评分机制检测是否为非生信项目
     
     判定标准：
+    0. 强制排除列表中的仓库直接排除
     1. Bio-Score > Tech-Score 且 Bio-Score >= BIO_SCORE_THRESHOLD 时通过
     2. 含大量 IT 词汇但完全无组学核心词 -> 强制排除
     3. topics 含 search/database/engine 且无生物学标签 -> 直接剔除
     """
+    full_name = (repo.get("full_name") or "").lower()
+    
+    # 规则 0：强制排除列表
+    force_exclude_lower = [r.lower() for r in FORCE_EXCLUDE_REPOS]
+    if full_name in force_exclude_lower:
+        return True
+    
+    # 检查仓库名是否包含黑名单关键词
+    repo_name = full_name.split("/")[-1] if "/" in full_name else full_name
+    for blacklist_term in NON_BIO_BLACKLIST:
+        if blacklist_term in repo_name:
+            return True
+    
     description = (repo.get("description") or "").lower()
     raw_topics = repo.get("topics", [])
     if isinstance(raw_topics, str):
@@ -328,7 +384,6 @@ def is_non_bio_project(repo: dict) -> bool:
         except (json.JSONDecodeError, TypeError):
             raw_topics = []
     topics = [t.lower() for t in raw_topics]
-    full_name = (repo.get("full_name") or "").lower()
     full_text = f"{description} {' '.join(topics)} {full_name}"
     
     # 规则 1：权重评分
