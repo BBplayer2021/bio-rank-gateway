@@ -970,7 +970,7 @@
                     <div class="tiobe-title">
                         <i class="bi bi-fire"></i> Bio-Omics Heat Index
                     </div>
-                    <div class="tiobe-subtitle">v2.0: Growth(40%) + Volume(30%) + Bioconductor(30%) — YoY captures rising fields</div>
+                    <div class="tiobe-subtitle">v3.0: Academic(30%) + Preprint(20%) + Tech(25%) + Funding(15%) + Community(10%)</div>
                 </div>
                 <button class="tiobe-toggle" id="tiobeToggle" onclick="toggleTiobeExpand()">Show All</button>
             </div>
@@ -1105,7 +1105,7 @@
                 const sidebarCat = FIELD_TO_CATEGORY[item.field];
                 const isClickable = !!sidebarCat;
                 
-                // YoY 增长率 (v2.0 新字段)
+                // YoY 增长率 (v3.0)
                 const yoyRate = item.yoy_rate ?? null;
                 let yoyHtml = '';
                 if (yoyRate !== null) {
@@ -1116,7 +1116,7 @@
                     yoyHtml = '<span class="tiobe-yoy neutral">-</span>';
                 }
                 
-                // 动能等级 (v2.0 新字段)
+                // 动能等级 (v3.0)
                 const momentum = item.momentum || 'Stable';
                 const momentumClass = momentum.toLowerCase().replace(' ', '-');
                 const momentumHtml = `<span class="tiobe-momentum ${momentumClass}">${momentum}</span>`;
