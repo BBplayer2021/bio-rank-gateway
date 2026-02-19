@@ -562,9 +562,9 @@
         
         .tiobe-bar-row {
             display: grid;
-            grid-template-columns: 24px 160px 1fr 64px 70px;
+            grid-template-columns: 24px 140px 1fr 54px 60px 80px;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             padding: 5px 8px;
             border-radius: 8px;
             cursor: default;
@@ -658,6 +658,30 @@
         .tiobe-change.new { color: var(--primary-color); font-weight: 600; }
         .tiobe-change.flat { color: var(--text-secondary); }
         
+        .tiobe-yoy {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-align: right;
+            white-space: nowrap;
+        }
+        .tiobe-yoy.positive { color: #38a169; }
+        .tiobe-yoy.negative { color: #e53e3e; }
+        .tiobe-yoy.neutral { color: var(--text-secondary); }
+        
+        .tiobe-momentum {
+            font-size: 0.68rem;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 10px;
+            text-align: center;
+            white-space: nowrap;
+        }
+        .tiobe-momentum.rising-star { background: #fef3c7; color: #92400e; }
+        .tiobe-momentum.hot { background: #fee2e2; color: #991b1b; }
+        .tiobe-momentum.growing { background: #d1fae5; color: #065f46; }
+        .tiobe-momentum.stable { background: #e5e7eb; color: #4b5563; }
+        .tiobe-momentum.cooling { background: #dbeafe; color: #1e40af; }
+        
         .tiobe-legend {
             display: flex;
             flex-wrap: wrap;
@@ -683,9 +707,10 @@
         
         @media (max-width: 992px) {
             .tiobe-bar-row {
-                grid-template-columns: 20px 120px 1fr 50px 60px;
-                gap: 6px;
+                grid-template-columns: 20px 110px 1fr 44px 50px 70px;
+                gap: 4px;
             }
+            .tiobe-momentum { font-size: 0.62rem; padding: 2px 4px; }
         }
         
         /* Comments Section */
@@ -945,7 +970,7 @@
                     <div class="tiobe-title">
                         <i class="bi bi-fire"></i> Bio-Omics Heat Index
                     </div>
-                    <div class="tiobe-subtitle">Weighted by PubMed (50%) + bioRxiv (30%) + GitHub (20%) — Click a field to view its tool rankings</div>
+                    <div class="tiobe-subtitle">v2.0: Growth(40%) + Volume(30%) + Bioconductor(30%) — YoY captures rising fields</div>
                 </div>
                 <button class="tiobe-toggle" id="tiobeToggle" onclick="toggleTiobeExpand()">Show All</button>
             </div>
@@ -1080,19 +1105,21 @@
                 const sidebarCat = FIELD_TO_CATEGORY[item.field];
                 const isClickable = !!sidebarCat;
                 
-                // 趋势
-                let changeHtml = '';
-                if (item.change_str === 'NEW') {
-                    changeHtml = '<span class="tiobe-change new">NEW</span>';
-                } else if (item.change === null || item.change === undefined) {
-                    changeHtml = '<span class="tiobe-change flat">-</span>';
-                } else if (item.change > 0) {
-                    changeHtml = `<span class="tiobe-change up"><i class="bi bi-caret-up-fill"></i> ${item.change_str}</span>`;
-                } else if (item.change < 0) {
-                    changeHtml = `<span class="tiobe-change down"><i class="bi bi-caret-down-fill"></i> ${item.change_str}</span>`;
+                // YoY 增长率 (v2.0 新字段)
+                const yoyRate = item.yoy_rate ?? null;
+                let yoyHtml = '';
+                if (yoyRate !== null) {
+                    const yoyClass = yoyRate > 5 ? 'positive' : (yoyRate < -5 ? 'negative' : 'neutral');
+                    const yoySign = yoyRate >= 0 ? '+' : '';
+                    yoyHtml = `<span class="tiobe-yoy ${yoyClass}">${yoySign}${yoyRate.toFixed(1)}%</span>`;
                 } else {
-                    changeHtml = '<span class="tiobe-change flat">0.00%</span>';
+                    yoyHtml = '<span class="tiobe-yoy neutral">-</span>';
                 }
+                
+                // 动能等级 (v2.0 新字段)
+                const momentum = item.momentum || 'Stable';
+                const momentumClass = momentum.toLowerCase().replace(' ', '-');
+                const momentumHtml = `<span class="tiobe-momentum ${momentumClass}">${momentum}</span>`;
                 
                 const linkIcon = isClickable ? '<i class="bi bi-box-arrow-in-right link-icon"></i>' : '';
                 const clickAttr = isClickable ? `onclick="tiobeNavigate('${sidebarCat}')"` : '';
@@ -1108,7 +1135,8 @@
                             <div class="tiobe-bar-fill" style="width:${barWidth.toFixed(1)}%;background:${barColor};"></div>
                         </div>
                         <span class="tiobe-pct">${item.share_pct.toFixed(1)}%</span>
-                        ${changeHtml}
+                        ${yoyHtml}
+                        ${momentumHtml}
                     </div>
                 `;
             }
@@ -1122,10 +1150,11 @@
                 const color = OMICS_CATEGORY_COLORS[cat] || '#718096';
                 legendHtml += `<span class="tiobe-legend-item"><span class="tiobe-legend-dot" style="background:${color}"></span>${cat}</span>`;
             }
-            // 数据时间
+            // 版本和数据时间
+            const version = omicsIndexData.version || '1.0';
             if (omicsIndexData.generated_at) {
                 const dateStr = new Date(omicsIndexData.generated_at).toLocaleDateString();
-                legendHtml += `<span class="tiobe-legend-item" style="margin-left:auto;">Updated: ${dateStr}</span>`;
+                legendHtml += `<span class="tiobe-legend-item" style="margin-left:auto;">v${version} | ${dateStr}</span>`;
             }
             legend.innerHTML = legendHtml;
         }

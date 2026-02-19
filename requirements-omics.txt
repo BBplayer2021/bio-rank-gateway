@@ -1,0 +1,5 @@
+# Bio-Omics TIOBE Index 脚本依赖
+# 安装: pip install -r requirements-omics.txt
+
+biopython>=1.81   # PubMed NCBI Entrez 查询
+requests>=2.28    # GitHub / bioRxiv API（可选，无则用标准库 urllib）
