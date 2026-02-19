@@ -508,6 +508,186 @@
             display: none;
         }
         
+        /* TIOBE Index Section */
+        .tiobe-section {
+            background: white;
+            border-radius: 16px;
+            padding: 25px 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .tiobe-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .tiobe-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .tiobe-subtitle {
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+        }
+        
+        .tiobe-toggle {
+            background: none;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 5px 12px;
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .tiobe-toggle:hover {
+            background: #f7fafc;
+            border-color: #cbd5e0;
+        }
+        
+        .tiobe-bar-list {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        
+        .tiobe-bar-row {
+            display: grid;
+            grid-template-columns: 24px 160px 1fr 64px 70px;
+            align-items: center;
+            gap: 10px;
+            padding: 5px 8px;
+            border-radius: 8px;
+            cursor: default;
+            transition: background 0.15s;
+        }
+        
+        .tiobe-bar-row:hover {
+            background: #f7fafc;
+        }
+        
+        .tiobe-bar-row.clickable {
+            cursor: pointer;
+        }
+        
+        .tiobe-bar-row.clickable:hover {
+            background: #edf2f7;
+        }
+        
+        .tiobe-rank {
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--text-secondary);
+            text-align: right;
+        }
+        
+        .tiobe-rank.top3 {
+            color: var(--primary-color);
+        }
+        
+        .tiobe-field {
+            font-size: 0.88rem;
+            font-weight: 500;
+            color: var(--text-primary);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .tiobe-field .category-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 6px;
+            vertical-align: middle;
+        }
+        
+        .tiobe-field .link-icon {
+            font-size: 0.7rem;
+            color: var(--primary-color);
+            opacity: 0;
+            margin-left: 4px;
+            transition: opacity 0.15s;
+        }
+        
+        .tiobe-bar-row.clickable:hover .link-icon {
+            opacity: 1;
+        }
+        
+        .tiobe-bar-track {
+            height: 20px;
+            background: #edf2f7;
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .tiobe-bar-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.6s ease;
+            min-width: 2px;
+        }
+        
+        .tiobe-pct {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            text-align: right;
+        }
+        
+        .tiobe-change {
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-align: right;
+            white-space: nowrap;
+        }
+        
+        .tiobe-change.up { color: #38a169; }
+        .tiobe-change.down { color: #e53e3e; }
+        .tiobe-change.new { color: var(--primary-color); font-weight: 600; }
+        .tiobe-change.flat { color: var(--text-secondary); }
+        
+        .tiobe-legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 16px;
+            padding-top: 14px;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .tiobe-legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+        }
+        
+        .tiobe-legend-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+        
+        @media (max-width: 992px) {
+            .tiobe-bar-row {
+                grid-template-columns: 20px 120px 1fr 50px 60px;
+                gap: 6px;
+            }
+        }
+        
         /* Comments Section */
         .comments-section {
             background: white;
@@ -758,6 +938,23 @@
             </div>
         </div>
         
+        <!-- Bio-Omics TIOBE Index -->
+        <div class="tiobe-section" id="tiobeSection" style="display: none;">
+            <div class="tiobe-header">
+                <div>
+                    <div class="tiobe-title">
+                        <i class="bi bi-fire"></i> Bio-Omics Heat Index
+                    </div>
+                    <div class="tiobe-subtitle">Weighted by PubMed (50%) + bioRxiv (30%) + GitHub (20%) — Click a field to view its tool rankings</div>
+                </div>
+                <button class="tiobe-toggle" id="tiobeToggle" onclick="toggleTiobeExpand()">Show All</button>
+            </div>
+            <div class="tiobe-bar-list" id="tiobeBarList">
+                <!-- Dynamic bars rendered by JS -->
+            </div>
+            <div class="tiobe-legend" id="tiobeLegend"></div>
+        </div>
+        
         <!-- Track Tabs -->
         <div class="track-tabs">
             <div class="track-tab active" data-track="pipeline" onclick="switchTrack('pipeline')">
@@ -819,6 +1016,133 @@
         let currentCategory = 'Genomics';
         let currentTrack = 'pipeline';
         let activeFilters = new Set();  // 当前激活的筛选标签
+        
+        /* ═══════════════════════════════════════════════════
+           Bio-Omics TIOBE Index
+           ═══════════════════════════════════════════════════ */
+        let omicsIndexData = null;
+        let tiobeExpanded = false;
+        const TIOBE_DEFAULT_SHOW = 10;
+        
+        // TIOBE field → sidebar category 映射 (可点击跳转的领域)
+        const FIELD_TO_CATEGORY = {
+            'Genomics': 'Genomics',
+            'Transcriptomics': 'Transcriptomics',
+            'Proteomics': 'Proteomics',
+            'Metabolomics': 'Metabolomics',
+            'Single-cell Omics': 'Single-cell',
+            'Metagenomics': 'Metagenomics',
+            'Epigenomics': 'Epigenetics',
+        };
+        
+        // 组学分类颜色
+        const OMICS_CATEGORY_COLORS = {
+            'Core Omics': '#4299e1',
+            'Advanced': '#9f7aea',
+            'Applied': '#ed8936',
+            'Medical': '#e53e3e',
+            'Technology': '#38b2ac',
+        };
+        
+        async function loadOmicsIndex() {
+            try {
+                const resp = await fetch('data/omics_index.json');
+                omicsIndexData = await resp.json();
+                renderTiobeIndex();
+            } catch (e) {
+                console.warn('Omics index not available:', e);
+            }
+        }
+        
+        function renderTiobeIndex() {
+            if (!omicsIndexData || !omicsIndexData.rankings) return;
+            
+            const section = document.getElementById('tiobeSection');
+            const container = document.getElementById('tiobeBarList');
+            const legend = document.getElementById('tiobeLegend');
+            const toggle = document.getElementById('tiobeToggle');
+            const rankings = omicsIndexData.rankings;
+            
+            if (rankings.length === 0) return;
+            section.style.display = 'block';
+            
+            const maxPct = rankings[0].share_pct;
+            const showCount = tiobeExpanded ? rankings.length : Math.min(TIOBE_DEFAULT_SHOW, rankings.length);
+            toggle.textContent = tiobeExpanded ? 'Show Top 10' : `Show All (${rankings.length})`;
+            toggle.style.display = rankings.length <= TIOBE_DEFAULT_SHOW ? 'none' : '';
+            
+            let html = '';
+            for (let i = 0; i < showCount; i++) {
+                const item = rankings[i];
+                const barWidth = maxPct > 0 ? (item.share_pct / maxPct * 100) : 0;
+                const catColor = OMICS_CATEGORY_COLORS[item.category] || '#718096';
+                const barColor = catColor;
+                const sidebarCat = FIELD_TO_CATEGORY[item.field];
+                const isClickable = !!sidebarCat;
+                
+                // 趋势
+                let changeHtml = '';
+                if (item.change_str === 'NEW') {
+                    changeHtml = '<span class="tiobe-change new">NEW</span>';
+                } else if (item.change === null || item.change === undefined) {
+                    changeHtml = '<span class="tiobe-change flat">-</span>';
+                } else if (item.change > 0) {
+                    changeHtml = `<span class="tiobe-change up"><i class="bi bi-caret-up-fill"></i> ${item.change_str}</span>`;
+                } else if (item.change < 0) {
+                    changeHtml = `<span class="tiobe-change down"><i class="bi bi-caret-down-fill"></i> ${item.change_str}</span>`;
+                } else {
+                    changeHtml = '<span class="tiobe-change flat">0.00%</span>';
+                }
+                
+                const linkIcon = isClickable ? '<i class="bi bi-box-arrow-in-right link-icon"></i>' : '';
+                const clickAttr = isClickable ? `onclick="tiobeNavigate('${sidebarCat}')"` : '';
+                const clickClass = isClickable ? ' clickable' : '';
+                
+                html += `
+                    <div class="tiobe-bar-row${clickClass}" ${clickAttr}>
+                        <span class="tiobe-rank${i < 3 ? ' top3' : ''}">${item.rank}</span>
+                        <span class="tiobe-field">
+                            <span class="category-dot" style="background:${catColor}"></span>${item.field}${linkIcon}
+                        </span>
+                        <div class="tiobe-bar-track">
+                            <div class="tiobe-bar-fill" style="width:${barWidth.toFixed(1)}%;background:${barColor};"></div>
+                        </div>
+                        <span class="tiobe-pct">${item.share_pct.toFixed(1)}%</span>
+                        ${changeHtml}
+                    </div>
+                `;
+            }
+            container.innerHTML = html;
+            
+            // 图例
+            const seenCats = new Set();
+            rankings.forEach(r => seenCats.add(r.category));
+            let legendHtml = '';
+            for (const cat of seenCats) {
+                const color = OMICS_CATEGORY_COLORS[cat] || '#718096';
+                legendHtml += `<span class="tiobe-legend-item"><span class="tiobe-legend-dot" style="background:${color}"></span>${cat}</span>`;
+            }
+            // 数据时间
+            if (omicsIndexData.generated_at) {
+                const dateStr = new Date(omicsIndexData.generated_at).toLocaleDateString();
+                legendHtml += `<span class="tiobe-legend-item" style="margin-left:auto;">Updated: ${dateStr}</span>`;
+            }
+            legend.innerHTML = legendHtml;
+        }
+        
+        function toggleTiobeExpand() {
+            tiobeExpanded = !tiobeExpanded;
+            renderTiobeIndex();
+        }
+        
+        function tiobeNavigate(category) {
+            switchCategory(category);
+            // 滚动到工具列表区域
+            const grid = document.getElementById('projectGrid');
+            if (grid) {
+                grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
         
         // Load data
         async function loadData() {
@@ -1149,6 +1473,7 @@
         
         // Initialize
         loadData();
+        loadOmicsIndex();
     </script>
 </body>
 </html>
