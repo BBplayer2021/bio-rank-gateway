@@ -1,0 +1,27 @@
+{
+  "2026-02-20": {
+    "Genomics": 845,
+    "Transcriptomics": 1937,
+    "Proteomics": 734,
+    "Metabolomics": 168,
+    "Single-cell Omics": 272,
+    "Spatial Omics": 207,
+    "Pangenomics": 82,
+    "Metagenomics": 113,
+    "Epigenomics": 424,
+    "Lipidomics": 272,
+    "Multi-omics": 502,
+    "Clinical Genomics": 136,
+    "Microbiome": 309,
+    "Pharmacogenomics": 250,
+    "Phylogenomics": 109,
+    "Structural Biology": 424,
+    "Immunogenomics": 109,
+    "Synthetic Biology": 103,
+    "Glycomics": 181,
+    "Radiomics": 54,
+    "Nutrigenomics": 14,
+    "Long-read Sequencing": 126,
+    "CRISPR Genomics": 326
+  }
+}
