@@ -13,7 +13,7 @@ Bio-Omics Heat Index (v3.0)
   - 预印本活跃度: bioRxiv 量(60%) + bioRxiv 增长(40%)
   - 技术开发势能: GitHub(30%) + Bioconductor(30%) + PyPI(40%)
   - 资金信号: NIH 项目数(100%)
-  - 社区关注度: Google Trends(50%) + Bing Search(50%)
+  - 社区关注度: Google Trends(50%) + Semantic Scholar(50%)
 
 数据源:
   - PubMed (NCBI Entrez): 年度文献量 + YoY 增长率
@@ -23,7 +23,7 @@ Bio-Omics Heat Index (v3.0)
   - PyPI Stats: Python 包下载量统计
   - NIH RePORTER: 近 2 年资助项目数
   - Google Trends: 相对搜索热度
-  - Bing Search: 搜索结果数量 (社区关注度)
+  - Semantic Scholar: 学术搜索结果数 (社区关注度)
 
 输出: docs/data/omics_index.json
 
@@ -72,8 +72,7 @@ HISTORY_PATH = PROJECT_ROOT / "docs" / "data" / "biorxiv_history.json"
 # 建议设置 GITHUB_TOKEN 以提高 GitHub API 配额，避免 403 rate limit
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 ENTREZ_EMAIL = os.environ.get("ENTREZ_EMAIL", "bio-rank-gateway@localhost")
-# Bing Web Search API Key (免费层 1000次/月)
-BING_API_KEY = os.environ.get("BING_API_KEY", "")
+# Semantic Scholar (免费, 无需 API key, 100 req/5min)
 
 # API 速率限制 (秒)
 NCBI_DELAY = 0.4       # NCBI 建议无 key 时 ≤3 req/s
@@ -83,7 +82,7 @@ BIOC_DELAY = 0.3       # Bioconductor 限速
 PYPI_DELAY = 0.2       # PyPI Stats 限速
 TRENDS_DELAY = 3.0     # Google Trends 限速 (需 ≥3s 避免 429)
 NIH_DELAY = 0.5        # NIH RePORTER 限速
-BING_DELAY = 0.3       # Bing Search 限速
+SCHOLAR_DELAY = 3.0    # Semantic Scholar 限速 (100 req/5min → ~3s safe)
 OPENALEX_DELAY = 0.15  # OpenAlex 限速 (polite pool: 10 req/s)
 API_TIMEOUT = 20
 MAX_RETRIES = 3
@@ -100,7 +99,7 @@ WEIGHT_ACADEMIC = 0.30       # 学术增长力
 WEIGHT_PREPRINT = 0.20       # 预印本活跃度
 WEIGHT_TECH = 0.25           # 技术开发势能
 WEIGHT_FUNDING = 0.15        # 资金信号 (NIH RePORTER)
-WEIGHT_COMMUNITY = 0.10      # 社区关注度 (Google Trends + Bing Search)
+WEIGHT_COMMUNITY = 0.10      # 社区关注度 (Google Trends + Scholar Results)
 
 # 学术增长力子权重
 WEIGHT_PUBMED_YOY = 0.70         # PubMed YoY 增长率
@@ -117,7 +116,7 @@ WEIGHT_PYPI = 0.40               # PyPI (Python 生态)
 
 # 社区关注度子权重
 WEIGHT_GTRENDS = 0.50            # Google Trends (相对热度趋势)
-WEIGHT_BING = 0.50               # Bing Search Volume (绝对搜索量)
+WEIGHT_SCHOLAR = 0.50            # Semantic Scholar Results (学术搜索量)
 
 # API 端点
 NCBI_ESEARCH = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
@@ -128,6 +127,7 @@ PYPI_STATS_BASE = "https://pypistats.org/api/packages"
 NIH_REPORTER_BASE = "https://api.reporter.nih.gov/v2/projects/search"
 BING_SEARCH_BASE = "https://api.bing.microsoft.com/v7.0/search"
 OPENALEX_WORKS_BASE = "https://api.openalex.org/works"
+SCHOLAR_SEARCH_BASE = "https://api.semanticscholar.org/graph/v1/paper/search"
 
 # 日志
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -989,6 +989,71 @@ def fetch_bing_search_volume(keywords: list[str]) -> int:
 
 
 # ============================================================
+# 数据抓取: Semantic Scholar 搜索结果数 (替代 Bing)
+# ============================================================
+# Semantic Scholar API 免费、无需 API key
+# 返回匹配论文总数，作为学术社区关注度的代理指标
+# Rate limit: 100 requests / 5 min (无 key)
+# ============================================================
+
+_scholar_cache: dict[str, int] = {}
+
+
+def fetch_scholar_results_count(keywords: list[str]) -> int:
+    """
+    获取 Semantic Scholar 搜索结果总数，反映学术社区对该领域的关注规模。
+    
+    API: https://api.semanticscholar.org/graph/v1/paper/search
+    返回: total (匹配论文总数)
+    
+    取前 3 个关键词分别查询，返回平均结果数。
+    """
+    cache_key = keywords[0] if keywords else ""
+    if cache_key in _scholar_cache:
+        return _scholar_cache[cache_key]
+    
+    headers = {
+        "User-Agent": "Bio-Omics-Index/3.0 (mailto:bio-rank-gateway@github.io)"
+    }
+    
+    total_results = 0
+    query_count = 0
+    
+    for kw in keywords[:3]:
+        query = f"{kw} bioinformatics"
+        url = f"{SCHOLAR_SEARCH_BASE}?query={quote_plus(query)}&limit=1&fields=title"
+        
+        try:
+            if HAS_REQUESTS:
+                r = requests.get(url, headers=headers, timeout=API_TIMEOUT)
+                if r.status_code == 200:
+                    data = r.json()
+                    total = data.get("total", 0)
+                    total_results += total
+                    query_count += 1
+                elif r.status_code == 429:
+                    log("  Scholar API: Rate limit, backing off")
+                    _rate_limit(10)
+                    continue
+            else:
+                req = Request(url, headers=headers)
+                with urlopen(req, timeout=API_TIMEOUT) as resp:
+                    data = json.loads(resp.read().decode("utf-8"))
+                    total = data.get("total", 0)
+                    total_results += total
+                    query_count += 1
+            
+            _rate_limit(SCHOLAR_DELAY)
+            
+        except Exception as e:
+            log("  Scholar search error for '%s': %s", kw, e)
+    
+    avg_results = total_results // query_count if query_count > 0 else 0
+    _scholar_cache[cache_key] = avg_results
+    return avg_results
+
+
+# ============================================================
 # 数据抓取: OpenAlex 引用动量 (Citation Momentum)
 # ============================================================
 
@@ -1099,7 +1164,7 @@ def calculate_scores_v3(raw_data: dict[str, dict]) -> list[dict[str, Any]]:
       - 预印本活跃度: bioRxiv 量(60%) + bioRxiv 增长(40%)
       - 技术开发势能: GitHub(30%) + Bioconductor(30%) + PyPI(40%)
       - 资金信号: NIH 项目数(100%)
-      - 社区关注度: Google Trends(50%) + Bing Search(50%)
+      - 社区关注度: Google Trends(50%) + Scholar Results(50%)
     
     所有子指标先 Min-Max 归一化到 [0, 1]，再加权求和。
     """
@@ -1115,7 +1180,7 @@ def calculate_scores_v3(raw_data: dict[str, dict]) -> list[dict[str, Any]]:
     pypi_downloads = [raw_data[f]["pypi_downloads"] for f in fields]
     nih_projects = [raw_data[f]["nih_projects"] for f in fields]
     gtrends_scores = [raw_data[f]["gtrends_score"] for f in fields]
-    bing_volumes = [raw_data[f]["bing_volume"] for f in fields]
+    scholar_results = [raw_data[f]["scholar_results"] for f in fields]
     citation_momentum = [raw_data[f]["citation_momentum"] for f in fields]
     
     # 归一化
@@ -1128,7 +1193,7 @@ def calculate_scores_v3(raw_data: dict[str, dict]) -> list[dict[str, Any]]:
     norm_pypi = normalize_values(pypi_downloads)
     norm_nih = normalize_values(nih_projects)
     norm_gtrends = normalize_values(gtrends_scores)
-    norm_bing = normalize_values(bing_volumes)
+    norm_scholar = normalize_values(scholar_results)
     norm_citation = normalize_values(citation_momentum)
     
     results = []
@@ -1157,15 +1222,11 @@ def calculate_scores_v3(raw_data: dict[str, dict]) -> list[dict[str, Any]]:
         # 4. 资金信号 (15%)
         funding_score = norm_nih[i]
         
-        # 5. 社区关注度 (10%)
-        # 动态权重: 有 BING_API_KEY 时 50/50，否则 Google Trends 100%
-        if BING_API_KEY:
-            community_score = (
-                norm_gtrends[i] * WEIGHT_GTRENDS +
-                norm_bing[i] * WEIGHT_BING
-            )
-        else:
-            community_score = norm_gtrends[i]
+        # 5. 社区关注度 (10%) = Google Trends(50%) + Scholar Results(50%)
+        community_score = (
+            norm_gtrends[i] * WEIGHT_GTRENDS +
+            norm_scholar[i] * WEIGHT_SCHOLAR
+        )
         
         # 总分
         heat_score = (
@@ -1194,7 +1255,7 @@ def calculate_scores_v3(raw_data: dict[str, dict]) -> list[dict[str, Any]]:
             "pypi_downloads": data["pypi_downloads"],
             "nih_projects": data["nih_projects"],
             "gtrends_score": round(data["gtrends_score"], 2),
-            "bing_volume": data["bing_volume"],
+            "scholar_results": data["scholar_results"],
             "citation_momentum": data["citation_momentum"],
             # 五维度分数 (调试用)
             "academic_score": round(academic_score, 4),
@@ -1270,7 +1331,7 @@ def collect_all_data() -> dict[str, dict]:
       - PyPI 下载量 (Python 生态)
       - NIH 资助项目数 (资金信号)
       - Google Trends 热度 (社区关注度)
-      - Bing 搜索量 (社区关注度)
+      - Semantic Scholar 搜索结果数 (社区关注度)
       - OpenAlex 引用动量 (学术增长力)
     """
     raw_data = {}
@@ -1318,9 +1379,10 @@ def collect_all_data() -> dict[str, dict]:
         log("  Google Trends: %.1f", gtrends_score)
         _rate_limit(TRENDS_DELAY)
         
-        # 8) Bing Search (社区关注度)
-        bing_volume = fetch_bing_search_volume(keywords)
-        log("  Bing Search: %s results", bing_volume)
+        # 8) Semantic Scholar (社区关注度 - 学术搜索量)
+        scholar_results = fetch_scholar_results_count(keywords)
+        log("  Scholar Results: %s papers", scholar_results)
+        _rate_limit(SCHOLAR_DELAY)
         
         # 9) OpenAlex Citation Momentum (学术增长力子维度)
         citation_momentum = fetch_openalex_citation_momentum(keywords)
@@ -1337,7 +1399,7 @@ def collect_all_data() -> dict[str, dict]:
             "pypi_downloads": pypi_downloads,
             "nih_projects": nih_projects,
             "gtrends_score": gtrends_score,
-            "bing_volume": bing_volume,
+            "scholar_results": scholar_results,
             "citation_momentum": citation_momentum,
             "category": category,
         }
@@ -1360,7 +1422,7 @@ def generate_omics_index() -> dict[str, Any]:
     log("\n[Phase 1] Collecting data (10 indicators)...")
     log("  - PubMed YoY, bioRxiv, GitHub, OpenAlex Citations")
     log("  - Bioconductor (R), PyPI (Python)")
-    log("  - NIH RePORTER, Google Trends, Bing Search")
+    log("  - NIH RePORTER, Google Trends, Semantic Scholar")
     raw_data = collect_all_data()
     
     # 1.5) bioRxiv 增长率 (需要历史数据)
@@ -1417,7 +1479,7 @@ def generate_omics_index() -> dict[str, Any]:
                 "tech_bioconductor": WEIGHT_BIOC,
                 "tech_pypi": WEIGHT_PYPI,
                 "community_gtrends": WEIGHT_GTRENDS,
-                "community_bing": WEIGHT_BING,
+                "community_scholar": WEIGHT_SCHOLAR,
             },
             "pubmed_period": "rolling 12-month vs previous 12-month",
             "citation_period": "top 20 papers (12 months) avg cited_by_count via OpenAlex",
@@ -1428,7 +1490,7 @@ def generate_omics_index() -> dict[str, Any]:
             "pypi_period": "last 6 months downloads (estimated)",
             "nih_period": f"{current_year - 1}-{current_year} funded projects",
             "gtrends_period": "last 12 months relative interest",
-            "bing_period": "total estimated search results",
+            "scholar_period": "total matching papers via Semantic Scholar API",
             "biorxiv_total_6m": biorxiv_total,
         },
         "total_fields": len(rankings),
@@ -1444,16 +1506,17 @@ def generate_omics_index() -> dict[str, Any]:
     log("\n" + "=" * 120)
     log("Bio-Omics Heat Index v3.0 (Top 20)")
     log("=" * 120)
-    log("%-4s %-20s %6s %7s %9s %7s %6s %9s %9s %6s %8s %7s",
-        "Rank", "Field", "Share%", "YoY%", "Momentum", "PubMed", "bioRxiv", "GitHub", "BiocDL", "PyPI", "NIH", "GTrends")
+    log("%-4s %-20s %6s %7s %9s %7s %6s %9s %9s %6s %8s %8s",
+        "Rank", "Field", "Share%", "YoY%", "Momentum", "PubMed", "bioRxiv", "GitHub", "BiocDL", "PyPI", "NIH", "Scholar")
     log("-" * 120)
     for item in rankings[:20]:
         yoy_str = f"{item['yoy_rate']:+.1f}%"
         # 简化大数字显示
         pypi_str = f"{item['pypi_downloads'] // 1000}k" if item['pypi_downloads'] >= 1000 else str(item['pypi_downloads'])
         bioc_str = f"{item['bioc_downloads'] // 1000}k" if item['bioc_downloads'] >= 1000 else str(item['bioc_downloads'])
+        scholar_str = f"{item['scholar_results'] // 1000}k" if item['scholar_results'] >= 1000 else str(item['scholar_results'])
         log(
-            "%-4s %-20s %5.2f%% %7s %9s %7s %7s %9s %9s %6s %8s %7.1f",
+            "%-4s %-20s %5.2f%% %7s %9s %7s %7s %9s %9s %6s %8s %8s",
             item["rank"],
             item["field"][:20],
             item["share_pct"],
@@ -1465,7 +1528,7 @@ def generate_omics_index() -> dict[str, Any]:
             bioc_str,
             pypi_str,
             item["nih_projects"],
-            item["gtrends_score"],
+            scholar_str,
         )
     log("\nGenerated at: %s", report["generated_at"])
     return report

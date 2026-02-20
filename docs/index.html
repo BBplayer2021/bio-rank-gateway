@@ -713,6 +713,77 @@
             .tiobe-momentum { font-size: 0.62rem; padding: 2px 4px; }
         }
         
+        /* Detail Expand Panel */
+        .tiobe-detail {
+            display: none;
+            grid-column: 1 / -1;
+            padding: 12px 16px 14px;
+            background: #f8fafc;
+            border-radius: 0 0 8px 8px;
+            margin-top: -4px;
+            margin-bottom: 4px;
+            border: 1px solid #e2e8f0;
+            border-top: none;
+            animation: detailSlide 0.2s ease;
+        }
+        .tiobe-detail.show { display: block; }
+        @keyframes detailSlide { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
+        
+        .tiobe-detail-grid {
+            display: grid;
+            grid-template-columns: 160px 1fr;
+            gap: 14px;
+        }
+        
+        /* Radar Chart */
+        .tiobe-radar-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .tiobe-radar-wrap svg { overflow: visible; }
+        .radar-grid { fill: none; stroke: #e2e8f0; stroke-width: 0.8; }
+        .radar-axis { stroke: #e2e8f0; stroke-width: 0.5; }
+        .radar-area { fill-opacity: 0.25; stroke-width: 1.5; }
+        .radar-label { font-size: 7.5px; fill: #4a5568; font-weight: 500; }
+        .radar-value { font-size: 6px; fill: #718096; }
+        
+        /* Indicator Grid */
+        .tiobe-indicators {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 6px 14px;
+        }
+        .tiobe-ind-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 3px 0;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .tiobe-ind-label {
+            font-size: 0.7rem;
+            color: #718096;
+            white-space: nowrap;
+        }
+        .tiobe-ind-value {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #2d3748;
+            text-align: right;
+        }
+        
+        .tiobe-bar-row.expanded {
+            background: #edf2f7;
+            border-radius: 8px 8px 0 0;
+        }
+
+        @media (max-width: 992px) {
+            .tiobe-detail-grid { grid-template-columns: 1fr; }
+            .tiobe-radar-wrap { margin-bottom: 10px; }
+            .tiobe-indicators { grid-template-columns: repeat(2, 1fr); }
+        }
+
         /* Comments Section */
         .comments-section {
             background: white;
@@ -1102,8 +1173,6 @@
                 const barWidth = maxPct > 0 ? (item.share_pct / maxPct * 100) : 0;
                 const catColor = OMICS_CATEGORY_COLORS[item.category] || '#718096';
                 const barColor = catColor;
-                const sidebarCat = FIELD_TO_CATEGORY[item.field];
-                const isClickable = !!sidebarCat;
                 
                 // YoY 增长率 (v3.0)
                 const yoyRate = item.yoy_rate ?? null;
@@ -1121,15 +1190,11 @@
                 const momentumClass = momentum.toLowerCase().replace(' ', '-');
                 const momentumHtml = `<span class="tiobe-momentum ${momentumClass}">${momentum}</span>`;
                 
-                const linkIcon = isClickable ? '<i class="bi bi-box-arrow-in-right link-icon"></i>' : '';
-                const clickAttr = isClickable ? `onclick="tiobeNavigate('${sidebarCat}')"` : '';
-                const clickClass = isClickable ? ' clickable' : '';
-                
                 html += `
-                    <div class="tiobe-bar-row${clickClass}" ${clickAttr}>
+                    <div class="tiobe-bar-row" onclick="toggleTiobeDetail(${i})" style="cursor:pointer;" id="tiobe-row-${i}">
                         <span class="tiobe-rank${i < 3 ? ' top3' : ''}">${item.rank}</span>
                         <span class="tiobe-field">
-                            <span class="category-dot" style="background:${catColor}"></span>${item.field}${linkIcon}
+                            <span class="category-dot" style="background:${catColor}"></span>${item.field}
                         </span>
                         <div class="tiobe-bar-track">
                             <div class="tiobe-bar-fill" style="width:${barWidth.toFixed(1)}%;background:${barColor};"></div>
@@ -1137,6 +1202,16 @@
                         <span class="tiobe-pct">${item.share_pct.toFixed(1)}%</span>
                         ${yoyHtml}
                         ${momentumHtml}
+                    </div>
+                    <div class="tiobe-detail" id="tiobe-detail-${i}">
+                        <div class="tiobe-detail-grid">
+                            <div class="tiobe-radar-wrap">
+                                ${buildRadarSVG(item, catColor)}
+                            </div>
+                            <div class="tiobe-indicators">
+                                ${buildIndicators(item)}
+                            </div>
+                        </div>
                     </div>
                 `;
             }
@@ -1150,13 +1225,103 @@
                 const color = OMICS_CATEGORY_COLORS[cat] || '#718096';
                 legendHtml += `<span class="tiobe-legend-item"><span class="tiobe-legend-dot" style="background:${color}"></span>${cat}</span>`;
             }
-            // 版本和数据时间
+            legendHtml += `<span class="tiobe-legend-item" style="opacity:0.7;"><i class="bi bi-hand-index" style="font-size:0.65rem;"></i> Click row to expand</span>`;
             const version = omicsIndexData.version || '1.0';
             if (omicsIndexData.generated_at) {
                 const dateStr = new Date(omicsIndexData.generated_at).toLocaleDateString();
                 legendHtml += `<span class="tiobe-legend-item" style="margin-left:auto;">v${version} | ${dateStr}</span>`;
             }
             legend.innerHTML = legendHtml;
+        }
+        
+        function toggleTiobeDetail(idx) {
+            const row = document.getElementById(`tiobe-row-${idx}`);
+            const detail = document.getElementById(`tiobe-detail-${idx}`);
+            if (!detail) return;
+            const isOpen = detail.classList.contains('show');
+            // Close all others
+            document.querySelectorAll('.tiobe-detail.show').forEach(d => d.classList.remove('show'));
+            document.querySelectorAll('.tiobe-bar-row.expanded').forEach(r => r.classList.remove('expanded'));
+            if (!isOpen) {
+                detail.classList.add('show');
+                row.classList.add('expanded');
+            }
+        }
+        
+        function buildRadarSVG(item, color) {
+            const dims = [
+                { label: 'Academic', key: 'academic_score' },
+                { label: 'Preprint', key: 'preprint_score' },
+                { label: 'Tech', key: 'tech_score' },
+                { label: 'Funding', key: 'funding_score' },
+                { label: 'Community', key: 'community_score' },
+            ];
+            const cx = 65, cy = 65, R = 48, n = 5;
+            const angleOff = -Math.PI / 2;
+            const pts = (r) => dims.map((_, i) => {
+                const a = angleOff + (2 * Math.PI * i) / n;
+                return [cx + r * Math.cos(a), cy + r * Math.sin(a)];
+            });
+            const poly = (r) => pts(r).map(p => p.join(',')).join(' ');
+            
+            // Grid rings at 25%, 50%, 75%, 100%
+            let svg = `<svg width="130" height="130" viewBox="0 0 130 130">`;
+            [0.25, 0.5, 0.75, 1.0].forEach(f => {
+                svg += `<polygon points="${poly(R * f)}" class="radar-grid"/>`;
+            });
+            // Axes
+            pts(R).forEach(p => {
+                svg += `<line x1="${cx}" y1="${cy}" x2="${p[0]}" y2="${p[1]}" class="radar-axis"/>`;
+            });
+            // Data polygon
+            const dataPts = dims.map((d, i) => {
+                const v = Math.min(item[d.key] || 0, 1);
+                const a = angleOff + (2 * Math.PI * i) / n;
+                return [cx + R * v * Math.cos(a), cy + R * v * Math.sin(a)];
+            });
+            svg += `<polygon points="${dataPts.map(p => p.join(',')).join(' ')}" class="radar-area" fill="${color}" stroke="${color}"/>`;
+            // Dots
+            dataPts.forEach(p => {
+                svg += `<circle cx="${p[0]}" cy="${p[1]}" r="2.5" fill="${color}"/>`;
+            });
+            // Labels
+            const labelR = R + 14;
+            dims.forEach((d, i) => {
+                const a = angleOff + (2 * Math.PI * i) / n;
+                const lx = cx + labelR * Math.cos(a);
+                const ly = cy + labelR * Math.sin(a);
+                const anchor = Math.abs(Math.cos(a)) < 0.1 ? 'middle' : (Math.cos(a) > 0 ? 'start' : 'end');
+                const val = (item[d.key] || 0).toFixed(2);
+                svg += `<text x="${lx}" y="${ly}" text-anchor="${anchor}" dominant-baseline="middle" class="radar-label">${d.label}</text>`;
+                svg += `<text x="${lx}" y="${ly + 9}" text-anchor="${anchor}" dominant-baseline="middle" class="radar-value">${val}</text>`;
+            });
+            svg += `</svg>`;
+            return svg;
+        }
+        
+        function fmtNum(n) {
+            if (n == null) return '-';
+            if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';
+            if (n >= 1e3) return (n / 1e3).toFixed(1) + 'k';
+            return String(n);
+        }
+        
+        function buildIndicators(item) {
+            const indicators = [
+                ['PubMed (12m)', fmtNum(item.pubmed_current)],
+                ['PubMed YoY', (item.yoy_rate >= 0 ? '+' : '') + item.yoy_rate.toFixed(1) + '%'],
+                ['Citation Avg', (item.citation_momentum || 0).toFixed(1)],
+                ['bioRxiv (6m)', fmtNum(item.biorxiv_count)],
+                ['GitHub Repos', fmtNum(item.github_activity)],
+                ['Bioconductor DL', fmtNum(item.bioc_downloads)],
+                ['PyPI DL (6m)', fmtNum(item.pypi_downloads)],
+                ['NIH Projects', fmtNum(item.nih_projects)],
+                ['Scholar Results', fmtNum(item.scholar_results ?? item.bing_volume ?? 0)],
+                ['Google Trends', (item.gtrends_score || 0).toFixed(1)],
+            ];
+            return indicators.map(([label, value]) =>
+                `<div class="tiobe-ind-item"><span class="tiobe-ind-label">${label}</span><span class="tiobe-ind-value">${value}</span></div>`
+            ).join('');
         }
         
         function toggleTiobeExpand() {
