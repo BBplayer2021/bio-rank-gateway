@@ -596,5 +596,94 @@
         ]
       }
     }
+  },
+  {
+    "timestamp": "2026-02-22T00:31:46.148138",
+    "top3": {
+      "Genomics": {
+        "pipelines": [
+          "K-Dense-AI/claude-scientific-skills",
+          "nf-core/sarek",
+          "nf-cmgg/structural"
+        ],
+        "utilities": [
+          "samtools/samtools",
+          "lh3/bwa",
+          "satijalab/seurat"
+        ]
+      },
+      "Transcriptomics": {
+        "pipelines": [
+          "nf-core/rnaseq",
+          "nf-core/scrnaseq",
+          "gagneurlab/drop"
+        ],
+        "utilities": [
+          "jinworks/CellChat",
+          "helicalAI/helical",
+          "thelovelab/DESeq2"
+        ]
+      },
+      "Metagenomics": {
+        "pipelines": [
+          "metagenome-atlas/atlas",
+          "nf-core/mag",
+          "nf-core/ampliseq"
+        ],
+        "utilities": [
+          "torognes/swarm",
+          "benjjneb/dada2",
+          "mothur/mothur"
+        ]
+      },
+      "Single-cell": {
+        "pipelines": [
+          "nf-core/scrnaseq",
+          "zhanghao-njmu/SCP",
+          "mengxu98/scop"
+        ],
+        "utilities": [
+          "scverse/scanpy",
+          "jinworks/CellChat",
+          "gao-lab/GLUE"
+        ]
+      },
+      "Epigenetics": {
+        "pipelines": [
+          "nf-core/hic",
+          "nf-core/chipseq",
+          "nf-core/atacseq"
+        ],
+        "utilities": [
+          "macs3-project/MACS",
+          "open2c/cooler",
+          "FelixKrueger/Bismark"
+        ]
+      },
+      "Proteomics": {
+        "pipelines": [
+          "lazear/sage",
+          "broadinstitute/PANOPLY",
+          "bigbio/quantms"
+        ],
+        "utilities": [
+          "vdemichev/DiaNN",
+          "michaelwitting/RepoRT",
+          "sirius-ms/sirius"
+        ]
+      },
+      "Metabolomics": {
+        "pipelines": [
+          "sneumann/xcms",
+          "shuzhao-li-lab/asari",
+          "biosustain/snakemake_UmetaFlow"
+        ],
+        "utilities": [
+          "michaelwitting/RepoRT",
+          "sirius-ms/sirius",
+          "cran-task-views/Omics"
+        ]
+      }
+    }
   }
 ]

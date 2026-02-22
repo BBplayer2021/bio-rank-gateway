@@ -1,0 +1,3326 @@
+{
+  "velvet": {
+    "count": 80,
+    "timestamp": "2026-02-22T00:23:50.437469"
+  },
+  "gimmemotifs": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:23:50.982174"
+  },
+  "vcflib": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:23:51.519916"
+  },
+  "msnbase": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:23:52.071399"
+  },
+  "jcvi": {
+    "count": 29,
+    "timestamp": "2026-02-22T00:23:52.627938"
+  },
+  "bwa": {
+    "count": 100,
+    "timestamp": "2026-02-22T00:23:53.175690"
+  },
+  "macs": {
+    "count": 39,
+    "timestamp": "2026-02-22T00:23:53.725361"
+  },
+  "pymzml": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:23:54.275155"
+  },
+  "mothur": {
+    "count": 40,
+    "timestamp": "2026-02-22T00:23:54.836332"
+  },
+  "hts-specs": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:23:55.369725"
+  },
+  "samtools": {
+    "count": 82,
+    "timestamp": "2026-02-22T00:23:55.923184"
+  },
+  "htslib": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:23:56.466740"
+  },
+  "rforproteomics": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:23:57.536326"
+  },
+  "mast": {
+    "count": 433,
+    "timestamp": "2026-02-22T00:23:58.085549"
+  },
+  "maldiquant": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:23:58.627816"
+  },
+  "pysamstats": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:23:59.159634"
+  },
+  "cobrapy": {
+    "count": 8,
+    "timestamp": "2026-02-22T00:23:59.708774"
+  },
+  "cobratoolbox": {
+    "count": 5,
+    "timestamp": "2026-02-22T00:24:00.263363"
+  },
+  "mdtraj": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:24:00.816028"
+  },
+  "swarm": {
+    "count": 214,
+    "timestamp": "2026-02-22T00:24:01.369173"
+  },
+  "bowtie2": {
+    "count": 49,
+    "timestamp": "2026-02-22T00:24:02.305846"
+  },
+  "ngless": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:24:02.851580"
+  },
+  "emperor": {
+    "count": 10,
+    "timestamp": "2026-02-22T00:24:03.403571"
+  },
+  "teachingmaterial": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:03.937171"
+  },
+  "manta": {
+    "count": 14,
+    "timestamp": "2026-02-22T00:24:04.944149"
+  },
+  "jannovar": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:24:05.486981"
+  },
+  "deeptools": {
+    "count": 4,
+    "timestamp": "2026-02-22T00:24:06.032958"
+  },
+  "soapdenovo2": {
+    "count": 10,
+    "timestamp": "2026-02-22T00:24:06.586276"
+  },
+  "fastaq": {
+    "count": 4,
+    "timestamp": "2026-02-22T00:24:07.133428"
+  },
+  "pyfaidx": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:07.666226"
+  },
+  "vcfr": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:24:08.207535"
+  },
+  "pia": {
+    "count": 14,
+    "timestamp": "2026-02-22T00:24:08.761107"
+  },
+  "delly": {
+    "count": 7,
+    "timestamp": "2026-02-22T00:24:09.310407"
+  },
+  "pychron": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:09.850220"
+  },
+  "vcf2maf": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:10.395139"
+  },
+  "bwa-meth": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:24:10.943900"
+  },
+  "methylkit": {
+    "count": 4,
+    "timestamp": "2026-02-22T00:24:11.493485"
+  },
+  "cljam": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:12.154542"
+  },
+  "openms": {
+    "count": 55,
+    "timestamp": "2026-02-22T00:24:12.715927"
+  },
+  "genmod": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:13.256152"
+  },
+  "pysam": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:24:13.794110"
+  },
+  "xcms": {
+    "count": 179,
+    "timestamp": "2026-02-22T00:24:14.344332"
+  },
+  "picard": {
+    "count": 14,
+    "timestamp": "2026-02-22T00:24:14.893948"
+  },
+  "htsjdk": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:24:15.447325"
+  },
+  "snippy": {
+    "count": 13,
+    "timestamp": "2026-02-22T00:24:16.006300"
+  },
+  "vsearch": {
+    "count": 10,
+    "timestamp": "2026-02-22T00:24:16.551746"
+  },
+  "mgl-gpr": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:17.090599"
+  },
+  "chipseeker": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:24:17.627785"
+  },
+  "ptxqc": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:24:18.168419"
+  },
+  "eoulsan": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:24:18.713697"
+  },
+  "parsnp": {
+    "count": 5,
+    "timestamp": "2026-02-22T00:24:19.260354"
+  },
+  "vcf-kit": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:24:19.808702"
+  },
+  "trinityrnaseq": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:20.359624"
+  },
+  "cataclysm-bn": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:20.906839"
+  },
+  "seqarray": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:24:21.502481"
+  },
+  "viral-ngs": {
+    "count": 7,
+    "timestamp": "2026-02-22T00:24:22.053529"
+  },
+  "pygeno": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:22.644279"
+  },
+  "fella": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:24:23.201356"
+  },
+  "stringtie": {
+    "count": 14,
+    "timestamp": "2026-02-22T00:24:23.762330"
+  },
+  "lofreq": {
+    "count": 10,
+    "timestamp": "2026-02-22T00:24:24.315149"
+  },
+  "reads-for-assembly": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:24.855848"
+  },
+  "wiggleplotr": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:25.401533"
+  },
+  "gatk": {
+    "count": 137,
+    "timestamp": "2026-02-22T00:24:25.960740"
+  },
+  "arioc": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:24:26.517181"
+  },
+  "sartools": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:24:27.068031"
+  },
+  "cpptraj": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:27.602819"
+  },
+  "dada2": {
+    "count": 30,
+    "timestamp": "2026-02-22T00:24:28.386357"
+  },
+  "agi-bio": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:28.930269"
+  },
+  "octopus": {
+    "count": 39,
+    "timestamp": "2026-02-22T00:24:29.492921"
+  },
+  "sleuth": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:24:30.036622"
+  },
+  "hicexplorer": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:24:30.580449"
+  },
+  "glypy": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:24:31.148065"
+  },
+  "bin": {
+    "count": 267,
+    "timestamp": "2026-02-22T00:24:31.696924"
+  },
+  "metacompass": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:32.234004"
+  },
+  "biotoolbox": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:32.770955"
+  },
+  "mzqc": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:24:33.324720"
+  },
+  "metabolights": {
+    "count": 58,
+    "timestamp": "2026-02-22T00:24:33.871382"
+  },
+  "mixcr": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:24:34.413354"
+  },
+  "redundans": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:24:34.958081"
+  },
+  "ddpcr": {
+    "count": 65,
+    "timestamp": "2026-02-22T00:24:35.510664"
+  },
+  "vcfgo": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:36.046466"
+  },
+  "jaffa": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:24:36.592869"
+  },
+  "chip-atlas": {
+    "count": 6,
+    "timestamp": "2026-02-22T00:24:37.145342"
+  },
+  "vcfanno": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:24:37.688962"
+  },
+  "hicpeaks": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:38.226430"
+  },
+  "pypdb": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:38.772044"
+  },
+  "basics": {
+    "count": 166,
+    "timestamp": "2026-02-22T00:24:39.334526"
+  },
+  "seurat": {
+    "count": 95,
+    "timestamp": "2026-02-22T00:24:39.885993"
+  },
+  "singlem": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:40.427934"
+  },
+  "vcf-validator": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:40.994930"
+  },
+  "reg-gen": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:24:41.544379"
+  },
+  "biscuit": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:24:42.102717"
+  },
+  "tiddit": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:24:42.650844"
+  },
+  "training-material": {
+    "count": 8,
+    "timestamp": "2026-02-22T00:24:43.202081"
+  },
+  "i18n-extract": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:43.741844"
+  },
+  "peddy": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:44.283216"
+  },
+  "stochpy": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:44.822110"
+  },
+  "mztab": {
+    "count": 15,
+    "timestamp": "2026-02-22T00:24:45.372776"
+  },
+  "cyvcf2": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:24:45.941026"
+  },
+  "compomics-utilities": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:24:46.505665"
+  },
+  "searchgui": {
+    "count": 13,
+    "timestamp": "2026-02-22T00:24:47.056194"
+  },
+  "peptide-shaker": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:24:47.626939"
+  },
+  "mikado": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:24:48.174789"
+  },
+  "camisim": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:24:48.723046"
+  },
+  "frogs": {
+    "count": 101,
+    "timestamp": "2026-02-22T00:24:49.304952"
+  },
+  "pyqms": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:24:49.869720"
+  },
+  "thermo-raw-file-reader": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:50.454249"
+  },
+  "ursgal": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:24:51.003625"
+  },
+  "brainpy": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:51.540470"
+  },
+  "causalpath": {
+    "count": 4,
+    "timestamp": "2026-02-22T00:24:52.093761"
+  },
+  "hail": {
+    "count": 8,
+    "timestamp": "2026-02-22T00:24:52.635115"
+  },
+  "bismark": {
+    "count": 13,
+    "timestamp": "2026-02-22T00:24:53.214466"
+  },
+  "tximport": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:24:53.756921"
+  },
+  "get_homologues": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:54.323408"
+  },
+  "protigy": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:54.878635"
+  },
+  "psi-ms-cv": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:55.420204"
+  },
+  "juicer": {
+    "count": 8,
+    "timestamp": "2026-02-22T00:24:55.990825"
+  },
+  "cooler": {
+    "count": 30,
+    "timestamp": "2026-02-22T00:24:56.548349"
+  },
+  "msgfplus": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:57.099323"
+  },
+  "calour": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:57.650276"
+  },
+  "ms_deisotope": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:24:58.192814"
+  },
+  "alfred": {
+    "count": 13,
+    "timestamp": "2026-02-22T00:24:58.746172"
+  },
+  "seqkit": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:24:59.293112"
+  },
+  "sequana": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:24:59.852658"
+  },
+  "tools-metabolomics": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:00.410175"
+  },
+  "assemblytics": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:25:00.954765"
+  },
+  "yingtools2": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:01.507588"
+  },
+  "famsa": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:02.070616"
+  },
+  "snakepipes": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:25:02.611361"
+  },
+  "svdb": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:25:03.152912"
+  },
+  "seqan3": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:03.702618"
+  },
+  "pharmcat": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:25:04.252395"
+  },
+  "higlass": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:25:04.811919"
+  },
+  "kraken-biom": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:05.351082"
+  },
+  "mzspeclib": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:25:05.907210"
+  },
+  "getorganelle": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:25:06.449967"
+  },
+  "mages": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:25:07.061616"
+  },
+  "bracken": {
+    "count": 7,
+    "timestamp": "2026-02-22T00:25:07.634330"
+  },
+  "pepatac": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:08.191180"
+  },
+  "gecko": {
+    "count": 29,
+    "timestamp": "2026-02-22T00:25:08.742285"
+  },
+  "single-cell-pseudotime": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:25:09.302474"
+  },
+  "ribbon": {
+    "count": 41,
+    "timestamp": "2026-02-22T00:25:09.854881"
+  },
+  "varlociraptor": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:10.408698"
+  },
+  "st_pipeline": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:10.954984"
+  },
+  "orgmassspecr": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:11.492571"
+  },
+  "hapcut2": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:25:12.037114"
+  },
+  "metagraph": {
+    "count": 8,
+    "timestamp": "2026-02-22T00:25:12.617240"
+  },
+  "sns": {
+    "count": 28,
+    "timestamp": "2026-02-22T00:25:13.166360"
+  },
+  "metaworkflow": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:25:13.704697"
+  },
+  "mzlib": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:14.271015"
+  },
+  "scrna-tools": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:14.821003"
+  },
+  "vcfpy": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:15.374469"
+  },
+  "pmartr": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:25:15.921563"
+  },
+  "drep": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:25:16.466792"
+  },
+  "teamteri": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:17.005318"
+  },
+  "splatter": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:25:17.543979"
+  },
+  "isescan": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:25:18.088047"
+  },
+  "md-task": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:25:18.642196"
+  },
+  "lcdb-wf": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:19.179313"
+  },
+  "enrichm": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:19.728325"
+  },
+  "atlas": {
+    "count": 4858,
+    "timestamp": "2026-02-22T00:25:20.283620"
+  },
+  "maven": {
+    "count": 13,
+    "timestamp": "2026-02-22T00:25:20.831758"
+  },
+  "metamorpheus": {
+    "count": 20,
+    "timestamp": "2026-02-22T00:25:21.382769"
+  },
+  "genomehubs": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:21.931348"
+  },
+  "scanpy": {
+    "count": 16,
+    "timestamp": "2026-02-22T00:25:22.493732"
+  },
+  "metacache": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:23.033624"
+  },
+  "mtbseq_source": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:23.589411"
+  },
+  "pairtools": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:25:24.158855"
+  },
+  "philosopher": {
+    "count": 11,
+    "timestamp": "2026-02-22T00:25:24.750169"
+  },
+  "miceco": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:25.290218"
+  },
+  "flashweave.jl": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:25:25.844009"
+  },
+  "panoply": {
+    "count": 30,
+    "timestamp": "2026-02-22T00:25:26.393607"
+  },
+  "stitch": {
+    "count": 91,
+    "timestamp": "2026-02-22T00:25:26.959101"
+  },
+  "ideal": {
+    "count": 2046,
+    "timestamp": "2026-02-22T00:25:27.505860"
+  },
+  "ms2pip": {
+    "count": 13,
+    "timestamp": "2026-02-22T00:25:29.071971"
+  },
+  "mzkit": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:29.614750"
+  },
+  "decontam": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:30.226512"
+  },
+  "fqless": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:30.782001"
+  },
+  "pheniqs": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:31.357209"
+  },
+  "sv-callers": {
+    "count": 31,
+    "timestamp": "2026-02-22T00:25:31.915065"
+  },
+  "degust": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:32.459692"
+  },
+  "pyflow-chipseq": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:33.016028"
+  },
+  "pagoda2": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:33.583031"
+  },
+  "flashlfq": {
+    "count": 5,
+    "timestamp": "2026-02-22T00:25:34.135177"
+  },
+  "fragpipe": {
+    "count": 43,
+    "timestamp": "2026-02-22T00:25:34.687907"
+  },
+  "graphtyper": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:35.227883"
+  },
+  "sirius": {
+    "count": 47,
+    "timestamp": "2026-02-22T00:25:36.817200"
+  },
+  "fastq_utils": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:37.386132"
+  },
+  "metaboseek": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:25:37.937362"
+  },
+  "admixturepipeline": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:25:38.485271"
+  },
+  "dmrseq": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:25:39.028695"
+  },
+  "cellranger": {
+    "count": 5,
+    "timestamp": "2026-02-22T00:25:39.585065"
+  },
+  "seq2hla": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:25:40.137926"
+  },
+  "recentrifuge": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:25:40.680314"
+  },
+  "purecn": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:25:41.231108"
+  },
+  "vcf2fasta": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:25:41.775957"
+  },
+  "metagenomescope": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:42.320308"
+  },
+  "anndata": {
+    "count": 4,
+    "timestamp": "2026-02-22T00:25:42.874862"
+  },
+  "vcf2dis": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:25:43.417665"
+  },
+  "amber": {
+    "count": 115,
+    "timestamp": "2026-02-22T00:25:43.978320"
+  },
+  "mosdepth": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:25:44.529996"
+  },
+  "ms2rescore": {
+    "count": 9,
+    "timestamp": "2026-02-22T00:25:45.086911"
+  },
+  "idep": {
+    "count": 7,
+    "timestamp": "2026-02-22T00:25:45.647659"
+  },
+  "scvi-tools": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:25:46.198431"
+  },
+  "armor": {
+    "count": 10,
+    "timestamp": "2026-02-22T00:25:46.745677"
+  },
+  "vgp-assembly": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:47.310245"
+  },
+  "medusa": {
+    "count": 25,
+    "timestamp": "2026-02-22T00:25:47.852840"
+  },
+  "cellxgene": {
+    "count": 4,
+    "timestamp": "2026-02-22T00:25:48.401167"
+  },
+  "rna-seq-star-deseq2": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:48.936835"
+  },
+  "msstatstmt": {
+    "count": 6,
+    "timestamp": "2026-02-22T00:25:49.496459"
+  },
+  "deqms": {
+    "count": 6,
+    "timestamp": "2026-02-22T00:25:50.046029"
+  },
+  "biojupies": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:25:50.592327"
+  },
+  "pdv": {
+    "count": 7,
+    "timestamp": "2026-02-22T00:25:51.139312"
+  },
+  "deseq2": {
+    "count": 175,
+    "timestamp": "2026-02-22T00:25:51.698984"
+  },
+  "bamtofastq": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:52.238959"
+  },
+  "sscclust": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:25:52.836608"
+  },
+  "isee": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:25:53.383363"
+  },
+  "aldy": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:25:53.937551"
+  },
+  "plink2": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:25:54.514528"
+  },
+  "fastqc": {
+    "count": 21,
+    "timestamp": "2026-02-22T00:25:55.060750"
+  },
+  "arcsv": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:55.600226"
+  },
+  "masurca": {
+    "count": 11,
+    "timestamp": "2026-02-22T00:25:56.149233"
+  },
+  "fasten": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:25:56.694854"
+  },
+  "npyc-toolbox": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:25:57.236443"
+  },
+  "ampumi": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:25:57.778294"
+  },
+  "bamnostic": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:25:58.317338"
+  },
+  "sesame": {
+    "count": 67,
+    "timestamp": "2026-02-22T00:25:58.868071"
+  },
+  "patroon": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:25:59.414026"
+  },
+  "startrac": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:25:59.967953"
+  },
+  "pyscenic": {
+    "count": 9,
+    "timestamp": "2026-02-22T00:26:00.526600"
+  },
+  "tpmcalculator": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:26:01.083677"
+  },
+  "methylseq": {
+    "count": 23,
+    "timestamp": "2026-02-22T00:26:01.641602"
+  },
+  "fq": {
+    "count": 22,
+    "timestamp": "2026-02-22T00:26:03.694755"
+  },
+  "pwiz": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:04.240028"
+  },
+  "diann": {
+    "count": 58,
+    "timestamp": "2026-02-22T00:26:04.792330"
+  },
+  "scrattch.vis": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:05.333281"
+  },
+  "massbank-data": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:05.874756"
+  },
+  "ccmetagen": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:26:06.430529"
+  },
+  "normalyzerde": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:26:06.988654"
+  },
+  "rnaseq": {
+    "count": 6116,
+    "timestamp": "2026-02-22T00:26:07.538110"
+  },
+  "hic_tools": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:08.077457"
+  },
+  "hickit": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:08.615017"
+  },
+  "pfind3": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:26:09.155662"
+  },
+  "isocor": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:09.694578"
+  },
+  "truvari": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:26:10.239046"
+  },
+  "bindash": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:26:10.790916"
+  },
+  "vatools": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:11.328962"
+  },
+  "mummichog": {
+    "count": 42,
+    "timestamp": "2026-02-22T00:26:11.878933"
+  },
+  "chipseq": {
+    "count": 1257,
+    "timestamp": "2026-02-22T00:26:12.437908"
+  },
+  "pbsv": {
+    "count": 5,
+    "timestamp": "2026-02-22T00:26:12.995112"
+  },
+  "crispresso2": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:13.533072"
+  },
+  "cloops2": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:26:14.076635"
+  },
+  "gnpsdocumentation": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:14.610532"
+  },
+  "mag": {
+    "count": 78,
+    "timestamp": "2026-02-22T00:26:15.163747"
+  },
+  "crispritz": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:15.706536"
+  },
+  "microbiomer": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:16.243563"
+  },
+  "ptrimmer": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:16.781213"
+  },
+  "10x_snakepipe": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:17.324357"
+  },
+  "flair": {
+    "count": 15,
+    "timestamp": "2026-02-22T00:26:17.872411"
+  },
+  "proteomics-sample-metadata": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:18.412249"
+  },
+  "mfapy": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:18.948168"
+  },
+  "sctransform": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:26:19.521880"
+  },
+  "doubletfinder": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:20.059720"
+  },
+  "metaspace": {
+    "count": 12,
+    "timestamp": "2026-02-22T00:26:20.609029"
+  },
+  "diffxpy": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:21.144987"
+  },
+  "pandora": {
+    "count": 27,
+    "timestamp": "2026-02-22T00:26:21.699342"
+  },
+  "metgem": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:26:22.247484"
+  },
+  "amon": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:26:22.793914"
+  },
+  "xtea": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:26:23.333539"
+  },
+  "do-ms": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:26:23.876714"
+  },
+  "isicle": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:26:24.422880"
+  },
+  "genomicsdb": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:26:24.970632"
+  },
+  "nanocompore": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:26:25.516365"
+  },
+  "fastq-screen": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:26.058587"
+  },
+  "somalier": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:26:26.602674"
+  },
+  "splotch": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:26:27.143859"
+  },
+  "parserng": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:27.681980"
+  },
+  "peca": {
+    "count": 4,
+    "timestamp": "2026-02-22T00:26:28.235886"
+  },
+  "cpsr": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:26:28.779217"
+  },
+  "sigprofilertopography": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:26:29.321216"
+  },
+  "tradeseq": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:29.866114"
+  },
+  "ganon": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:30.410444"
+  },
+  "ppx": {
+    "count": 10,
+    "timestamp": "2026-02-22T00:26:30.957433"
+  },
+  "vcf-js": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:31.494908"
+  },
+  "prolfqua": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:26:32.047034"
+  },
+  "ampliseq": {
+    "count": 39,
+    "timestamp": "2026-02-22T00:26:32.605297"
+  },
+  "rnafusion": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:33.152343"
+  },
+  "fishpond": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:33.688287"
+  },
+  "nplinker": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:26:34.261876"
+  },
+  "mhcquant": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:26:34.804189"
+  },
+  "referenceseeker": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:35.349348"
+  },
+  "muscat": {
+    "count": 13,
+    "timestamp": "2026-02-22T00:26:35.898527"
+  },
+  "atacseq": {
+    "count": 390,
+    "timestamp": "2026-02-22T00:26:36.455979"
+  },
+  "cpgtools": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:37.001246"
+  },
+  "qurro": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:37.539375"
+  },
+  "pema": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:38.078416"
+  },
+  "animalcules": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:38.618352"
+  },
+  "ntedit": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:26:39.161769"
+  },
+  "spectrum_utils": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:39.711459"
+  },
+  "icellr": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:40.247713"
+  },
+  "rna-seq-kallisto-sleuth": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:40.788365"
+  },
+  "run_dbcan": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:41.332215"
+  },
+  "socru": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:41.869308"
+  },
+  "no-floaters": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:42.411327"
+  },
+  "dicey": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:42.961396"
+  },
+  "sccoda": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:43.501998"
+  },
+  "trackintel": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:44.039471"
+  },
+  "methrix": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:44.583592"
+  },
+  "freud": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:26:45.133668"
+  },
+  "msfragger": {
+    "count": 39,
+    "timestamp": "2026-02-22T00:26:45.712055"
+  },
+  "mgse": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:26:46.258261"
+  },
+  "deeplc": {
+    "count": 6,
+    "timestamp": "2026-02-22T00:26:46.805878"
+  },
+  "dram": {
+    "count": 4,
+    "timestamp": "2026-02-22T00:26:47.366334"
+  },
+  "dittoseq": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:47.915946"
+  },
+  "cellbender": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:26:48.458255"
+  },
+  "bwa-mem2": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:26:49.007646"
+  },
+  "sg-nex-data": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:49.551696"
+  },
+  "bioinf-commons": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:50.106426"
+  },
+  "pridepy": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:50.645712"
+  },
+  "souporcell": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:26:51.188134"
+  },
+  "pyfastx": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:26:51.726720"
+  },
+  "basevar": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:26:52.284437"
+  },
+  "ucscxenatools": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:52.822840"
+  },
+  "wgbs_tools": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:53.364322"
+  },
+  "spectra": {
+    "count": 4673,
+    "timestamp": "2026-02-22T00:26:53.921227"
+  },
+  "scrnaseq": {
+    "count": 1277,
+    "timestamp": "2026-02-22T00:26:54.484557"
+  },
+  "hic": {
+    "count": 992,
+    "timestamp": "2026-02-22T00:26:55.031300"
+  },
+  "proteomicslfq": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:55.571816"
+  },
+  "nanocaller": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:56.115818"
+  },
+  "cell2cell": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:26:56.662368"
+  },
+  "qfeatures": {
+    "count": 4,
+    "timestamp": "2026-02-22T00:26:57.204671"
+  },
+  "scrattch.bigcat": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:57.748899"
+  },
+  "sarek": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:26:58.314773"
+  },
+  "scdblfinder": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:58.865294"
+  },
+  "omicsplayground": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:26:59.400960"
+  },
+  "pybsaseq": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:26:59.941817"
+  },
+  "nextpolish": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:27:00.497323"
+  },
+  "hifiasm": {
+    "count": 11,
+    "timestamp": "2026-02-22T00:27:01.063337"
+  },
+  "signac": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:27:01.643983"
+  },
+  "maaslin2": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:27:02.199823"
+  },
+  "aerosandbox": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:02.737166"
+  },
+  "stim": {
+    "count": 8,
+    "timestamp": "2026-02-22T00:27:03.286093"
+  },
+  "scatac-pro": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:03.823032"
+  },
+  "allcools": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:27:04.375972"
+  },
+  "varfish-server": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:04.915136"
+  },
+  "snps": {
+    "count": 5588,
+    "timestamp": "2026-02-22T00:27:05.466758"
+  },
+  "easymetagenome": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:06.006072"
+  },
+  "platon": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:27:06.552099"
+  },
+  "rnalysis": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:27:07.097384"
+  },
+  "rnadeseq": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:07.644585"
+  },
+  "rpvg": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:27:08.190753"
+  },
+  "scgeatoolbox": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:08.732442"
+  },
+  "umapx": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:09.275105"
+  },
+  "dynamo-release": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:09.814290"
+  },
+  "datacomets": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:10.357144"
+  },
+  "seq2science": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:27:10.905050"
+  },
+  "varca": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:11.442189"
+  },
+  "mpgap": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:11.988545"
+  },
+  "scarches": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:27:12.528560"
+  },
+  "openchrom": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:27:13.075037"
+  },
+  "metaboverse": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:13.612941"
+  },
+  "metapi": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:14.151620"
+  },
+  "cellxgene-gateway": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:14.697414"
+  },
+  "tidybulk": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:27:15.240722"
+  },
+  "tobias": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:27:15.799117"
+  },
+  "tiledb-vcf": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:16.336416"
+  },
+  "trust4": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:27:17.002333"
+  },
+  "biowasm": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:17.542808"
+  },
+  "rasusa": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:18.077393"
+  },
+  "lightdock": {
+    "count": 6,
+    "timestamp": "2026-02-22T00:27:18.624709"
+  },
+  "rnaflow": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:19.166471"
+  },
+  "snakemake": {
+    "count": 88,
+    "timestamp": "2026-02-22T00:27:19.724964"
+  },
+  "cirrocumulus": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:20.265228"
+  },
+  "drop": {
+    "count": 421,
+    "timestamp": "2026-02-22T00:27:20.856901"
+  },
+  "kb_python": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:21.395017"
+  },
+  "microbiomemarker": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:21.939170"
+  },
+  "archr": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:27:22.487891"
+  },
+  "chromap": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:27:23.035041"
+  },
+  "dysgu": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:23.574220"
+  },
+  "olinkrpackage": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:24.108325"
+  },
+  "scp": {
+    "count": 107,
+    "timestamp": "2026-02-22T00:27:24.662801"
+  },
+  "diaproteomics": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:27:25.208376"
+  },
+  "ms-mint": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:25.747125"
+  },
+  "cnapy": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:26.284221"
+  },
+  "iq": {
+    "count": 109,
+    "timestamp": "2026-02-22T00:27:26.840829"
+  },
+  "autometa": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:27:27.380300"
+  },
+  "mzmine": {
+    "count": 77,
+    "timestamp": "2026-02-22T00:27:28.933332"
+  },
+  "nanovar": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:27:29.481478"
+  },
+  "covtobed": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:30.028718"
+  },
+  "metawibele": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:27:30.571624"
+  },
+  "genozip": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:27:31.115116"
+  },
+  "tweedieverse": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:31.660249"
+  },
+  "phylophlan": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:27:32.216678"
+  },
+  "bakta": {
+    "count": 5,
+    "timestamp": "2026-02-22T00:27:32.778552"
+  },
+  "dna-seq-varlociraptor": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:33.323322"
+  },
+  "woltka": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:33.862761"
+  },
+  "spotlight": {
+    "count": 139,
+    "timestamp": "2026-02-22T00:27:34.419590"
+  },
+  "report": {
+    "count": 14441,
+    "timestamp": "2026-02-22T00:27:37.020990"
+  },
+  "spacexr": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:37.557548"
+  },
+  "bambu": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:27:38.118872"
+  },
+  "ngspeciesid": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:38.657569"
+  },
+  "hapo-g": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:39.202618"
+  },
+  "volcano3d": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:39.740307"
+  },
+  "mustache": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:27:40.289323"
+  },
+  "metaphlan": {
+    "count": 4,
+    "timestamp": "2026-02-22T00:27:40.832227"
+  },
+  "gor": {
+    "count": 6,
+    "timestamp": "2026-02-22T00:27:41.381527"
+  },
+  "molmass": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:41.916856"
+  },
+  "schist": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:27:42.468975"
+  },
+  "pyteomics": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:27:43.011864"
+  },
+  "amplicon_sorter": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:43.557431"
+  },
+  "svdss": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:27:44.100661"
+  },
+  "cellrank": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:27:44.645694"
+  },
+  "cosmosr": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:45.189663"
+  },
+  "jigv": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:45.748215"
+  },
+  "seurat.utils": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:46.292543"
+  },
+  "metaboprep": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:27:46.833440"
+  },
+  "seacells": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:27:47.377810"
+  },
+  "scmiko": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:47.916709"
+  },
+  "glimmav2": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:48.501015"
+  },
+  "metaboigniter": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:49.050475"
+  },
+  "viralrecon": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:27:49.602718"
+  },
+  "sdrf-pipelines": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:50.179322"
+  },
+  "bento-tools": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:50.737137"
+  },
+  "kneaddata": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:27:51.284691"
+  },
+  "ilus": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:51.823048"
+  },
+  "isoquant": {
+    "count": 6,
+    "timestamp": "2026-02-22T00:27:52.373268"
+  },
+  "liqa": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:52.925343"
+  },
+  "snparcher": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:27:53.473239"
+  },
+  "pyrodigal": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:54.013647"
+  },
+  "astir": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:27:54.595666"
+  },
+  "grenepipe": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:55.137548"
+  },
+  "cellxgene_vip": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:55.684435"
+  },
+  "teaching": {
+    "count": 419,
+    "timestamp": "2026-02-22T00:27:56.239566"
+  },
+  "scarf": {
+    "count": 4,
+    "timestamp": "2026-02-22T00:27:56.783444"
+  },
+  "cell2location": {
+    "count": 5,
+    "timestamp": "2026-02-22T00:27:57.332344"
+  },
+  "lotus2": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:27:57.871264"
+  },
+  "spec2vec": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:27:58.420046"
+  },
+  "msdap": {
+    "count": 5,
+    "timestamp": "2026-02-22T00:27:58.971659"
+  },
+  "dataharmonizer": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:27:59.545120"
+  },
+  "corems": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:00.105015"
+  },
+  "matchms": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:00.656821"
+  },
+  "rapids-single-cell-examples": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:01.199166"
+  },
+  "escape": {
+    "count": 841,
+    "timestamp": "2026-02-22T00:28:01.917117"
+  },
+  "osta": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:28:02.470977"
+  },
+  "bamt": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:03.006456"
+  },
+  "umap-java": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:03.547725"
+  },
+  "scrna_seurat_pipeline": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:04.088218"
+  },
+  "drompaplus": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:04.628103"
+  },
+  "openproblems": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:05.172584"
+  },
+  "pypls": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:05.714147"
+  },
+  "t2t-polish": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:06.259482"
+  },
+  "protti": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:06.803759"
+  },
+  "pangraph": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:07.349178"
+  },
+  "vembrane": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:07.896319"
+  },
+  "whatshap": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:28:08.438538"
+  },
+  "vimms": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:09.601333"
+  },
+  "svanna": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:10.142679"
+  },
+  "alevin-fry": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:28:10.691955"
+  },
+  "voyager": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:28:11.241906"
+  },
+  "ancientmetagenomedir": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:11.786394"
+  },
+  "rnanorm": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:12.336190"
+  },
+  "ancombc": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:12.882235"
+  },
+  "hdwgcna": {
+    "count": 34,
+    "timestamp": "2026-02-22T00:28:13.432169"
+  },
+  "rhermes": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:14.016460"
+  },
+  "rmap": {
+    "count": 8,
+    "timestamp": "2026-02-22T00:28:15.085648"
+  },
+  "squidpy": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:28:15.632799"
+  },
+  "tangram": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:28:16.181302"
+  },
+  "rawrr": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:16.729239"
+  },
+  "phaseddiploidgenomeassemblypipeline": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:17.272739"
+  },
+  "proforma": {
+    "count": 6,
+    "timestamp": "2026-02-22T00:28:17.841265"
+  },
+  "isonform": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:18.419659"
+  },
+  "somadataio": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:18.971017"
+  },
+  "cut-runtools-2.0": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:19.508943"
+  },
+  "cuttag-pipeline": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:20.053987"
+  },
+  "scutrquant": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:20.744282"
+  },
+  "mia": {
+    "count": 82,
+    "timestamp": "2026-02-22T00:28:21.300698"
+  },
+  "alphamap": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:21.846210"
+  },
+  "stdeconvolve": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:22.391397"
+  },
+  "faster": {
+    "count": 2603,
+    "timestamp": "2026-02-22T00:28:22.944832"
+  },
+  "oma": {
+    "count": 33,
+    "timestamp": "2026-02-22T00:28:23.650651"
+  },
+  "sansa": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:24.223432"
+  },
+  "bitfam": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:24.762986"
+  },
+  "alphatims": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:25.305255"
+  },
+  "rams": {
+    "count": 46,
+    "timestamp": "2026-02-22T00:28:25.862376"
+  },
+  "spatialdlpfc": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:26.399478"
+  },
+  "clipseq": {
+    "count": 59,
+    "timestamp": "2026-02-22T00:28:26.965123"
+  },
+  "nanome": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:27.512920"
+  },
+  "m2aia": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:28.056766"
+  },
+  "seqfu2": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:28.604996"
+  },
+  "pcaone": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:29.217051"
+  },
+  "pisces": {
+    "count": 19,
+    "timestamp": "2026-02-22T00:28:29.768864"
+  },
+  "paste": {
+    "count": 82,
+    "timestamp": "2026-02-22T00:28:30.322142"
+  },
+  "pciseq": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:30.870158"
+  },
+  "falcon": {
+    "count": 32,
+    "timestamp": "2026-02-22T00:28:31.425559"
+  },
+  "dali": {
+    "count": 44,
+    "timestamp": "2026-02-22T00:28:31.978548"
+  },
+  "cutandrun": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:32.521373"
+  },
+  "uncovar": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:33.069908"
+  },
+  "gatk-snp-calling": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:33.608786"
+  },
+  "struo2": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:34.150026"
+  },
+  "biser": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:34.705135"
+  },
+  "bamtocov": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:35.270212"
+  },
+  "ezaai": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:35.821518"
+  },
+  "circrna": {
+    "count": 704,
+    "timestamp": "2026-02-22T00:28:36.373268"
+  },
+  "genotools": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:36.913287"
+  },
+  "multinichenetr": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:37.473408"
+  },
+  "spateo-release": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:38.019079"
+  },
+  "maplet": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:38.566863"
+  },
+  "alternative-splicing-tools": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:39.111826"
+  },
+  "spapros": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:39.650332"
+  },
+  "wf-bacterial-genomes": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:40.190574"
+  },
+  "sceptre": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:40.741523"
+  },
+  "stereopy": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:41.291020"
+  },
+  "basalt": {
+    "count": 5,
+    "timestamp": "2026-02-22T00:28:41.843158"
+  },
+  "cobra": {
+    "count": 135,
+    "timestamp": "2026-02-22T00:28:42.400617"
+  },
+  "spata2": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:42.946037"
+  },
+  "pmultiqc": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:43.485929"
+  },
+  "atacseq_pipeline": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:44.024097"
+  },
+  "omicverse": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:44.566702"
+  },
+  "crisprme": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:45.109922"
+  },
+  "clair3": {
+    "count": 5,
+    "timestamp": "2026-02-22T00:28:45.672768"
+  },
+  "dreamlet": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:46.212679"
+  },
+  "nmdc-schema": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:46.751664"
+  },
+  "spotclean": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:47.305079"
+  },
+  "crispr_comparison": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:47.860959"
+  },
+  "package-mopepgen": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:48.399650"
+  },
+  "rapids_singlecell": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:48.941347"
+  },
+  "gnomad_db": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:49.481192"
+  },
+  "rnavar": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:50.030942"
+  },
+  "clonalscope": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:50.576704"
+  },
+  "spatialpca": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:51.123018"
+  },
+  "qcxms": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:51.669005"
+  },
+  "numbat": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:28:52.216925"
+  },
+  "parascopy": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:52.761630"
+  },
+  "cellphonedb": {
+    "count": 7,
+    "timestamp": "2026-02-22T00:28:53.317108"
+  },
+  "enrichment_analysis": {
+    "count": 8218,
+    "timestamp": "2026-02-22T00:28:53.907139"
+  },
+  "amica": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:28:54.449946"
+  },
+  "raredisease": {
+    "count": 7,
+    "timestamp": "2026-02-22T00:28:55.026424"
+  },
+  "pertpy": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:55.577425"
+  },
+  "mzdata": {
+    "count": 14,
+    "timestamp": "2026-02-22T00:28:56.127313"
+  },
+  "metaphor": {
+    "count": 59,
+    "timestamp": "2026-02-22T00:28:56.684695"
+  },
+  "haptools": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:57.247221"
+  },
+  "microbiome-etc-podcasts": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:57.788883"
+  },
+  "scenicplus": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:28:58.333046"
+  },
+  "bpcells": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:28:58.869312"
+  },
+  "hat": {
+    "count": 108,
+    "timestamp": "2026-02-22T00:28:59.444654"
+  },
+  "microbiomeprofiler": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:00.014947"
+  },
+  "reference_database_creator": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:00.566043"
+  },
+  "asari": {
+    "count": 4,
+    "timestamp": "2026-02-22T00:29:01.115394"
+  },
+  "glue": {
+    "count": 75,
+    "timestamp": "2026-02-22T00:29:01.698665"
+  },
+  "chromatographr": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:02.248082"
+  },
+  "bamboo-engine": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:02.792388"
+  },
+  "alphadia": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:03.344089"
+  },
+  "alpharaw": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:03.906104"
+  },
+  "metheor": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:04.443936"
+  },
+  "alphabase": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:05.007385"
+  },
+  "nnsvg": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:05.582399"
+  },
+  "clustermap": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:06.172799"
+  },
+  "sccustomize": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:06.711380"
+  },
+  "vcfbub": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:07.267970"
+  },
+  "fqgrep": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:07.923541"
+  },
+  "mira": {
+    "count": 35,
+    "timestamp": "2026-02-22T00:29:08.477330"
+  },
+  "miniquant": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:09.015550"
+  },
+  "quantms": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:09.563536"
+  },
+  "alphaviz": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:10.109919"
+  },
+  "assembly-annotation-pipeline": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:10.746461"
+  },
+  "circdna": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:11.290993"
+  },
+  "staarpipeline": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:29:11.870631"
+  },
+  "decoupler": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:29:12.419801"
+  },
+  "iniquitate": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:12.981085"
+  },
+  "kana": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:29:13.531533"
+  },
+  "spatialtranscriptomics": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:29:14.084536"
+  },
+  "snapatac2": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:14.627337"
+  },
+  "funcscan": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:15.169221"
+  },
+  "maw": {
+    "count": 7,
+    "timestamp": "2026-02-22T00:29:15.719269"
+  },
+  "genome_tracks": {
+    "count": 9,
+    "timestamp": "2026-02-22T00:29:16.277868"
+  },
+  "gfastats": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:16.826555"
+  },
+  "scpubr": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:17.370293"
+  },
+  "guide-counter": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:17.906153"
+  },
+  "taxor": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:18.447295"
+  },
+  "genome_assembly_tools": {
+    "count": 5,
+    "timestamp": "2026-02-22T00:29:19.006344"
+  },
+  "lorax": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:19.543771"
+  },
+  "standr": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:20.089759"
+  },
+  "casanovo": {
+    "count": 9,
+    "timestamp": "2026-02-22T00:29:20.655459"
+  },
+  "gdan-tmp-models": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:21.199918"
+  },
+  "spatialvi": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:21.751449"
+  },
+  "postre": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:22.300715"
+  },
+  "3dmolms": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:22.858092"
+  },
+  "graffite": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:23.423897"
+  },
+  "scrnaseq_processing_seurat": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:23.983833"
+  },
+  "cytospace": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:29:24.534866"
+  },
+  "fava": {
+    "count": 10,
+    "timestamp": "2026-02-22T00:29:25.208074"
+  },
+  "shapeit5": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:25.743807"
+  },
+  "scrnasequest": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:26.288757"
+  },
+  "splicewiz": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:26.846678"
+  },
+  "vcfdist": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:27.605681"
+  },
+  "supercc": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:28.154256"
+  },
+  "chromconverter": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:28.729907"
+  },
+  "unsupervised_analysis": {
+    "count": 76,
+    "timestamp": "2026-02-22T00:29:29.281119"
+  },
+  "mtgrasp": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:29.828169"
+  },
+  "craq": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:30.375737"
+  },
+  "alignoth": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:30.916245"
+  },
+  "phanta": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:31.460479"
+  },
+  "alphapeptstats": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:32.006892"
+  },
+  "scnanoseq": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:32.560306"
+  },
+  "hgtseq": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:33.107814"
+  },
+  "mixscape_seurat": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:33.649361"
+  },
+  "banksy_py": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:34.211370"
+  },
+  "veba": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:34.751532"
+  },
+  "dea_seurat": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:35.450584"
+  },
+  "genomenote": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:36.005528"
+  },
+  "analysis_guides": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:29:36.591684"
+  },
+  "trackplot": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:37.149941"
+  },
+  "spacedeconv": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:37.698372"
+  },
+  "hap-eval": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:38.260968"
+  },
+  "gget": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:38.817751"
+  },
+  "panman": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:39.365477"
+  },
+  "flagger": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:39.950992"
+  },
+  "calder2": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:40.505864"
+  },
+  "mebocost": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:41.045736"
+  },
+  "directlfq": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:29:41.591957"
+  },
+  "structural": {
+    "count": 19829,
+    "timestamp": "2026-02-22T00:29:42.145750"
+  },
+  "rapid-qc-ms": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:42.682641"
+  },
+  "psm_utils": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:43.220177"
+  },
+  "cphasing": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:43.778647"
+  },
+  "gw": {
+    "count": 44,
+    "timestamp": "2026-02-22T00:29:44.332915"
+  },
+  "sage": {
+    "count": 205,
+    "timestamp": "2026-02-22T00:29:44.895650"
+  },
+  "phables": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:45.463511"
+  },
+  "rademu": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:46.010224"
+  },
+  "vcfpp": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:46.549575"
+  },
+  "starfysh": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:47.088651"
+  },
+  "snakemake_umetaflow": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:47.628452"
+  },
+  "crisprscore": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:48.175215"
+  },
+  "dea_limma": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:48.716806"
+  },
+  "genet": {
+    "count": 126,
+    "timestamp": "2026-02-22T00:29:49.277297"
+  },
+  "napu_wf": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:49.821375"
+  },
+  "rnasplice": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:50.361775"
+  },
+  "severus": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:50.921573"
+  },
+  "oktoberfest": {
+    "count": 4,
+    "timestamp": "2026-02-22T00:29:51.471621"
+  },
+  "north_american_vitis_pangenome": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:52.024437"
+  },
+  "binchicken": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:52.565628"
+  },
+  "irescue": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:53.106045"
+  },
+  "scalpel": {
+    "count": 11,
+    "timestamp": "2026-02-22T00:29:53.676940"
+  },
+  "candycrunch": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:54.227415"
+  },
+  "playbook-workflow-builder": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:54.772428"
+  },
+  "fbmn-stats": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:55.319931"
+  },
+  "differentialabundance": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:55.861424"
+  },
+  "c.origami": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:56.407224"
+  },
+  "dep2": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:56.953576"
+  },
+  "paste2": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:57.495708"
+  },
+  "panspace": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:58.090464"
+  },
+  "crawdad": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:58.635251"
+  },
+  "genes2genes": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:29:59.177766"
+  },
+  "fqtk": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:29:59.724720"
+  },
+  "ggsc": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:00.268816"
+  },
+  "stq": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:30:00.817525"
+  },
+  "quality-control-wgs": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:01.357314"
+  },
+  "pydeseq2": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:01.910963"
+  },
+  "mmlong2": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:02.454640"
+  },
+  "hybracter": {
+    "count": 3,
+    "timestamp": "2026-02-22T00:30:02.998660"
+  },
+  "pctax": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:03.549438"
+  },
+  "savana": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:04.089177"
+  },
+  "best": {
+    "count": 10366,
+    "timestamp": "2026-02-22T00:30:04.656041"
+  },
+  "ggpicrust2": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:05.202144"
+  },
+  "mabs": {
+    "count": 137,
+    "timestamp": "2026-02-22T00:30:05.761243"
+  },
+  "fermo": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:30:06.375453"
+  },
+  "oncoanalyser": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:06.918433"
+  },
+  "assemblyqc": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:07.489580"
+  },
+  "symphonypy": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:08.028858"
+  },
+  "cellscopes.jl": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:08.582734"
+  },
+  "svarp": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:09.185564"
+  },
+  "iris": {
+    "count": 86,
+    "timestamp": "2026-02-22T00:30:09.772249"
+  },
+  "nichede": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:10.339057"
+  },
+  "ovrl.py": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:10.894247"
+  },
+  "viralmetagenome": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:11.655285"
+  },
+  "koina": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:12.196888"
+  },
+  "binette": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:12.743702"
+  },
+  "proteobench": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:13.368870"
+  },
+  "chromatinhd": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:13.911158"
+  },
+  "intro-to-peak-analysis": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:14.483251"
+  },
+  "dimspec": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:15.043989"
+  },
+  "oatk": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:15.585800"
+  },
+  "hiphase": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:16.132972"
+  },
+  "omics": {
+    "count": 15620,
+    "timestamp": "2026-02-22T00:30:16.687390"
+  },
+  "mzcore": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:17.231339"
+  },
+  "spatrack": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:17.807628"
+  },
+  "wakhan": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:18.347966"
+  },
+  "sequali": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:18.900584"
+  },
+  "isoformic": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:19.442437"
+  },
+  "pumatac": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:19.993937"
+  },
+  "quartet": {
+    "count": 84,
+    "timestamp": "2026-02-22T00:30:20.601005"
+  },
+  "biobear": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:21.146758"
+  },
+  "scout": {
+    "count": 22,
+    "timestamp": "2026-02-22T00:30:21.706144"
+  },
+  "degap": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:22.251975"
+  },
+  "daylily-ephemeral-cluster": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:22.979313"
+  },
+  "sylph": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:23.704172"
+  },
+  "sccube": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:24.252880"
+  },
+  "bambooai": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:24.794839"
+  },
+  "marker-magu": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:25.339746"
+  },
+  "exon": {
+    "count": 2068,
+    "timestamp": "2026-02-22T00:30:25.904532"
+  },
+  "pangene": {
+    "count": 6,
+    "timestamp": "2026-02-22T00:30:26.463205"
+  },
+  "deepurify": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:27.006479"
+  },
+  "tomicsvis": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:27.551160"
+  },
+  "spilterlize_integrate": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:28.092962"
+  },
+  "proseg": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:28.642791"
+  },
+  "pgpg_finder": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:29.190529"
+  },
+  "aline": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:30:29.737943"
+  },
+  "clusterde": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:30.295047"
+  },
+  "spotgf": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:30.837157"
+  },
+  "flowsig": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:31.391659"
+  },
+  "isosceles": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:31.944083"
+  },
+  "varigraph": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:32.503906"
+  },
+  "biosynfoni": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:33.061658"
+  },
+  "immuannot": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:33.610634"
+  },
+  "nclusion.jl": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:34.161679"
+  },
+  "curve_curator": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:34.708458"
+  },
+  "scimilarity": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:35.249383"
+  },
+  "ggvolc": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:35.793341"
+  },
+  "msbuddy": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:36.341345"
+  },
+  "instanovo": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:30:36.894339"
+  },
+  "louper": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:37.438977"
+  },
+  "annotator": {
+    "count": 84,
+    "timestamp": "2026-02-22T00:30:38.017675"
+  },
+  "bambulab-studio-orca-slicer-presets": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:38.570785"
+  },
+  "hifi-somatic-wdl": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:39.161223"
+  },
+  "olivar": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:39.703105"
+  },
+  "readsimulator": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:40.250354"
+  },
+  "uce": {
+    "count": 36,
+    "timestamp": "2026-02-22T00:30:40.810006"
+  },
+  "minimod": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:41.356437"
+  },
+  "salmon": {
+    "count": 316,
+    "timestamp": "2026-02-22T00:30:41.913033"
+  },
+  "octopusv": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:42.459582"
+  },
+  "fiora": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:43.026306"
+  },
+  "tipp": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:43.571738"
+  },
+  "detaxizer": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:44.119391"
+  },
+  "calicost": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:44.662192"
+  },
+  "cellchat": {
+    "count": 70,
+    "timestamp": "2026-02-22T00:30:45.215885"
+  },
+  "sccellfie": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:45.759567"
+  },
+  "haphic": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:46.300399"
+  },
+  "nohuman": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:46.845913"
+  },
+  "vaper": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:47.392337"
+  },
+  "spottedpy": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:47.943372"
+  },
+  "variantbenchmarking": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:48.483327"
+  },
+  "dnadesign": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:49.031087"
+  },
+  "screenpro2": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:49.652647"
+  },
+  "gnnome": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:50.198345"
+  },
+  "deeppolisher": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:50.769407"
+  },
+  "gsmap": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:51.880417"
+  },
+  "nanovarbench": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:52.429876"
+  },
+  "oncogan": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:52.984528"
+  },
+  "kun-peng": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:54.671396"
+  },
+  "mgm": {
+    "count": 5,
+    "timestamp": "2026-02-22T00:30:55.306538"
+  },
+  "piawka": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:56.602312"
+  },
+  "metabot": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:57.462408"
+  },
+  "cutefc": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:58.010009"
+  },
+  "seurat-integrate": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:30:59.195122"
+  },
+  "sawfish": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:30:59.740293"
+  },
+  "rinalmo": {
+    "count": 5,
+    "timestamp": "2026-02-22T00:31:00.308186"
+  },
+  "sclens": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:31:00.867877"
+  },
+  "hest": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:01.417107"
+  },
+  "lemur": {
+    "count": 21,
+    "timestamp": "2026-02-22T00:31:01.982832"
+  },
+  "easymultiprofiler": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:31:02.529574"
+  },
+  "spatialxe": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:03.086770"
+  },
+  "svtopo": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:31:03.633945"
+  },
+  "cornetto": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:31:04.202899"
+  },
+  "novae": {
+    "count": 2,
+    "timestamp": "2026-02-22T00:31:04.749801"
+  },
+  "longcalld": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:05.291262"
+  },
+  "perteval": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:05.834315"
+  },
+  "dechat": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:06.388059"
+  },
+  "vcfexpress": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:31:07.168486"
+  },
+  "pyopenms_viz": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:31:08.002595"
+  },
+  "mintflow": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:08.554676"
+  },
+  "helical": {
+    "count": 707,
+    "timestamp": "2026-02-22T00:31:09.124323"
+  },
+  "starcat": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:09.669261"
+  },
+  "specimmune": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:10.215048"
+  },
+  "conan-fgw": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:10.760454"
+  },
+  "pytximport": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:11.308534"
+  },
+  "fdrbench": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:13.049118"
+  },
+  "msiflow": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:13.587971"
+  },
+  "cellwhisperer": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:14.129035"
+  },
+  "enformer_fine_tuning": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:14.671756"
+  },
+  "loki": {
+    "count": 9,
+    "timestamp": "2026-02-22T00:31:15.270013"
+  },
+  "qust": {
+    "count": 7,
+    "timestamp": "2026-02-22T00:31:15.841915"
+  },
+  "iscale": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:16.385357"
+  },
+  "fastcnv": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:17.105671"
+  },
+  "spadit": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:31:17.653328"
+  },
+  "needlr": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:18.195904"
+  },
+  "scplotter": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:18.745000"
+  },
+  "cassia": {
+    "count": 23,
+    "timestamp": "2026-02-22T00:31:19.301885"
+  },
+  "deepspot": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:19.842442"
+  },
+  "filterx": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:20.385380"
+  },
+  "spatial_transcriptomics_tools": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:20.950612"
+  },
+  "grepq": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:21.494048"
+  },
+  "svgap": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:22.052450"
+  },
+  "pmat2": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:22.603625"
+  },
+  "hicfoundation": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:23.299469"
+  },
+  "pan_te": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:31:23.848725"
+  },
+  "split": {
+    "count": 997,
+    "timestamp": "2026-02-22T00:31:24.520892"
+  },
+  "hitsv": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:25.069039"
+  },
+  "wild-rice-pangenome-project": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:25.609950"
+  },
+  "panmask": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:26.300100"
+  },
+  "synthetic-manipulation-motion-generation": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:26.843734"
+  },
+  "irma": {
+    "count": 15,
+    "timestamp": "2026-02-22T00:31:27.394204"
+  },
+  "ecofolddb": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:31:27.939654"
+  },
+  "fetch_ngs": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:28.488593"
+  },
+  "biocoin": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:29.034886"
+  },
+  "spatialagent": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:30.637181"
+  },
+  "stagent": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:31.190669"
+  },
+  "shinycell2": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:31.733272"
+  },
+  "scrna-seq-guide": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:32.279387"
+  },
+  "dia-bert": {
+    "count": 1,
+    "timestamp": "2026-02-22T00:31:32.826045"
+  },
+  "stpath": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:33.369371"
+  },
+  "driverse": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:33.908014"
+  },
+  "cytetype": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:34.454686"
+  },
+  "stflow": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:35.001691"
+  },
+  "miphei-vit": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:35.555633"
+  },
+  "pdex": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:36.103384"
+  },
+  "scop": {
+    "count": 236,
+    "timestamp": "2026-02-22T00:31:36.663107"
+  },
+  "stofm": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:37.241598"
+  },
+  "thor": {
+    "count": 4,
+    "timestamp": "2026-02-22T00:31:37.787138"
+  },
+  "signature": {
+    "count": 7266,
+    "timestamp": "2026-02-22T00:31:38.342836"
+  },
+  "themissingsemester": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:38.909362"
+  },
+  "vcf-reformatter": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:39.531879"
+  },
+  "chromnitron": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:40.079350"
+  },
+  "bbtools": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:40.641214"
+  },
+  "cytetyper": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:41.185550"
+  },
+  "claude-scientific-skills": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:41.736582"
+  },
+  "savont": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:42.289348"
+  },
+  "revise": {
+    "count": 72,
+    "timestamp": "2026-02-22T00:31:42.883821"
+  },
+  "scope-st": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:43.784266"
+  },
+  "scrna_seq_analysis": {
+    "count": 123,
+    "timestamp": "2026-02-22T00:31:44.360613"
+  },
+  "helicase": {
+    "count": 381,
+    "timestamp": "2026-02-22T00:31:44.918521"
+  },
+  "multi-omics": {
+    "count": 7739,
+    "timestamp": "2026-02-22T00:31:45.495637"
+  },
+  "edgepython": {
+    "count": 0,
+    "timestamp": "2026-02-22T00:31:46.042534"
+  }
+}
