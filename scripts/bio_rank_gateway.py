@@ -488,12 +488,18 @@ def save_repo_with_snapshot(repo: dict, category: str, project_type: str,
     license_info = repo.get("license") or {}
     license_name = license_info.get("name", "") if isinstance(license_info, dict) else ""
     
+    # 处理 repo 改名/转移: 同一 id 可能以新 full_name 出现，需先清理旧记录
+    cursor.execute("DELETE FROM repositories WHERE id = ? AND full_name != ?",
+                   (repo.get("id"), full_name))
+    
     cursor.execute("""
         INSERT INTO repositories (id, full_name, url, description, language, license, topics, 
                                   created_at, category, project_type, has_paper, has_docker, 
                                   has_conda_env, sub_label, install_commands, preview_images, badge_url)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        ON CONFLICT(full_name) DO UPDATE SET
+        ON CONFLICT(id) DO UPDATE SET
+            full_name = excluded.full_name,
+            url = excluded.url,
             description = excluded.description,
             language = excluded.language,
             topics = excluded.topics,
