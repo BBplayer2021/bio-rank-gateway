@@ -83,6 +83,27 @@ KEYWORDS = {
         "untargeted metabolomics", "targeted metabolomics",
         "MZmine", "MetaboAnalyst", "mzML", "HMDB", "KEGG pathway",
         "MS-DIAL", "SIRIUS", "GNPS", "molecular networking", "metabolic flux"
+    ],
+    "Spatial-omics": [
+        "spatial transcriptomics", "spatial omics", "Visium", "MERFISH",
+        "seqFISH", "Slide-seq", "STARmap", "10x Visium", "spatial gene expression",
+        "squidpy", "stlearn", "cell2location", "RCTD", "spatial deconvolution",
+        "spatialDE", "image-based transcriptomics"
+    ],
+    "Multi-omics": [
+        "multi-omics", "multiomics", "omics integration", "data integration",
+        "MOFA", "iCluster", "mixOmics", "SNF", "multi-modal omics",
+        "pan-omics", "cross-omics", "integrative omics", "joint embedding",
+        "MCIA", "multi-view", "multimodal biology"
+    ],
+    "BioAI": [
+        "protein structure prediction", "AlphaFold", "ESM", "protein language model",
+        "drug discovery AI", "molecular generation", "biomedical NLP",
+        "scientific LLM", "protein design", "molecule generation",
+        "AI drug design", "de novo design", "protein folding",
+        "RoseTTAFold", "OpenFold", "ColabFold", "EvolutionaryScale",
+        "compound screening", "virtual screening", "ADMET prediction",
+        "retrosynthesis", "biomedical foundation model"
     ]
 }
 
@@ -109,7 +130,13 @@ UTILITY_LABELS = {
     "CNV Analysis": ["cnv", "copy number", "infercnv", "numbat"],
     "Cell Communication": ["ligand", "receptor", "nichenet", "cellchat", "communication"],
     "Mass Spectrometry": ["maxquant", "mass spec", "proteowizard", "msconvert", "openms"],
-    "Metabolite Analysis": ["xcms", "mzmine", "metaboanalyst", "lipidomics", "metabolite"]
+    "Metabolite Analysis": ["xcms", "mzmine", "metaboanalyst", "lipidomics", "metabolite"],
+    "Spatial Analysis": ["spatial", "visium", "merfish", "squidpy", "stlearn", "cell2location", "deconvolution"],
+    "Omics Integration": ["multi-omics", "multiomics", "integration", "mofa", "mixomics", "snf", "joint embedding"],
+    "Protein Structure": ["alphafold", "protein structure", "rosettafold", "openfold", "colabfold", "protein folding"],
+    "Drug Discovery": ["drug discovery", "virtual screening", "molecular generation", "compound", "admet", "retrosynthesis"],
+    "Biomedical NLP": ["biomedical nlp", "scientific llm", "text mining", "biobert", "pubmedbert", "named entity"],
+    "Molecular Design": ["de novo design", "protein design", "molecule generation", "generative", "diffusion model"]
 }
 
 # 排除关键词
@@ -181,12 +208,27 @@ BIO_SCORE_TERMS = {
     "mass-spectrometry": 15, "mass spectrometry": 15,
     "maxquant": 15, "proteowizard": 15, "peptide": 12,
     "xcms": 15, "mzidentml": 15, "tmt": 12, "dia": 10, "dda": 10,
+    # Spatial Omics 高权重
+    "spatial transcriptomics": 15, "visium": 15, "merfish": 15, "seqfish": 15,
+    "slide-seq": 15, "squidpy": 12, "stlearn": 12, "cell2location": 12,
+    "spatial omics": 12, "spatial deconvolution": 12,
+    # Multi-omics 高权重
+    "multi-omics": 15, "multiomics": 15, "omics integration": 15,
+    "mofa": 12, "mixomics": 12, "integrative omics": 12,
+    # BioAI 高权重
+    "alphafold": 15, "protein structure prediction": 15, "protein folding": 15,
+    "rosettafold": 15, "openfold": 15, "colabfold": 15,
+    "protein language model": 15, "esm": 12, "protein design": 12,
+    "drug discovery": 12, "virtual screening": 12, "molecular generation": 12,
+    "de novo design": 12, "retrosynthesis": 12, "admet": 12,
     # 中权重 (10分) - 常见生信词汇
     "bioinformatics": 10, "genomics": 10, "transcriptomics": 10,
     "epigenetics": 10, "sequencing": 10, "genome": 10, "gene expression": 10,
     "rna-seq": 10, "dna": 10, "rna": 10, "ngs": 10,
     "bisulfite": 10, "methylation": 10, "microbiome": 10,
     "biomarker": 10, "omics": 10, "bam": 10,
+    "spatial": 8, "multi-modal": 8,
+    "scientific llm": 10, "biomedical nlp": 10, "biomedical foundation model": 10,
     "protein identification": 10, "label-free quantification": 10,
     "lc-ms": 10, "gc-ms": 10, "tandem mass": 10,
     "metabolite": 10, "metabolic profiling": 10,
@@ -208,6 +250,8 @@ TECH_SCORE_TERMS = {
     "game-engine": 15, "game engine": 15,
     "blockchain": 15, "cryptocurrency": 15,
     "llm": 15, "large language model": 15, "chatbot": 15,
+    # 注意: BioAI 类 (scientific LLM, protein LM) 在 Bio-Score 中有高正向权重，
+    # 即使命中 llm 扣分也会被 Bio-Score 正向词抵消
     # 中扣分 (10分)
     "cloud-native": 10, "cloud native": 10,
     "kubernetes": 10, "k8s": 10, "docker swarm": 10,
@@ -234,7 +278,13 @@ OMICS_CORE_TERMS = [
     "ngs", "omics", "phylogenetic", "microbiome", "variant", "alignment",
     "wgs", "scrna-seq", "vcf", "fastq", "bam", "chip-seq", "atac-seq",
     "maxquant", "xcms", "proteowizard", "lc-ms", "gc-ms",
-    "tmt", "dia", "dda", "mzidentml", "lipidomics"
+    "tmt", "dia", "dda", "mzidentml", "lipidomics",
+    "spatial transcriptomics", "visium", "merfish", "squidpy", "spatial omics",
+    "multi-omics", "multiomics", "omics integration", "mofa", "mixomics",
+    "alphafold", "protein structure prediction", "protein folding", "rosettafold",
+    "openfold", "colabfold", "protein language model", "esm",
+    "drug discovery", "virtual screening", "molecular generation", "de novo design",
+    "scientific llm", "biomedical nlp", "biomedical foundation model"
 ]
 
 # 生信安全词（包含这些词的项目不会被黑名单排除）
@@ -978,8 +1028,14 @@ def classify_category(repo: dict, search_category: str) -> str:
     matched_categories = []
     
     if any(kw in full_text for kw in ["single-cell", "scrna", "10x", "scanpy", "seurat", 
-                                       "cell ranger", "droplet", "spatial transcriptomics"]):
+                                       "cell ranger", "droplet"]):
         matched_categories.append("Single-cell")
+    
+    if any(kw in full_text for kw in ["spatial transcriptomics", "spatial omics", "visium",
+                                       "merfish", "seqfish", "slide-seq", "squidpy", "stlearn",
+                                       "cell2location", "spatial deconvolution", "spatialDE",
+                                       "spatial gene expression"]):
+        matched_categories.append("Spatial-omics")
     
     if any(kw in full_text for kw in ["metagenom", "16s", "microbiome", "taxonom", "kraken", 
                                        "metaphlan", "qiime", "mothur", "amplicon"]):
@@ -1002,6 +1058,19 @@ def classify_category(repo: dict, search_category: str) -> str:
     if any(kw in full_text for kw in ["rna-seq", "rnaseq", "transcript", "differential expression",
                                        "deseq", "edger", "kallisto", "salmon"]):
         matched_categories.append("Transcriptomics")
+    
+    if any(kw in full_text for kw in ["multi-omics", "multiomics", "omics integration",
+                                       "integrative omics", "mofa", "mixomics",
+                                       "multi-modal omics", "pan-omics", "cross-omics"]):
+        matched_categories.append("Multi-omics")
+    
+    if any(kw in full_text for kw in ["alphafold", "protein structure prediction", "protein folding",
+                                       "rosettafold", "openfold", "colabfold", "protein language model",
+                                       "drug discovery", "virtual screening", "molecular generation",
+                                       "de novo design", "protein design", "scientific llm",
+                                       "biomedical nlp", "biomedical foundation model",
+                                       "retrosynthesis", "admet", "compound screening"]):
+        matched_categories.append("BioAI")
     
     if not matched_categories:
         # 无特定分类匹配时，用 Bio-Score 做最终校验
@@ -1023,8 +1092,14 @@ def get_multi_categories(repo: dict) -> list:
     matched_categories = []
     
     if any(kw in full_text for kw in ["single-cell", "scrna", "10x", "scanpy", "seurat", 
-                                       "cell ranger", "droplet", "spatial transcriptomics"]):
+                                       "cell ranger", "droplet"]):
         matched_categories.append("Single-cell")
+    
+    if any(kw in full_text for kw in ["spatial transcriptomics", "spatial omics", "visium",
+                                       "merfish", "seqfish", "slide-seq", "squidpy", "stlearn",
+                                       "cell2location", "spatial deconvolution", "spatialDE",
+                                       "spatial gene expression"]):
+        matched_categories.append("Spatial-omics")
     
     if any(kw in full_text for kw in ["metagenom", "16s", "microbiome", "taxonom", "kraken", 
                                        "metaphlan", "qiime", "mothur", "amplicon"]):
@@ -1047,6 +1122,19 @@ def get_multi_categories(repo: dict) -> list:
     if any(kw in full_text for kw in ["rna-seq", "rnaseq", "transcript", "differential expression",
                                        "deseq", "edger", "kallisto", "salmon"]):
         matched_categories.append("Transcriptomics")
+    
+    if any(kw in full_text for kw in ["multi-omics", "multiomics", "omics integration",
+                                       "integrative omics", "mofa", "mixomics",
+                                       "multi-modal omics", "pan-omics", "cross-omics"]):
+        matched_categories.append("Multi-omics")
+    
+    if any(kw in full_text for kw in ["alphafold", "protein structure prediction", "protein folding",
+                                       "rosettafold", "openfold", "colabfold", "protein language model",
+                                       "drug discovery", "virtual screening", "molecular generation",
+                                       "de novo design", "protein design", "scientific llm",
+                                       "biomedical nlp", "biomedical foundation model",
+                                       "retrosynthesis", "admet", "compound screening"]):
+        matched_categories.append("BioAI")
     
     if not matched_categories:
         return ["Genomics"]
@@ -1458,7 +1546,10 @@ def depth_search(quick_mode: bool = False):
             "Genomics": ["GATK", "BWA"],
             "Transcriptomics": ["RNA-seq", "DESeq2"],
             "Metagenomics": ["Metagenome"],
-            "Single-cell": ["scRNA-seq", "Scanpy"]
+            "Single-cell": ["scRNA-seq", "Scanpy"],
+            "Spatial-omics": ["Visium", "spatial transcriptomics"],
+            "Multi-omics": ["multi-omics", "omics integration"],
+            "BioAI": ["AlphaFold", "protein language model"]
         }
     
     category_pipelines_count = defaultdict(int)
@@ -1467,7 +1558,11 @@ def depth_search(quick_mode: bool = False):
     bio_terms = ["bioinformatics", "genomics", "transcriptomics", "metagenomics", 
                  "epigenetics", "proteomics", "metabolomics", "sequencing", "alignment",
                  "assembly", "variant", "expression", "analysis", "pipeline", "workflow",
-                 "mass-spectrometry", "peptide", "metabolite", "lipidomics"]
+                 "mass-spectrometry", "peptide", "metabolite", "lipidomics",
+                 "spatial transcriptomics", "spatial omics", "visium", "merfish",
+                 "multi-omics", "multiomics", "omics integration",
+                 "alphafold", "protein structure", "drug discovery", "protein language model",
+                 "scientific llm", "biomedical nlp", "molecular generation"]
     
     for category, keywords in keywords_to_search.items():
         log(f"\n[Category] {category}")
@@ -1598,7 +1693,7 @@ def generate_ranking_report():
             log(f"    Processed {i + 1}/{len(repos)} repos...")
     
     # 按类别和类型分组（包含 Workflow Engine 独立分类）
-    categories = ["Genomics", "Transcriptomics", "Metagenomics", "Single-cell", "Epigenetics", "Proteomics", "Metabolomics"]
+    categories = ["Genomics", "Transcriptomics", "Metagenomics", "Single-cell", "Epigenetics", "Proteomics", "Metabolomics", "Spatial-omics", "Multi-omics", "BioAI"]
     ranking = {}
     
     for cat in categories:
