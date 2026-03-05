@@ -29,24 +29,34 @@ In the fast-evolving field of bioinformatics, finding the most reliable and acti
 
 ## Features
 
-### 1. 🤖 Automated Pipeline
+### 1. 🔥 Bio-Omics Heat Index (v3.0)
+- **Five-Dimension Model**: Academic(30%) + Preprint(20%) + Tech(25%) + Funding(15%) + Community(10%)
+- **10 Omics Categories**: Genomics, Transcriptomics, Metagenomics, Single-cell, Epigenetics, Proteomics, Metabolomics, Spatial Omics, Multi-omics, **BioAI** (NEW)
+- **23 Sub-fields**: Covering core, advanced, applied, medical, and technology tracks
+- **Rank Change Tracking**: TIOBE-style position change indicator (▲/▼) showing movement between reporting periods
+- **YoY Growth**: Rolling 12-month window comparison for trend analysis
+- **Momentum Labels**: Rising Star / Hot / Growing / Stable / Cooling
+- **Interactive Radar Charts**: Five-dimension breakdown on click-to-expand detail panels
+- Data sources: PubMed, bioRxiv, GitHub, Bioconductor, PyPI, NIH RePORTER, Google Trends, Semantic Scholar, OpenAlex
+
+### 2. 🤖 Automated Pipeline
 - Weekly automated data collection (every Sunday at 0:00 UTC)
 - GitHub Actions workflow for CI/CD
 - Automatic deployment to GitHub Pages
 
-### 2. 💎 Data Enrichment
+### 3. 💎 Data Enrichment
 - **Install Command Detection**: Regex matching for `conda install`, `pip install`, `docker pull`, `git clone`
 - **Preview Image Extraction**: Scans README for workflow/report/plot images
 - **Badge Generation**: Shields.io badge URLs for each project
 
-### 3. 🎨 Frontend Portal
+### 4. 🎨 Frontend Portal
 - Modern card-based design
-- Left sidebar for omics category navigation
+- Left sidebar for omics category navigation (BioAI featured with HOT badge)
 - Dual-track switching (Pipeline/Utility)
 - Quick Install code blocks
 - Giscus comment system integration
 
-### 4. 📢 Notification System
+### 5. 📢 Notification System
 - Tracks Top 3 rankings
 - Detects new entries
 - Outputs badge Markdown for manual notification
@@ -58,13 +68,16 @@ bio-rank-gateway/
 ├── .github/workflows/   # GitHub Actions automation
 │   └── main.yml
 ├── scripts/             # Python crawler and algorithm
-│   └── bio_rank_gateway.py
+│   ├── bio_rank_gateway.py      # Tool ranking engine
+│   └── omics_tiobe_index.py     # Omics Heat Index engine (v3.0)
 ├── data/                # JSON data storage
 │   ├── ranking_report.json
 │   └── ranking_history.json
 ├── docs/                # GitHub Pages deployment
 │   ├── index.html
 │   ├── data/
+│   │   ├── ranking_report.json
+│   │   └── omics_index.json     # Heat Index data (23 fields)
 │   └── assets/
 └── README.md
 ```

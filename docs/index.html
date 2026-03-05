@@ -562,7 +562,7 @@
         
         .tiobe-bar-row {
             display: grid;
-            grid-template-columns: 24px 140px 1fr 54px 60px 80px;
+            grid-template-columns: 24px 36px 140px 1fr 54px 60px 80px;
             align-items: center;
             gap: 8px;
             padding: 5px 8px;
@@ -707,7 +707,7 @@
         
         @media (max-width: 992px) {
             .tiobe-bar-row {
-                grid-template-columns: 20px 110px 1fr 44px 50px 70px;
+                grid-template-columns: 20px 32px 110px 1fr 44px 50px 70px;
                 gap: 4px;
             }
             .tiobe-momentum { font-size: 0.62rem; padding: 2px 4px; }
@@ -890,6 +890,15 @@
         </div>
         
         <ul class="category-list" id="categoryList">
+            <li class="category-item" data-category="BioAI" style="position: relative;">
+                <div class="category-icon" style="background: #d69e2e;">
+                    <i class="bi bi-robot"></i>
+                </div>
+                <div>
+                    <div>BioAI <span style="background:#e53e3e;color:#fff;font-size:0.55rem;padding:1px 5px;border-radius:8px;font-weight:700;margin-left:4px;vertical-align:middle;">HOT</span></div>
+                    <small class="text-muted">AlphaFold, Drug AI</small>
+                </div>
+            </li>
             <li class="category-item active" data-category="Genomics">
                 <div class="category-icon" style="background: #4299e1;">
                     <i class="bi bi-cpu"></i>
@@ -969,15 +978,6 @@
                 <div>
                     <div>Multi-omics</div>
                     <small class="text-muted">Integration, MOFA</small>
-                </div>
-            </li>
-            <li class="category-item" data-category="BioAI">
-                <div class="category-icon" style="background: #d69e2e;">
-                    <i class="bi bi-robot"></i>
-                </div>
-                <div>
-                    <div>BioAI</div>
-                    <small class="text-muted">AlphaFold, Drug AI</small>
                 </div>
             </li>
         </ul>
@@ -1219,9 +1219,23 @@
                 const momentumClass = momentum.toLowerCase().replace(' ', '-');
                 const momentumHtml = `<span class="tiobe-momentum ${momentumClass}">${momentum}</span>`;
                 
+                // 排名变化 (CHANGE)
+                const rc = item.rank_change;
+                let changeHtml = '';
+                if (rc === null || rc === undefined) {
+                    changeHtml = '<span class="tiobe-change new">NEW</span>';
+                } else if (rc > 0) {
+                    changeHtml = `<span class="tiobe-change up">&#9650;${rc}</span>`;
+                } else if (rc < 0) {
+                    changeHtml = `<span class="tiobe-change down">&#9660;${Math.abs(rc)}</span>`;
+                } else {
+                    changeHtml = '<span class="tiobe-change flat">&mdash;</span>';
+                }
+                
                 html += `
                     <div class="tiobe-bar-row" onclick="toggleTiobeDetail(${i})" style="cursor:pointer;" id="tiobe-row-${i}">
                         <span class="tiobe-rank${i < 3 ? ' top3' : ''}">${item.rank}</span>
+                        ${changeHtml}
                         <span class="tiobe-field">
                             <span class="category-dot" style="background:${catColor}"></span>${item.field}
                         </span>

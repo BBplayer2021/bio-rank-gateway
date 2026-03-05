@@ -1285,34 +1285,44 @@ def calculate_scores_v3(raw_data: dict[str, dict]) -> list[dict[str, Any]]:
 # 趋势: 对比已有 omics_index.json 计算 Change %
 # ============================================================
 
-def load_previous_share(history_path: Path) -> dict[str, float]:
-    """读取已有 omics_index.json 中最近一期 rankings 的 share_pct。"""
+def load_previous_data(history_path: Path) -> tuple[dict[str, float], dict[str, int]]:
+    """读取已有 omics_index.json 中最近一期 rankings 的 share_pct 和 rank。"""
     if not history_path.exists():
-        return {}
+        return {}, {}
     try:
         with open(history_path, "r", encoding="utf-8") as f:
             old = json.load(f)
-        prev = {}
+        prev_share = {}
+        prev_rank = {}
         for item in old.get("rankings", []):
-            prev[item["field"]] = item.get("share_pct", 0)
-        return prev
+            prev_share[item["field"]] = item.get("share_pct", 0)
+            prev_rank[item["field"]] = item.get("rank", 0)
+        return prev_share, prev_rank
     except Exception as e:
         log("  Warning: could not load history %s: %s", history_path, e)
-        return {}
+        return {}, {}
 
 
 def attach_trend(rankings: list[dict], history_path: Path) -> None:
-    """在原 rankings 上就地添加 change / change_str。"""
-    prev = load_previous_share(history_path)
+    """在原 rankings 上就地添加 change / change_str / rank_change。"""
+    prev_share, prev_rank = load_previous_data(history_path)
     for item in rankings:
-        prev_share = prev.get(item["field"])
-        if prev_share is not None:
-            change = round(item["share_pct"] - prev_share, 2)
+        # Share% 变化
+        ps = prev_share.get(item["field"])
+        if ps is not None:
+            change = round(item["share_pct"] - ps, 2)
             item["change"] = change
             item["change_str"] = f"+{change:.2f}%" if change >= 0 else f"{change:.2f}%"
         else:
             item["change"] = None
             item["change_str"] = "NEW"
+        
+        # 排名位次变化 (正数=上升, 负数=下降, 0=不变, None=新上榜)
+        pr = prev_rank.get(item["field"])
+        if pr is not None:
+            item["rank_change"] = pr - item["rank"]  # 旧排名 - 新排名: 正=上升
+        else:
+            item["rank_change"] = None
 
 
 # ============================================================
