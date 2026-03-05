@@ -13,7 +13,7 @@
   </p>
   <p align="center">
     <b>[English]</b> Real-time monitoring of global bioinformatics tool vitality.<br>
-    <b>[中文]</b> 实时监测全球生信工具和流程的生命力，拒绝"生信考古"。
+    <a href="README_CN.md"><b>[中文]</b></a> 实时监测全球生信工具和流程的生命力，拒绝"生信考古"。
   </p>
 </p>
 
