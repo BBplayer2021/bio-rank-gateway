@@ -5,7 +5,7 @@
   },
   "gimmemotifs": {
     "count": 1,
-    "timestamp": "2026-02-22T00:23:50.982174"
+    "timestamp": "2026-03-05T07:14:50.348667"
   },
   "vcflib": {
     "count": 1,
@@ -85,7 +85,7 @@
   },
   "ngless": {
     "count": 1,
-    "timestamp": "2026-02-22T00:24:02.851580"
+    "timestamp": "2026-03-05T07:14:50.915803"
   },
   "emperor": {
     "count": 10,
@@ -93,11 +93,11 @@
   },
   "teachingmaterial": {
     "count": 0,
-    "timestamp": "2026-02-22T00:24:03.937171"
+    "timestamp": "2026-03-05T07:14:51.487814"
   },
   "manta": {
     "count": 14,
-    "timestamp": "2026-02-22T00:24:04.944149"
+    "timestamp": "2026-03-05T07:14:52.025306"
   },
   "jannovar": {
     "count": 2,
@@ -437,7 +437,7 @@
   },
   "causalpath": {
     "count": 4,
-    "timestamp": "2026-02-22T00:24:52.093761"
+    "timestamp": "2026-03-05T07:14:52.673812"
   },
   "hail": {
     "count": 8,
@@ -4238,5 +4238,29 @@
   "medgeclaw": {
     "count": 0,
     "timestamp": "2026-03-05T01:53:45.787118"
+  },
+  "braker": {
+    "count": 6,
+    "timestamp": "2026-03-05T07:14:53.447586"
+  },
+  "dmpfold2": {
+    "count": 0,
+    "timestamp": "2026-03-05T07:14:54.263133"
+  },
+  "dips-plus": {
+    "count": 0,
+    "timestamp": "2026-03-05T07:14:54.904180"
+  },
+  "msagen": {
+    "count": 0,
+    "timestamp": "2026-03-05T07:14:55.615138"
+  },
+  "galba": {
+    "count": 3,
+    "timestamp": "2026-03-05T07:14:56.194645"
+  },
+  "minifold": {
+    "count": 0,
+    "timestamp": "2026-03-05T07:14:57.064441"
   }
 }
