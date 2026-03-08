@@ -4262,5 +4262,29 @@
   "minifold": {
     "count": 0,
     "timestamp": "2026-03-05T07:14:57.064441"
+  },
+  "rsem": {
+    "count": 16,
+    "timestamp": "2026-03-08T00:31:12.596093"
+  },
+  "miscmetabar": {
+    "count": 0,
+    "timestamp": "2026-03-08T00:31:13.856562"
+  },
+  "m3-jepa": {
+    "count": 0,
+    "timestamp": "2026-03-08T00:31:15.133098"
+  },
+  "phap": {
+    "count": 4,
+    "timestamp": "2026-03-08T00:31:15.823296"
+  },
+  "ng-diagram": {
+    "count": 0,
+    "timestamp": "2026-03-08T00:31:16.486277"
+  },
+  "computer_vision_spatial_omics": {
+    "count": 0,
+    "timestamp": "2026-03-08T00:31:17.161302"
   }
 }
