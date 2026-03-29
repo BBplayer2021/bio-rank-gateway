@@ -1,70 +1,5 @@
 [
   {
-    "timestamp": "2026-02-09T15:33:09.234717",
-    "top3": {
-      "Genomics": {
-        "pipelines": [
-          "nf-core/sarek",
-          "maxplanck-ie/snakepipes",
-          "sequana/sequana"
-        ],
-        "utilities": [
-          "samtools/samtools",
-          "pachterlab/gget",
-          "lh3/bwa"
-        ]
-      },
-      "Transcriptomics": {
-        "pipelines": [
-          "nf-core/rnaseq",
-          "nf-core/scrnaseq",
-          "nf-core/rnafusion"
-        ],
-        "utilities": [
-          "Starlitnightly/omicverse",
-          "scverse/PyDESeq2",
-          "cafferychen777/mLLMCelltype"
-        ]
-      },
-      "Metagenomics": {
-        "pipelines": [
-          "YongxinLiu/EasyMetagenome",
-          "metagenome-atlas/atlas",
-          "nf-core/mag"
-        ],
-        "utilities": [
-          "torognes/vsearch",
-          "benjjneb/dada2",
-          "biobakery/MetaPhlAn"
-        ]
-      },
-      "Single-cell": {
-        "pipelines": [
-          "nf-core/scrnaseq",
-          "nf-core/spatialvi",
-          "nf-core/scnanoseq"
-        ],
-        "utilities": [
-          "scverse/scvi-tools",
-          "scverse/scanpy",
-          "theislab/cellrank"
-        ]
-      },
-      "Epigenetics": {
-        "pipelines": [
-          "nf-core/chipseq",
-          "nf-core/atacseq",
-          "nf-core/methylseq"
-        ],
-        "utilities": [
-          "macs3-project/MACS",
-          "mdozmorov/HiC_tools",
-          "FelixKrueger/Bismark"
-        ]
-      }
-    }
-  },
-  {
     "timestamp": "2026-02-12T07:20:15.200426",
     "top3": {
       "Genomics": {
@@ -1038,6 +973,131 @@
           "google-deepmind/alphafold3",
           "google-deepmind/alphafold",
           "aqlaboratory/openfold-3"
+        ]
+      }
+    }
+  },
+  {
+    "timestamp": "2026-03-29T00:37:37.885256",
+    "top3": {
+      "Genomics": {
+        "pipelines": [
+          "airbytehq/airbyte",
+          "Auto-Explore/GitComet",
+          "nf-cmgg/structural"
+        ],
+        "utilities": [
+          "K-Dense-AI/claude-scientific-skills",
+          "lh3/bwa",
+          "Ch0pin/medusa"
+        ]
+      },
+      "Transcriptomics": {
+        "pipelines": [
+          "nf-core/rnaseq",
+          "nf-core/scrnaseq",
+          "gagneurlab/drop"
+        ],
+        "utilities": [
+          "xjtulyc/MedgeClaw",
+          "Starlitnightly/omicverse",
+          "jinworks/CellChat"
+        ]
+      },
+      "Metagenomics": {
+        "pipelines": [
+          "nf-core/mag",
+          "metagenome-atlas/atlas",
+          "YongxinLiu/EasyMetagenome"
+        ],
+        "utilities": [
+          "benjjneb/dada2",
+          "torognes/swarm",
+          "mothur/mothur"
+        ]
+      },
+      "Single-cell": {
+        "pipelines": [
+          "nf-core/scrnaseq",
+          "mengxu98/scop",
+          "scverse/pertpy"
+        ],
+        "utilities": [
+          "scverse/scanpy",
+          "jinworks/CellChat",
+          "aertslab/pySCENIC"
+        ]
+      },
+      "Epigenetics": {
+        "pipelines": [
+          "nf-core/chipseq",
+          "nf-core/atacseq",
+          "nf-core/hic"
+        ],
+        "utilities": [
+          "macs3-project/MACS",
+          "open2c/cooler",
+          "FelixKrueger/Bismark"
+        ]
+      },
+      "Proteomics": {
+        "pipelines": [
+          "lazear/sage",
+          "broadinstitute/PANOPLY",
+          "bigbio/quantms"
+        ],
+        "utilities": [
+          "vdemichev/DiaNN",
+          "michaelwitting/RepoRT",
+          "sirius-ms/sirius"
+        ]
+      },
+      "Metabolomics": {
+        "pipelines": [
+          "sneumann/xcms",
+          "shuzhao-li-lab/asari",
+          "nf-core/metaboigniter"
+        ],
+        "utilities": [
+          "michaelwitting/RepoRT",
+          "sirius-ms/sirius",
+          "cran-task-views/Omics"
+        ]
+      },
+      "Spatial-omics": {
+        "pipelines": [
+          "TheJacksonLaboratory/STQ",
+          "nf-core/spatialvi",
+          "LiuLab-Bioelectronics-Harvard/STAgent"
+        ],
+        "utilities": [
+          "scverse/scvi-tools",
+          "MarcElosua/SPOTlight",
+          "BayraktarLab/cell2location"
+        ]
+      },
+      "Multi-omics": {
+        "pipelines": [
+          "epigen/MrBiomics",
+          "Lotfollahi-lab/nichecompass",
+          "ropensci/UCSCXenaTools"
+        ],
+        "utilities": [
+          "gao-lab/GLUE",
+          "Trhova/Multi-omics",
+          "fanglu0411/sgs"
+        ]
+      },
+      "BioAI": {
+        "pipelines": [
+          "PapenfussLab/proteindj",
+          "wells-wood-research/de-stress",
+          "psipred/DMPfold2"
+        ],
+        "utilities": [
+          "google-deepmind/alphafold",
+          "xjtulyc/MedgeClaw",
+          "google-deepmind/alphafold3"
         ]
       }
     }
