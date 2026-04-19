@@ -4470,5 +4470,33 @@
   "sciagent-skills": {
     "count": 0,
     "timestamp": "2026-04-12T00:51:12.120967"
+  },
+  "ms_peak_picker": {
+    "count": 0,
+    "timestamp": "2026-04-19T00:37:56.345150"
+  },
+  "easysfs": {
+    "count": 0,
+    "timestamp": "2026-04-19T00:37:57.015841"
+  },
+  "normalisr": {
+    "count": 0,
+    "timestamp": "2026-04-19T00:37:58.125927"
+  },
+  "multifish": {
+    "count": 0,
+    "timestamp": "2026-04-19T00:37:58.925090"
+  },
+  "flowcept": {
+    "count": 0,
+    "timestamp": "2026-04-19T00:37:59.893291"
+  },
+  "afprofile": {
+    "count": 1,
+    "timestamp": "2026-04-19T00:38:00.628624"
+  },
+  "quantum-transformer": {
+    "count": 0,
+    "timestamp": "2026-04-19T00:38:01.548460"
   }
 }
