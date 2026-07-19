@@ -4970,5 +4970,65 @@
   "icml2026-ai-bio": {
     "count": 0,
     "timestamp": "2026-07-12T02:17:36.023304"
+  },
+  "poplddecay": {
+    "count": 0,
+    "timestamp": "2026-07-19T02:05:00.785120"
+  },
+  "microbiome.jl": {
+    "count": 0,
+    "timestamp": "2026-07-19T02:05:01.511786"
+  },
+  "xpore": {
+    "count": 0,
+    "timestamp": "2026-07-19T02:05:02.667433"
+  },
+  "cadd-sv": {
+    "count": 1,
+    "timestamp": "2026-07-19T02:05:03.225181"
+  },
+  "guidescan-cli": {
+    "count": 0,
+    "timestamp": "2026-07-19T02:05:04.036898"
+  },
+  "pharokka": {
+    "count": 3,
+    "timestamp": "2026-07-19T02:05:04.938032"
+  },
+  "epinformer": {
+    "count": 1,
+    "timestamp": "2026-07-19T02:05:06.160034"
+  },
+  "snputils": {
+    "count": 0,
+    "timestamp": "2026-07-19T02:05:06.961199"
+  },
+  "ramanbiolib": {
+    "count": 0,
+    "timestamp": "2026-07-19T02:05:07.616863"
+  },
+  "flashdeconv": {
+    "count": 7,
+    "timestamp": "2026-07-19T02:05:08.317465"
+  },
+  "spmind": {
+    "count": 0,
+    "timestamp": "2026-07-19T02:05:08.910963"
+  },
+  "histopia": {
+    "count": 0,
+    "timestamp": "2026-07-19T02:05:09.458006"
+  },
+  "fp-tools": {
+    "count": 0,
+    "timestamp": "2026-07-19T02:05:10.696448"
+  },
+  "wisp-science": {
+    "count": 0,
+    "timestamp": "2026-07-19T02:05:11.245159"
+  },
+  "unofficial-davinci-mcp": {
+    "count": 0,
+    "timestamp": "2026-07-19T02:05:11.781905"
   }
 }
