@@ -4089,7 +4089,7 @@
   },
   "alphafold3-gui": {
     "count": 0,
-    "timestamp": "2026-07-12T02:16:16.518285"
+    "timestamp": "2026-08-02T02:11:05.212169"
   },
   "alphafold3_tools": {
     "count": 0,
@@ -5046,5 +5046,29 @@
   "motif": {
     "count": 4539,
     "timestamp": "2026-07-26T02:24:11.077940"
+  },
+  "somaticwrapper": {
+    "count": 0,
+    "timestamp": "2026-08-02T02:11:01.022194"
+  },
+  "openfold2": {
+    "count": 0,
+    "timestamp": "2026-08-02T02:11:02.743749"
+  },
+  "sclet": {
+    "count": 0,
+    "timestamp": "2026-08-02T02:11:04.552123"
+  },
+  "open-science": {
+    "count": 152,
+    "timestamp": "2026-08-02T02:11:06.249060"
+  },
+  "ripple": {
+    "count": 16,
+    "timestamp": "2026-08-02T02:11:06.962268"
+  },
+  "coral": {
+    "count": 362,
+    "timestamp": "2026-08-02T02:11:07.581296"
   }
 }
