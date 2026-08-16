@@ -4089,7 +4089,7 @@
   },
   "alphafold3-gui": {
     "count": 0,
-    "timestamp": "2026-08-02T02:11:05.212169"
+    "timestamp": "2026-08-16T01:01:53.594268"
   },
   "alphafold3_tools": {
     "count": 0,
@@ -5049,27 +5049,27 @@
   },
   "somaticwrapper": {
     "count": 0,
-    "timestamp": "2026-08-02T02:11:01.022194"
+    "timestamp": "2026-08-16T01:01:47.966644"
   },
   "openfold2": {
     "count": 0,
-    "timestamp": "2026-08-02T02:11:02.743749"
+    "timestamp": "2026-08-16T01:01:50.112741"
   },
   "sclet": {
     "count": 0,
-    "timestamp": "2026-08-02T02:11:04.552123"
+    "timestamp": "2026-08-16T01:01:53.003376"
   },
   "open-science": {
-    "count": 152,
-    "timestamp": "2026-08-02T02:11:06.249060"
+    "count": 153,
+    "timestamp": "2026-08-16T01:01:55.602252"
   },
   "ripple": {
     "count": 16,
-    "timestamp": "2026-08-02T02:11:06.962268"
+    "timestamp": "2026-08-16T01:01:56.119849"
   },
   "coral": {
-    "count": 362,
-    "timestamp": "2026-08-02T02:11:07.581296"
+    "count": 363,
+    "timestamp": "2026-08-16T01:01:56.640923"
   },
   "ballgown": {
     "count": 4,
@@ -5098,5 +5098,33 @@
   "drug-discovery-graph-models": {
     "count": 0,
     "timestamp": "2026-08-09T01:28:04.358277"
+  },
+  "mageri": {
+    "count": 1,
+    "timestamp": "2026-08-16T01:01:46.521814"
+  },
+  "lrsim": {
+    "count": 0,
+    "timestamp": "2026-08-16T01:01:47.366736"
+  },
+  "methylstar": {
+    "count": 1,
+    "timestamp": "2026-08-16T01:01:48.828846"
+  },
+  "move": {
+    "count": 958,
+    "timestamp": "2026-08-16T01:01:50.751317"
+  },
+  "marsilea": {
+    "count": 0,
+    "timestamp": "2026-08-16T01:01:51.736771"
+  },
+  "madgen": {
+    "count": 0,
+    "timestamp": "2026-08-16T01:01:54.192845"
+  },
+  "claude-trader": {
+    "count": 0,
+    "timestamp": "2026-08-16T01:01:54.946508"
   }
 }
