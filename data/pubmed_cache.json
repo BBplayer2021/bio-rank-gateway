@@ -5190,5 +5190,33 @@
   "aim-lab-orchestrator": {
     "count": 0,
     "timestamp": "2026-08-30T02:55:40.682238"
+  },
+  "juicebox": {
+    "count": 5,
+    "timestamp": "2026-09-06T02:15:59.387334"
+  },
+  "n2words": {
+    "count": 0,
+    "timestamp": "2026-09-06T02:16:00.850654"
+  },
+  "itsxrust": {
+    "count": 0,
+    "timestamp": "2026-09-06T02:16:04.080730"
+  },
+  "frigid": {
+    "count": 5,
+    "timestamp": "2026-09-06T02:16:04.709029"
+  },
+  "ai-bioworkflow": {
+    "count": 0,
+    "timestamp": "2026-09-06T02:16:05.351836"
+  },
+  "marinfold": {
+    "count": 0,
+    "timestamp": "2026-09-06T02:16:05.982994"
+  },
+  "openscience": {
+    "count": 5,
+    "timestamp": "2026-09-06T02:16:06.654351"
   }
 }
