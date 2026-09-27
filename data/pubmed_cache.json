@@ -1,2103 +1,2103 @@
 {
   "velvet": {
-    "count": 83,
-    "timestamp": "2026-09-20T02:44:50.814248"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:42.805033"
   },
   "gimmemotifs": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:44:51.444196"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:43.444779"
   },
   "vcflib": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:44:52.096289"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:44.080351"
   },
   "msnbase": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:44:52.748378"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:44.760249"
   },
   "jcvi": {
-    "count": 29,
-    "timestamp": "2026-09-20T02:44:53.425086"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:45.432626"
   },
   "bwa": {
-    "count": 105,
-    "timestamp": "2026-09-20T02:44:54.075550"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:46.111909"
   },
   "macs": {
-    "count": 41,
-    "timestamp": "2026-09-20T02:44:55.395628"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:47.355563"
   },
   "pymzml": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:44:56.027499"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:47.979001"
   },
   "mothur": {
-    "count": 40,
-    "timestamp": "2026-09-20T02:44:56.690022"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:48.610327"
   },
   "hts-specs": {
     "count": 0,
-    "timestamp": "2026-09-20T02:44:58.004502"
+    "timestamp": "2026-09-27T02:53:49.913258"
   },
   "samtools": {
-    "count": 84,
-    "timestamp": "2026-09-20T02:44:58.668575"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:50.585208"
   },
   "htslib": {
-    "count": 3,
-    "timestamp": "2026-09-13T02:24:18.004879"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:51.188933"
   },
   "rforproteomics": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:45:10.600013"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:52.482287"
   },
   "mast": {
-    "count": 484,
-    "timestamp": "2026-09-20T02:45:11.199772"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:53.087113"
   },
   "maldiquant": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:45:11.843938"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:53.728130"
   },
   "pysamstats": {
     "count": 0,
-    "timestamp": "2026-09-20T02:45:13.132674"
+    "timestamp": "2026-09-27T02:53:55.024492"
   },
   "cobrapy": {
-    "count": 8,
-    "timestamp": "2026-09-20T02:45:13.757553"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:55.652496"
   },
   "cobratoolbox": {
-    "count": 5,
-    "timestamp": "2026-09-20T02:45:14.403345"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:56.289080"
   },
   "mdtraj": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:45:15.050616"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:56.897038"
   },
   "swarm": {
-    "count": 219,
-    "timestamp": "2026-09-20T02:45:15.709076"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:57.508017"
   },
   "bowtie2": {
-    "count": 51,
-    "timestamp": "2026-09-20T02:45:16.374321"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:58.126084"
   },
   "ngless": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:45:17.044560"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:58.725551"
   },
   "emperor": {
-    "count": 12,
-    "timestamp": "2026-09-20T02:45:17.649352"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:59.338819"
   },
   "teachingmaterial": {
     "count": 0,
-    "timestamp": "2026-09-20T02:45:19.158732"
+    "timestamp": "2026-09-27T02:54:00.640693"
   },
   "manta": {
-    "count": 16,
-    "timestamp": "2026-09-20T02:45:19.824629"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:01.279571"
   },
   "jannovar": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:45:20.701704"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:01.915264"
   },
   "deeptools": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:45:21.339362"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:02.538900"
   },
   "soapdenovo2": {
-    "count": 11,
-    "timestamp": "2026-09-20T02:45:22.681486"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:04.144242"
   },
   "fastaq": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:45:23.347630"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:04.779698"
   },
   "pyfaidx": {
     "count": 0,
-    "timestamp": "2026-09-20T02:45:24.023455"
+    "timestamp": "2026-09-27T02:54:05.401540"
   },
   "vcfr": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:45:26.083997"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:07.354397"
   },
   "pia": {
-    "count": 16,
-    "timestamp": "2026-09-20T02:45:27.414265"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:08.629985"
   },
   "delly": {
-    "count": 8,
-    "timestamp": "2026-09-20T02:45:28.075456"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:09.303529"
   },
   "pychron": {
     "count": 0,
-    "timestamp": "2026-09-20T02:45:28.737828"
+    "timestamp": "2026-09-27T02:54:10.025264"
   },
   "vcf2maf": {
     "count": 0,
-    "timestamp": "2026-09-20T02:45:29.412660"
+    "timestamp": "2026-09-27T02:54:10.632513"
   },
   "bwa-meth": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:45:30.074809"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:11.305016"
   },
   "methylkit": {
-    "count": 5,
-    "timestamp": "2026-09-20T02:45:31.446382"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:12.526917"
   },
   "cljam": {
     "count": 0,
-    "timestamp": "2026-09-20T02:45:32.124397"
+    "timestamp": "2026-09-27T02:54:13.200142"
   },
   "openms": {
-    "count": 57,
-    "timestamp": "2026-09-20T02:45:32.787798"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:13.815844"
   },
   "genmod": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:45:33.447067"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:14.467585"
   },
   "pysam": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:45:34.113308"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:15.127145"
   },
   "xcms": {
-    "count": 185,
-    "timestamp": "2026-09-20T02:45:35.018825"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:15.803142"
   },
   "picard": {
-    "count": 14,
-    "timestamp": "2026-09-20T02:45:35.696472"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:16.422672"
   },
   "htsjdk": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:45:38.669735"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:19.082272"
   },
   "snippy": {
-    "count": 15,
-    "timestamp": "2026-09-20T02:45:39.344095"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:19.726385"
   },
   "vsearch": {
-    "count": 12,
-    "timestamp": "2026-09-20T02:45:40.123299"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:20.382306"
   },
   "mgl-gpr": {
     "count": 0,
-    "timestamp": "2026-09-20T02:45:40.753650"
+    "timestamp": "2026-09-27T02:54:21.017478"
   },
   "chipseeker": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:45:41.419804"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:21.647590"
   },
   "ptxqc": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:45:42.092598"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:22.315195"
   },
   "eoulsan": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:45:43.419103"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:23.532586"
   },
   "parsnp": {
-    "count": 5,
-    "timestamp": "2026-09-20T02:45:44.045506"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:24.178586"
   },
   "vcf-kit": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:45:44.724644"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:24.844421"
   },
   "trinityrnaseq": {
     "count": 0,
-    "timestamp": "2026-09-20T02:45:45.354063"
+    "timestamp": "2026-09-27T02:54:25.494666"
   },
   "cataclysm-bn": {
     "count": 0,
-    "timestamp": "2026-09-20T02:45:46.731128"
+    "timestamp": "2026-09-27T02:54:26.759675"
   },
   "seqarray": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:45:47.360212"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:27.443393"
   },
   "viral-ngs": {
-    "count": 7,
-    "timestamp": "2026-09-20T02:45:48.703838"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:28.759152"
   },
   "pygeno": {
     "count": 0,
-    "timestamp": "2026-09-20T02:45:49.346387"
+    "timestamp": "2026-09-27T02:54:29.377985"
   },
   "fella": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:45:50.011720"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:30.012427"
   },
   "stringtie": {
-    "count": 15,
-    "timestamp": "2026-09-20T02:45:50.657646"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:30.703138"
   },
   "lofreq": {
-    "count": 10,
-    "timestamp": "2026-09-20T02:45:51.265984"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:31.355214"
   },
   "reads-for-assembly": {
     "count": 0,
-    "timestamp": "2026-09-20T02:45:52.560836"
+    "timestamp": "2026-09-27T02:54:32.634508"
   },
   "wiggleplotr": {
     "count": 0,
-    "timestamp": "2026-09-20T02:45:53.215914"
+    "timestamp": "2026-09-27T02:54:33.263662"
   },
   "gatk": {
-    "count": 153,
-    "timestamp": "2026-09-20T02:45:54.534367"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:34.549616"
   },
   "arioc": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:45:55.455327"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:35.191491"
   },
   "sartools": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:45:56.117594"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:35.816545"
   },
   "cpptraj": {
     "count": 0,
-    "timestamp": "2026-09-20T02:45:56.806259"
+    "timestamp": "2026-09-27T02:54:36.479352"
   },
   "dada2": {
-    "count": 33,
-    "timestamp": "2026-09-20T02:45:57.473655"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:37.146389"
   },
   "agi-bio": {
     "count": 0,
-    "timestamp": "2026-09-20T02:45:58.757948"
+    "timestamp": "2026-09-27T02:54:38.410414"
   },
   "octopus": {
-    "count": 39,
-    "timestamp": "2026-09-20T02:46:00.058632"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:39.710258"
   },
   "sleuth": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:46:01.375830"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:41.033331"
   },
   "hicexplorer": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:46:02.044906"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:41.679581"
   },
   "glypy": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:46:02.684265"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:42.306442"
   },
   "bin": {
-    "count": 278,
-    "timestamp": "2026-09-20T02:46:03.352780"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:42.919417"
   },
   "metacompass": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:04.025311"
+    "timestamp": "2026-09-27T02:54:43.568857"
   },
   "biotoolbox": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:04.696515"
+    "timestamp": "2026-09-27T02:54:44.244971"
   },
   "mzqc": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:46:05.342646"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:44.923785"
   },
   "metabolights": {
-    "count": 63,
-    "timestamp": "2026-09-20T02:46:06.676132"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:46.160494"
   },
   "mixcr": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:46:07.391739"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:46.786439"
   },
   "redundans": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:46:08.072392"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:47.457452"
   },
   "ddpcr": {
-    "count": 69,
-    "timestamp": "2026-09-20T02:46:08.755000"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:48.069912"
   },
   "vcfgo": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:09.381802"
+    "timestamp": "2026-09-27T02:54:48.680306"
   },
   "jaffa": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:46:10.070442"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:49.321698"
   },
   "chip-atlas": {
-    "count": 8,
-    "timestamp": "2026-09-20T02:46:10.681775"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:50.665860"
   },
   "vcfanno": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:46:11.344732"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:51.299898"
   },
   "hicpeaks": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:12.052382"
+    "timestamp": "2026-09-27T02:54:51.913104"
   },
   "pypdb": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:12.678300"
+    "timestamp": "2026-09-27T02:54:52.560957"
   },
   "basics": {
-    "count": 170,
-    "timestamp": "2026-09-20T02:46:13.344657"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:53.178795"
   },
   "seurat": {
-    "count": 120,
-    "timestamp": "2026-09-20T02:46:14.776291"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:54.496658"
   },
   "singlem": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:15.603356"
+    "timestamp": "2026-09-27T02:54:55.117235"
   },
   "vcf-validator": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:16.266030"
+    "timestamp": "2026-09-27T02:54:55.740882"
   },
   "reg-gen": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:46:16.937380"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:56.392459"
   },
   "biscuit": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:46:17.608574"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:57.069334"
   },
   "tiddit": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:46:18.277071"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:57.728920"
   },
   "training-material": {
-    "count": 8,
-    "timestamp": "2026-09-20T02:46:18.904516"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:58.347349"
   },
   "i18n-extract": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:19.537782"
+    "timestamp": "2026-09-27T02:54:59.064363"
   },
   "peddy": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:20.175255"
+    "timestamp": "2026-09-27T02:54:59.738207"
   },
   "stochpy": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:21.443151"
+    "timestamp": "2026-09-27T02:55:01.101510"
   },
   "mztab": {
-    "count": 15,
-    "timestamp": "2026-09-20T02:46:22.088922"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:01.728210"
   },
   "cyvcf2": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:46:22.747445"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:02.380368"
   },
   "compomics-utilities": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:46:23.344313"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:02.997519"
   },
   "searchgui": {
-    "count": 13,
-    "timestamp": "2026-09-20T02:46:23.947294"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:03.680438"
   },
   "peptide-shaker": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:46:24.624992"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:04.298522"
   },
   "mikado": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:46:25.290001"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:04.984964"
   },
   "camisim": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:46:25.928106"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:05.642149"
   },
   "frogs": {
-    "count": 105,
-    "timestamp": "2026-09-20T02:46:26.589453"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:06.297478"
   },
   "pyqms": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:46:27.276262"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:06.901173"
   },
   "thermo-raw-file-reader": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:28.172344"
+    "timestamp": "2026-09-27T02:55:07.601688"
   },
   "ursgal": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:46:28.797249"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:08.230805"
   },
   "brainpy": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:29.438897"
+    "timestamp": "2026-09-27T02:55:08.866237"
   },
   "causalpath": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:46:30.041987"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:09.713678"
   },
   "hail": {
-    "count": 8,
-    "timestamp": "2026-09-20T02:46:30.656230"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:10.361339"
   },
   "bismark": {
-    "count": 14,
-    "timestamp": "2026-09-20T02:46:31.974684"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:11.650333"
   },
   "tximport": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:46:32.620290"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:12.292652"
   },
   "get_homologues": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:34.843962"
+    "timestamp": "2026-09-27T02:55:14.309478"
   },
   "protigy": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:36.134550"
+    "timestamp": "2026-09-27T02:55:15.711303"
   },
   "psi-ms-cv": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:36.804631"
+    "timestamp": "2026-09-27T02:55:16.310919"
   },
   "juicer": {
-    "count": 8,
-    "timestamp": "2026-09-20T02:46:38.140117"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:17.617037"
   },
   "cooler": {
-    "count": 32,
-    "timestamp": "2026-09-20T02:46:38.865744"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:18.559047"
   },
   "msgfplus": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:40.682505"
+    "timestamp": "2026-09-27T02:55:20.417198"
   },
   "calour": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:41.413063"
+    "timestamp": "2026-09-27T02:55:21.073435"
   },
   "ms_deisotope": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:43.332596"
+    "timestamp": "2026-09-27T02:55:23.097436"
   },
   "alfred": {
-    "count": 14,
-    "timestamp": "2026-09-20T02:46:44.014812"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:23.732150"
   },
   "seqkit": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:46:44.682136"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:24.485441"
   },
   "sequana": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:46:45.378968"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:25.176785"
   },
   "tools-metabolomics": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:47.694285"
+    "timestamp": "2026-09-27T02:55:27.052632"
   },
   "assemblytics": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:46:48.982508"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:28.287348"
   },
   "yingtools2": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:49.602581"
+    "timestamp": "2026-09-27T02:55:28.924402"
   },
   "famsa": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:50.263895"
+    "timestamp": "2026-09-27T02:55:29.533157"
   },
   "snakepipes": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:46:51.097891"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:30.177633"
   },
   "svdb": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:46:51.748684"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:30.849152"
   },
   "seqan3": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:52.419573"
+    "timestamp": "2026-09-27T02:55:31.536204"
   },
   "pharmcat": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:46:53.092201"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:32.174870"
   },
   "higlass": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:46:53.752993"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:32.806956"
   },
   "kraken-biom": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:54.359474"
+    "timestamp": "2026-09-27T02:55:33.428854"
   },
   "mzspeclib": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:46:55.022794"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:34.113326"
   },
   "getorganelle": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:46:55.681274"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:34.753528"
   },
   "mages": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:46:57.010053"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:35.996631"
   },
   "bracken": {
-    "count": 8,
-    "timestamp": "2026-09-20T02:46:57.614381"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:36.646599"
   },
   "pepatac": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:58.257307"
+    "timestamp": "2026-09-27T02:55:37.243604"
   },
   "gecko": {
-    "count": 32,
-    "timestamp": "2026-09-20T02:47:00.403669"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:39.128146"
   },
   "single-cell-pseudotime": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:47:01.067081"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:39.752065"
   },
   "ribbon": {
-    "count": 43,
-    "timestamp": "2026-09-20T02:47:01.736664"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:40.400610"
   },
   "varlociraptor": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:02.348946"
+    "timestamp": "2026-09-27T02:55:41.058009"
   },
   "st_pipeline": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:04.410243"
+    "timestamp": "2026-09-27T02:55:43.072277"
   },
   "orgmassspecr": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:05.073526"
+    "timestamp": "2026-09-27T02:55:43.747433"
   },
   "hapcut2": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:47:06.344554"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:45.068555"
   },
   "metagraph": {
-    "count": 9,
-    "timestamp": "2026-09-20T02:47:07.636600"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:46.431470"
   },
   "sns": {
-    "count": 29,
-    "timestamp": "2026-09-20T02:47:09.013703"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:47.763958"
   },
   "metaworkflow": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:47:09.625794"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:48.380753"
   },
   "mzlib": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:10.279030"
+    "timestamp": "2026-09-27T02:55:49.027327"
   },
   "scrna-tools": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:11.049226"
+    "timestamp": "2026-09-27T02:55:49.709899"
   },
   "vcfpy": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:11.716507"
+    "timestamp": "2026-09-27T02:55:50.340785"
   },
   "pmartr": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:47:12.430814"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:50.999427"
   },
   "drep": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:47:13.055818"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:51.671704"
   },
   "teamteri": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:13.652752"
+    "timestamp": "2026-09-27T02:55:52.279801"
   },
   "splatter": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:47:14.341255"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:52.965126"
   },
   "isescan": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:47:15.685160"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:54.275105"
   },
   "md-task": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:47:16.944396"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:55.612068"
   },
   "lcdb-wf": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:18.969991"
+    "timestamp": "2026-09-27T02:55:56.902190"
   },
   "enrichm": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:19.693913"
+    "timestamp": "2026-09-27T02:55:57.706388"
   },
   "atlas": {
-    "count": 5324,
-    "timestamp": "2026-09-20T02:47:20.361435"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:58.355471"
   },
   "maven": {
-    "count": 14,
-    "timestamp": "2026-09-20T02:47:21.029744"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:59.090000"
   },
   "metamorpheus": {
-    "count": 20,
-    "timestamp": "2026-09-20T02:47:21.675332"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:59.777518"
   },
   "genomehubs": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:22.336183"
+    "timestamp": "2026-09-27T02:56:00.424445"
   },
   "scanpy": {
-    "count": 17,
-    "timestamp": "2026-09-20T02:47:23.007574"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:01.074402"
   },
   "metacache": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:23.684289"
+    "timestamp": "2026-09-27T02:56:01.719067"
   },
   "mtbseq_source": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:24.362544"
+    "timestamp": "2026-09-27T02:56:02.387181"
   },
   "pairtools": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:47:25.002854"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:03.059869"
   },
   "philosopher": {
-    "count": 11,
-    "timestamp": "2026-09-20T02:47:25.676162"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:03.685704"
   },
   "miceco": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:26.312070"
+    "timestamp": "2026-09-27T02:56:04.379368"
   },
   "flashweave.jl": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:26.965803"
+    "timestamp": "2026-09-27T02:56:04.996764"
   },
   "panoply": {
-    "count": 30,
-    "timestamp": "2026-09-20T02:47:27.622297"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:05.632501"
   },
   "stitch": {
-    "count": 96,
-    "timestamp": "2026-09-20T02:47:28.964337"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:06.937861"
   },
   "ideal": {
-    "count": 2129,
-    "timestamp": "2026-09-20T02:47:29.595191"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:07.597687"
   },
   "ms2pip": {
-    "count": 13,
-    "timestamp": "2026-09-20T02:47:30.251687"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:08.254257"
   },
   "mzkit": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:30.923159"
+    "timestamp": "2026-09-27T02:56:08.855238"
   },
   "decontam": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:33.158135"
+    "timestamp": "2026-09-27T02:56:10.958011"
   },
   "fqless": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:33.787671"
+    "timestamp": "2026-09-27T02:56:11.573118"
   },
   "pheniqs": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:34.449036"
+    "timestamp": "2026-09-27T02:56:12.222757"
   },
   "sv-callers": {
-    "count": 33,
-    "timestamp": "2026-09-20T02:47:35.151212"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:12.855264"
   },
   "degust": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:35.784570"
+    "timestamp": "2026-09-27T02:56:13.500561"
   },
   "pyflow-chipseq": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:36.409937"
+    "timestamp": "2026-09-27T02:56:14.176947"
   },
   "pagoda2": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:37.089820"
+    "timestamp": "2026-09-27T02:56:14.857418"
   },
   "flashlfq": {
-    "count": 6,
-    "timestamp": "2026-09-20T02:47:37.744600"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:15.470269"
   },
   "fragpipe": {
-    "count": 55,
-    "timestamp": "2026-09-20T02:47:39.012536"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:16.797508"
   },
   "graphtyper": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:41.007083"
+    "timestamp": "2026-09-27T02:56:18.986482"
   },
   "sirius": {
-    "count": 56,
-    "timestamp": "2026-09-20T02:47:41.712771"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:19.603622"
   },
   "fastq_utils": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:42.517569"
+    "timestamp": "2026-09-27T02:56:20.314494"
   },
   "metaboseek": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:47:43.182771"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:20.983245"
   },
   "admixturepipeline": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:47:44.494405"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:22.300735"
   },
   "dmrseq": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:47:45.103713"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:22.946324"
   },
   "cellranger": {
-    "count": 6,
-    "timestamp": "2026-09-20T02:47:45.812796"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:23.562432"
   },
   "seq2hla": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:47:47.150976"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:24.870379"
   },
   "recentrifuge": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:47:47.991759"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:25.503679"
   },
   "purecn": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:47:48.647127"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:26.166828"
   },
   "vcf2fasta": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:47:49.260554"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:26.818819"
   },
   "metagenomescope": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:50.192717"
+    "timestamp": "2026-09-27T02:56:27.465669"
   },
   "anndata": {
-    "count": 7,
-    "timestamp": "2026-09-20T02:47:51.250072"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:28.115533"
   },
   "vcf2dis": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:47:51.927948"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:28.758065"
   },
   "amber": {
-    "count": 120,
-    "timestamp": "2026-09-20T02:47:52.671326"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:29.423318"
   },
   "mosdepth": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:47:53.312522"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:30.043336"
   },
   "ms2rescore": {
-    "count": 10,
-    "timestamp": "2026-09-20T02:47:54.646598"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:31.293007"
   },
   "idep": {
-    "count": 7,
-    "timestamp": "2026-09-20T02:47:55.286215"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:31.977078"
   },
   "scvi-tools": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:47:55.955109"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:32.618038"
   },
   "armor": {
-    "count": 10,
-    "timestamp": "2026-09-20T02:47:56.602456"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:33.246815"
   },
   "vgp-assembly": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:57.248575"
+    "timestamp": "2026-09-27T02:56:33.885952"
   },
   "medusa": {
-    "count": 28,
-    "timestamp": "2026-09-20T02:47:57.931913"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:34.547834"
   },
   "cellxgene": {
-    "count": 7,
-    "timestamp": "2026-09-20T02:47:59.266589"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:35.833679"
   },
   "rna-seq-star-deseq2": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:00.617386"
+    "timestamp": "2026-09-27T02:56:37.114538"
   },
   "msstatstmt": {
-    "count": 6,
-    "timestamp": "2026-09-20T02:48:01.222192"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:37.775079"
   },
   "deqms": {
-    "count": 7,
-    "timestamp": "2026-09-20T02:48:01.837460"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:38.440578"
   },
   "biojupies": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:48:03.151584"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:39.703856"
   },
   "pdv": {
-    "count": 7,
-    "timestamp": "2026-09-20T02:48:03.814952"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:40.336094"
   },
   "deseq2": {
-    "count": 207,
-    "timestamp": "2026-09-20T02:48:04.484910"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:40.955476"
   },
   "bamtofastq": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:05.726943"
+    "timestamp": "2026-09-27T02:56:42.237434"
   },
   "sscclust": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:48:06.376134"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:42.885345"
   },
   "isee": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:48:07.044537"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:43.521533"
   },
   "aldy": {
-    "count": 5,
-    "timestamp": "2026-09-20T02:48:08.340057"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:44.851812"
   },
   "plink2": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:48:09.002769"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:45.495388"
   },
   "fastqc": {
-    "count": 23,
-    "timestamp": "2026-09-20T02:48:09.656778"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:46.155536"
   },
   "arcsv": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:10.290923"
+    "timestamp": "2026-09-27T02:56:46.809480"
   },
   "masurca": {
-    "count": 11,
-    "timestamp": "2026-09-20T02:48:11.101055"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:47.450444"
   },
   "fasten": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:48:12.399829"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:48.712766"
   },
   "npyc-toolbox": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:48:13.071876"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:49.341481"
   },
   "ampumi": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:48:13.731490"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:49.976668"
   },
   "bamnostic": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:14.415758"
+    "timestamp": "2026-09-27T02:56:50.673800"
   },
   "sesame": {
-    "count": 76,
-    "timestamp": "2026-09-20T02:48:15.035612"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:51.313887"
   },
   "patroon": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:48:15.661345"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:51.953238"
   },
   "startrac": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:48:16.310633"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:52.626918"
   },
   "pyscenic": {
-    "count": 14,
-    "timestamp": "2026-09-20T02:48:16.966539"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:53.337236"
   },
   "tpmcalculator": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:48:17.633949"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:54.037045"
   },
   "methylseq": {
-    "count": 24,
-    "timestamp": "2026-09-20T02:48:18.286390"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:54.713447"
   },
   "fq": {
-    "count": 23,
-    "timestamp": "2026-09-20T02:48:18.940841"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:55.357180"
   },
   "pwiz": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:19.615792"
+    "timestamp": "2026-09-27T02:56:56.205751"
   },
   "diann": {
-    "count": 75,
-    "timestamp": "2026-09-20T02:48:20.288295"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:56.851815"
   },
   "scrattch.vis": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:20.950346"
+    "timestamp": "2026-09-27T02:56:57.535276"
   },
   "massbank-data": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:21.580315"
+    "timestamp": "2026-09-27T02:56:58.178207"
   },
   "ccmetagen": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:48:22.916639"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:59.488970"
   },
   "normalyzerde": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:48:23.576473"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:00.141924"
   },
   "rnaseq": {
-    "count": 6629,
-    "timestamp": "2026-09-20T02:48:24.268278"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:00.761918"
   },
   "hic_tools": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:24.952221"
+    "timestamp": "2026-09-27T02:57:01.548398"
   },
   "hickit": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:48:26.334848"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:02.838650"
   },
   "pfind3": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:48:27.006863"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:03.519115"
   },
   "isocor": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:27.653800"
+    "timestamp": "2026-09-27T02:57:04.227243"
   },
   "truvari": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:48:28.271936"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:04.867446"
   },
   "bindash": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:48:30.332777"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:06.794563"
   },
   "vatools": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:31.019605"
+    "timestamp": "2026-09-27T02:57:07.438013"
   },
   "mummichog": {
-    "count": 45,
-    "timestamp": "2026-09-20T02:48:31.651074"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:08.116811"
   },
   "chipseq": {
-    "count": 1309,
-    "timestamp": "2026-09-20T02:48:32.328402"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:08.760964"
   },
   "pbsv": {
-    "count": 5,
-    "timestamp": "2026-09-20T02:48:33.750124"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:10.074179"
   },
   "crispresso2": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:34.636662"
+    "timestamp": "2026-09-27T02:57:10.743318"
   },
   "cloops2": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:48:35.276155"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:11.359834"
   },
   "gnpsdocumentation": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:36.632278"
+    "timestamp": "2026-09-27T02:57:12.676961"
   },
   "mag": {
-    "count": 93,
-    "timestamp": "2026-09-20T02:48:37.287347"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:13.321796"
   },
   "crispritz": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:38.131094"
+    "timestamp": "2026-09-27T02:57:13.959460"
   },
   "microbiomer": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:38.821579"
+    "timestamp": "2026-09-27T02:57:14.579198"
   },
   "ptrimmer": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:39.486019"
+    "timestamp": "2026-09-27T02:57:15.220071"
   },
   "10x_snakepipe": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:40.726128"
+    "timestamp": "2026-09-27T02:57:16.438426"
   },
   "flair": {
-    "count": 18,
-    "timestamp": "2026-09-20T02:48:41.369315"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:17.130613"
   },
   "proteomics-sample-metadata": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:42.001582"
+    "timestamp": "2026-09-27T02:57:18.009134"
   },
   "mfapy": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:42.648163"
+    "timestamp": "2026-09-27T02:57:18.733143"
   },
   "sctransform": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:48:43.315593"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:19.622762"
   },
   "doubletfinder": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:43.981554"
+    "timestamp": "2026-09-27T02:57:20.260463"
   },
   "metaspace": {
-    "count": 14,
-    "timestamp": "2026-09-20T02:48:44.610895"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:20.892538"
   },
   "diffxpy": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:46.025640"
+    "timestamp": "2026-09-27T02:57:22.204456"
   },
   "pandora": {
-    "count": 27,
-    "timestamp": "2026-09-20T02:48:46.642193"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:22.907603"
   },
   "metgem": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:48:47.976794"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:24.208517"
   },
   "amon": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:48:48.622486"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:24.877780"
   },
   "xtea": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:48:49.260074"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:25.526017"
   },
   "do-ms": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:48:49.918850"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:26.173152"
   },
   "isicle": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:48:51.206243"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:27.439364"
   },
   "genomicsdb": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:48:52.079468"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:28.079236"
   },
   "nanocompore": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:48:52.711292"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:28.730334"
   },
   "fastq-screen": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:53.383718"
+    "timestamp": "2026-09-27T02:57:29.408123"
   },
   "somalier": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:48:54.032716"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:30.037931"
   },
   "splotch": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:48:54.686054"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:30.643292"
   },
   "parserng": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:55.307906"
+    "timestamp": "2026-09-27T02:57:31.248583"
   },
   "peca": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:48:55.987747"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:31.863748"
   },
   "cpsr": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:48:56.625972"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:32.516804"
   },
   "sigprofilertopography": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:48:58.008315"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:33.768207"
   },
   "tradeseq": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:58.704860"
+    "timestamp": "2026-09-27T02:57:34.379005"
   },
   "ganon": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:59.295906"
+    "timestamp": "2026-09-27T02:57:34.997452"
   },
   "ppx": {
-    "count": 10,
-    "timestamp": "2026-09-20T02:49:00.019626"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:35.612201"
   },
   "vcf-js": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:00.673081"
+    "timestamp": "2026-09-27T02:57:36.264864"
   },
   "prolfqua": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:49:02.284867"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:37.615307"
   },
   "ampliseq": {
-    "count": 43,
-    "timestamp": "2026-09-20T02:49:03.562788"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:38.884449"
   },
   "rnafusion": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:49:05.568332"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:40.829846"
   },
   "fishpond": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:49:06.233302"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:41.451511"
   },
   "nplinker": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:49:07.469132"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:42.774455"
   },
   "mhcquant": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:49:08.121178"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:43.450547"
   },
   "referenceseeker": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:09.621125"
+    "timestamp": "2026-09-27T02:57:44.734935"
   },
   "muscat": {
-    "count": 16,
-    "timestamp": "2026-09-20T02:49:10.312817"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:45.394918"
   },
   "atacseq": {
-    "count": 458,
-    "timestamp": "2026-09-20T02:49:10.977599"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:46.026357"
   },
   "cpgtools": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:11.628376"
+    "timestamp": "2026-09-27T02:57:46.646548"
   },
   "qurro": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:12.292249"
+    "timestamp": "2026-09-27T02:57:47.266198"
   },
   "pema": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:12.914240"
+    "timestamp": "2026-09-27T02:57:47.892545"
   },
   "animalcules": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:13.535074"
+    "timestamp": "2026-09-27T02:57:48.574293"
   },
   "ntedit": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:49:14.817130"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:49.850178"
   },
   "spectrum_utils": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:15.485382"
+    "timestamp": "2026-09-27T02:57:50.476543"
   },
   "icellr": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:16.325049"
+    "timestamp": "2026-09-27T02:57:51.140168"
   },
   "rna-seq-kallisto-sleuth": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:16.944496"
+    "timestamp": "2026-09-27T02:57:51.809172"
   },
   "run_dbcan": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:19.235102"
+    "timestamp": "2026-09-27T02:57:54.096404"
   },
   "socru": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:19.870303"
+    "timestamp": "2026-09-27T02:57:54.849679"
   },
   "no-floaters": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:20.513800"
+    "timestamp": "2026-09-27T02:57:55.472194"
   },
   "dicey": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:21.185279"
+    "timestamp": "2026-09-27T02:57:56.085704"
   },
   "sccoda": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:21.838952"
+    "timestamp": "2026-09-27T02:57:56.760593"
   },
   "trackintel": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:22.502148"
+    "timestamp": "2026-09-27T02:57:57.408235"
   },
   "methrix": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:23.170734"
+    "timestamp": "2026-09-27T02:57:58.092183"
   },
   "freud": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:49:23.851737"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:58.709498"
   },
   "msfragger": {
-    "count": 45,
-    "timestamp": "2026-09-20T02:49:26.412692"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:01.390616"
   },
   "mgse": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:49:27.690923"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:02.619529"
   },
   "deeplc": {
-    "count": 9,
-    "timestamp": "2026-09-20T02:49:28.372862"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:03.298289"
   },
   "dram": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:49:29.026353"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:03.961184"
   },
   "dittoseq": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:29.653616"
+    "timestamp": "2026-09-27T02:58:04.616369"
   },
   "cellbender": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:49:30.320969"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:05.268063"
   },
   "bwa-mem2": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:49:30.967818"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:05.902027"
   },
   "sg-nex-data": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:31.574187"
+    "timestamp": "2026-09-27T02:58:06.550154"
   },
   "bioinf-commons": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:32.310063"
+    "timestamp": "2026-09-27T02:58:07.211295"
   },
   "pridepy": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:33.618476"
+    "timestamp": "2026-09-27T02:58:08.474809"
   },
   "souporcell": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:49:35.541624"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:10.398471"
   },
   "pyfastx": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:49:36.233534"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:11.030561"
   },
   "basevar": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:49:37.252317"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:11.672949"
   },
   "ucscxenatools": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:37.906366"
+    "timestamp": "2026-09-27T02:58:12.327365"
   },
   "wgbs_tools": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:38.583207"
+    "timestamp": "2026-09-27T02:58:12.987357"
   },
   "spectra": {
-    "count": 4824,
-    "timestamp": "2026-09-20T02:49:39.258197"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:13.649167"
   },
   "scrnaseq": {
-    "count": 1644,
-    "timestamp": "2026-09-20T02:49:39.874308"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:14.326675"
   },
   "hic": {
-    "count": 1092,
-    "timestamp": "2026-09-20T02:49:40.540978"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:14.933041"
   },
   "proteomicslfq": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:41.168361"
+    "timestamp": "2026-09-27T02:58:15.540541"
   },
   "nanocaller": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:41.817246"
+    "timestamp": "2026-09-27T02:58:16.153557"
   },
   "cell2cell": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:49:42.464266"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:16.806823"
   },
   "qfeatures": {
-    "count": 5,
-    "timestamp": "2026-09-20T02:49:43.133334"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:17.406364"
   },
   "scrattch.bigcat": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:43.770346"
+    "timestamp": "2026-09-27T02:58:18.020460"
   },
   "sarek": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:49:44.421365"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:18.626570"
   },
   "scdblfinder": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:45.671140"
+    "timestamp": "2026-09-27T02:58:19.966782"
   },
   "omicsplayground": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:46.303815"
+    "timestamp": "2026-09-27T02:58:20.603674"
   },
   "pybsaseq": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:49:46.918828"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:21.219242"
   },
   "nextpolish": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:49:47.555101"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:21.853151"
   },
   "hifiasm": {
-    "count": 14,
-    "timestamp": "2026-09-20T02:49:48.160624"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:22.520258"
   },
   "signac": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:49:48.840167"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:23.146585"
   },
   "maaslin2": {
-    "count": 7,
-    "timestamp": "2026-09-20T02:49:50.142179"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:24.454517"
   },
   "aerosandbox": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:50.803335"
+    "timestamp": "2026-09-27T02:58:25.136613"
   },
   "stim": {
-    "count": 9,
-    "timestamp": "2026-09-20T02:49:51.456894"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:25.773017"
   },
   "scatac-pro": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:52.127262"
+    "timestamp": "2026-09-27T02:58:26.408371"
   },
   "allcools": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:49:52.802445"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:27.048507"
   },
   "varfish-server": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:54.137806"
+    "timestamp": "2026-09-27T02:58:28.301844"
   },
   "snps": {
-    "count": 5847,
-    "timestamp": "2026-09-20T02:49:54.787723"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:28.973489"
   },
   "easymetagenome": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:56.101038"
+    "timestamp": "2026-09-27T02:58:30.234861"
   },
   "platon": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:49:56.779436"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:30.876303"
   },
   "rnalysis": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:49:57.450640"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:31.522273"
   },
   "rnadeseq": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:58.085151"
+    "timestamp": "2026-09-27T02:58:32.132463"
   },
   "rpvg": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:49:58.691843"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:32.785660"
   },
   "scgeatoolbox": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:59.377735"
+    "timestamp": "2026-09-27T02:58:33.445599"
   },
   "umapx": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:00.035212"
+    "timestamp": "2026-09-27T02:58:34.132685"
   },
   "dynamo-release": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:00.680542"
+    "timestamp": "2026-09-27T02:58:34.788252"
   },
   "datacomets": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:01.293901"
+    "timestamp": "2026-09-27T02:58:35.443422"
   },
   "seq2science": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:50:01.973542"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:36.076486"
   },
   "varca": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:03.216313"
+    "timestamp": "2026-09-27T02:58:37.370146"
   },
   "mpgap": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:04.546334"
+    "timestamp": "2026-09-27T02:58:38.665391"
   },
   "scarches": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:50:05.193645"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:39.297856"
   },
   "openchrom": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:50:05.873195"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:39.935001"
   },
   "metaboverse": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:06.543189"
+    "timestamp": "2026-09-27T02:58:40.574633"
   },
   "metapi": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:07.176735"
+    "timestamp": "2026-09-27T02:58:41.213039"
   },
   "cellxgene-gateway": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:08.495543"
+    "timestamp": "2026-09-27T02:58:42.477625"
   },
   "tidybulk": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:50:09.134236"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:43.155470"
   },
   "tobias": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:50:11.217662"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:45.037672"
   },
   "tiledb-vcf": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:11.870634"
+    "timestamp": "2026-09-27T02:58:45.659368"
   },
   "trust4": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:50:12.625446"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:46.304160"
   },
   "biowasm": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:13.295624"
+    "timestamp": "2026-09-27T02:58:46.970802"
   },
   "rasusa": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:14.576357"
+    "timestamp": "2026-09-27T02:58:48.232235"
   },
   "lightdock": {
-    "count": 6,
-    "timestamp": "2026-09-20T02:50:15.248672"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:48.890107"
   },
   "rnaflow": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:15.913624"
+    "timestamp": "2026-09-27T02:58:49.573828"
   },
   "snakemake": {
-    "count": 109,
-    "timestamp": "2026-09-20T02:50:16.581573"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:50.410905"
   },
   "cirrocumulus": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:50:17.446954"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:51.429914"
   },
   "drop": {
-    "count": 441,
-    "timestamp": "2026-09-20T02:50:18.095623"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:52.133251"
   },
   "kb_python": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:19.335950"
+    "timestamp": "2026-09-27T02:58:52.758182"
   },
   "microbiomemarker": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:20.668821"
+    "timestamp": "2026-09-27T02:58:53.991099"
   },
   "archr": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:50:21.302529"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:54.640496"
   },
   "chromap": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:50:21.983572"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:55.265224"
   },
   "dysgu": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:22.584728"
+    "timestamp": "2026-09-27T02:58:55.889627"
   },
   "olinkrpackage": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:24.224098"
+    "timestamp": "2026-09-27T02:58:57.221826"
   },
   "scp": {
-    "count": 124,
-    "timestamp": "2026-09-20T02:50:24.874709"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:57.848375"
   },
   "diaproteomics": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:50:26.188400"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:59.139406"
   },
   "ms-mint": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:50:26.853299"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:59.814995"
   },
   "cnapy": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:27.449617"
+    "timestamp": "2026-09-27T02:59:00.476529"
   },
   "iq": {
-    "count": 118,
-    "timestamp": "2026-09-20T02:50:28.083452"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:01.089801"
   },
   "autometa": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:50:28.745168"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:01.755557"
   },
   "mzmine": {
-    "count": 85,
-    "timestamp": "2026-09-20T02:50:29.424811"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:02.434222"
   },
   "nanovar": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:50:30.028397"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:03.068214"
   },
   "covtobed": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:33.403892"
+    "timestamp": "2026-09-27T02:59:06.259540"
   },
   "metawibele": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:50:34.715049"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:07.547162"
   },
   "genozip": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:50:35.355736"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:08.164421"
   },
   "tweedieverse": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:36.023627"
+    "timestamp": "2026-09-27T02:59:08.835834"
   },
   "phylophlan": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:50:39.301884"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:12.051643"
   },
   "bakta": {
-    "count": 8,
-    "timestamp": "2026-09-20T02:50:39.932744"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:12.688114"
   },
   "dna-seq-varlociraptor": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:41.279105"
+    "timestamp": "2026-09-27T02:59:13.975160"
   },
   "woltka": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:41.918359"
+    "timestamp": "2026-09-27T02:59:14.600043"
   },
   "spotlight": {
-    "count": 149,
-    "timestamp": "2026-09-20T02:50:42.588143"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:15.238142"
   },
   "report": {
-    "count": 14822,
-    "timestamp": "2026-09-20T02:50:44.605109"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:17.127358"
   },
   "spacexr": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:45.928116"
+    "timestamp": "2026-09-27T02:59:18.385161"
   },
   "bambu": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:50:46.970725"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:19.027944"
   },
   "ngspeciesid": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:47.586613"
+    "timestamp": "2026-09-27T02:59:19.653125"
   },
   "hapo-g": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:48.949150"
+    "timestamp": "2026-09-27T02:59:20.974557"
   },
   "volcano3d": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:49.564226"
+    "timestamp": "2026-09-27T02:59:21.591884"
   },
   "mustache": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:50:50.326186"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:22.216863"
   },
   "metaphlan": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:50:50.992030"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:22.852492"
   },
   "gor": {
-    "count": 6,
-    "timestamp": "2026-09-20T02:50:51.625545"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:23.492557"
   },
   "molmass": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:52.307572"
+    "timestamp": "2026-09-27T02:59:24.142505"
   },
   "schist": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:50:53.211142"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:24.804784"
   },
   "pyteomics": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:50:54.532917"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:26.040520"
   },
   "amplicon_sorter": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:55.202362"
+    "timestamp": "2026-09-27T02:59:26.679029"
   },
   "svdss": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:50:56.516172"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:27.969224"
   },
   "cellrank": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:50:57.197176"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:28.582802"
   },
   "cosmosr": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:57.851956"
+    "timestamp": "2026-09-27T02:59:29.212910"
   },
   "jigv": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:58.519486"
+    "timestamp": "2026-09-27T02:59:29.884653"
   },
   "seurat.utils": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:59.781791"
+    "timestamp": "2026-09-27T02:59:31.138158"
   },
   "metaboprep": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:51:00.409067"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:31.761850"
   },
   "seacells": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:51:01.073862"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:32.396903"
   },
   "scmiko": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:01.715903"
+    "timestamp": "2026-09-27T02:59:33.033987"
   },
   "glimmav2": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:02.380584"
+    "timestamp": "2026-09-27T02:59:33.719319"
   },
   "metaboigniter": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:02.973286"
+    "timestamp": "2026-09-27T02:59:34.352963"
   },
   "viralrecon": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:51:03.616668"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:35.023196"
   },
   "sdrf-pipelines": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:04.750330"
+    "timestamp": "2026-09-27T02:59:35.637903"
   },
   "bento-tools": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:05.413505"
+    "timestamp": "2026-09-27T02:59:36.290285"
   },
   "kneaddata": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:51:06.028568"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:36.975782"
   },
   "ilus": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:06.689863"
+    "timestamp": "2026-09-27T02:59:37.602691"
   },
   "isoquant": {
-    "count": 6,
-    "timestamp": "2026-09-20T02:51:07.370934"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:38.223669"
   },
   "liqa": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:09.276490"
+    "timestamp": "2026-09-27T02:59:40.156575"
   },
   "snparcher": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:51:09.912697"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:40.804550"
   },
   "pyrodigal": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:10.546078"
+    "timestamp": "2026-09-27T02:59:41.449692"
   },
   "astir": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:51:11.213971"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:42.068815"
   },
   "grenepipe": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:11.900297"
+    "timestamp": "2026-09-27T02:59:42.750960"
   },
   "cellxgene_vip": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:12.550243"
+    "timestamp": "2026-09-27T02:59:43.415681"
   },
   "teaching": {
-    "count": 441,
-    "timestamp": "2026-09-20T02:51:13.199280"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:44.065216"
   },
   "scarf": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:51:13.877704"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:44.692189"
   },
   "cell2location": {
-    "count": 8,
-    "timestamp": "2026-09-20T02:51:14.513695"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:45.322085"
   },
   "lotus2": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:15.177616"
+    "timestamp": "2026-09-27T02:59:45.945567"
   },
   "spec2vec": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:51:15.818609"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:46.692645"
   },
   "msdap": {
-    "count": 5,
-    "timestamp": "2026-09-20T02:51:16.429179"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:47.317481"
   },
   "dataharmonizer": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:51:17.712141"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:48.644142"
   },
   "corems": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:18.383722"
+    "timestamp": "2026-09-27T02:59:49.244444"
   },
   "matchms": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:51:19.029674"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:50.015214"
   },
   "rapids-single-cell-examples": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:19.688700"
+    "timestamp": "2026-09-27T02:59:50.694276"
   },
   "escape": {
-    "count": 911,
-    "timestamp": "2026-09-20T02:51:21.610858"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:52.693570"
   },
   "osta": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:51:22.282566"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:53.324271"
   },
   "bamt": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:22.905901"
+    "timestamp": "2026-09-27T02:59:53.935540"
   },
   "umap-java": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:23.557788"
+    "timestamp": "2026-09-27T02:59:54.593118"
   },
   "scrna_seurat_pipeline": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:25.561488"
+    "timestamp": "2026-09-27T02:59:56.570586"
   },
   "drompaplus": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:26.846502"
+    "timestamp": "2026-09-27T02:59:57.846862"
   },
   "openproblems": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:28.091651"
+    "timestamp": "2026-09-27T02:59:59.083237"
   },
   "pypls": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:28.830505"
+    "timestamp": "2026-09-27T02:59:59.696113"
   },
   "t2t-polish": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:30.133132"
+    "timestamp": "2026-09-27T03:00:01.025773"
   },
   "protti": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:31.434017"
+    "timestamp": "2026-09-27T03:00:02.447771"
   },
   "pangraph": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:51:32.083186"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:03.066482"
   },
   "vembrane": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:51:32.713237"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:03.727630"
   },
   "whatshap": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:51:33.991601"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:05.019653"
   },
   "vimms": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:51:34.668329"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:05.642236"
   },
   "svanna": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:51:35.331284"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:06.284669"
   },
   "alevin-fry": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:51:36.009462"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:06.991450"
   },
   "voyager": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:51:36.659133"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:07.616977"
   },
   "ancientmetagenomedir": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:51:37.282679"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:08.272623"
   },
   "rnanorm": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:38.571447"
+    "timestamp": "2026-09-27T03:00:09.518201"
   },
   "ancombc": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:51:39.228838"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:10.197551"
   },
   "hdwgcna": {
-    "count": 51,
-    "timestamp": "2026-09-20T02:51:39.854343"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:10.831313"
   },
   "rhermes": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:40.500983"
+    "timestamp": "2026-09-27T03:00:11.508621"
   },
   "rmap": {
-    "count": 8,
-    "timestamp": "2026-09-20T02:51:41.199163"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:12.141655"
   },
   "squidpy": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:51:41.863597"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:12.815593"
   },
   "tangram": {
-    "count": 5,
-    "timestamp": "2026-09-20T02:51:42.531464"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:13.481595"
   },
   "rawrr": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:51:43.228463"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:14.117100"
   },
   "phaseddiploidgenomeassemblypipeline": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:43.840987"
+    "timestamp": "2026-09-27T03:00:14.765741"
   },
   "proforma": {
-    "count": 6,
-    "timestamp": "2026-09-20T02:51:44.488463"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:15.448595"
   },
   "isonform": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:51:45.148984"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:16.093410"
   },
   "somadataio": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:45.812370"
+    "timestamp": "2026-09-27T03:00:16.745780"
   },
   "cut-runtools-2.0": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:46.463753"
+    "timestamp": "2026-09-27T03:00:17.419838"
   },
   "cuttag-pipeline": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:49.721932"
+    "timestamp": "2026-09-27T03:00:21.242518"
   },
   "scutrquant": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:51:50.386254"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:21.918040"
   },
   "mia": {
-    "count": 94,
-    "timestamp": "2026-09-20T02:51:51.950629"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:23.220643"
   },
   "alphamap": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:51:54.510602"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:25.847633"
   },
   "stdeconvolve": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:55.824630"
+    "timestamp": "2026-09-27T03:00:27.210701"
   },
   "faster": {
-    "count": 2731,
-    "timestamp": "2026-09-20T02:51:56.434907"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:27.855970"
   },
   "oma": {
-    "count": 33,
-    "timestamp": "2026-09-20T02:51:57.111848"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:28.508621"
   },
   "sansa": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:51:57.844966"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:29.197837"
   },
   "bitfam": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:58.493293"
+    "timestamp": "2026-09-27T03:00:29.835422"
   },
   "alphatims": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:59.120337"
+    "timestamp": "2026-09-27T03:00:30.450392"
   },
   "rams": {
-    "count": 48,
-    "timestamp": "2026-09-20T02:52:01.105949"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:32.387621"
   },
   "spatialdlpfc": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:01.759098"
+    "timestamp": "2026-09-27T03:00:33.036482"
   },
   "clipseq": {
-    "count": 60,
-    "timestamp": "2026-09-20T02:52:02.431801"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:33.720085"
   },
   "nanome": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:03.110115"
+    "timestamp": "2026-09-27T03:00:34.382804"
   },
   "m2aia": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:03.710012"
+    "timestamp": "2026-09-27T03:00:35.010065"
   },
   "seqfu2": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:04.339244"
+    "timestamp": "2026-09-27T03:00:35.685131"
   },
   "pcaone": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:52:05.005731"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:36.368218"
   },
   "pisces": {
-    "count": 19,
-    "timestamp": "2026-09-20T02:46:37.473260"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:16.948904"
   },
   "paste": {
-    "count": 86,
-    "timestamp": "2026-09-20T02:52:05.686863"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:36.991954"
   },
   "pciseq": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:08.445548"
+    "timestamp": "2026-09-27T03:00:39.625922"
   },
   "falcon": {
-    "count": 35,
-    "timestamp": "2026-09-20T02:52:09.707217"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:40.933899"
   },
   "dali": {
-    "count": 44,
-    "timestamp": "2026-09-20T02:52:10.910844"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:42.257648"
   },
   "cutandrun": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:12.268500"
+    "timestamp": "2026-09-27T03:00:43.544542"
   },
   "uncovar": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:12.942793"
+    "timestamp": "2026-09-27T03:00:44.220561"
   },
   "gatk-snp-calling": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:13.556995"
+    "timestamp": "2026-09-27T03:00:44.919562"
   },
   "struo2": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:14.227219"
+    "timestamp": "2026-09-27T03:00:45.576364"
   },
   "biser": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:14.880646"
+    "timestamp": "2026-09-27T03:00:46.337353"
   },
   "bamtocov": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:52:15.553583"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:47.016147"
   },
   "ezaai": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:52:16.217096"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:47.650553"
   },
   "circrna": {
-    "count": 743,
-    "timestamp": "2026-09-20T02:52:16.851576"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:48.305867"
   },
   "genotools": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:52:17.532383"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:48.915623"
   },
   "multinichenetr": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:18.216942"
+    "timestamp": "2026-09-27T03:00:49.826980"
   },
   "spateo-release": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:19.542609"
+    "timestamp": "2026-09-27T03:00:51.093881"
   },
   "maplet": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:52:20.824899"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:52.361956"
   },
   "alternative-splicing-tools": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:21.474081"
+    "timestamp": "2026-09-27T03:00:52.976060"
   },
   "spapros": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:22.183556"
+    "timestamp": "2026-09-27T03:00:53.588045"
   },
   "wf-bacterial-genomes": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:22.832211"
+    "timestamp": "2026-09-27T03:00:54.245480"
   },
   "sceptre": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:52:23.503459"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:54.890798"
   },
   "stereopy": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:52:24.153910"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:55.557687"
   },
   "basalt": {
-    "count": 5,
-    "timestamp": "2026-09-20T02:52:24.867362"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:56.230037"
   },
   "cobra": {
-    "count": 144,
-    "timestamp": "2026-09-20T02:52:26.184753"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:57.520421"
   },
   "spata2": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:52:26.871583"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:59.083405"
   },
   "pmultiqc": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:52:27.548383"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:59.770808"
   },
   "atacseq_pipeline": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:28.877609"
+    "timestamp": "2026-09-27T03:01:01.316327"
   },
   "omicverse": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:52:30.205118"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:02.708396"
   },
   "crisprme": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:33.006956"
+    "timestamp": "2026-09-27T03:01:05.259347"
   },
   "clair3": {
-    "count": 8,
-    "timestamp": "2026-09-20T02:52:33.689870"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:05.916591"
   },
   "dreamlet": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:34.339021"
+    "timestamp": "2026-09-27T03:01:06.562139"
   },
   "nmdc-schema": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:35.015230"
+    "timestamp": "2026-09-27T03:01:07.294061"
   },
   "spotclean": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:36.370315"
+    "timestamp": "2026-09-27T03:01:08.572868"
   },
   "crispr_comparison": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:37.027559"
+    "timestamp": "2026-09-27T03:01:09.197671"
   },
   "package-mopepgen": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:37.640377"
+    "timestamp": "2026-09-27T03:01:10.048166"
   },
   "rapids_singlecell": {
     "count": 0,
@@ -2105,1191 +2105,1191 @@
   },
   "gnomad_db": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:38.973602"
+    "timestamp": "2026-09-27T03:01:11.343117"
   },
   "rnavar": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:39.633668"
+    "timestamp": "2026-09-27T03:01:12.003123"
   },
   "clonalscope": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:40.273952"
+    "timestamp": "2026-09-27T03:01:12.639624"
   },
   "spatialpca": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:52:40.914588"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:13.308467"
   },
   "qcxms": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:52:42.249664"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:14.566809"
   },
   "numbat": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:52:42.874974"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:15.193323"
   },
   "parascopy": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:44.860755"
+    "timestamp": "2026-09-27T03:01:17.444032"
   },
   "cellphonedb": {
-    "count": 9,
-    "timestamp": "2026-09-20T02:52:45.541751"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:18.132272"
   },
   "enrichment_analysis": {
-    "count": 9149,
-    "timestamp": "2026-09-20T02:52:46.179544"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:19.052513"
   },
   "amica": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:52:47.489758"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:20.351575"
   },
   "raredisease": {
-    "count": 10,
-    "timestamp": "2026-09-20T02:52:48.152281"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:20.979651"
   },
   "pertpy": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:52:48.836364"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:21.643135"
   },
   "mzdata": {
-    "count": 14,
-    "timestamp": "2026-09-20T02:52:49.524094"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:22.306943"
   },
   "metaphor": {
-    "count": 60,
-    "timestamp": "2026-09-20T02:52:50.124214"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:22.965347"
   },
   "haptools": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:52:50.769605"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:23.607060"
   },
   "microbiome-etc-podcasts": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:52.060513"
+    "timestamp": "2026-09-27T03:01:24.961265"
   },
   "scenicplus": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:52:52.668919"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:25.584214"
   },
   "bpcells": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:55.483628"
+    "timestamp": "2026-09-27T03:01:28.477344"
   },
   "hat": {
-    "count": 114,
-    "timestamp": "2026-09-20T02:52:56.793089"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:29.764441"
   },
   "microbiomeprofiler": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:52:57.447826"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:30.429638"
   },
   "reference_database_creator": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:58.827253"
+    "timestamp": "2026-09-27T03:01:31.705242"
   },
   "asari": {
-    "count": 5,
-    "timestamp": "2026-09-20T02:52:59.498087"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:32.371697"
   },
   "glue": {
-    "count": 82,
-    "timestamp": "2026-09-20T02:53:00.236191"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:33.032636"
   },
   "chromatographr": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:00.905498"
+    "timestamp": "2026-09-27T03:01:33.652902"
   },
   "bamboo-engine": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:04.194391"
+    "timestamp": "2026-09-27T03:01:37.006392"
   },
   "alphadia": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:53:06.111842"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:39.034426"
   },
   "alpharaw": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:06.751370"
+    "timestamp": "2026-09-27T03:01:39.691652"
   },
   "metheor": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:07.390763"
+    "timestamp": "2026-09-27T03:01:40.358987"
   },
   "alphabase": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:08.080459"
+    "timestamp": "2026-09-27T03:01:40.985955"
   },
   "nnsvg": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:08.735901"
+    "timestamp": "2026-09-27T03:01:41.612616"
   },
   "clustermap": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:53:09.385645"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:42.274429"
   },
   "sccustomize": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:10.064390"
+    "timestamp": "2026-09-27T03:01:42.982856"
   },
   "vcfbub": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:10.732016"
+    "timestamp": "2026-09-27T03:01:43.662576"
   },
   "fqgrep": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:11.371466"
+    "timestamp": "2026-09-27T03:01:44.326599"
   },
   "mira": {
-    "count": 35,
-    "timestamp": "2026-09-20T02:53:12.649164"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:45.652517"
   },
   "miniquant": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:13.350555"
+    "timestamp": "2026-09-27T03:01:46.286229"
   },
   "quantms": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:53:13.991666"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:46.957024"
   },
   "alphaviz": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:14.652385"
+    "timestamp": "2026-09-27T03:01:47.568345"
   },
   "assembly-annotation-pipeline": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:15.262522"
+    "timestamp": "2026-09-27T03:01:48.207637"
   },
   "circdna": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:15.900958"
+    "timestamp": "2026-09-27T03:01:48.845065"
   },
   "staarpipeline": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:53:16.570963"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:49.468618"
   },
   "decoupler": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:53:17.888212"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:50.749578"
   },
   "iniquitate": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:53:18.540923"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:51.380523"
   },
   "kana": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:53:20.584664"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:53.444243"
   },
   "spatialtranscriptomics": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:53:21.348910"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:54.189747"
   },
   "snapatac2": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:53:22.028961"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:54.836147"
   },
   "funcscan": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:23.416231"
+    "timestamp": "2026-09-27T03:01:56.203187"
   },
   "maw": {
-    "count": 7,
-    "timestamp": "2026-09-20T02:53:24.056084"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:56.820254"
   },
   "genome_tracks": {
-    "count": 9,
-    "timestamp": "2026-09-20T02:53:24.713878"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:57.469934"
   },
   "gfastats": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:25.363262"
+    "timestamp": "2026-09-27T03:01:58.083736"
   },
   "scpubr": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:26.005758"
+    "timestamp": "2026-09-27T03:01:58.697281"
   },
   "guide-counter": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:27.339111"
+    "timestamp": "2026-09-27T03:01:59.973467"
   },
   "taxor": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:29.898567"
+    "timestamp": "2026-09-27T03:02:03.235537"
   },
   "genome_assembly_tools": {
-    "count": 5,
-    "timestamp": "2026-09-20T02:53:30.565864"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:03.914376"
   },
   "lorax": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:53:31.869665"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:05.501578"
   },
   "standr": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:53:32.519133"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:06.125870"
   },
   "casanovo": {
-    "count": 11,
-    "timestamp": "2026-09-20T02:53:33.176204"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:06.740528"
   },
   "gdan-tmp-models": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:34.519643"
+    "timestamp": "2026-09-27T03:02:08.168354"
   },
   "spatialvi": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:35.801340"
+    "timestamp": "2026-09-27T03:02:09.469786"
   },
   "postre": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:53:37.107720"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:10.723306"
   },
   "3dmolms": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:39.045815"
+    "timestamp": "2026-09-27T03:02:12.661948"
   },
   "graffite": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:53:40.394946"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:13.930077"
   },
   "scrnaseq_processing_seurat": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:41.010339"
+    "timestamp": "2026-09-27T03:02:14.585206"
   },
   "cytospace": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:53:41.636570"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:15.266356"
   },
   "fava": {
-    "count": 10,
-    "timestamp": "2026-09-20T02:53:42.237206"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:15.937663"
   },
   "shapeit5": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:42.992662"
+    "timestamp": "2026-09-27T03:02:16.599535"
   },
   "scrnasequest": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:43.676547"
+    "timestamp": "2026-09-27T03:02:17.230608"
   },
   "splicewiz": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:53:44.366565"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:17.862786"
   },
   "vcfdist": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:45.626777"
+    "timestamp": "2026-09-27T03:02:19.175802"
   },
   "supercc": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:46.955344"
+    "timestamp": "2026-09-27T03:02:20.496652"
   },
   "chromconverter": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:47.629902"
+    "timestamp": "2026-09-27T03:02:21.158054"
   },
   "unsupervised_analysis": {
-    "count": 81,
-    "timestamp": "2026-09-20T02:53:48.974382"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:22.461793"
   },
   "mtgrasp": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:49.603155"
+    "timestamp": "2026-09-27T03:02:23.075459"
   },
   "craq": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:53:50.210181"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:23.706984"
   },
   "alignoth": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:52.863401"
+    "timestamp": "2026-09-27T03:02:26.303024"
   },
   "phanta": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:53.532795"
+    "timestamp": "2026-09-27T03:02:26.938093"
   },
   "alphapeptstats": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:53:54.138312"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:27.554870"
   },
   "scnanoseq": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:53:54.821101"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:28.156526"
   },
   "hgtseq": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:55.490714"
+    "timestamp": "2026-09-27T03:02:28.797523"
   },
   "mixscape_seurat": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:56.137097"
+    "timestamp": "2026-09-27T03:02:29.475333"
   },
   "banksy_py": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:56.809206"
+    "timestamp": "2026-09-27T03:02:30.127702"
   },
   "veba": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:53:57.501205"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:30.758019"
   },
   "dea_seurat": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:58.228562"
+    "timestamp": "2026-09-27T03:02:31.410947"
   },
   "genomenote": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:58.900158"
+    "timestamp": "2026-09-27T03:02:32.089879"
   },
   "analysis_guides": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:54:00.207988"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:33.400550"
   },
   "trackplot": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:54:00.797668"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:34.010644"
   },
   "spacedeconv": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:01.403910"
+    "timestamp": "2026-09-27T03:02:34.684587"
   },
   "hap-eval": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:02.754377"
+    "timestamp": "2026-09-27T03:02:35.903412"
   },
   "gget": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:54:04.258241"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:37.205113"
   },
   "panman": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:54:04.925156"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:37.865034"
   },
   "flagger": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:05.549071"
+    "timestamp": "2026-09-27T03:02:38.698016"
   },
   "calder2": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:54:06.802430"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:39.983139"
   },
   "mebocost": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:54:07.453813"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:40.846230"
   },
   "directlfq": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:54:08.110820"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:41.490580"
   },
   "structural": {
-    "count": 21630,
-    "timestamp": "2026-09-20T02:54:10.781304"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:44.046748"
   },
   "rapid-qc-ms": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:12.119910"
+    "timestamp": "2026-09-27T03:02:45.498236"
   },
   "psm_utils": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:14.045648"
+    "timestamp": "2026-09-27T03:02:47.464599"
   },
   "cphasing": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:14.712668"
+    "timestamp": "2026-09-27T03:02:48.505005"
   },
   "gw": {
-    "count": 46,
-    "timestamp": "2026-09-20T02:54:15.415336"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:49.143009"
   },
   "sage": {
-    "count": 208,
-    "timestamp": "2026-09-20T02:54:18.665046"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:52.377098"
   },
   "phables": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:54:19.351643"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:53.036357"
   },
   "rademu": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:20.021012"
+    "timestamp": "2026-09-27T03:02:53.957598"
   },
   "vcfpp": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:21.305288"
+    "timestamp": "2026-09-27T03:02:55.254996"
   },
   "starfysh": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:21.956796"
+    "timestamp": "2026-09-27T03:02:55.905377"
   },
   "snakemake_umetaflow": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:22.608185"
+    "timestamp": "2026-09-27T03:02:56.529743"
   },
   "crisprscore": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:23.290146"
+    "timestamp": "2026-09-27T03:02:57.170325"
   },
   "dea_limma": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:24.062786"
+    "timestamp": "2026-09-27T03:02:57.791208"
   },
   "genet": {
-    "count": 126,
-    "timestamp": "2026-09-20T02:54:24.733244"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:58.395458"
   },
   "napu_wf": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:25.395512"
+    "timestamp": "2026-09-27T03:02:59.053604"
   },
   "rnasplice": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:26.759830"
+    "timestamp": "2026-09-27T03:03:00.360649"
   },
   "severus": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:54:27.430765"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:01.017972"
   },
   "oktoberfest": {
-    "count": 5,
-    "timestamp": "2026-09-20T02:54:28.075614"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:01.697817"
   },
   "north_american_vitis_pangenome": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:28.678689"
+    "timestamp": "2026-09-27T03:03:02.334401"
   },
   "binchicken": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:29.915953"
+    "timestamp": "2026-09-27T03:03:03.635515"
   },
   "irescue": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:31.201012"
+    "timestamp": "2026-09-27T03:03:04.886625"
   },
   "scalpel": {
-    "count": 11,
-    "timestamp": "2026-09-20T02:54:33.224297"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:06.817182"
   },
   "candycrunch": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:54:33.901916"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:07.457537"
   },
   "playbook-workflow-builder": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:54:34.571633"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:08.101558"
   },
   "fbmn-stats": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:35.240539"
+    "timestamp": "2026-09-27T03:03:08.761670"
   },
   "differentialabundance": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:54:35.926502"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:09.450563"
   },
   "c.origami": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:36.565101"
+    "timestamp": "2026-09-27T03:03:10.125774"
   },
   "dep2": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:54:37.892266"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:11.473837"
   },
   "paste2": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:38.530486"
+    "timestamp": "2026-09-27T03:03:12.117960"
   },
   "panspace": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:39.891818"
+    "timestamp": "2026-09-27T03:03:13.373441"
   },
   "crawdad": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:54:40.547988"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:13.983589"
   },
   "genes2genes": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:54:41.228748"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:14.642762"
   },
   "fqtk": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:43.267681"
+    "timestamp": "2026-09-27T03:03:16.623768"
   },
   "ggsc": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:43.898093"
+    "timestamp": "2026-09-27T03:03:17.293444"
   },
   "stq": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:54:45.204662"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:18.566847"
   },
   "quality-control-wgs": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:45.811193"
+    "timestamp": "2026-09-27T03:03:19.189641"
   },
   "pydeseq2": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:47.113089"
+    "timestamp": "2026-09-27T03:03:20.478064"
   },
   "mmlong2": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:48.450001"
+    "timestamp": "2026-09-27T03:03:21.751702"
   },
   "hybracter": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:54:49.733307"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:23.481541"
   },
   "pctax": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:50.715723"
+    "timestamp": "2026-09-27T03:03:24.087943"
   },
   "savana": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:51.383266"
+    "timestamp": "2026-09-27T03:03:24.712352"
   },
   "best": {
-    "count": 10803,
-    "timestamp": "2026-09-20T02:54:52.066709"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:25.416694"
   },
   "ggpicrust2": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:53.383758"
+    "timestamp": "2026-09-27T03:03:26.756307"
   },
   "mabs": {
-    "count": 144,
-    "timestamp": "2026-09-20T02:54:54.071204"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:27.441209"
   },
   "fermo": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:54:54.755054"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:28.104301"
   },
   "oncoanalyser": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:55.373517"
+    "timestamp": "2026-09-27T03:03:28.740180"
   },
   "assemblyqc": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:54:56.005147"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:29.419407"
   },
   "symphonypy": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:56.676203"
+    "timestamp": "2026-09-27T03:03:30.037523"
   },
   "cellscopes.jl": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:57.370433"
+    "timestamp": "2026-09-27T03:03:30.891255"
   },
   "svarp": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:58.025713"
+    "timestamp": "2026-09-27T03:03:31.500286"
   },
   "iris": {
-    "count": 90,
-    "timestamp": "2026-09-20T02:54:58.654525"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:32.129528"
   },
   "nichede": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:59.394899"
+    "timestamp": "2026-09-27T03:03:32.812798"
   },
   "ovrl.py": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:00.079949"
+    "timestamp": "2026-09-27T03:03:33.478958"
   },
   "viralmetagenome": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:00.717011"
+    "timestamp": "2026-09-27T03:03:34.148813"
   },
   "koina": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:55:01.395498"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:34.803091"
   },
   "binette": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:02.033709"
+    "timestamp": "2026-09-27T03:03:35.477143"
   },
   "proteobench": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:03.323256"
+    "timestamp": "2026-09-27T03:03:37.395948"
   },
   "chromatinhd": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:55:04.006300"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:38.072739"
   },
   "intro-to-peak-analysis": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:05.401116"
+    "timestamp": "2026-09-27T03:03:39.750585"
   },
   "dimspec": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:08.012335"
+    "timestamp": "2026-09-27T03:03:42.345270"
   },
   "oatk": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:09.982813"
+    "timestamp": "2026-09-27T03:03:44.259553"
   },
   "hiphase": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:11.931681"
+    "timestamp": "2026-09-27T03:03:46.260435"
   },
   "omics": {
-    "count": 19066,
-    "timestamp": "2026-09-20T02:55:12.593627"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:47.019028"
   },
   "mzcore": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:13.254653"
+    "timestamp": "2026-09-27T03:03:47.639517"
   },
   "spatrack": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:14.120637"
+    "timestamp": "2026-09-27T03:03:48.241958"
   },
   "wakhan": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:14.792263"
+    "timestamp": "2026-09-27T03:03:48.909588"
   },
   "sequali": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:16.087544"
+    "timestamp": "2026-09-27T03:03:50.213358"
   },
   "isoformic": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:55:16.762847"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:50.884036"
   },
   "pumatac": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:18.071145"
+    "timestamp": "2026-09-27T03:03:52.175913"
   },
   "quartet": {
-    "count": 92,
-    "timestamp": "2026-09-20T02:55:19.425107"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:53.493287"
   },
   "biobear": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:20.841051"
+    "timestamp": "2026-09-27T03:03:54.786558"
   },
   "scout": {
-    "count": 24,
-    "timestamp": "2026-09-20T02:55:21.517770"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:55.399214"
   },
   "degap": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:55:22.207223"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:56.053884"
   },
   "daylily-ephemeral-cluster": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:22.882805"
+    "timestamp": "2026-09-27T03:03:56.726513"
   },
   "sylph": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:55:24.240039"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:58.035867"
   },
   "sccube": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:55:24.903080"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:58.676015"
   },
   "bambooai": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:25.579600"
+    "timestamp": "2026-09-27T03:03:59.409638"
   },
   "marker-magu": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:28.210882"
+    "timestamp": "2026-09-27T03:04:02.075001"
   },
   "exon": {
-    "count": 2129,
-    "timestamp": "2026-09-20T02:55:29.735451"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:02.699065"
   },
   "pangene": {
-    "count": 7,
-    "timestamp": "2026-09-20T02:55:31.764349"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:04.694180"
   },
   "deepurify": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:32.409855"
+    "timestamp": "2026-09-27T03:04:05.630070"
   },
   "tomicsvis": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:33.063532"
+    "timestamp": "2026-09-27T03:04:06.265117"
   },
   "spilterlize_integrate": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:35.008725"
+    "timestamp": "2026-09-27T03:04:08.274904"
   },
   "proseg": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:55:35.672906"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:08.910635"
   },
   "pgpg_finder": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:36.353538"
+    "timestamp": "2026-09-27T03:04:09.533617"
   },
   "aline": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:55:37.034690"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:10.224831"
   },
   "clusterde": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:37.693673"
+    "timestamp": "2026-09-27T03:04:10.862791"
   },
   "spotgf": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:38.362080"
+    "timestamp": "2026-09-27T03:04:11.516684"
   },
   "flowsig": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:39.105200"
+    "timestamp": "2026-09-27T03:04:12.169151"
   },
   "isosceles": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:55:41.065597"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:14.123590"
   },
   "varigraph": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:55:42.397511"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:15.684427"
   },
   "biosynfoni": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:43.069143"
+    "timestamp": "2026-09-27T03:04:16.328461"
   },
   "immuannot": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:45.070835"
+    "timestamp": "2026-09-27T03:04:18.244669"
   },
   "nclusion.jl": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:45.704511"
+    "timestamp": "2026-09-27T03:04:19.138075"
   },
   "curve_curator": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:46.361946"
+    "timestamp": "2026-09-27T03:04:20.234972"
   },
   "scimilarity": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:47.012190"
+    "timestamp": "2026-09-27T03:04:20.886864"
   },
   "ggvolc": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:47.673972"
+    "timestamp": "2026-09-27T03:04:21.516954"
   },
   "msbuddy": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:48.319144"
+    "timestamp": "2026-09-27T03:04:22.171374"
   },
   "instanovo": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:55:48.997934"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:22.858022"
   },
   "louper": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:49.654860"
+    "timestamp": "2026-09-27T03:04:23.511587"
   },
   "annotator": {
-    "count": 89,
-    "timestamp": "2026-09-20T02:55:50.320862"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:24.187211"
   },
   "bambulab-studio-orca-slicer-presets": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:51.630371"
+    "timestamp": "2026-09-27T03:04:25.495028"
   },
   "hifi-somatic-wdl": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:52.900842"
+    "timestamp": "2026-09-27T03:04:26.809559"
   },
   "olivar": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:55:53.521852"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:27.463094"
   },
   "readsimulator": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:54.167809"
+    "timestamp": "2026-09-27T03:04:28.117046"
   },
   "uce": {
-    "count": 41,
-    "timestamp": "2026-09-20T02:55:54.821178"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:28.795627"
   },
   "minimod": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:56.086734"
+    "timestamp": "2026-09-27T03:04:30.077508"
   },
   "salmon": {
-    "count": 335,
-    "timestamp": "2026-09-20T02:46:05.976542"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:45.540826"
   },
   "octopusv": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:55:56.693478"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:30.736375"
   },
   "fiora": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:55:57.978380"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:32.086569"
   },
   "tipp": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:55:59.943432"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:34.066351"
   },
   "detaxizer": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:00.650108"
+    "timestamp": "2026-09-27T03:04:34.745940"
   },
   "calicost": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:01.910976"
+    "timestamp": "2026-09-27T03:04:36.079610"
   },
   "cellchat": {
-    "count": 105,
-    "timestamp": "2026-09-20T02:56:02.626990"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:36.722273"
   },
   "sccellfie": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:03.943357"
+    "timestamp": "2026-09-27T03:04:38.012820"
   },
   "haphic": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:04.632621"
+    "timestamp": "2026-09-27T03:04:38.646894"
   },
   "nohuman": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:07.288524"
+    "timestamp": "2026-09-27T03:04:41.201662"
   },
   "vaper": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:56:08.616242"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:42.462394"
   },
   "spottedpy": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:09.305236"
+    "timestamp": "2026-09-27T03:04:43.142597"
   },
   "variantbenchmarking": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:10.652729"
+    "timestamp": "2026-09-27T03:04:44.410059"
   },
   "dnadesign": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:56:11.263847"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:45.032940"
   },
   "screenpro2": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:11.894783"
+    "timestamp": "2026-09-27T03:04:45.647449"
   },
   "gnnome": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:56:12.544364"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:46.305769"
   },
   "deeppolisher": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:56:13.850485"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:47.589031"
   },
   "gsmap": {
-    "count": 12,
-    "timestamp": "2026-09-20T02:56:15.086235"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:48.938030"
   },
   "nanovarbench": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:17.019799"
+    "timestamp": "2026-09-27T03:04:50.857037"
   },
   "oncogan": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:56:17.687163"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:51.483232"
   },
   "kun-peng": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:56:19.687300"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:53.389785"
   },
   "mgm": {
-    "count": 7,
-    "timestamp": "2026-09-20T02:56:20.308658"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:54.059991"
   },
   "piawka": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:25.586170"
+    "timestamp": "2026-09-27T03:04:59.824988"
   },
   "metabot": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:28.821055"
+    "timestamp": "2026-09-27T03:05:03.063996"
   },
   "cutefc": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:56:30.124489"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:04.379758"
   },
   "seurat-integrate": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:30.798470"
+    "timestamp": "2026-09-27T03:05:05.000563"
   },
   "sawfish": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:56:32.749659"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:06.921363"
   },
   "rinalmo": {
-    "count": 6,
-    "timestamp": "2026-09-20T02:56:34.732930"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:08.944532"
   },
   "sclens": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:56:35.388471"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:09.552148"
   },
   "hest": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:36.675735"
+    "timestamp": "2026-09-27T03:05:10.810458"
   },
   "lemur": {
-    "count": 21,
-    "timestamp": "2026-09-20T02:56:37.941014"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:12.101879"
   },
   "easymultiprofiler": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:56:39.269178"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:13.362526"
   },
   "spatialxe": {
     "count": 0,
     "timestamp": "2026-05-24T00:59:25.870592"
   },
   "svtopo": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:56:40.809698"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:14.647921"
   },
   "cornetto": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:56:41.452237"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:15.332645"
   },
   "novae": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:56:42.730185"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:16.587498"
   },
   "longcalld": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:43.333533"
+    "timestamp": "2026-09-27T03:05:17.211557"
   },
   "perteval": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:44.603794"
+    "timestamp": "2026-09-27T03:05:18.635918"
   },
   "dechat": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:45.875807"
+    "timestamp": "2026-09-27T03:05:19.987164"
   },
   "vcfexpress": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:56:47.156069"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:21.525841"
   },
   "pyopenms_viz": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:56:47.803607"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:22.210861"
   },
   "mintflow": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:50.367605"
+    "timestamp": "2026-09-27T03:05:24.735001"
   },
   "helical": {
-    "count": 722,
-    "timestamp": "2026-09-20T02:56:51.050834"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:25.418257"
   },
   "starcat": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:52.357918"
+    "timestamp": "2026-09-27T03:05:26.903171"
   },
   "specimmune": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:57.124376"
+    "timestamp": "2026-09-27T03:05:31.547057"
   },
   "conan-fgw": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:59.034447"
+    "timestamp": "2026-09-27T03:05:33.486548"
   },
   "pytximport": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:01.297532"
+    "timestamp": "2026-09-27T03:05:35.656983"
   },
   "fdrbench": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:02.546201"
+    "timestamp": "2026-09-27T03:05:36.918607"
   },
   "msiflow": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:03.888211"
+    "timestamp": "2026-09-27T03:05:38.280018"
   },
   "cellwhisperer": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:57:04.546219"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:38.951085"
   },
   "enformer_fine_tuning": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:07.819012"
+    "timestamp": "2026-09-27T03:05:42.233967"
   },
   "loki": {
-    "count": 9,
-    "timestamp": "2026-09-20T02:57:09.782679"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:44.144520"
   },
   "qust": {
-    "count": 7,
-    "timestamp": "2026-09-20T02:57:10.536863"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:44.778408"
   },
   "iscale": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:11.874523"
+    "timestamp": "2026-09-27T03:05:46.048990"
   },
   "fastcnv": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:12.649353"
+    "timestamp": "2026-09-27T03:05:46.747860"
   },
   "spadit": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:57:13.904108"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:48.019454"
   },
   "needlr": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:57:19.340505"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:53.428857"
   },
   "scplotter": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:21.520935"
+    "timestamp": "2026-09-27T03:05:55.261421"
   },
   "cassia": {
-    "count": 25,
-    "timestamp": "2026-09-20T02:57:23.476802"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:57.179435"
   },
   "deepspot": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:24.159140"
+    "timestamp": "2026-09-27T03:05:57.850027"
   },
   "filterx": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:24.804206"
+    "timestamp": "2026-09-27T03:05:58.495327"
   },
   "spatial_transcriptomics_tools": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:57:25.490100"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:59.138088"
   },
   "grepq": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:30.739998"
+    "timestamp": "2026-09-27T03:06:05.116598"
   },
   "svgap": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:31.421977"
+    "timestamp": "2026-09-27T03:06:05.753370"
   },
   "pmat2": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:36.694376"
+    "timestamp": "2026-09-27T03:06:10.938181"
   },
   "hicfoundation": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:57:40.049301"
+    "count": 0,
+    "timestamp": "2026-09-27T03:06:13.488996"
   },
   "pan_te": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:57:47.470604"
+    "count": 0,
+    "timestamp": "2026-09-27T03:06:20.979109"
   },
   "split": {
-    "count": 1070,
-    "timestamp": "2026-09-20T02:57:51.350675"
+    "count": 0,
+    "timestamp": "2026-09-27T03:06:24.802211"
   },
   "hitsv": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:52.650731"
+    "timestamp": "2026-09-27T03:06:26.127864"
   },
   "wild-rice-pangenome-project": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:53.921395"
+    "timestamp": "2026-09-27T03:06:27.429138"
   },
   "panmask": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:55.904905"
+    "timestamp": "2026-09-27T03:06:29.306688"
   },
   "synthetic-manipulation-motion-generation": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:56.544836"
+    "timestamp": "2026-09-27T03:06:29.991919"
   },
   "irma": {
-    "count": 15,
-    "timestamp": "2026-09-20T02:57:57.195356"
+    "count": 0,
+    "timestamp": "2026-09-27T03:06:30.620803"
   },
   "ecofolddb": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:57:59.250445"
+    "count": 0,
+    "timestamp": "2026-09-27T03:06:32.532763"
   },
   "fetch_ngs": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:01.955009"
+    "timestamp": "2026-09-27T03:06:35.111765"
   },
   "biocoin": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:05.094678"
+    "timestamp": "2026-09-27T03:06:38.365932"
   },
   "spatialagent": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:07.042607"
+    "timestamp": "2026-09-27T03:06:40.964953"
   },
   "stagent": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:09.074154"
+    "timestamp": "2026-09-27T03:06:42.909751"
   },
   "shinycell2": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:10.368709"
+    "timestamp": "2026-09-27T03:06:44.276572"
   },
   "scrna-seq-guide": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:11.039794"
+    "timestamp": "2026-09-27T03:06:45.151106"
   },
   "dia-bert": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:58:11.669722"
+    "count": 0,
+    "timestamp": "2026-09-27T03:06:45.794906"
   },
   "stpath": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:13.640818"
+    "timestamp": "2026-09-27T03:06:47.886171"
   },
   "driverse": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:14.321769"
+    "timestamp": "2026-09-27T03:06:48.542811"
   },
   "cytetype": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:15.592806"
+    "timestamp": "2026-09-27T03:06:49.887639"
   },
   "stflow": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:16.216732"
+    "timestamp": "2026-09-27T03:06:50.544005"
   },
   "miphei-vit": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:17.526401"
+    "timestamp": "2026-09-27T03:06:51.880358"
   },
   "pdex": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:18.173611"
+    "timestamp": "2026-09-27T03:06:52.527506"
   },
   "scop": {
-    "count": 245,
-    "timestamp": "2026-09-20T02:58:21.502898"
+    "count": 0,
+    "timestamp": "2026-09-27T03:06:55.701014"
   },
   "stofm": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:22.105128"
+    "timestamp": "2026-09-27T03:06:56.329201"
   },
   "thor": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:58:27.319318"
+    "count": 0,
+    "timestamp": "2026-09-27T03:07:02.129052"
   },
   "signature": {
-    "count": 8012,
-    "timestamp": "2026-09-20T02:58:28.652945"
+    "count": 0,
+    "timestamp": "2026-09-27T03:07:03.455433"
   },
   "themissingsemester": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:30.022336"
+    "timestamp": "2026-09-27T03:07:04.780096"
   },
   "vcf-reformatter": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:30.690943"
+    "timestamp": "2026-09-27T03:07:05.556641"
   },
   "chromnitron": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:34.943892"
+    "timestamp": "2026-09-27T03:07:10.395419"
   },
   "bbtools": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:35.631715"
+    "timestamp": "2026-09-27T03:07:11.144810"
   },
   "cytetyper": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:36.949672"
+    "timestamp": "2026-09-27T03:07:13.097123"
   },
   "claude-scientific-skills": {
     "count": 0,
@@ -3297,543 +3297,543 @@
   },
   "savont": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:47.426598"
+    "timestamp": "2026-09-27T03:07:24.365493"
   },
   "revise": {
-    "count": 74,
-    "timestamp": "2026-09-20T02:58:48.025395"
+    "count": 0,
+    "timestamp": "2026-09-27T03:07:25.310873"
   },
   "scope-st": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:49.930374"
+    "timestamp": "2026-09-27T03:07:27.232577"
   },
   "scrna_seq_analysis": {
-    "count": 174,
-    "timestamp": "2026-09-20T02:58:51.285941"
+    "count": 0,
+    "timestamp": "2026-09-27T03:07:28.642196"
   },
   "helicase": {
-    "count": 389,
-    "timestamp": "2026-09-20T02:58:54.530341"
+    "count": 0,
+    "timestamp": "2026-09-27T03:07:31.913177"
   },
   "multi-omics": {
-    "count": 10592,
-    "timestamp": "2026-09-20T02:58:55.204610"
+    "count": 0,
+    "timestamp": "2026-09-27T03:07:32.554683"
   },
   "edgepython": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:59.075099"
+    "timestamp": "2026-09-27T03:07:36.405576"
   },
   "igv": {
-    "count": 54,
-    "timestamp": "2026-09-20T02:44:57.368173"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:49.262622"
   },
   "fastqp": {
     "count": 0,
-    "timestamp": "2026-09-20T02:45:24.653673"
+    "timestamp": "2026-09-27T02:54:06.073603"
   },
   "qiita": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:45:25.419030"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:06.732212"
   },
   "seqminer": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:45:26.726438"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:07.991559"
   },
   "rust-bio": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:45:59.392755"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:39.042064"
   },
   "cadra": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:33.270907"
+    "timestamp": "2026-09-27T02:55:12.976956"
   },
   "protwis": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:39.475751"
+    "timestamp": "2026-09-27T02:55:19.163330"
   },
   "gpcrdb_data": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:40.082225"
+    "timestamp": "2026-09-27T02:55:19.801856"
   },
   "gaas": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:46:47.071313"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:26.412008"
   },
   "omicspls": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:47:16.324094"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:54.960822"
   },
   "jetpack": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:28.280257"
+    "timestamp": "2026-09-27T02:56:06.288106"
   },
   "asap": {
-    "count": 35,
-    "timestamp": "2026-09-20T02:47:32.502471"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:10.172794"
   },
   "starfish": {
-    "count": 38,
-    "timestamp": "2026-09-20T02:47:39.653680"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:17.562626"
   },
   "mofa2": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:47:59.951557"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:36.472630"
   },
   "ppanggolin": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:48:02.521169"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:39.067036"
   },
   "activepathways": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:48:07.716229"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:44.147820"
   },
   "tourmaline": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:48:22.250944"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:58.813656"
   },
   "mmseqs2-app": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:29.650958"
+    "timestamp": "2026-09-27T02:57:06.119064"
   },
   "pygtftk": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:48:40.092988"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:15.826099"
   },
   "multienrichjam": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:47.328902"
+    "timestamp": "2026-09-27T02:57:23.584102"
   },
   "scispacy": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:49:02.919301"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:38.266698"
   },
   "mixomics": {
-    "count": 26,
-    "timestamp": "2026-09-20T02:49:04.243578"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:39.535386"
   },
   "panaroo": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:49:18.580352"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:53.453864"
   },
   "mobilitydb": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:25.169601"
+    "timestamp": "2026-09-27T02:58:00.063333"
   },
   "biaae": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:25.797436"
+    "timestamp": "2026-09-27T02:58:00.745322"
   },
   "ampliconsuite-pipeline": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:32.976823"
+    "timestamp": "2026-09-27T02:58:07.854055"
   },
   "multiassayworkshop": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:34.867103"
+    "timestamp": "2026-09-27T02:58:09.701976"
   },
   "pythonproteomics": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:45.079202"
+    "timestamp": "2026-09-27T02:58:19.302434"
   },
   "giotto": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:49:49.487728"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:23.819683"
   },
   "scib": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:02.576072"
+    "timestamp": "2026-09-27T02:58:36.757363"
   },
   "mlrun": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:09.891129"
+    "timestamp": "2026-09-27T02:58:43.764613"
   },
   "ai_in_drug_discovery_progress": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:13.922649"
+    "timestamp": "2026-09-27T02:58:47.604832"
   },
   "tada": {
-    "count": 11,
-    "timestamp": "2026-09-20T02:50:23.552234"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:56.571427"
   },
   "de-stress": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:25.548196"
+    "timestamp": "2026-09-27T02:58:58.523397"
   },
   "genui": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:31.303836"
+    "timestamp": "2026-09-27T02:59:04.380935"
   },
   "spatiallibd": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:50:32.729998"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:05.631462"
   },
   "easyamplicon": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:50:34.040856"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:06.904761"
   },
   "scisa-tools": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:38.003269"
+    "timestamp": "2026-09-27T02:59:10.761998"
   },
   "sttkit": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:38.618925"
+    "timestamp": "2026-09-27T02:59:11.415782"
   },
   "multipower": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:50:43.932056"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:16.479734"
   },
   "muon": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:50:45.275980"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:17.742555"
   },
   "guidance-for-multi-omics-and-multi-modal-data-integration-and-analysis-on-aws": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:48.277185"
+    "timestamp": "2026-09-27T02:59:20.329567"
   },
   "cecret": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:24.222204"
+    "timestamp": "2026-09-27T02:59:55.255037"
   },
   "aviary": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:24.891822"
+    "timestamp": "2026-09-27T02:59:55.930684"
   },
   "provis": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:26.208365"
+    "timestamp": "2026-09-27T02:59:57.223843"
   },
   "gatk-sv": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:27.452172"
+    "timestamp": "2026-09-27T02:59:58.467342"
   },
   "bayesspace": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:29.509197"
+    "timestamp": "2026-09-27T03:00:00.356187"
   },
   "metaworks": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:51:30.769579"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:01.699174"
   },
   "airbyte": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:37.917329"
+    "timestamp": "2026-09-27T03:00:08.885780"
   },
   "tdc": {
-    "count": 20,
-    "timestamp": "2026-09-20T02:51:48.450958"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:19.426117"
   },
   "spatialdecon": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:51:49.120301"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:20.522010"
   },
   "export-size": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:51.244185"
+    "timestamp": "2026-09-27T03:00:22.571203"
   },
   "spagcn": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:51:53.253086"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:24.512862"
   },
   "spectre": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:51:53.855926"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:25.192099"
   },
   "pangenome": {
-    "count": 1282,
-    "timestamp": "2026-09-20T02:51:59.781384"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:31.129023"
   },
   "sharem": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:06.994973"
+    "timestamp": "2026-09-27T03:00:38.329882"
   },
   "evolocity": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:07.649875"
+    "timestamp": "2026-09-27T03:00:38.969962"
   },
   "fastqwiper": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:09.107084"
+    "timestamp": "2026-09-27T03:00:40.292572"
   },
   "mofapy2": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:10.310764"
+    "timestamp": "2026-09-27T03:00:41.583663"
   },
   "scmdc": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:52:20.191698"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:51.705393"
   },
   "muon.jl": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:25.530281"
+    "timestamp": "2026-09-27T03:00:56.871534"
   },
   "spatialge": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:28.206525"
+    "timestamp": "2026-09-27T03:01:00.423490"
   },
   "fastcat": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:52:29.534120"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:02.000435"
   },
   "smprofiler": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:43.551034"
+    "timestamp": "2026-09-27T03:01:15.837927"
   },
   "alphafold": {
-    "count": 445,
-    "timestamp": "2026-09-20T02:52:46.812345"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:19.691411"
   },
   "colabfold": {
-    "count": 16,
-    "timestamp": "2026-09-20T02:52:51.395977"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:24.283427"
   },
   "alphafold-notebooks": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:53.971650"
+    "timestamp": "2026-09-27T03:01:26.943589"
   },
   "mowgli": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:52:54.810539"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:27.588113"
   },
   "mudata": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:56.110842"
+    "timestamp": "2026-09-27T03:01:29.091832"
   },
   "gcap": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:01.612035"
+    "timestamp": "2026-09-27T03:01:34.302157"
   },
   "alphafold2import": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:02.926691"
+    "timestamp": "2026-09-27T03:01:35.597965"
   },
   "ppi-miner": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:03.530117"
+    "timestamp": "2026-09-27T03:01:36.297282"
   },
   "openfold": {
-    "count": 7,
-    "timestamp": "2026-09-20T02:53:05.488320"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:38.378473"
   },
   "tmtools": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:53:17.224718"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:50.126211"
   },
   "alphafill": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:53:19.173972"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:52.056510"
   },
   "ameta": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:19.832370"
+    "timestamp": "2026-09-27T03:01:52.682108"
   },
   "scdesign3": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:53:27.940043"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:00.889013"
   },
   "ringtail": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:29.232544"
+    "timestamp": "2026-09-27T03:02:02.201568"
   },
   "lightning": {
-    "count": 12,
-    "timestamp": "2026-09-20T02:53:33.841381"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:07.490091"
   },
   "taxprofiler": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:35.138145"
+    "timestamp": "2026-09-27T03:02:08.852243"
   },
   "proteinfold": {
-    "count": 9,
-    "timestamp": "2026-09-20T02:53:37.755624"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:11.348826"
   },
   "vite-plugin-wasm": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:38.385647"
+    "timestamp": "2026-09-27T03:02:12.019279"
   },
   "scmultisim": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:53:39.715289"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:13.293869"
   },
   "genomeassembler": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:46.247815"
+    "timestamp": "2026-09-27T03:02:19.849237"
   },
   "mrbiomics": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:48.304358"
+    "timestamp": "2026-09-27T03:02:21.778893"
   },
   "napari-spatialdata": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:50.873038"
+    "timestamp": "2026-09-27T03:02:24.371420"
   },
   "cebra": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:51.533959"
+    "timestamp": "2026-09-27T03:02:25.040677"
   },
   "multigrate": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:52.213261"
+    "timestamp": "2026-09-27T03:02:25.659370"
   },
   "panpop": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:53:59.548478"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:32.725373"
   },
   "spatialdata": {
-    "count": 6,
-    "timestamp": "2026-09-20T02:54:02.078733"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:35.302029"
   },
   "mouse_organogenesis_10x_multiome_publication": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:08.761999"
+    "timestamp": "2026-09-27T03:02:42.153164"
   },
   "tmbed": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:54:09.433208"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:42.765172"
   },
   "vertex-ai-alphafold-inference-pipeline": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:10.097909"
+    "timestamp": "2026-09-27T03:02:43.387356"
   },
   "apo2ph4": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:11.450910"
+    "timestamp": "2026-09-27T03:02:44.724823"
   },
   "transformerst": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:13.418104"
+    "timestamp": "2026-09-27T03:02:46.798509"
   },
   "roadies": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:54:16.096598"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:49.788798"
   },
   "genomeassembly": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:54:16.787145"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:50.407329"
   },
   "evobind": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:17.392304"
+    "timestamp": "2026-09-27T03:02:51.040294"
   },
   "nichecompass": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:54:18.066998"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:51.700798"
   },
   "pyrovelocity": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:30.575873"
+    "timestamp": "2026-09-27T03:03:04.281310"
   },
   "protflash": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:54:32.558078"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:06.160959"
   },
   "cytocommunity": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:37.224720"
+    "timestamp": "2026-09-27T03:03:10.796184"
   },
   "ankh": {
-    "count": 12,
-    "timestamp": "2026-09-20T02:54:42.602388"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:15.992109"
   },
   "symphony": {
-    "count": 17,
-    "timestamp": "2026-09-20T02:54:47.776520"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:21.117287"
   },
   "gpdl": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:49.056654"
+    "timestamp": "2026-09-27T03:03:22.363628"
   },
   "inmoose": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:54:52.731708"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:26.080466"
   },
   "voltron": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:02.687301"
+    "timestamp": "2026-09-27T03:03:36.088942"
   },
   "simgen": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:04.722104"
+    "timestamp": "2026-09-27T03:03:39.091132"
   },
   "el-cptn": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:06.041634"
+    "timestamp": "2026-09-27T03:03:40.402495"
   },
   "metanet": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:55:06.665079"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:41.065127"
   },
   "abmap": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:07.344673"
+    "timestamp": "2026-09-27T03:03:41.742536"
   },
   "integrate-chatgpt-in-excel-using-vba": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:08.689763"
+    "timestamp": "2026-09-27T03:03:43.008470"
   },
   "rakaia": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:09.319179"
+    "timestamp": "2026-09-27T03:03:43.643781"
   },
   "hummus": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:55:10.617079"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:44.900105"
   },
   "ai4sci-micam": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:11.256827"
+    "timestamp": "2026-09-27T03:03:45.611844"
   },
   "alphafold-idp": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:17.426123"
+    "timestamp": "2026-09-27T03:03:51.544649"
   },
   "viral-protein-function-plm": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:18.761175"
+    "timestamp": "2026-09-27T03:03:52.823634"
   },
   "af_analysis": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:55:23.571541"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:57.370663"
   },
   "af_unmasked": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:26.200860"
+    "timestamp": "2026-09-27T03:04:00.070370"
   },
   "oxbow": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:26.854880"
+    "timestamp": "2026-09-27T03:04:00.687438"
   },
   "marsgt": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:55:30.407146"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:03.376881"
   },
   "polaris": {
-    "count": 6,
-    "timestamp": "2026-09-20T02:55:31.081010"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:04.050856"
   },
   "ramanspy": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:33.700944"
+    "timestamp": "2026-09-27T03:04:06.988078"
   },
   "sv_benchmark_cmrg_giab": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:41.733991"
+    "timestamp": "2026-09-27T03:04:15.004615"
   },
   "alphared": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:55:43.744318"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:16.977794"
   },
   "sopa": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:55:50.977950"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:24.844172"
   },
   "saprot": {
-    "count": 8,
-    "timestamp": "2026-09-20T02:55:55.490729"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:29.434594"
   },
   "tcgaplot": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:55:57.337553"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:31.411675"
   },
   "bionemo-framework": {
     "count": 0,
@@ -3841,1422 +3841,1442 @@
   },
   "fraggen": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:59.278749"
+    "timestamp": "2026-09-27T03:04:33.420185"
   },
   "xomicsshiny": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:01.275356"
+    "timestamp": "2026-09-27T03:04:35.437248"
   },
   "protflow": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:03.292318"
+    "timestamp": "2026-09-27T03:04:37.373146"
   },
   "afdistill": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:05.959057"
+    "timestamp": "2026-09-27T03:04:39.954665"
   },
   "uspnet": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:06.627948"
+    "timestamp": "2026-09-27T03:04:40.593899"
   },
   "meteor": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:56:07.956385"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:41.832563"
   },
   "blazeseq": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:09.974861"
+    "timestamp": "2026-09-27T03:04:43.779290"
   },
   "scmultibench": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:56:13.201265"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:46.922888"
   },
   "colora": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:56:14.474854"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:48.249855"
   },
   "data-repo_plm-finetune-eval": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:15.776345"
+    "timestamp": "2026-09-27T03:04:49.551622"
   },
   "alphafind": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:16.400347"
+    "timestamp": "2026-09-27T03:04:50.205119"
   },
   "stereommv1": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:19.002356"
+    "timestamp": "2026-09-27T03:04:52.772608"
   },
   "xeniumspatialanalysis": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:20.979838"
+    "timestamp": "2026-09-27T03:04:54.708025"
   },
   "comet": {
-    "count": 120,
-    "timestamp": "2026-09-20T02:56:23.591224"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:57.388307"
   },
   "pcmol": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:24.261309"
+    "timestamp": "2026-09-27T03:04:58.024492"
   },
   "plm_swe": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:26.229128"
+    "timestamp": "2026-09-27T03:05:00.465177"
   },
   "graph-dit": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:26.909790"
+    "timestamp": "2026-09-27T03:05:01.100060"
   },
   "alphaflow": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:56:29.499811"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:03.754770"
   },
   "afm-lis": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:31.435376"
+    "timestamp": "2026-09-27T03:05:05.621863"
   },
   "autoencodix": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:56:32.098230"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:06.294215"
   },
   "scconfluence": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:33.416584"
+    "timestamp": "2026-09-27T03:05:07.621461"
   },
   "afsample2": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:56:34.117460"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:08.269220"
   },
   "harpy": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:54:46.450218"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:19.835750"
   },
   "mesa": {
-    "count": 45,
-    "timestamp": "2026-09-20T02:56:36.057646"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:10.167948"
   },
   "mogaaap": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:56:37.281963"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:11.435621"
   },
   "dockm8": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:38.600327"
+    "timestamp": "2026-09-27T03:05:12.713102"
   },
   "celldega": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:42.065946"
+    "timestamp": "2026-09-27T03:05:15.970980"
   },
   "instructplm": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:43.972070"
+    "timestamp": "2026-09-27T03:05:17.969853"
   },
   "alphafold-decoded": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:45.244498"
+    "timestamp": "2026-09-27T03:05:19.317461"
   },
   "nicheformer": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:56:48.453678"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:22.825030"
   },
   "progen2-finetuning": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:49.088761"
+    "timestamp": "2026-09-27T03:05:23.463152"
   },
   "bin2cell": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:56:49.762607"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:24.087129"
   },
   "saprothub": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:53.170526"
+    "timestamp": "2026-09-27T03:05:27.532155"
   },
   "open-af3": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:54.449076"
+    "timestamp": "2026-09-27T03:05:28.915651"
   },
   "egdb": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:55.122766"
+    "timestamp": "2026-09-27T03:05:29.586297"
   },
   "lsabgc-pan": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:56.471502"
+    "timestamp": "2026-09-27T03:05:30.864094"
   },
   "protrek": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:56:57.768101"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:32.178656"
   },
   "mulan": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:57:00.349662"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:35.016661"
   },
   "plm-interact": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:57:01.947781"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:36.280380"
   },
   "seqdance": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:03.221832"
+    "timestamp": "2026-09-27T03:05:37.582035"
   },
   "scdownstream": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:05.826402"
+    "timestamp": "2026-09-27T03:05:40.225148"
   },
   "easymultiomics": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:06.506137"
+    "timestamp": "2026-09-27T03:05:40.902370"
   },
   "etflow": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:07.162256"
+    "timestamp": "2026-09-27T03:05:41.551896"
   },
   "mofaflex": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:08.436279"
+    "timestamp": "2026-09-27T03:05:42.878569"
   },
   "cosdata": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:09.131780"
+    "timestamp": "2026-09-27T03:05:43.539537"
   },
   "sgs": {
-    "count": 79,
-    "timestamp": "2026-09-20T02:57:11.217331"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:45.400091"
   },
   "dplm": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:13.254772"
+    "timestamp": "2026-09-27T03:05:47.375633"
   },
   "scstgcn": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:57:14.579209"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:48.694752"
   },
   "scniche": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:57:15.282292"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:49.432866"
   },
   "plotlars": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:15.995248"
+    "timestamp": "2026-09-27T03:05:50.060303"
   },
   "segger_dev": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:17.332645"
+    "timestamp": "2026-09-27T03:05:51.461817"
   },
   "semla-flow": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:20.837237"
+    "timestamp": "2026-09-27T03:05:54.645839"
   },
   "bindcraft": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:57:22.118718"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:55.892391"
   },
   "spatialppiv2": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:26.103507"
+    "timestamp": "2026-09-27T03:05:59.797776"
   },
   "enact-pipeline": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:26.770967"
+    "timestamp": "2026-09-27T03:06:00.581475"
   },
   "drvi": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:27.452686"
+    "timestamp": "2026-09-27T03:06:01.203571"
   },
   "alpharing": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:28.046218"
+    "timestamp": "2026-09-27T03:06:01.852799"
   },
   "rgfn": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:28.715527"
+    "timestamp": "2026-09-27T03:06:02.936448"
   },
   "aiagents4pharma": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:57:29.392030"
+    "count": 0,
+    "timestamp": "2026-09-27T03:06:03.553395"
   },
   "interplm": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:57:32.693126"
+    "count": 0,
+    "timestamp": "2026-09-27T03:06:07.099329"
   },
   "asign": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:57:33.329267"
+    "count": 0,
+    "timestamp": "2026-09-27T03:06:07.750273"
   },
   "alphafold3": {
-    "count": 123,
-    "timestamp": "2026-09-20T02:57:33.951276"
+    "count": 0,
+    "timestamp": "2026-09-27T03:06:08.362430"
   },
   "alphafold3-gui": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:35.281400"
+    "timestamp": "2026-09-27T03:06:09.706502"
   },
   "alphafold3_tools": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:38.632071"
+    "timestamp": "2026-09-27T03:06:12.233650"
   },
   "faplm": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:39.411903"
+    "timestamp": "2026-09-27T03:06:12.876358"
   },
   "phoregen": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:43.404004"
+    "timestamp": "2026-09-27T03:06:16.855415"
   },
   "evolvex": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:44.138182"
+    "timestamp": "2026-09-27T03:06:17.533056"
   },
   "lc-plm": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:45.454628"
+    "timestamp": "2026-09-27T03:06:18.879697"
   },
   "protacfold": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:48.796620"
+    "timestamp": "2026-09-27T03:06:22.183206"
   },
   "actseek": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:57:50.066081"
+    "count": 0,
+    "timestamp": "2026-09-27T03:06:23.456526"
   },
   "lrsomatic": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:52.014341"
+    "timestamp": "2026-09-27T03:06:25.479799"
   },
   "alphafold3-conda-install": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:53.316704"
+    "timestamp": "2026-09-27T03:06:26.829145"
   },
   "spatialex": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:57:55.255804"
+    "count": 0,
+    "timestamp": "2026-09-27T03:06:28.703687"
   },
   "arkflow": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:57.954854"
+    "timestamp": "2026-09-27T03:06:31.269838"
   },
   "pmgen": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:57:59.998484"
+    "count": 0,
+    "timestamp": "2026-09-27T03:06:33.182318"
   },
   "pplm": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:58:01.287307"
+    "count": 0,
+    "timestamp": "2026-09-27T03:06:34.441455"
   },
   "ai_quantum_drug_discovery": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:03.273840"
+    "timestamp": "2026-09-27T03:06:36.364668"
   },
   "propmolflow": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:03.879926"
+    "timestamp": "2026-09-27T03:06:37.051046"
   },
   "materialmvp": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:04.485184"
+    "timestamp": "2026-09-27T03:06:37.723419"
   },
   "rag-esm": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:09.705724"
+    "timestamp": "2026-09-27T03:06:43.590588"
   },
   "mfdesign": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:13.005625"
+    "timestamp": "2026-09-27T03:06:47.185292"
   },
   "tabasco": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:18.819093"
+    "timestamp": "2026-09-27T03:06:53.132737"
   },
   "openalpha_evolve": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:20.168131"
+    "timestamp": "2026-09-27T03:06:54.438600"
   },
   "alphafold-mcp-server": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:22.728899"
+    "timestamp": "2026-09-27T03:06:56.942777"
   },
   "lucavirus": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:23.363146"
+    "timestamp": "2026-09-27T03:06:57.619196"
   },
   "flips": {
-    "count": 14,
-    "timestamp": "2026-09-20T02:58:24.038754"
+    "count": 0,
+    "timestamp": "2026-09-27T03:06:58.594291"
   },
   "alphafold3-architecture-walkthrough": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:25.363982"
+    "timestamp": "2026-09-27T03:06:59.903620"
   },
   "molly": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:58:26.024656"
+    "count": 0,
+    "timestamp": "2026-09-27T03:07:00.792144"
   },
   "foldcraft": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:26.667563"
+    "timestamp": "2026-09-27T03:07:01.469959"
   },
   "amix-1": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:29.339656"
+    "timestamp": "2026-09-27T03:07:04.110462"
   },
   "mber-open": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:39.600046"
+    "timestamp": "2026-09-27T03:07:15.762308"
   },
   "proteindj": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:40.915277"
+    "timestamp": "2026-09-27T03:07:17.297445"
   },
   "2025-neurips-hsacc": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:41.515298"
+    "timestamp": "2026-09-27T03:07:17.975981"
   },
   "tcbb-simkf": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:44.194498"
+    "timestamp": "2026-09-27T03:07:21.145687"
   },
   "openfold-3": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:44.880572"
+    "timestamp": "2026-09-27T03:07:21.783957"
   },
   "omixbench": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:46.125109"
+    "timestamp": "2026-09-27T03:07:23.131250"
   },
   "sgi-bench": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:52.603974"
+    "timestamp": "2026-09-27T03:07:29.995399"
   },
   "protprofilemd": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:55.856962"
+    "timestamp": "2026-09-27T03:07:33.180443"
   },
   "odesign-pipeline": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:57.115256"
+    "timestamp": "2026-09-27T03:07:34.440066"
   },
   "medgeclaw": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:01.742166"
+    "timestamp": "2026-09-27T03:07:39.025495"
   },
   "braker": {
-    "count": 6,
-    "timestamp": "2026-09-20T02:48:57.276284"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:33.149109"
   },
   "dmpfold2": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:47.106855"
+    "timestamp": "2026-09-27T03:00:18.019761"
   },
   "dips-plus": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:52:44.197794"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:16.779236"
   },
   "msagen": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:20.668921"
+    "timestamp": "2026-09-27T03:02:54.595127"
   },
   "galba": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:54:41.911719"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:15.391566"
   },
   "minifold": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:14.934308"
+    "timestamp": "2026-09-27T03:06:49.198783"
   },
   "rsem": {
-    "count": 17,
-    "timestamp": "2026-09-20T02:44:54.731472"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:46.716942"
   },
   "miscmetabar": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:20.998594"
+    "timestamp": "2026-09-27T02:59:52.027833"
   },
   "m3-jepa": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:17.996264"
+    "timestamp": "2026-09-27T03:05:52.129541"
   },
   "phap": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:58:00.624263"
+    "count": 0,
+    "timestamp": "2026-09-27T03:06:33.789452"
   },
   "ng-diagram": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:12.337298"
+    "timestamp": "2026-09-27T03:06:46.581140"
   },
   "computer_vision_spatial_omics": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:37.611236"
+    "timestamp": "2026-09-27T03:07:13.757835"
   },
   "ssake": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:45:48.034182"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:28.081292"
   },
   "arcs": {
-    "count": 44,
-    "timestamp": "2026-09-20T02:46:59.705282"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:38.509821"
   },
   "rna-bloom": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:48:45.400746"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:21.538342"
   },
   "ntjoin": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:49:53.470325"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:27.682855"
   },
   "compositional": {
-    "count": 1015,
-    "timestamp": "2026-09-20T02:51:17.084310"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:47.948498"
   },
   "rapids-singlecell": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:38.304509"
+    "timestamp": "2026-09-27T03:01:10.670137"
   },
   "lumpy-sv": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:45:12.503921"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:54.398951"
   },
   "simplesam": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:13.984780"
+    "timestamp": "2026-09-27T02:54:53.859292"
   },
   "phaser": {
-    "count": 5,
-    "timestamp": "2026-09-20T02:46:31.300571"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:10.972834"
   },
   "clusterexperiment": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:46:35.484956"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:14.984651"
   },
   "conos": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:48:50.579253"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:26.791669"
   },
   "kallistobustools": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:55.446743"
+    "timestamp": "2026-09-27T02:58:29.605125"
   },
   "microeco": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:51:07.989481"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:38.836370"
   },
   "bopep": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:34.620872"
+    "timestamp": "2026-09-27T03:06:09.037121"
   },
   "chatspatial": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:16.855586"
+    "timestamp": "2026-09-27T03:06:51.175219"
   },
   "svpg": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:24.723535"
+    "timestamp": "2026-09-27T03:06:59.264127"
   },
   "ilesta": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:36.337743"
+    "timestamp": "2026-09-27T03:07:12.483286"
   },
   "gitcomet": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:56.520996"
+    "timestamp": "2026-09-27T03:07:33.821918"
   },
   "drugclaw": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:03.053821"
+    "timestamp": "2026-09-27T03:07:40.551269"
   },
   "guacamole": {
     "count": 0,
-    "timestamp": "2026-09-20T02:45:36.360241"
+    "timestamp": "2026-09-27T02:54:17.097913"
   },
   "scnym": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:03.901305"
+    "timestamp": "2026-09-27T02:58:38.041079"
   },
   "humanpilot": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:32.076973"
+    "timestamp": "2026-09-27T02:59:04.981385"
   },
   "immunopipe": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:41.576601"
+    "timestamp": "2026-09-27T03:01:13.911259"
   },
   "bwa-meme": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:02.256649"
+    "timestamp": "2026-09-27T03:01:34.956381"
   },
   "nanoranger": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:54:06.149311"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:39.340351"
   },
   "alphafold3-pytorch": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:53.833550"
+    "timestamp": "2026-09-27T03:05:28.220597"
   },
   "ml_conformer_generator": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:48.129578"
+    "timestamp": "2026-09-27T03:06:21.582226"
   },
   "batchdocking--automated_workflow_based_on_autodock-gpu": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:07.715998"
+    "timestamp": "2026-09-27T03:06:41.582443"
   },
   "rctd-py": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:02.403886"
+    "timestamp": "2026-09-27T03:07:39.900317"
   },
   "omicsclaw": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:04.283623"
+    "timestamp": "2026-09-27T03:07:41.901331"
   },
   "openclaw-chat-history-import": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:04.930564"
+    "timestamp": "2026-09-27T03:07:42.629209"
   },
   "derfinder": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:45:22.017932"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:03.535606"
   },
   "vcf-annotator": {
     "count": 0,
-    "timestamp": "2026-09-20T02:45:42.755674"
+    "timestamp": "2026-09-27T02:54:22.931515"
   },
   "rnaseqgene": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:28.944186"
+    "timestamp": "2026-09-27T02:57:05.476327"
   },
   "bsa": {
-    "count": 301,
-    "timestamp": "2026-09-20T02:51:33.391536"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:04.362465"
   },
   "sctriangulate": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:31.741017"
+    "timestamp": "2026-09-27T03:01:03.974924"
   },
   "panagram": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:29.281591"
+    "timestamp": "2026-09-27T03:03:03.002873"
   },
   "longcallr": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:40.396679"
+    "timestamp": "2026-09-27T03:04:13.449662"
   },
   "verifybamid": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:42.100610"
+    "timestamp": "2026-09-27T02:55:21.735971"
   },
   "savvy": {
-    "count": 13,
-    "timestamp": "2026-09-20T02:47:05.697755"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:44.434157"
   },
   "elisa": {
-    "count": 2697,
-    "timestamp": "2026-09-20T02:55:39.733347"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:12.810201"
   },
   "xtrimopglm": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:58:05.745267"
+    "count": 0,
+    "timestamp": "2026-09-27T03:06:39.002690"
   },
   "nicheflow": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:38.952685"
+    "timestamp": "2026-09-27T03:07:15.074410"
   },
   "scientific-agent-skills": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:43.546286"
+    "timestamp": "2026-09-27T03:07:20.464117"
   },
   "spalp": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:51.936317"
+    "timestamp": "2026-09-27T03:07:29.318580"
   },
   "sciagent-skills": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:01.028918"
+    "timestamp": "2026-09-27T03:07:38.402548"
   },
   "ms_peak_picker": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:42.728116"
+    "timestamp": "2026-09-27T02:55:22.415924"
   },
   "easysfs": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:08.340731"
+    "timestamp": "2026-09-27T02:55:47.126529"
   },
   "normalisr": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:53.861482"
+    "timestamp": "2026-09-27T02:59:25.417245"
   },
   "multifish": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:11.593764"
+    "timestamp": "2026-09-27T03:00:42.929648"
   },
   "flowcept": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:44.565756"
+    "timestamp": "2026-09-27T03:03:17.933261"
   },
   "afprofile": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:55:34.378481"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:07.603542"
   },
   "quantum-transformer": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:54.596675"
+    "timestamp": "2026-09-27T03:06:28.071075"
   },
   "canvas": {
-    "count": 28,
-    "timestamp": "2026-09-20T02:46:20.831104"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:00.398878"
   },
   "mspc": {
-    "count": 7,
-    "timestamp": "2026-09-20T02:47:46.483623"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:24.182062"
   },
   "fegenie": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:06.834049"
+    "timestamp": "2026-09-27T02:57:42.143342"
   },
   "movingpandas": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:17.923238"
+    "timestamp": "2026-09-27T02:57:52.801145"
   },
   "stereoscope": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:10.537134"
+    "timestamp": "2026-09-27T02:58:44.406416"
   },
   "disoflag": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:56:05.282980"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:39.294871"
   },
   "omicskit": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:05.203128"
+    "timestamp": "2026-09-27T03:05:39.594003"
   },
   "thyra": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:30.062787"
+    "timestamp": "2026-09-27T03:06:04.350266"
   },
   "hprcv2": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:27.921755"
+    "timestamp": "2026-09-27T03:07:02.802552"
   },
   "bioagents": {
-    "count": 5,
-    "timestamp": "2026-09-20T02:58:42.889521"
+    "count": 0,
+    "timestamp": "2026-09-27T03:07:19.860039"
   },
   "chromvar": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:46:34.186784"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:13.628757"
   },
   "meringue": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:32.981773"
+    "timestamp": "2026-09-27T02:57:09.375990"
   },
   "topec": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:56:24.927263"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:58.691434"
   },
   "bwa-fastalign": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:46.795644"
+    "timestamp": "2026-09-27T03:06:20.324357"
   },
   "segtraq": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:32.015680"
+    "timestamp": "2026-09-27T03:07:06.857171"
   },
   "lobster": {
-    "count": 22,
-    "timestamp": "2026-09-20T02:58:34.264589"
+    "count": 0,
+    "timestamp": "2026-09-27T03:07:08.838426"
   },
   "aurora": {
-    "count": 141,
-    "timestamp": "2026-09-20T02:59:08.774599"
+    "count": 0,
+    "timestamp": "2026-09-27T03:07:46.507104"
   },
   "comet-cc": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:09.430259"
+    "timestamp": "2026-09-27T03:07:47.132101"
   },
   "baysor": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:24.501345"
+    "timestamp": "2026-09-27T02:57:59.414338"
   },
   "pato": {
-    "count": 6,
-    "timestamp": "2026-09-20T02:50:43.294032"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:15.855339"
   },
   "ont-ampseq": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:56:27.567101"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:01.716764"
   },
   "scotch": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:56:51.696161"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:26.275924"
   },
   "carafe": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:57:20.161256"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:54.025581"
   },
   "finest": {
-    "count": 22,
-    "timestamp": "2026-09-20T02:57:35.938091"
+    "count": 0,
+    "timestamp": "2026-09-27T03:06:10.319386"
   },
   "scnotebooks": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:41.386966"
+    "timestamp": "2026-09-27T03:06:14.829418"
   },
   "cell-annotator": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:42.025398"
+    "timestamp": "2026-09-27T03:06:15.500069"
   },
   "af_pipeline": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:44.783596"
+    "timestamp": "2026-09-27T03:06:18.195482"
   },
   "crypto-ai-trading-bot": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:10.105756"
+    "timestamp": "2026-09-27T03:07:47.774622"
   },
   "genie3": {
-    "count": 26,
-    "timestamp": "2026-09-20T02:59:11.371680"
+    "count": 0,
+    "timestamp": "2026-09-27T03:07:49.141042"
   },
   "frmatch": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:34.243640"
+    "timestamp": "2026-09-27T02:58:09.081894"
   },
   "alphaquant": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:52.636697"
+    "timestamp": "2026-09-27T03:00:23.829761"
   },
   "bgcflow": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:53:04.848208"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:37.697055"
   },
   "bambu-pipe": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:21.603167"
+    "timestamp": "2026-09-27T03:04:55.432433"
   },
   "helm-gpt": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:56:22.912550"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:56.766087"
   },
   "recall": {
-    "count": 1286,
-    "timestamp": "2026-09-20T02:57:22.805888"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:56.550153"
   },
   "concert": {
-    "count": 373,
-    "timestamp": "2026-09-20T02:58:33.404771"
+    "count": 0,
+    "timestamp": "2026-09-27T03:07:08.221679"
   },
   "medical-research-skills": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:58.429828"
+    "timestamp": "2026-09-27T03:07:35.766762"
   },
   "odon": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:59:06.225241"
+    "count": 0,
+    "timestamp": "2026-09-27T03:07:43.934558"
   },
   "higgsfield-claude-skills": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:08.140122"
+    "timestamp": "2026-09-27T03:07:45.828023"
   },
   "degify": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:12.020088"
+    "timestamp": "2026-09-27T03:07:49.797649"
   },
   "svtyper": {
     "count": 0,
-    "timestamp": "2026-09-20T02:45:46.017095"
+    "timestamp": "2026-09-27T02:54:26.142754"
   },
   "gwas2vcf": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:27.038502"
+    "timestamp": "2026-09-27T02:58:02.002654"
   },
   "pipecomp": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:50:19.990878"
+    "count": 0,
+    "timestamp": "2026-09-27T02:58:53.363116"
   },
   "tmexplorer": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:20.356117"
+    "timestamp": "2026-09-27T02:59:51.377558"
   },
   "flavonoidfriday": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:18.876799"
+    "timestamp": "2026-09-27T03:00:50.462026"
   },
   "myb_annotator": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:53.330934"
+    "timestamp": "2026-09-27T03:01:26.297597"
   },
   "lhai36366": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:28.597639"
+    "timestamp": "2026-09-27T03:02:01.508814"
   },
   "redeconve": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:54:31.883053"
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:05.529229"
   },
   "moleculediffusiontransformer": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:20.094717"
+    "timestamp": "2026-09-27T03:03:54.100056"
   },
   "spaim": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:56:55.789834"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:30.217864"
   },
   "genex-ai": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:14.656839"
+    "timestamp": "2026-09-27T03:07:52.622490"
   },
   "cs2-external-cheat-2026": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:16.876931"
+    "timestamp": "2026-09-27T03:07:54.551694"
   },
   "super-focus": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:47:15.005899"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:53.618875"
   },
   "stream-chain": {
     "count": 0,
-    "timestamp": "2026-09-20T02:48:35.954910"
+    "timestamp": "2026-09-27T02:57:12.065526"
   },
   "long-read-proteogenomics": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:51:55.158065"
+    "count": 0,
+    "timestamp": "2026-09-27T03:00:26.531844"
   },
   "birdman": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:00.426699"
+    "timestamp": "2026-09-27T03:00:31.764934"
   },
   "mopline": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:45.019197"
+    "timestamp": "2026-09-27T03:02:18.514896"
   },
   "temstapro": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:15.407850"
+    "timestamp": "2026-09-27T03:03:49.568785"
   },
   "tumourevo": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:28.186541"
+    "timestamp": "2026-09-27T03:05:02.388885"
   },
   "spatialaxe": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:39.945662"
+    "timestamp": "2026-09-27T03:05:14.036621"
   },
   "proteopy": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:20.802398"
+    "timestamp": "2026-09-27T03:06:55.053502"
   },
   "bgpt-mcp": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:00.380582"
+    "timestamp": "2026-09-27T03:07:37.755283"
   },
   "parsington": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:00.691721"
+    "timestamp": "2026-09-27T02:54:40.361478"
   },
   "pygc": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:07.804754"
+    "timestamp": "2026-09-27T02:58:41.852018"
   },
   "gaep": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:53:31.211553"
+    "count": 0,
+    "timestamp": "2026-09-27T03:02:04.864199"
   },
   "metaproviz": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:27.538729"
+    "timestamp": "2026-09-27T03:04:01.388869"
   },
   "clinical-genomics": {
-    "count": 311,
-    "timestamp": "2026-09-20T02:56:18.329059"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:52.092073"
   },
   "spatialleiden": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:59.683466"
+    "timestamp": "2026-09-27T03:05:34.103554"
   },
   "computational-metabolomics-review": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:53.869032"
+    "timestamp": "2026-09-27T03:07:31.269142"
   },
   "phenopixel": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:17.491015"
+    "timestamp": "2026-09-27T03:07:55.186945"
   },
   "quast": {
-    "count": 18,
-    "timestamp": "2026-09-20T02:45:09.838268"
+    "count": 0,
+    "timestamp": "2026-09-27T02:53:51.807616"
   },
   "viewbs": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:03.026084"
+    "timestamp": "2026-09-27T02:55:41.736378"
   },
   "idbacapp": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:58.613126"
+    "timestamp": "2026-09-27T02:56:35.196457"
   },
   "fingerprint_maps": {
-    "count": 6,
-    "timestamp": "2026-09-20T02:48:05.084550"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:41.587542"
   },
   "diffgram": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:01.645835"
+    "timestamp": "2026-09-27T02:57:36.942655"
   },
   "mageckflute": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:08.783861"
+    "timestamp": "2026-09-27T02:57:44.063108"
   },
   "patchwork": {
-    "count": 41,
-    "timestamp": "2026-09-20T02:52:32.346871"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:04.624071"
   },
   "pepnet": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:53:26.675381"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:59.352634"
   },
   "pixelator": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:52.267273"
+    "timestamp": "2026-09-27T03:04:26.166817"
   },
   "fastplms": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:40.712799"
+    "timestamp": "2026-09-27T03:06:14.148553"
   },
   "phoenix": {
-    "count": 69,
-    "timestamp": "2026-09-20T02:58:38.281105"
+    "count": 0,
+    "timestamp": "2026-09-27T03:07:14.399664"
   },
   "fasterfasta": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:48.638839"
+    "timestamp": "2026-09-27T03:07:25.975227"
   },
   "notame": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:50:36.727230"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:09.467154"
   },
   "minibwa": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:42.191125"
+    "timestamp": "2026-09-27T03:07:18.600479"
   },
   "segger": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:49.327332"
+    "timestamp": "2026-09-27T03:07:26.585874"
   },
   "deggo": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:22.123676"
+    "timestamp": "2026-09-27T03:08:00.016458"
   },
   "cgat": {
-    "count": 6,
-    "timestamp": "2026-09-20T02:46:46.046745"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:25.774761"
   },
   "vsnp": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:47:07.005756"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:45.755162"
   },
   "bionemo-recipes": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:58.640518"
+    "timestamp": "2026-09-27T03:04:32.743038"
   },
   "limpa": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:46.124433"
+    "timestamp": "2026-09-27T03:06:19.661976"
   },
   "foldback": {
-    "count": 14,
-    "timestamp": "2026-09-20T02:59:03.663176"
+    "count": 0,
+    "timestamp": "2026-09-27T03:07:41.278834"
   },
   "livia": {
-    "count": 13,
-    "timestamp": "2026-09-20T02:59:05.575100"
+    "count": 0,
+    "timestamp": "2026-09-27T03:07:43.302113"
   },
   "autozyme": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:20.123130"
+    "timestamp": "2026-09-27T03:07:57.796580"
   },
   "quickbooks-windows-master": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:21.491878"
+    "timestamp": "2026-09-27T03:07:59.353143"
   },
   "fastrgz": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:22.764308"
+    "timestamp": "2026-09-27T03:08:00.638669"
   },
   "stix": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:31.571351"
+    "timestamp": "2026-09-27T02:56:09.544658"
   },
   "mogcn": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:52:58.136095"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:31.093172"
   },
   "protein-contaminant-libraries-for-dda-and-dia-proteomics": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:36.483543"
+    "timestamp": "2026-09-27T03:02:10.100218"
   },
   "dense-homolog-retrieval": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:39.207181"
+    "timestamp": "2026-09-27T03:03:12.735220"
   },
   "xfold": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:57:37.705116"
+    "count": 0,
+    "timestamp": "2026-09-27T03:06:11.598827"
   },
   "coscientist": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:02.651934"
+    "timestamp": "2026-09-27T03:06:35.724346"
   },
   "cellatria": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:58:32.701949"
+    "count": 0,
+    "timestamp": "2026-09-27T03:07:07.540739"
   },
   "prot2prop": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:57.786042"
+    "timestamp": "2026-09-27T03:07:35.086445"
   },
   "deepspotm": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:20.819532"
+    "timestamp": "2026-09-27T03:07:58.462584"
   },
   "bamboo-hr-employee-flow": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:23.971375"
+    "timestamp": "2026-09-27T03:08:01.934181"
   },
   "claude-science-ai-app": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:25.268978"
+    "timestamp": "2026-09-27T03:08:03.311894"
   },
   "unicycler": {
-    "count": 47,
-    "timestamp": "2026-09-20T02:46:48.304199"
+    "count": 0,
+    "timestamp": "2026-09-27T02:55:27.685316"
   },
   "fast-plast": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:56.355820"
+    "timestamp": "2026-09-27T02:55:35.380237"
   },
   "big-map": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:55.889148"
+    "timestamp": "2026-09-27T02:59:27.322301"
   },
   "variant-calling-pipeline-gatk4": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:59.138216"
+    "timestamp": "2026-09-27T02:59:30.512579"
   },
   "rapdtool": {
     "count": 0,
-    "timestamp": "2026-09-20T02:53:12.006830"
+    "timestamp": "2026-09-27T03:01:44.976229"
   },
   "pancg": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:31.370264"
+    "timestamp": "2026-09-27T03:07:06.189399"
   },
   "pair-representation-scaling": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:40.248203"
+    "timestamp": "2026-09-27T03:07:16.379700"
   },
   "precision-medicine-mcp": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:45.501241"
+    "timestamp": "2026-09-27T03:07:22.457479"
   },
   "karyoscope": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:15.437305"
+    "timestamp": "2026-09-27T03:07:53.280697"
   },
   "catif-rl": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:16.169077"
+    "timestamp": "2026-09-27T03:07:53.903468"
   },
   "protsyntax": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:23.373020"
+    "timestamp": "2026-09-27T03:08:01.271866"
   },
   "icml2026-ai-bio": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:27.205504"
+    "timestamp": "2026-09-27T03:08:05.223286"
   },
   "poplddecay": {
     "count": 0,
-    "timestamp": "2026-09-20T02:46:58.926858"
+    "timestamp": "2026-09-27T02:55:37.863549"
   },
   "microbiome.jl": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:53.964630"
+    "timestamp": "2026-09-27T02:56:30.675838"
   },
   "xpore": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:37.349556"
+    "timestamp": "2026-09-27T02:59:10.108315"
   },
   "cadd-sv": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:50:40.610805"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:13.355800"
   },
   "guidescan-cli": {
     "count": 0,
-    "timestamp": "2026-09-20T02:51:47.779202"
+    "timestamp": "2026-09-27T03:00:18.704043"
   },
   "pharokka": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:53:22.691843"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:55.526805"
   },
   "epinformer": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:56:22.290766"
+    "count": 0,
+    "timestamp": "2026-09-27T03:04:56.115619"
   },
   "snputils": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:32.066664"
+    "timestamp": "2026-09-27T03:06:06.422269"
   },
   "ramanbiolib": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:06.390879"
+    "timestamp": "2026-09-27T03:06:39.659635"
   },
   "flashdeconv": {
-    "count": 7,
-    "timestamp": "2026-09-20T02:58:53.199449"
+    "count": 0,
+    "timestamp": "2026-09-27T03:07:30.626540"
   },
   "spmind": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:13.339864"
+    "timestamp": "2026-09-27T03:07:51.088442"
   },
   "histopia": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:18.847071"
+    "timestamp": "2026-09-27T03:07:56.484216"
   },
   "fp-tools": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:19.488119"
+    "timestamp": "2026-09-27T03:07:57.137472"
   },
   "wisp-science": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:24.627053"
+    "timestamp": "2026-09-27T03:08:02.618794"
   },
   "unofficial-davinci-mcp": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:29.065353"
+    "timestamp": "2026-09-27T03:08:07.450874"
   },
   "flashfry": {
     "count": 0,
-    "timestamp": "2026-09-20T02:45:58.130959"
+    "timestamp": "2026-09-27T02:54:37.796932"
   },
   "smoothie": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:57:58.602040"
+    "count": 0,
+    "timestamp": "2026-09-27T03:06:31.925478"
   },
   "tt-bio": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:08.459299"
+    "timestamp": "2026-09-27T03:06:42.239758"
   },
   "motif": {
-    "count": 4612,
-    "timestamp": "2026-09-20T02:59:29.696780"
+    "count": 0,
+    "timestamp": "2026-09-27T03:08:08.091262"
   },
   "somaticwrapper": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:38.342219"
+    "timestamp": "2026-09-27T02:56:16.170984"
   },
   "openfold2": {
     "count": 0,
-    "timestamp": "2026-09-20T02:52:06.349097"
+    "timestamp": "2026-09-27T03:00:37.679200"
   },
   "sclet": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:16.653042"
+    "timestamp": "2026-09-27T03:05:50.785548"
   },
   "open-science": {
-    "count": 157,
-    "timestamp": "2026-09-20T02:59:25.912121"
+    "count": 0,
+    "timestamp": "2026-09-27T03:08:03.944457"
   },
   "ripple": {
-    "count": 16,
-    "timestamp": "2026-09-20T02:59:27.812893"
+    "count": 0,
+    "timestamp": "2026-09-27T03:08:06.017315"
   },
   "coral": {
-    "count": 367,
-    "timestamp": "2026-09-20T02:59:30.395979"
+    "count": 0,
+    "timestamp": "2026-09-27T03:08:08.756838"
   },
   "ballgown": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:45:18.273197"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:00.018049"
   },
   "msamtools": {
     "count": 0,
-    "timestamp": "2026-09-20T02:50:30.678379"
+    "timestamp": "2026-09-27T02:59:03.732476"
   },
   "crc_epi_scatac": {
     "count": 0,
-    "timestamp": "2026-09-20T02:55:44.425277"
+    "timestamp": "2026-09-27T03:04:17.597418"
   },
   "terra": {
-    "count": 42,
-    "timestamp": "2026-09-20T02:56:46.546729"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:20.625260"
   },
   "inspire": {
-    "count": 188,
-    "timestamp": "2026-09-20T02:57:18.673284"
+    "count": 0,
+    "timestamp": "2026-09-27T03:05:52.777761"
   },
   "aiev": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:31.073579"
+    "timestamp": "2026-09-27T03:08:09.378853"
   },
   "drug-discovery-graph-models": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:31.704129"
+    "timestamp": "2026-09-27T03:08:10.051959"
   },
   "mageri": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:45:53.861947"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:33.873139"
   },
   "lrsim": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:18.045713"
+    "timestamp": "2026-09-27T02:55:56.292187"
   },
   "methylstar": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:49:04.902918"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:40.176543"
   },
   "move": {
-    "count": 971,
-    "timestamp": "2026-09-20T02:52:35.696478"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:07.907553"
   },
   "marsilea": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:26.084241"
+    "timestamp": "2026-09-27T03:02:59.716100"
   },
   "madgen": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:50.683986"
+    "timestamp": "2026-09-27T03:06:24.154397"
   },
   "claude-trader": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:50.551378"
+    "timestamp": "2026-09-27T03:07:27.913137"
   },
   "migec": {
     "count": 0,
-    "timestamp": "2026-09-20T02:45:37.114851"
+    "timestamp": "2026-09-27T02:54:17.757541"
   },
   "micall": {
     "count": 0,
-    "timestamp": "2026-09-20T02:45:37.972111"
+    "timestamp": "2026-09-27T02:54:18.446054"
   },
   "commonmz": {
     "count": 0,
-    "timestamp": "2026-09-20T02:47:03.675023"
+    "timestamp": "2026-09-27T02:55:42.445160"
   },
   "metaboannotation": {
-    "count": 2,
-    "timestamp": "2026-09-20T02:52:31.076203"
+    "count": 0,
+    "timestamp": "2026-09-27T03:01:03.353251"
   },
   "metasbt": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:03.660676"
+    "timestamp": "2026-09-27T03:02:36.579516"
   },
   "nf-binder-design": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:49.425748"
+    "timestamp": "2026-09-27T03:06:22.808677"
   },
   "craftgrn": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:46.741083"
+    "timestamp": "2026-09-27T03:07:23.751628"
   },
   "digdigdig": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:18.179894"
+    "timestamp": "2026-09-27T03:07:55.828034"
   },
   "medaka": {
-    "count": 157,
-    "timestamp": "2026-09-20T02:47:40.310528"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:18.178563"
   },
   "spring": {
-    "count": 511,
-    "timestamp": "2026-09-20T02:48:25.657568"
+    "count": 0,
+    "timestamp": "2026-09-27T02:57:02.167828"
   },
   "crisprcastyper": {
-    "count": 1,
-    "timestamp": "2026-09-20T02:51:08.654740"
+    "count": 0,
+    "timestamp": "2026-09-27T02:59:39.521412"
   },
   "affinegaps": {
     "count": 0,
-    "timestamp": "2026-09-20T02:56:58.390807"
+    "timestamp": "2026-09-27T03:05:32.867642"
   },
   "claude-science-windows": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:28.406225"
+    "timestamp": "2026-09-27T03:08:06.802925"
   },
   "ezst": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:33.058499"
+    "timestamp": "2026-09-27T03:08:11.359481"
   },
   "dyb-pro": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:33.684485"
+    "timestamp": "2026-09-27T03:08:11.979083"
   },
   "aim-lab-orchestrator": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:34.294479"
+    "timestamp": "2026-09-27T03:08:12.657009"
   },
   "juicebox": {
-    "count": 5,
-    "timestamp": "2026-09-20T02:45:51.914095"
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:31.991867"
   },
   "n2words": {
     "count": 0,
-    "timestamp": "2026-09-20T02:49:14.199879"
+    "timestamp": "2026-09-27T02:57:49.236219"
   },
   "itsxrust": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:59.724296"
+    "timestamp": "2026-09-27T03:07:37.013364"
   },
   "frigid": {
-    "count": 5,
-    "timestamp": "2026-09-20T02:59:07.515825"
+    "count": 0,
+    "timestamp": "2026-09-27T03:07:45.175428"
   },
   "ai-bioworkflow": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:12.668945"
+    "timestamp": "2026-09-27T03:07:50.442131"
   },
   "marinfold": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:13.975370"
+    "timestamp": "2026-09-27T03:07:51.991103"
   },
   "openscience": {
-    "count": 5,
-    "timestamp": "2026-09-20T02:59:26.581785"
+    "count": 0,
+    "timestamp": "2026-09-27T03:08:04.562517"
   },
   "foldingdiff": {
     "count": 0,
-    "timestamp": "2026-09-20T02:54:12.777586"
+    "timestamp": "2026-09-27T03:02:46.102904"
   },
   "chemtsv3": {
     "count": 0,
-    "timestamp": "2026-09-20T02:58:19.516485"
+    "timestamp": "2026-09-27T03:06:53.779194"
   },
   "3dcpath-datasets": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:06.847299"
+    "timestamp": "2026-09-27T03:07:44.534476"
   },
   "drug-discovery-agent-skills": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:32.383241"
+    "timestamp": "2026-09-27T03:08:10.742555"
   },
   "scikit-bio": {
     "count": 0,
-    "timestamp": "2026-09-20T02:45:30.778668"
+    "timestamp": "2026-09-27T02:54:11.926744"
   },
   "hiccompare": {
-    "count": 3,
-    "timestamp": "2026-09-20T02:47:43.837913"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:21.630585"
   },
   "groot": {
-    "count": 4,
-    "timestamp": "2026-09-20T02:48:11.757160"
+    "count": 0,
+    "timestamp": "2026-09-27T02:56:48.062353"
   },
   "alphapepttools": {
     "count": 0,
-    "timestamp": "2026-09-20T02:57:42.735103"
+    "timestamp": "2026-09-27T03:06:16.188648"
   },
   "hcls-agent-skills": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:10.767170"
+    "timestamp": "2026-09-27T03:07:48.461515"
   },
   "dock-postprocess": {
     "count": 0,
-    "timestamp": "2026-09-20T02:59:34.976647"
+    "timestamp": "2026-09-27T03:08:13.443405"
+  },
+  "methylsig": {
+    "count": 0,
+    "timestamp": "2026-09-27T02:54:49.981013"
+  },
+  "peptacular": {
+    "count": 0,
+    "timestamp": "2026-09-27T03:03:36.734242"
+  },
+  "3d-ot": {
+    "count": 0,
+    "timestamp": "2026-09-27T03:06:40.272330"
+  },
+  "binderflow": {
+    "count": 0,
+    "timestamp": "2026-09-27T03:07:11.795526"
+  },
+  "deepspot2cell": {
+    "count": 0,
+    "timestamp": "2026-09-27T03:07:19.237615"
   }
 }
